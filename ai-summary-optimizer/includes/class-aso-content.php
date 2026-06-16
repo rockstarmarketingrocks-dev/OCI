@@ -55,7 +55,7 @@ class ASO_Content {
         );
 
         // Insert before the first <p> tag; fall back to prepending.
-        if ( str_contains( $content, '<p' ) ) {
+        if ( strpos( $content, '<p' ) !== false ) {
             return preg_replace( '/<p[^>]*>/i', $summary_html . '$0', $content, 1 );
         }
 

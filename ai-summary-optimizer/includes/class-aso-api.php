@@ -46,7 +46,6 @@ PROMPT;
         $body = wp_json_encode( [
             'model'      => self::MODEL,
             'max_tokens' => 512,
-            'thinking'   => [ 'type' => 'adaptive' ],
             'messages'   => [
                 [
                     'role'    => 'user',
@@ -61,7 +60,6 @@ PROMPT;
                 'Content-Type'      => 'application/json',
                 'x-api-key'         => $this->api_key,
                 'anthropic-version' => '2023-06-01',
-                'anthropic-beta'    => 'thinking-2025-02-19',
             ],
             'body' => $body,
         ] );
