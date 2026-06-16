@@ -8,6 +8,7 @@ class ASO_Admin {
         add_action( 'admin_init', [ $this, 'register_settings' ] );
         add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_styles' ] );
         add_action( 'wp_ajax_aso_generate_single', [ $this, 'ajax_generate_single' ] );
+        add_action( 'wp_ajax_aso_test_connection', [ $this, 'ajax_test_connection' ] );
     }
 
     public function add_menu(): void {
@@ -79,6 +80,34 @@ class ASO_Admin {
                                    value="<?php echo esc_attr( $settings['api_key'] ?? '' ); ?>"
                                    class="regular-text" autocomplete="off" />
                             <p class="description"><?php esc_html_e( 'Get your key at console.anthropic.com.', 'ai-summary-optimizer' ); ?></p>
+                            <p>
+                                <button type="button" id="aso-test-btn" class="button button-secondary" style="margin-top:6px;">
+                                    <?php esc_html_e( 'Test API Connection', 'ai-summary-optimizer' ); ?>
+                                </button>
+                                <span id="aso-test-result" style="margin-left:10px;font-weight:600;"></span>
+                            </p>
+                            <script>
+                            (function($){
+                                $('#aso-test-btn').on('click', function(){
+                                    var key = $('#aso_api_key').val();
+                                    if (!key) { alert('Enter your API key first.'); return; }
+                                    $(this).prop('disabled', true).text('Testing…');
+                                    $('#aso-test-result').css('color','').text('');
+                                    $.post(ajaxurl, {
+                                        action: 'aso_test_connection',
+                                        nonce:  <?php echo wp_json_encode( wp_create_nonce( 'aso_test_nonce' ) ); ?>,
+                                        api_key: key
+                                    }, function(res){
+                                        if (res.success) {
+                                            $('#aso-test-result').css('color','green').text('✓ Connected! ' + res.data.message);
+                                        } else {
+                                            $('#aso-test-result').css('color','red').text('✗ ' + (res.data.message || 'Connection failed'));
+                                        }
+                                    }).fail(function(){ $('#aso-test-result').css('color','red').text('✗ Request failed.'); })
+                                    .always(function(){ $('#aso-test-btn').prop('disabled', false).text('Test API Connection'); });
+                                });
+                            })(jQuery);
+                            </script>
                         </td>
                     </tr>
                     <tr>
@@ -151,6 +180,48 @@ class ASO_Admin {
             </a>
         </div>
         <?php
+    }
+
+    /** AJAX: test the API key by sending a minimal request to Anthropic. */
+    public function ajax_test_connection(): void {
+        check_ajax_referer( 'aso_test_nonce', 'nonce' );
+
+        if ( ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( [ 'message' => 'Permission denied.' ] );
+        }
+
+        $api_key = sanitize_text_field( wp_unslash( $_POST['api_key'] ?? '' ) );
+        if ( empty( $api_key ) ) {
+            wp_send_json_error( [ 'message' => 'No API key provided.' ] );
+        }
+
+        $response = wp_remote_post( 'https://api.anthropic.com/v1/messages', [
+            'timeout' => 20,
+            'headers' => [
+                'Content-Type'      => 'application/json',
+                'x-api-key'         => $api_key,
+                'anthropic-version' => '2023-06-01',
+            ],
+            'body' => wp_json_encode( [
+                'model'      => 'claude-opus-4-8',
+                'max_tokens' => 10,
+                'messages'   => [ [ 'role' => 'user', 'content' => 'Say OK' ] ],
+            ] ),
+        ] );
+
+        if ( is_wp_error( $response ) ) {
+            wp_send_json_error( [ 'message' => 'WordPress HTTP error: ' . $response->get_error_message() ] );
+        }
+
+        $code = wp_remote_retrieve_response_code( $response );
+        $data = json_decode( wp_remote_retrieve_body( $response ), true );
+
+        if ( $code === 200 ) {
+            wp_send_json_success( [ 'message' => 'API key is valid and Claude responded successfully.' ] );
+        }
+
+        $error_msg = $data['error']['message'] ?? ( 'HTTP ' . $code );
+        wp_send_json_error( [ 'message' => $error_msg ] );
     }
 
     /** AJAX: generate summary for a single post from the meta box. */

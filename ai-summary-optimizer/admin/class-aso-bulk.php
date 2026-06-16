@@ -241,13 +241,14 @@ class ASO_Bulk {
                             $row.find('.aso-row-status').html('<span style="color:green;">&#10003; Done</span>');
                             $row.attr('data-has-summary', '1');
                         } else {
-                            var msg = (res.data && res.data.message) ? res.data.message : 'Error';
-                            $row.find('.aso-row-status').html('<span style="color:red;" title="' + msg + '">&#10007; Failed</span>');
+                            var msg = (res.data && res.data.message) ? res.data.message : 'Unknown error';
+                            $row.find('.aso-row-status').html('<span style="color:red;">&#10007; ' + $('<span>').text(msg).html() + '</span>');
                         }
                         current++;
                         processNext();
-                    }).fail(function(){
-                        $row.find('.aso-row-status').html('<span style="color:orange;">&#9888; Skipped</span>');
+                    }).fail(function(xhr){
+                        var rawText = xhr.responseText ? xhr.responseText.substring(0, 200) : 'No response';
+                        $row.find('.aso-row-status').html('<span style="color:red;">&#10007; Request failed — check PHP error log. Response: ' + rawText + '</span>');
                         current++;
                         processNext();
                     });
