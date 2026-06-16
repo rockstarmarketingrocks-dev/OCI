@@ -4,15 +4,12 @@ defined( 'ABSPATH' ) || exit;
 class ASO_Bulk {
 
     public function init(): void {
-        // Bulk action on Posts list table.
         foreach ( $this->get_enabled_post_types() as $pt ) {
             add_filter( "bulk_actions-edit-{$pt}", [ $this, 'register_bulk_action' ] );
             add_filter( "handle_bulk_actions-edit-{$pt}", [ $this, 'handle_bulk_action' ], 10, 3 );
         }
 
         add_action( 'admin_notices', [ $this, 'bulk_action_notice' ] );
-
-        // Dedicated bulk-generate admin page.
         add_action( 'admin_menu', [ $this, 'add_bulk_page' ] );
         add_action( 'wp_ajax_aso_bulk_generate', [ $this, 'ajax_bulk_generate' ] );
     }
@@ -37,19 +34,10 @@ class ASO_Bulk {
 
         foreach ( $post_ids as $post_id ) {
             $result = aso_generate_and_save( (int) $post_id );
-            if ( is_wp_error( $result ) ) {
-                $errors++;
-            } else {
-                $generated++;
-            }
+            is_wp_error( $result ) ? $errors++ : $generated++;
         }
 
-        $redirect_url = add_query_arg( [
-            'aso_generated' => $generated,
-            'aso_errors'    => $errors,
-        ], $redirect_url );
-
-        return $redirect_url;
+        return add_query_arg( [ 'aso_generated' => $generated, 'aso_errors' => $errors ], $redirect_url );
     }
 
     public function bulk_action_notice(): void {
@@ -68,9 +56,9 @@ class ASO_Bulk {
 
     public function add_bulk_page(): void {
         add_submenu_page(
-            null, // Hidden from menus; accessed via direct URL.
-            __( 'Bulk Generate AI Summaries', 'ai-summary-optimizer' ),
-            __( 'Bulk Generate', 'ai-summary-optimizer' ),
+            null,
+            __( 'Generate AI Summaries', 'ai-summary-optimizer' ),
+            __( 'Generate AI Summaries', 'ai-summary-optimizer' ),
             'manage_options',
             'aso-bulk-generate',
             [ $this, 'render_bulk_page' ]
@@ -85,30 +73,34 @@ class ASO_Bulk {
         $settings   = get_option( 'aso_settings', [] );
         $post_types = $this->get_enabled_post_types();
 
-        // Count posts without summaries per type.
-        $counts = [];
+        // Fetch all published posts for each enabled post type.
+        $all_posts = [];
         foreach ( $post_types as $pt ) {
-            $query = new WP_Query( [
+            $q = new WP_Query( [
                 'post_type'      => $pt,
                 'post_status'    => 'publish',
                 'posts_per_page' => -1,
-                'fields'         => 'ids',
-                'meta_query'     => [
-                    [
-                        'key'     => ASO_META_KEY,
-                        'compare' => 'NOT EXISTS',
-                    ],
-                ],
+                'orderby'        => 'title',
+                'order'          => 'ASC',
             ] );
-            $counts[ $pt ] = $query->found_posts;
+            foreach ( $q->posts as $post ) {
+                $has_summary = (bool) get_post_meta( $post->ID, ASO_META_KEY, true );
+                $all_posts[] = [
+                    'id'          => $post->ID,
+                    'title'       => $post->post_title ?: '(no title)',
+                    'type'        => $pt,
+                    'has_summary' => $has_summary,
+                    'edit_url'    => get_edit_post_link( $post->ID ),
+                ];
+            }
         }
         ?>
         <div class="wrap">
-            <h1><?php esc_html_e( 'Bulk Generate AI Summaries', 'ai-summary-optimizer' ); ?></h1>
-            <p><?php esc_html_e( 'Click the button below to generate summaries for all published posts that do not yet have one. Already-generated summaries are skipped.', 'ai-summary-optimizer' ); ?></p>
+            <h1><?php esc_html_e( 'Generate AI Summaries', 'ai-summary-optimizer' ); ?></h1>
+            <p><?php esc_html_e( 'Select the posts and pages you want to generate summaries for, then click Generate. Posts that already have a summary are marked — you can re-generate them too.', 'ai-summary-optimizer' ); ?></p>
 
             <?php if ( empty( $settings['api_key'] ) ) : ?>
-                <div class="notice notice-error">
+                <div class="notice notice-error inline">
                     <p><?php printf(
                         esc_html__( 'No API key configured. %sSet it here%s.', 'ai-summary-optimizer' ),
                         '<a href="' . esc_url( admin_url( 'options-general.php?page=ai-summary-optimizer' ) ) . '">',
@@ -117,89 +109,152 @@ class ASO_Bulk {
                 </div>
             <?php endif; ?>
 
-            <table class="widefat" style="max-width:500px;margin-bottom:20px;">
+            <?php if ( empty( $all_posts ) ) : ?>
+                <p><?php esc_html_e( 'No published posts or pages found.', 'ai-summary-optimizer' ); ?></p>
+            <?php else : ?>
+
+            <!-- Toolbar -->
+            <div style="margin:16px 0 8px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+                <label style="font-weight:600;">
+                    <input type="checkbox" id="aso-check-all" />
+                    <?php esc_html_e( 'Select All', 'ai-summary-optimizer' ); ?>
+                </label>
+                <label>
+                    <input type="checkbox" id="aso-check-missing" />
+                    <?php esc_html_e( 'Select only missing summaries', 'ai-summary-optimizer' ); ?>
+                </label>
+                <span style="flex:1;"></span>
+                <button id="aso-bulk-btn" class="button button-primary" <?php disabled( empty( $settings['api_key'] ) ); ?>>
+                    <?php esc_html_e( 'Generate for Selected', 'ai-summary-optimizer' ); ?>
+                </button>
+                <span id="aso-bulk-spinner" class="spinner" style="float:none;margin:0;vertical-align:middle;display:none;"></span>
+            </div>
+
+            <!-- Post table -->
+            <table class="wp-list-table widefat fixed striped" id="aso-post-table">
                 <thead>
-                    <tr><th><?php esc_html_e( 'Post Type', 'ai-summary-optimizer' ); ?></th><th><?php esc_html_e( 'Missing Summaries', 'ai-summary-optimizer' ); ?></th></tr>
+                    <tr>
+                        <td class="manage-column column-cb check-column"><input type="checkbox" style="display:none" /></td>
+                        <th><?php esc_html_e( 'Title', 'ai-summary-optimizer' ); ?></th>
+                        <th style="width:90px;"><?php esc_html_e( 'Type', 'ai-summary-optimizer' ); ?></th>
+                        <th style="width:120px;"><?php esc_html_e( 'Summary', 'ai-summary-optimizer' ); ?></th>
+                        <th style="width:140px;"><?php esc_html_e( 'Status', 'ai-summary-optimizer' ); ?></th>
+                    </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ( $counts as $pt => $count ) : ?>
-                        <tr><td><?php echo esc_html( $pt ); ?></td><td><?php echo esc_html( $count ); ?></td></tr>
+                    <?php foreach ( $all_posts as $p ) : ?>
+                    <tr data-id="<?php echo esc_attr( $p['id'] ); ?>" data-has-summary="<?php echo $p['has_summary'] ? '1' : '0'; ?>">
+                        <th class="check-column">
+                            <input type="checkbox" class="aso-post-cb" value="<?php echo esc_attr( $p['id'] ); ?>" />
+                        </th>
+                        <td>
+                            <strong><a href="<?php echo esc_url( $p['edit_url'] ); ?>"><?php echo esc_html( $p['title'] ); ?></a></strong>
+                        </td>
+                        <td><?php echo esc_html( $p['type'] ); ?></td>
+                        <td class="aso-has-summary">
+                            <?php if ( $p['has_summary'] ) : ?>
+                                <span style="color:green;">&#10003; <?php esc_html_e( 'Has summary', 'ai-summary-optimizer' ); ?></span>
+                            <?php else : ?>
+                                <span style="color:#aaa;">&#8212; <?php esc_html_e( 'None', 'ai-summary-optimizer' ); ?></span>
+                            <?php endif; ?>
+                        </td>
+                        <td class="aso-row-status"></td>
+                    </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
 
-            <button id="aso-bulk-btn" class="button button-primary" <?php disabled( empty( $settings['api_key'] ) ); ?>>
-                <?php esc_html_e( 'Start Bulk Generation', 'ai-summary-optimizer' ); ?>
-            </button>
-            <span id="aso-bulk-spinner" class="spinner" style="float:none;margin-top:0;vertical-align:middle;display:none;"></span>
-
-            <div id="aso-bulk-progress" style="margin-top:20px;display:none;">
-                <p id="aso-bulk-status"></p>
-                <progress id="aso-bulk-bar" value="0" max="100" style="width:400px;"></progress>
-                <ul id="aso-bulk-log" style="max-height:200px;overflow-y:auto;background:#f9f9f9;border:1px solid #ddd;padding:10px;margin-top:10px;font-size:12px;"></ul>
+            <!-- Progress bar -->
+            <div id="aso-bulk-progress" style="margin-top:16px;display:none;">
+                <p id="aso-bulk-status" style="font-weight:600;"></p>
+                <progress id="aso-bulk-bar" value="0" max="100" style="width:100%;max-width:600px;height:20px;"></progress>
             </div>
+
+            <?php endif; ?>
         </div>
 
         <script>
         (function($){
-            var postIds = <?php
-                $all_ids = [];
-                foreach ( $post_types as $pt ) {
-                    $q = new WP_Query( [
-                        'post_type'      => $pt,
-                        'post_status'    => 'publish',
-                        'posts_per_page' => -1,
-                        'fields'         => 'ids',
-                        'meta_query'     => [ [ 'key' => '_aso_summary', 'compare' => 'NOT EXISTS' ] ],
-                    ] );
-                    $all_ids = array_merge( $all_ids, $q->posts );
-                }
-                echo wp_json_encode( array_map( 'intval', $all_ids ) );
-            ?>;
+            var nonce = <?php echo wp_json_encode( wp_create_nonce( 'aso_bulk_nonce' ) ); ?>;
 
-            var nonce   = <?php echo wp_json_encode( wp_create_nonce( 'aso_bulk_nonce' ) ); ?>;
-            var total   = postIds.length;
-            var current = 0;
-
-            $('#aso-bulk-btn').on('click', function(){
-                if (!total) { alert('No posts need summaries!'); return; }
-                $(this).prop('disabled', true);
-                $('#aso-bulk-spinner').show();
-                $('#aso-bulk-progress').show();
-                processNext();
+            // Select All toggle.
+            $('#aso-check-all').on('change', function(){
+                $('.aso-post-cb').prop('checked', this.checked);
             });
 
-            function processNext() {
-                if (current >= total) {
-                    $('#aso-bulk-status').text('Done! ' + total + ' summaries processed.');
-                    $('#aso-bulk-spinner').hide();
+            // Select only missing.
+            $('#aso-check-missing').on('change', function(){
+                if (this.checked) {
+                    $('#aso-check-all').prop('checked', false);
+                    $('.aso-post-cb').each(function(){
+                        var hasSummary = $(this).closest('tr').data('has-summary');
+                        $(this).prop('checked', hasSummary == '0');
+                    });
+                } else {
+                    $('.aso-post-cb').prop('checked', false);
+                }
+            });
+
+            // Generate button.
+            $('#aso-bulk-btn').on('click', function(){
+                var selected = [];
+                $('.aso-post-cb:checked').each(function(){
+                    selected.push( parseInt($(this).val(), 10) );
+                });
+
+                if (!selected.length) {
+                    alert('Please select at least one post or page.');
                     return;
                 }
 
-                var id = postIds[current];
-                $('#aso-bulk-status').text('Processing ' + (current + 1) + ' of ' + total + '…');
-                $('#aso-bulk-bar').val(Math.round((current / total) * 100));
+                $(this).prop('disabled', true);
+                $('#aso-check-all, #aso-check-missing, .aso-post-cb').prop('disabled', true);
+                $('#aso-bulk-spinner').show();
+                $('#aso-bulk-progress').show();
 
-                $.post(ajaxurl, {
-                    action:  'aso_bulk_generate',
-                    post_id: id,
-                    nonce:   nonce
-                }, function(res){
-                    var li = $('<li>');
-                    if (res.success) {
-                        li.css('color','green').text('✓ Post #' + id + ' — ' + res.data.summary.substring(0, 80) + '…');
-                    } else {
-                        li.css('color','red').text('✗ Post #' + id + ' — ' + (res.data.message || 'Error'));
+                var total   = selected.length;
+                var current = 0;
+
+                function processNext() {
+                    if (current >= total) {
+                        $('#aso-bulk-status').text('Done! ' + total + ' post(s) processed.');
+                        $('#aso-bulk-spinner').hide();
+                        $('#aso-bulk-btn').prop('disabled', false);
+                        $('#aso-check-all, #aso-check-missing, .aso-post-cb').prop('disabled', false);
+                        return;
                     }
-                    $('#aso-bulk-log').append(li);
-                    current++;
-                    processNext();
-                }).fail(function(){
-                    $('<li>').css('color','orange').text('⚠ Post #' + id + ' — Request failed, skipping.').appendTo('#aso-bulk-log');
-                    current++;
-                    processNext();
-                });
-            }
+
+                    var id = selected[current];
+                    $('#aso-bulk-status').text('Processing ' + (current + 1) + ' of ' + total + '…');
+                    $('#aso-bulk-bar').val(Math.round((current / total) * 100));
+
+                    var $row = $('tr[data-id="' + id + '"]');
+                    $row.find('.aso-row-status').html('<em style="color:#888;">Generating…</em>');
+
+                    $.post(ajaxurl, {
+                        action:  'aso_bulk_generate',
+                        post_id: id,
+                        nonce:   nonce
+                    }, function(res){
+                        if (res.success) {
+                            $row.find('.aso-has-summary').html('<span style="color:green;">&#10003; Has summary</span>');
+                            $row.find('.aso-row-status').html('<span style="color:green;">&#10003; Done</span>');
+                            $row.attr('data-has-summary', '1');
+                        } else {
+                            var msg = (res.data && res.data.message) ? res.data.message : 'Error';
+                            $row.find('.aso-row-status').html('<span style="color:red;" title="' + msg + '">&#10007; Failed</span>');
+                        }
+                        current++;
+                        processNext();
+                    }).fail(function(){
+                        $row.find('.aso-row-status').html('<span style="color:orange;">&#9888; Skipped</span>');
+                        current++;
+                        processNext();
+                    });
+                }
+
+                processNext();
+            });
         })(jQuery);
         </script>
         <?php

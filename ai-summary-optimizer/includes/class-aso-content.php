@@ -49,7 +49,7 @@ class ASO_Content {
             : '';
 
         $summary_html = sprintf(
-            '<div class="aso-summary">%s<p class="aso-summary-text">%s</p></div>',
+            '<div class="aso-summary">%s<p class="aso-summary-text"><em>%s</em></p></div>',
             $label_html,
             nl2br( esc_html( $summary ) )
         );
