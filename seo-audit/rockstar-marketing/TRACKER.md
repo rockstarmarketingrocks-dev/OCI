@@ -22,7 +22,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 15 | [x] done 2026-10-25 | Fort Walton Beach SEO Company | 12093 | /fort-walton-beach-seo-company/ | 15-fort-walton-beach-seo-company.pdf |
 | 16 | [x] done 2026-10-25 | Fort Walton Beach Social Media Company | 12112 | /fort-walton-beach-social-media-company/ | 16-fort-walton-beach-social-media-company.pdf |
 | 17 | [x] done 2026-10-25 | Fort Walton Beach Web Design Company | 12120 | /fort-walton-beach-web-design/ | 17-fort-walton-beach-web-design.pdf |
-| 18 | [ ] | Santa Rosa Beach SEO Company | 12041 | /santa-rosa-beach-seo-company/ | |
+| 18 | [x] done 2026-10-25 | Santa Rosa Beach SEO Company | 12041 | /santa-rosa-beach-seo-company/ | 18-santa-rosa-beach-seo-company.pdf |
 | 19 | [ ] | Santa Rosa Beach Social Media Company | 12026 | /santa-rosa-beach-social-media-company/ | |
 | 20 | [ ] | Santa Rosa Beach Web Design Company | 12056 | /santa-rosa-beach-web-design-company/ | |
 | 21 | [ ] | Pensacola SEO Company | 12139 | /pensacola-seo-company/ | |
@@ -54,3 +54,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - /destin-seo-company/ = re-focused to "Local SEO Destin / GBP" (no rankings; Home owns head term). City SEO pages (FWB/SRB/Pensacola) likely share its Jan-2023 template – check for stuffing + /locations anchor.
 - Forms: Quform 1 = Contact, 2 = Destin Social (+ maybe others), 3 = Video → all redirect to /thank-you/?form=N&service=&city=.
 - QUICK WIN: "fort walton beach seo company" 260/mo KD 7 – Home ranks #15, FWB page not in top 100. /destin-florida/ ranks #42 for FWB SEO term.
+- SRB cluster ≈640/mo (seo company 170, SEO 90/50, digital marketing ×6) scattered over 6 URLs → consolidate on /santa-rosa-beach-seo-company/. SRB video marketing (50) ranks #8 via SRB social page.
