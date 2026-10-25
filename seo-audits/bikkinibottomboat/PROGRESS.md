@@ -16,7 +16,7 @@ Work top to bottom; mark `[x]` when the changelog is delivered.
 | 9 | [x] | How much does it cost to get to Crab Island | 2345 | /how-much-does-it-cost-to-get-to-crab-island/ | pdf/09-crab-island-cost.pdf |
 | 10 | [x] | Public Tour vs Private Charter | 2363 | /public-crab-island-tour-vs-private-charter-which-should-you-book/ | pdf/10-public-vs-private.pdf |
 | 11 | [x] | What to Bring to Crab Island | 2375 | /what-to-bring-to-crab-island/ | pdf/11-what-to-bring.pdf |
-| 12 | [ ] | Is Crab Island Safe for Families | 2381 | /is-crab-island-safe-for-families/ | |
+| 12 | [x] | Is Crab Island Safe for Families | 2381 | /is-crab-island-safe-for-families/ | pdf/12-crab-island-safe-families.pdf |
 | 13 | [ ] | Bachelorette Parties & Large Groups | 2389 | /best-crab-island-tour-for-bachelorette-parties-large-groups/ | |
 | 14 | [ ] | Blog index | 2048 | /blog/ | |
 | 15 | [ ] | Post: Destin Fireworks Cruise | 2192 | /the-ultimate-front-row-seat-for-the-destin-fireworks-cruise/ | |
