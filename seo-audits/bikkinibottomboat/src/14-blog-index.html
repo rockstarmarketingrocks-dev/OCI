@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SEO Changelog – Blog Index – bikkinibottomboat.com</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Changelog — Blog Index (Local Guide)</h1>
+<div class="meta">
+<b>URL:</b> https://bikkinibottomboat.com/blog/ &nbsp;·&nbsp; <b>WP ID:</b> 2048 (set as the WordPress "Posts page"; Elementor + The Post Grid blocks) &nbsp;·&nbsp; <b>Audit date:</b> 2026-10-25 &nbsp;·&nbsp; <b>Audit page 14 of 24</b><br>
+<b>Sources:</b> WordPress page content, Rank Math fields, category list (site connector), Semrush US keyword data from earlier audits.
+</div>
+
+<div class="box warn"><b>Limitation:</b> the live page could not be fetched from the audit environment. Because ID 2048 is the <b>Posts page</b> (Settings → Reading), WordPress normally renders it with the theme's blog archive template and <b>ignores the page's own content</b>, unless an Elementor Theme Builder archive template overrides it. <b>VERIFY</b> what actually shows at /blog/ before acting on §1 row 2.</div>
+
+<h2>1. Summary</h2>
+<table>
+<tr><th style="width:26%">Area</th><th>Current state</th><th style="width:11%">Priority</th></tr>
+<tr><td>Thin intro</td><td>The page's own text is 13 words: H2 "Local Guide and Blog in Destin FL" + "From Bikkini Bottom Boat Charters Crew!". No H1.</td><td class="pri p1">High</td></tr>
+<tr><td><b>Leftover demo template</b></td><td>The stored content is a <b>The Post Grid demo layout</b>: 8 images and a background banner <b>hot-linked from radiustheme.com</b> (<code>ad-landscape-2.jpg</code>, <code>ad-portrate-8.png</code>, <code>fashion-2-free-banner.jpg</code>…), demo section titles ("Trending News", "Editor's Picks", "Top News", "Weekly Top News", "What's New") and a 6-icon social-links block. If this renders, the blog shows fashion-magazine demo ads and loads images from a third-party site. If it doesn't render, it's dead weight. Remove it either way.</td><td class="pri p1">High</td></tr>
+<tr><td>Guides are missing from the blog</td><td>The 6 Crab Island guides (pages 8–13) are <b>Pages</b>, not Posts, so they never appear in the blog listing. Readers of the blog never find them.</td><td class="pri p1">High</td></tr>
+<tr><td>Categories</td><td>All 8 posts sit in one category, "Blog", with the default description "Your blog category". "Uncategorized" is empty. There's no topical grouping (Crab Island, things to do, spotlights, events, weather).</td><td class="pri p2">Medium</td></tr>
+<tr><td>Rank Math</td><td>Title "Blog | Bikkini Bottom Boat Charters " (trailing space, generic). No focus keyword.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Content gap</td><td>"things to do in destin" gets <b>8,100/mo at KD 15</b> (Semrush, homepage audit). The site's restaurants post already ranks #7–20 for 1,000–9,900/mo restaurant terms, which shows local-guide content works here. There's no "things to do" pillar post yet.</td><td class="pri p1">High</td></tr>
+<tr><td>Freshness</td><td>Page last modified 2025-06-01. Latest post: Hurricane Isaias update (2026).</td><td class="pri p3">Low</td></tr>
+</table>
+
+<h2>2. Keyword targeting</h2>
+<table>
+<tr><th>Keyword</th><th>Vol.</th><th>KD</th><th>Use</th></tr>
+<tr><td>things to do in destin</td><td>8,100</td><td>15</td><td><b>New pillar post</b> (not the index). The index H1 references "things to do" and links to it.</td></tr>
+<tr><td>destin local guide / destin blog</td><td>low</td><td>—</td><td>Index title + H1</td></tr>
+<tr><td>crab island guide</td><td>low</td><td>—</td><td>H2 section linking the 6 guides</td></tr>
+</table>
+
+<h2>3. Rank Math / meta changes</h2>
+<table>
+<tr><th style="width:18%">Field</th><th style="width:38%">Current</th><th>Change to</th></tr>
+<tr><td>SEO title</td><td>Blog | Bikkini Bottom Boat Charters␠</td><td><b>Destin Local Guide: Crab Island Tips, Things to Do &amp; Eats | Bikkini Bottom</b>. If Rank Math ignores page meta for the Posts page, set it in Titles &amp; Meta → Misc Pages / Blog.</td></tr>
+<tr><td>Meta description</td><td>Read about local activities and recommendations… There's no better guide than a local!</td><td><b>Local tips from a Destin boat crew: Crab Island guides, things to do, where to eat, fireworks schedules and local business spotlights.</b> (136)</td></tr>
+<tr><td>Focus keyword</td><td>(empty)</td><td><b>destin local guide</b></td></tr>
+<tr><td>Page title</td><td>Bikkini Bottom Boat Charters Blog and Local Guide</td><td><b>Destin Local Guide</b></td></tr>
+<tr><td>Pagination</td><td>—</td><td>VERIFY that /blog/page/2/ is self-canonical and indexable (Rank Math default). Only 8 posts today, so pagination isn't an issue yet.</td></tr>
+</table>
+
+<h2>4. Page layout &amp; headings</h2>
+<table>
+<tr><th style="width:9%">Tag</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>H1</td><td><b>missing</b> (H2 "Local Guide and Blog in Destin FL")</td><td><b>Destin Local Guide from the Bikkini Bottom Crew</b></td></tr>
+<tr><td>Intro</td><td>"From Bikkini Bottom Boat Charters Crew!"</td><td>About 80-word intro (see §5)</td></tr>
+<tr><td>H2 <span class="small">(new)</span></td><td>—</td><td><b>Crab Island Guides</b>: 6 cards linking the guide pages</td></tr>
+<tr><td>H2 <span class="small">(new)</span></td><td>—</td><td><b>Things to Do &amp; Where to Eat in Destin</b>: post grid filtered to that category</td></tr>
+<tr><td>H2 <span class="small">(new)</span></td><td>—</td><td><b>Local Business Spotlights</b>: post grid (4 spotlight posts)</td></tr>
+<tr><td>H2 <span class="small">(new)</span></td><td>—</td><td><b>Destin Events, Fireworks &amp; Weather</b>: post grid</td></tr>
+<tr><td>Demo sections</td><td>Trending News / Editor's Picks / Top News / Weekly Top News / What's New</td><td><b>Delete</b></td></tr>
+<tr><td>CTA <span class="small">(new)</span></td><td>—</td><td>Banner: "See Destin from the water. Book a Crab Island tour" → Crab Island page</td></tr>
+</table>
+
+<h2>5. Copy</h2>
+<div class="copy">
+<h1><span class="tag">H1</span>Destin Local Guide from the Bikkini Bottom Crew</h1>
+<p>We spend every day on Destin's water, so we know the best times to hit Crab Island, where to eat after your tour, which nights the fireworks fly and which local businesses are worth your time. This guide collects everything we tell our guests: Crab Island how-tos, things to do in Destin, restaurant picks, local spotlights and weather updates.</p>
+<h2><span class="tag">H2</span>Crab Island Guides</h2>
+<p>[Cards] What Is Crab Island? · How Much Does It Cost to Get to Crab Island? · Shuttle vs. Pontoon vs. Charter · What to Bring to Crab Island · Is Crab Island Safe for Families? · Destin Bachelorette Party Boat</p>
+<h2><span class="tag">H2</span>Things to Do &amp; Where to Eat in Destin</h2>
+<p>[Post grid: category "Things to Do"]</p>
+<h2><span class="tag">H2</span>Local Business Spotlights</h2>
+<p>[Post grid: category "Local Spotlights"]</p>
+<h2><span class="tag">H2</span>Destin Events, Fireworks &amp; Weather</h2>
+<p>[Post grid: category "Events &amp; Weather"]</p>
+<p><b>[Book a Crab Island Tour]</b></p>
+</div>
+
+<h2>6. Category restructure</h2>
+<table>
+<tr><th>New category (slug)</th><th>Posts to assign</th><th>Category description (shown on archive, about 40 words)</th></tr>
+<tr><td>Crab Island &amp; Boating (<code>crab-island</code>)</td><td>2197 Crab Island Excursion Guide; 2244 Crab Island Voyages spotlight (secondary)</td><td>"Tips for visiting Crab Island and boating in Destin, from the captains of Bikkini Bottom."</td></tr>
+<tr><td>Things to Do in Destin (<code>things-to-do-destin</code>)</td><td>2210 Best Restaurants; the new "Things to Do in Destin" pillar</td><td>"Where to eat, play and explore in Destin, FL, recommended by locals."</td></tr>
+<tr><td>Local Spotlights (<code>local-spotlights</code>)</td><td>2225 Lisa Snuggs Real Estate; 2244 Crab Island Voyages; 2256 Destin Elite Transportation; 2262 A Day Away Massage &amp; Spa</td><td>"Meet the Destin-area businesses we love and recommend to our guests."</td></tr>
+<tr><td>Events, Fireworks &amp; Weather (<code>destin-events</code>)</td><td>2192 Destin Fireworks Cruise; 2568 Hurricane Isaias</td><td>"Destin fireworks schedules, seasonal events and weather updates for boaters."</td></tr>
+</table>
+<p class="small">Rename the existing "Blog" category (ID 1) to "Crab Island &amp; Boating" instead of deleting it. That keeps its ID and any links. VERIFY whether Rank Math "Strip Category Base" is on: if so, the category slug <code>blog</code> collides with the /blog/ page URL, which is one more reason to rename it. Delete the empty "Uncategorized" (ID 5) only if it isn't the default category.</p>
+
+<h2>7. Content plan (gaps found so far)</h2>
+<table>
+<tr><th>New post</th><th>Target keyword (vol / KD)</th><th>Links to</th></tr>
+<tr><td>Things to Do in Destin, FL: A Local's List</td><td>things to do in destin (8,100 / 15)</td><td>Crab Island tours, dolphin cruise, sunset cruise, restaurants post</td></tr>
+<tr><td>Destin Fireworks Schedule [Year]</td><td>destin fireworks (590 / 29), destin fireworks schedule (70)</td><td>Fireworks cruise <code>#fireworks</code>; update post 2192 instead if preferred</td></tr>
+<tr><td>Destin Bachelorette Weekend Itinerary</td><td>destin bachelorette (70), bachelorette party destin fl (110)</td><td>/destin-bachelorette-party-boat/</td></tr>
+<tr><td>Dolphins in Destin: When and Where to See Them</td><td>dolphin watching destin (50), swim with dolphins destin (720, answered honestly)</td><td>/destin-dolphin-cruise/</td></tr>
+</table>
+
+<h2>8. Technical fixes</h2>
+<table>
+<tr><th style="width:24%">Issue</th><th>Fix</th><th style="width:11%">Priority</th></tr>
+<tr><td>Demo blocks + hot-linked images</td><td>Clear the page content (Gutenberg blocks) and rebuild in Elementor, or use an <b>Elementor Theme Builder → Archive</b> template for the Posts page with the H1, intro and Posts widgets. Check the Network tab for any request to radiustheme.com.</td><td class="pri p1">High</td></tr>
+<tr><td>Show guide pages</td><td>Add a manual card section (Elementor Posts widget with Source = "Manual selection" of the 6 pages, or simple Icon Boxes).</td><td class="pri p1">High</td></tr>
+<tr><td>Post cards</td><td>Each card: featured image (posts currently have no featured images per the SEO overview, VERIFY), title as H3, excerpt, date. Set featured images on all 8 posts. Those images also become the OG images.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Plugins</td><td>If The Post Grid isn't used anywhere else after the rebuild, deactivate it (and Advanced Post Block / Advanced Posts Listing if also unused). That's three overlapping post-listing plugins.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Schema</td><td>Rank Math: CollectionPage (default for the blog) + BreadcrumbList. Posts get BlogPosting with author and dates.</td><td class="pri p3">Low</td></tr>
+</table>
+
+<h2>9. Tracking</h2>
+<table>
+<tr><th style="width:26%">Item</th><th>Setup</th></tr>
+<tr><td>Content grouping</td><td>GA4 content group by URL: Service pages / Crab Island guides / Blog posts / Spotlights. This shows which content type drives bookings.</td></tr>
+<tr><td>Blog → booking</td><td>Path exploration from the blog and posts to Book Now. Key event attribution: "data-driven" to credit assisting posts.</td></tr>
+<tr><td>Card clicks</td><td><code>select_content</code> with <code>content_type</code> = guide / post and <code>item_id</code> = slug.</td></tr>
+<tr><td>Partner traffic</td><td>Spotlight posts send clicks to partners. Track <code>partner_click</code> (outbound) and ask partners to link back, which gives this site local backlinks.</td></tr>
+</table>
+
+<h2>10. Changelog (implementation checklist)</h2>
+<table>
+<tr><th style="width:5%">#</th><th>Change</th><th style="width:16%">Where</th><th style="width:9%">Status</th></tr>
+<tr><td>1</td><td>VERIFY which template renders /blog/</td><td>Live site</td><td>To do</td></tr>
+<tr><td>2</td><td><b>Demo Post Grid blocks and radiustheme.com images removed</b></td><td>Page 2048 / Elementor</td><td>To do</td></tr>
+<tr><td>3</td><td>H1 + intro; 4 topic sections; guide cards; CTA banner</td><td>Elementor / Theme Builder</td><td>To do</td></tr>
+<tr><td>4</td><td>Categories restructured (4), descriptions written, posts reassigned; "Blog" renamed</td><td>Posts → Categories</td><td>To do</td></tr>
+<tr><td>5</td><td>SEO title/meta/focus; page title "Destin Local Guide"</td><td>Rank Math</td><td>To do</td></tr>
+<tr><td>6</td><td>Featured images for all 8 posts</td><td>Posts</td><td>To do</td></tr>
+<tr><td>7</td><td>Unused post-grid plugins deactivated</td><td>Plugins</td><td>To do</td></tr>
+<tr><td>8</td><td>4 new posts planned (Things to Do pillar first)</td><td>Content</td><td>To do</td></tr>
+<tr><td>9</td><td>Content groups, card click and partner click tracking</td><td>GA4 / GTM</td><td>To do</td></tr>
+</table>
+<p class="small">Next page in queue: <b>Post: The Ultimate Front-Row Seat for the Destin Fireworks Cruise</b> (ID 2192).</p>
+</body></html>
