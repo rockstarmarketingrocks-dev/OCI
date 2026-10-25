@@ -16,7 +16,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 9 | [x] done 2026-10-25 | Clients | 4015 | /clients/ | 09-clients.pdf |
 | 10 | [x] done 2026-10-25 | Locations | 12023 | /locations/ | 10-locations.pdf |
 | 11 | [x] done 2026-10-25 | FAQ | 12060 | /faq/ | 11-faq.pdf |
-| 12 | [ ] | Destin SEO Company | 11989 | /destin-seo-company/ | |
+| 12 | [x] done 2026-10-25 | Destin SEO Company | 11989 | /destin-seo-company/ | 12-destin-seo-company.pdf |
 | 13 | [ ] | Destin Social Media Company | 11942 | /destin-social-media-company/ | |
 | 14 | [ ] | Destin Web Design Company | 12001 | /destin-webdesign-company/ | |
 | 15 | [ ] | Fort Walton Beach SEO Company | 12093 | /fort-walton-beach-seo-company/ | |
@@ -51,3 +51,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - Extra NAP (from /contact-us/): toll-free (855) 545-3669, info@rockstar-marketing.com, hours Mon–Fri 9–5, Sat by phone, Sun closed. Lead tracking depends on new /thank-you/ page (CU-01).
 - Site-wide: image attachment pages are public (e.g. /jh-3/, /clients/sssss/) – redirect/noindex in AIOSEO (CL-06). Media titles are junk ("aaaa", "2323") – alt text likely empty everywhere.
 - FAQ is the single FAQPage-schema source; service-page FAQs stay short and link to /faq/ (no duplicate FAQ schema).
+- /destin-seo-company/ = re-focused to "Local SEO Destin / GBP" (no rankings; Home owns head term). City SEO pages (FWB/SRB/Pensacola) likely share its Jan-2023 template – check for stuffing + /locations anchor.
