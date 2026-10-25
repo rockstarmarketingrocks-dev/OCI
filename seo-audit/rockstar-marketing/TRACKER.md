@@ -17,7 +17,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 10 | [x] done 2026-10-25 | Locations | 12023 | /locations/ | 10-locations.pdf |
 | 11 | [x] done 2026-10-25 | FAQ | 12060 | /faq/ | 11-faq.pdf |
 | 12 | [x] done 2026-10-25 | Destin SEO Company | 11989 | /destin-seo-company/ | 12-destin-seo-company.pdf |
-| 13 | [ ] | Destin Social Media Company | 11942 | /destin-social-media-company/ | |
+| 13 | [x] done 2026-10-25 | Destin Social Media Company | 11942 | /destin-social-media-company/ | 13-destin-social-media-company.pdf |
 | 14 | [ ] | Destin Web Design Company | 12001 | /destin-webdesign-company/ | |
 | 15 | [ ] | Fort Walton Beach SEO Company | 12093 | /fort-walton-beach-seo-company/ | |
 | 16 | [ ] | Fort Walton Beach Social Media Company | 12112 | /fort-walton-beach-social-media-company/ | |
@@ -52,3 +52,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - Site-wide: image attachment pages are public (e.g. /jh-3/, /clients/sssss/) – redirect/noindex in AIOSEO (CL-06). Media titles are junk ("aaaa", "2323") – alt text likely empty everywhere.
 - FAQ is the single FAQPage-schema source; service-page FAQs stay short and link to /faq/ (no duplicate FAQ schema).
 - /destin-seo-company/ = re-focused to "Local SEO Destin / GBP" (no rankings; Home owns head term). City SEO pages (FWB/SRB/Pensacola) likely share its Jan-2023 template – check for stuffing + /locations anchor.
+- Forms: Quform 1 = Contact, 2 = Destin Social (+ maybe others), 3 = Video → all redirect to /thank-you/?form=N&service=&city=.
