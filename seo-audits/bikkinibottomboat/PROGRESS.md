@@ -14,7 +14,7 @@ Work top to bottom; mark `[x]` when the changelog is delivered.
 | 7 | [x] | Gallery | 420 | /our-charter/ | pdf/07-gallery.pdf |
 | 8 | [x] | What is Crab Island | 2333 | /what-is-crab-island/ | pdf/08-what-is-crab-island.pdf |
 | 9 | [x] | How much does it cost to get to Crab Island | 2345 | /how-much-does-it-cost-to-get-to-crab-island/ | pdf/09-crab-island-cost.pdf |
-| 10 | [ ] | Public Tour vs Private Charter | 2363 | /public-crab-island-tour-vs-private-charter-which-should-you-book/ | |
+| 10 | [x] | Public Tour vs Private Charter | 2363 | /public-crab-island-tour-vs-private-charter-which-should-you-book/ | pdf/10-public-vs-private.pdf |
 | 11 | [ ] | What to Bring to Crab Island | 2375 | /what-to-bring-to-crab-island/ | |
 | 12 | [ ] | Is Crab Island Safe for Families | 2381 | /is-crab-island-safe-for-families/ | |
 | 13 | [ ] | Bachelorette Parties & Large Groups | 2389 | /best-crab-island-tour-for-bachelorette-parties-large-groups/ | |
