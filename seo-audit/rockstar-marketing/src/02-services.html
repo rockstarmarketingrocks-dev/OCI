@@ -1,0 +1,191 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – Services</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Services</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/services/</b> &nbsp;·&nbsp; WP ID 11534 &nbsp;·&nbsp; Builder: Classic editor &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Last modified in WP: 2022-09-13 &nbsp;·&nbsp; Page 2 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> This should be the hub that sends visitors and link equity to every service page. Right now it's a 460-word text block with <b>zero links</b>, no H1 or H2 in the content, no custom SEO title, and references to dead platforms and old algorithm updates (Google+ Local, Digg, StumbleUpon, "Panda and the recent Penguin updates"). Semrush shows it ranking only on page 4+ (#31 "seo destin", #51 "seo company destin fl"), so it gets no traffic. It also competes weakly with Home and /seo/ for the same SEO terms. The fix: make it the <b>"Digital Marketing Services in Destin"</b> hub, with one short section and a link per service, and clean up the outdated copy.
+</div>
+<p class="small"><b>Method note:</b> same as the Home audit. The live site can't be reached from the audit environment. Data comes from WordPress (connector), AIOSEO and Semrush US. <i>Verify live</i> = check in the browser.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>Intralinking</td><td>0 internal links on a services hub. Link each service section to its page (/seo/, /social-media/, /video-marketing/, /web-design/) and link the city list to the location pages (§4).</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>H1</td><td>The content has no H1. The theme probably prints "Services" as the title (<i>verify live</i>), which is a weak, generic H1. Set the H1 to <b>"Digital Marketing Services in Destin, Florida"</b>. In Burst, either change the page title or hide the theme title and add the H1 in the content; never output both.</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>SEO title</td><td>Empty, so AIOSEO falls back to the default "Services – Destin, Florida Advanced Social Media and SEO Company". New: <b>"Digital Marketing Services in Destin, FL | Rockstar Marketing"</b> (59).</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>Outdated content</td><td>Remove Google+ Local (shut down 2019), Digg/StumbleUpon (defunct), Twitter → X, "Panda and the recent Penguin updates" (2011–2012), "83% don't go past page 1" (unsourced). Rewrite in §5.</td></tr>
+<tr><td>5</td><td><span class="p1">P1</span></td><td>Missing service</td><td>The meta description says "Video Marketing", but the page has no video section. Add one that links to /video-marketing/.</td></tr>
+<tr><td>6</td><td><span class="p2">P2</span></td><td>Headings</td><td>All 6 sections are H3s with no H2 above them. New structure: H1 → H2 "Our Services" → H3 per service, then H2s for process, areas, FAQ and CTA (§3).</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Meta description</td><td>161 characters (gets truncated), generic, and the phrase "Video Marketing Web Design Company" is missing a comma. Rewrite (§2).</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Focus keyphrase</td><td>Empty. Set to "Digital Marketing Services Destin". Secondary: Destin marketing agency, Destin SEO services, online reputation management Destin, PPC management Destin.</td></tr>
+<tr><td>9</td><td><span class="p2">P2</span></td><td>Copy errors</td><td>"If you miss you" → "If we miss your call"; "If they can't fine them" → "find"; "PPP pay-for-performance" → "PPC"; "in throughout" → "throughout"; "Google + Local" → Google Business Profile.</td></tr>
+<tr><td>10</td><td><span class="p2">P2</span></td><td>CTA</td><td>No call to action, button, phone or form anywhere on the page. Add a CTA after the service grid and at the end.</td></tr>
+<tr><td>11</td><td><span class="p2">P2</span></td><td>Schema</td><td>Add an <code>ItemList</code> of <code>Service</code> items (provider = Rockstar Marketing, areaServed = cities) and <code>FAQPage</code> for the new FAQ. Add <code>BreadcrumbList</code> (Home › Services).</td></tr>
+<tr><td>12</td><td><span class="p3">P3</span></td><td>Thin service sections</td><td>Link Building, Reputation Management and PPC have no pages of their own. Keep them as sections here for now; add them to the backlog as future pages (PPC and reputation management have commercial intent).</td></tr>
+<tr><td>13</td><td><span class="p3">P3</span></td><td>Visuals</td><td>The page has no images. Add an icon or image per service with alt text, plus a featured/OG image.</td></tr>
+<tr><td>14</td><td><span class="p3">P3</span></td><td>City list</td><td>The run-on string of 18 city names, centered, with no links, reads as keyword stuffing. Replace it with the linked service-area block (§5).</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>(empty → site default)</td><td><b>Digital Marketing Services in Destin, FL | Rockstar Marketing</b></td></tr>
+<tr><td>Meta description</td><td>Rockstar Marketing is a Destin, Fort Walton Beach &amp; Niceville, Florida Advanced Social Media, Search Engine Optimization, Video Marketing Web Design Company. (161)</td><td><b>SEO, social media, video marketing, web design, PPC and reputation management for Destin and Emerald Coast businesses. See what we can do for you.</b> (145)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>Digital Marketing Services Destin</td></tr>
+<tr><td>H1</td><td>"Services" (theme title, <i>verify live</i>)</td><td>Digital Marketing Services in Destin, Florida</td></tr>
+<tr><td>Slug</td><td>/services/</td><td>Keep it. The URL is clean and already linked internally; changing it isn't worth a redirect.</td></tr>
+<tr><td>OG image</td><td>none</td><td>1200×630 "Our Services" branded image</td></tr>
+<tr><td>Canonical / robots</td><td><i>Verify live</i></td><td>Self-canonical https URL; index, follow</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:45%">Current</th><th>New</th></tr>
+<tr><td class="small">
+(H1 = theme title "Services", <i>verify</i>)<br>
+H3 – Advanced Social Media<br>
+H3 – Search Engine Optimization<br>
+H3 – Web design and Web Development<br>
+H3 – Advanced Linking Campaigns<br>
+H3 – Online Reputation Management<br>
+H3 – Pay Per Click
+</td><td class="small">
+<b>H1</b> – Digital Marketing Services in Destin, Florida<br>
+<b>H2</b> – Our Digital Marketing Services<br>
+&nbsp;&nbsp;<b>H3</b> – Search Engine Optimization (SEO)<br>
+&nbsp;&nbsp;<b>H3</b> – Advanced Social Media Marketing<br>
+&nbsp;&nbsp;<b>H3</b> – YouTube &amp; Video Marketing <i>(new)</i><br>
+&nbsp;&nbsp;<b>H3</b> – Web Design &amp; Development<br>
+&nbsp;&nbsp;<b>H3</b> – Pay-Per-Click (PPC) Advertising<br>
+&nbsp;&nbsp;<b>H3</b> – Link Building &amp; Digital PR<br>
+&nbsp;&nbsp;<b>H3</b> – Online Reputation Management<br>
+&nbsp;&nbsp;<b>H3</b> – Google Business Profile Optimization <i>(new)</i><br>
+<b>H2</b> – Which Service Is Right for Your Business?<br>
+<b>H2</b> – Areas We Serve on the Emerald Coast<br>
+<b>H2</b> – Services FAQ<br>
+&nbsp;&nbsp;<b>H3</b> ×3 – questions<br>
+<b>H2</b> – Get a Free Marketing Audit <i>(CTA)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:40%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>Destin SEO services / Learn more about SEO</td><td>/seo/</td><td>SEO H3 + button</td></tr>
+<tr><td>social media marketing / Learn more about social media</td><td>/social-media/</td><td>Social H3 + button</td></tr>
+<tr><td>video marketing / Learn more about video</td><td>/video-marketing/</td><td>Video H3 + button</td></tr>
+<tr><td>web design / Learn more about web design</td><td>/web-design/</td><td>Web H3 + button</td></tr>
+<tr><td>local SEO</td><td>/destin-seo-company/</td><td>GBP H3</td></tr>
+<tr><td>City links (Destin, Fort Walton Beach, Santa Rosa Beach, Pensacola, Miramar Beach)</td><td>the 11 location pages</td><td>Areas We Serve</td></tr>
+<tr><td>see all locations</td><td>/locations/</td><td>Areas We Serve</td></tr>
+<tr><td>client results</td><td>/clients/</td><td>Intro</td></tr>
+<tr><td>full FAQ</td><td>/faq/</td><td>FAQ</td></tr>
+<tr><td>Get My Free Audit</td><td>/contact-us/</td><td>2 CTAs</td></tr>
+<tr><td><b>Inbound:</b> "our digital marketing services"</td><td>/services/ ← from Home (Services H2), About Us and every service page breadcrumb</td><td>other pages</td></tr>
+</table>
+
+<h2 class="pb">5. Rewritten Page Content (ready to paste)</h2>
+<p class="small">About 900 words. [PHONE] = your number. Each service section ends with a "Learn more" link. Facts are taken from your existing pages; nothing new is invented.</p>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Digital Marketing Services in Destin, Florida</b></p>
+<p><span class="tag">&lt;p&gt;</span> Rockstar Marketing gives Emerald Coast businesses everything they need to get found and get chosen online: SEO, social media, video, web design, paid ads and reputation management, all under one roof in Destin. Every service is built around one goal: more calls, bookings and sales. Take a look at our <a>client results</a>. <span class="small">[→ /clients/]</span></p>
+<p><span class="tag">button</span> [Get a Free Marketing Audit] → /contact-us/</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Our Digital Marketing Services</b></p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b>Search Engine Optimization (SEO)</b><br>
+<span class="tag">&lt;p&gt;</span> Our local and national <a>Destin SEO services</a> put your business on the first page of Google, where most people stop looking. We handle technical SEO, keyword research, on-page content, local map rankings and link building, then report on rankings, traffic and leads every month. <a>Learn more about SEO →</a> <span class="small">[→ /seo/ ×2]</span></p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b>Advanced Social Media Marketing</b><br>
+<span class="tag">&lt;p&gt;</span> Social media is where your customers spend their time: Facebook, Instagram, TikTok, YouTube, LinkedIn, Pinterest and X. We build the strategy, create the content, manage your community and run paid social campaigns that grow a real audience and send it to your website. <a>Learn more about social media marketing →</a> <span class="small">[→ /social-media/]</span></p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b>YouTube &amp; Video Marketing</b><br>
+<span class="tag">&lt;p&gt;</span> Video is the fastest way to earn attention and trust. We plan, produce and optimize YouTube videos, short-form reels and ad creative that rank in search and get shared, including a single video that reached more than 60 million people. <a>Learn more about video marketing →</a> <span class="small">[→ /video-marketing/]</span></p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b>Web Design &amp; Development</b><br>
+<span class="tag">&lt;p&gt;</span> We design fast, mobile-first WordPress, Shopify and custom websites and eCommerce stores with SEO built in. When you call, we answer; if we miss your call, we'll get back to you within one business day. And you get full ownership of your website. <a>Learn more about web design →</a> <span class="small">[→ /web-design/]</span></p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b>Pay-Per-Click (PPC) Advertising</b><br>
+<span class="tag">&lt;p&gt;</span> PPC puts you at the top of Google, YouTube and social feeds right away. You choose who sees your ads and only pay when someone clicks. We build and manage Google Ads and Meta Ads campaigns with conversion tracking, so you know exactly what each lead costs.</p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b>Link Building &amp; Digital PR</b><br>
+<span class="tag">&lt;p&gt;</span> Quality links from relevant websites help Google find, trust and rank your pages. We earn links through local partnerships, PR, directories and content worth citing, and we follow Google's spam policies so your rankings last.</p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b>Online Reputation Management</b><br>
+<span class="tag">&lt;p&gt;</span> There are no cookie-cutter fixes for reputation problems. We build a plan around your situation: generating more positive reviews, responding to negative ones, publishing original content you approve, and pushing outdated results down so people see the business you are today.</p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b>Google Business Profile Optimization</b><br>
+<span class="tag">&lt;p&gt;</span> Your Google Business Profile drives the map results and the "near me" searches. We optimize categories, services, photos, posts and reviews, and combine them with <a>local SEO</a> so you show up in the map pack across the Emerald Coast. <span class="small">[→ /destin-seo-company/]</span></p>
+
+<p><span class="tag">button</span> [Not sure where to start? Get a free audit] → /contact-us/</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Which Service Is Right for Your Business?</b><br>
+<span class="tag">&lt;p&gt;</span> Most clients get the best results by combining services: SEO and a strong Google Business Profile for steady local leads, social media and video to build demand, and PPC for immediate traffic while SEO ramps up. We'll recommend the mix that fits your goals and budget. You never pay for services you don't need.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Areas We Serve on the Emerald Coast</b><br>
+<span class="tag">&lt;p&gt;</span> From our office in Destin we serve businesses from Pensacola to Panama City Beach:</p>
+<ul>
+<li><b>Destin:</b> <a>SEO</a> · <a>Social Media</a> · <a>Web Design</a></li>
+<li><b>Fort Walton Beach:</b> <a>SEO</a> · <a>Social Media</a> · <a>Web Design</a></li>
+<li><b>Santa Rosa Beach &amp; 30A:</b> <a>SEO</a> · <a>Social Media</a> · <a>Web Design</a></li>
+<li><b>Pensacola:</b> <a>SEO</a> · <a>Social Media</a> · <a>Web Design</a></li>
+<li><b>Miramar Beach:</b> <a>Social Media</a></li>
+</ul>
+<p><span class="tag">&lt;p&gt;</span> We also work with businesses in Niceville, Crestview, Navarre, Gulf Breeze, Shalimar, Valparaiso, Milton, Pace, Rosemary Beach, Alys Beach, Seaside, WaterColor, Grayton Beach, Blue Mountain Beach and Panama City. <a>See all locations</a>. <span class="small">[→ /locations/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Services FAQ</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Do I have to sign up for every service?</b> <span class="tag">&lt;p&gt;</span> No. Every service is available on its own, and we only recommend a package when the combination will pay for itself.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>What's the difference between SEO and PPC?</b> <span class="tag">&lt;p&gt;</span> PPC buys you instant visibility for as long as you pay for clicks. SEO earns rankings that keep bringing in free traffic over time. Many businesses use PPC while their SEO builds.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Do you work with businesses outside Florida?</b> <span class="tag">&lt;p&gt;</span> Yes. We run SEO, social media and video campaigns for clients nationwide. <a>Read our full FAQ</a>. <span class="small">[→ /faq/]</span></p>
+
+<p><span class="tag">CTA band &lt;h2&gt;</span> <b>Get a Free Marketing Audit</b><br>
+<span class="tag">&lt;p&gt;</span> Tell us about your business and we'll show you where you're losing customers online, and how to win them back.<br>
+<span class="tag">button</span> [Get My Free Audit] → /contact-us/ &nbsp; <span class="tag">button</span> [Call [PHONE]] → tel:</p>
+</div>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>CTA events</td><td>Fire <code>cta_click</code> with parameter <code>cta_location</code> (services_top / services_mid / services_bottom) on the 3 audit buttons, and <code>phone_call_click</code> on tel: links. Use the same names as on Home so reports roll up.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Service interest</td><td>Fire <code>select_service</code> with <code>service_name</code> on every "Learn more" click. This shows which services visitors care about and helps guide content and ad spend.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>GA4 funnel</td><td>Build a GA4 funnel exploration: /services/ → service page → /contact-us/ → generate_lead.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Scroll depth</td><td>Use the Enhanced Measurement 90% scroll event to check whether visitors reach the Areas and FAQ sections.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Duplicate H1</td><td>If you add an H1 in the content, turn off the theme's page title for this page (Burst page options → Show title area: No), or the page will have two H1s. <i>Verify live</i>.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Template</td><td>The page uses the default (blank) template with classic content. Consider rebuilding it in WPBakery so it matches the look of Home, with icons, a service grid and CTA rows.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Structured data</td><td><code>ItemList</code> of <code>Service</code> + <code>FAQPage</code> + <code>BreadcrumbList</code> (AIOSEO breadcrumbs). Validate in the Rich Results Test.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Keyword overlap</td><td>The page ranks at positions 31–71 for SEO terms that Home and /seo/ should own. The new "digital marketing services" focus removes the overlap; keep "SEO" mentions to the one SEO section.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Content freshness</td><td>Not updated since 2022-09. Update the modified date once the rewrite is live (AIOSEO uses it in the sitemap lastmod).</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Menu</td><td>Make sure the "Services" menu item has the 4 service pages as a dropdown, so they get sitewide links (<i>verify live</i>).</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>S-01</td><td>Add</td><td>H1 "Digital Marketing Services in Destin, Florida"; turn off theme title to avoid a duplicate H1</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-02</td><td>Change</td><td>SEO title → "Digital Marketing Services in Destin, FL | Rockstar Marketing"</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-03</td><td>Change</td><td>New meta description (145); focus keyphrase "Digital Marketing Services Destin"</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-04</td><td>Rewrite</td><td>Full copy rewrite (~900 words); remove Google+, Digg, StumbleUpon, Panda/Penguin and the unsourced stat</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-05</td><td>Add</td><td>New service sections: Video Marketing and Google Business Profile</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-06</td><td>Change</td><td>Heading hierarchy: H2 "Our Digital Marketing Services" with 8 H3s; new H2s for fit, areas, FAQ, CTA</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-07</td><td>Add</td><td>~25 internal links to service pages, 11 location pages, /locations/, /clients/, /faq/, /contact-us/</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-08</td><td>Replace</td><td>Unlinked 18-city string → linked Areas We Serve block</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-09</td><td>Add</td><td>3 CTAs (top, mid, bottom) + phone</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-10</td><td>Fix</td><td>Typos: "If you miss you", "fine them", "PPP", "in throughout"</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-11</td><td>Add</td><td>Service icons + alt text; 1200×630 OG image</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-12</td><td>Add</td><td>ItemList/Service, FAQPage and BreadcrumbList schema</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-13</td><td>Tracking</td><td>cta_click (with cta_location), select_service, phone_call_click; GA4 services funnel</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>S-14</td><td>Backlog</td><td>Future pages: PPC Management, Online Reputation Management, Google Business Profile Optimization</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: Search Engine Optimization (/seo/)</b></p>
+</body></html>

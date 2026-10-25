@@ -6,7 +6,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | # | Status | Page | WP ID | URL | Report |
 |---|--------|------|-------|-----|--------|
 | 1 | [x] done 2026-10-25 | Home | 6057 | / | 01-home.pdf |
-| 2 | [ ] | Services | 11534 | /services/ | |
+| 2 | [x] done 2026-10-25 | Services | 11534 | /services/ | 02-services.pdf |
 | 3 | [ ] | Search Engine Optimization | 11538 | /seo/ | |
 | 4 | [ ] | Social Media | 11541 | /social-media/ | |
 | 5 | [ ] | Video Marketing | 11544 | /video-marketing/ | |
@@ -40,3 +40,5 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - Duplicate meta description shared by Home, Clients, About Us, Contact Us.
 - Site-wide http:// → https:// search-replace needed.
 - 12 pages have no custom SEO title; 21 have no focus keyphrase.
+- Services hub: future pages backlog = PPC Management, Online Reputation Management, GBP Optimization, Niceville location page.
+- Burst theme likely prints page title as H1 – check every classic-editor page for missing/duplicate H1.
