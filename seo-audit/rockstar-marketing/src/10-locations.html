@@ -1,0 +1,144 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – Locations</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Locations</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/locations/</b> &nbsp;·&nbsp; WP ID 12023 &nbsp;·&nbsp; Builder: Classic editor &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Created / last modified: 2023-01-03 &nbsp;·&nbsp; Page 10 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> This page is <b>empty</b>. Its entire content is one link with the anchor "Locations" pointing to the home page. It has no SEO title, no description and no child pages. It was probably created as a menu placeholder. As it stands it's a thin, indexable page, and every rewrite in this audit series (Home, Services, About, Social) now links to it as "see all areas we serve". It should become the <b>location hub</b>: one page that links to all 11 city pages and the Destin Florida page, explains the service area, and passes authority down to the city pages that are currently losing to /web-design/ and Home for their own city keywords.
+</div>
+<p class="small"><b>Method note:</b> the live site can't be reached from the audit environment. Data comes from WordPress (connector) and AIOSEO. <i>Verify live</i> = check in the browser.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>Empty page</td><td>Replace the single "Locations → /" link with the hub content in §5 (about 800 words, 12 city links).</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>Self-referential anchor</td><td>The only link uses the anchor "Locations" and points to the <i>home</i> page, which is misleading for users and crawlers. Delete it.</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Meta</td><td>SEO title and description are both empty. New values in §2.</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>Hub linking</td><td>Link to all 11 city pages with descriptive anchors (city + service), grouped by city. This is the main job of the page.</td></tr>
+<tr><td>5</td><td><span class="p2">P2</span></td><td>Menu / hierarchy</td><td>Make "Locations" a top-level menu item with the cities as a dropdown (<i>verify the live menu</i>). Optional: set the city pages' Parent = Locations to get breadcrumbs like Home › Locations › Destin SEO Company. Don't change the URLs; the city slugs are already ranking, so a parent change must not alter the permalink without 301s.</td></tr>
+<tr><td>6</td><td><span class="p2">P2</span></td><td>Coverage gaps</td><td>Cities named across the site with no page: Niceville (Home already ranks #4 for "niceville social media company"), Navarre, Crestview, Gulf Breeze, Panama City Beach, 30A/Rosemary Beach. List them on the hub now; build pages later (Niceville first).</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Map</td><td>Add a service-area map (static image or a Google My Maps embed with pins for each city) plus the office NAP.</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Schema</td><td><code>CollectionPage</code> / <code>ItemList</code> of the city pages, plus Organization <code>areaServed</code> (list of <code>City</code> entities).</td></tr>
+<tr><td>9</td><td><span class="p3">P3</span></td><td>Unique copy per city</td><td>Each city block on the hub needs 2–3 unique sentences (not a template with the name swapped), so the hub doesn't duplicate the city pages.</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>(empty)</td><td><b>Areas We Serve on Florida's Emerald Coast | Rockstar Marketing</b> (60)</td></tr>
+<tr><td>Meta description</td><td>(empty)</td><td><b>SEO, social media and web design for Destin, Fort Walton Beach, Santa Rosa Beach, 30A, Miramar Beach, Pensacola and all of Northwest Florida.</b> (143)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>Emerald Coast digital marketing</td></tr>
+<tr><td>H1</td><td>Theme title "Locations" (<i>verify</i>)</td><td>Areas We Serve on the Emerald Coast</td></tr>
+<tr><td>Slug</td><td>/locations/</td><td>Keep it</td></tr>
+<tr><td>Robots</td><td>index (empty page!)</td><td>Keep index once the content is live. Until then, set it to noindex.</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td class="small">(theme H1 "Locations", <i>verify</i>)<br><i>No content</i></td><td class="small">
+<b>H1</b> – Areas We Serve on the Emerald Coast<br>
+<b>H2</b> – Destin, Florida (Our Home Office)<br>
+<b>H2</b> – Fort Walton Beach<br>
+<b>H2</b> – Santa Rosa Beach &amp; 30A<br>
+<b>H2</b> – Miramar Beach &amp; Sandestin<br>
+<b>H2</b> – Pensacola<br>
+<b>H2</b> – More Communities We Serve<br>
+&nbsp;&nbsp;<b>H3</b> – Niceville &amp; Bluewater Bay<br>
+&nbsp;&nbsp;<b>H3</b> – Navarre &amp; Gulf Breeze<br>
+&nbsp;&nbsp;<b>H3</b> – Crestview<br>
+&nbsp;&nbsp;<b>H3</b> – Panama City Beach<br>
+<b>H2</b> – National Clients<br>
+<b>H2</b> – Find Our Office <i>(map + NAP + CTA)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan (the page's core purpose)</h2>
+<table>
+<tr><th style="width:24%">City block</th><th>Links (anchor → URL)</th></tr>
+<tr><td>Destin</td><td>Destin SEO company → /destin-seo-company/ · Destin social media company → /destin-social-media-company/ · Destin web design → /web-design/ <span class="small">(or /destin-webdesign-company/ if kept, see audit #14)</span> · about Destin, Florida → /destin-florida/</td></tr>
+<tr><td>Fort Walton Beach</td><td>Fort Walton Beach SEO → /fort-walton-beach-seo-company/ · social media → /fort-walton-beach-social-media-company/ · web design → /fort-walton-beach-web-design/</td></tr>
+<tr><td>Santa Rosa Beach &amp; 30A</td><td>Santa Rosa Beach SEO → /santa-rosa-beach-seo-company/ · social media → /santa-rosa-beach-social-media-company/ · web design → /santa-rosa-beach-web-design-company/</td></tr>
+<tr><td>Miramar Beach</td><td>Miramar Beach social media → /miramar-beach-social-media-company/</td></tr>
+<tr><td>Pensacola</td><td>Pensacola SEO → /pensacola-seo-company/ · social media → /pensacola-social-media-company/ · web design → /pensacola-web-design-company/</td></tr>
+<tr><td>More communities / National</td><td>SEO services → /seo/ · social media marketing → /social-media/ · video marketing → /video-marketing/ · client results → /clients/</td></tr>
+<tr><td>CTA</td><td>Get a free audit → /contact-us/</td></tr>
+<tr><td><b>Inbound</b></td><td>/locations/ ← main menu, footer, Home, Services, About, /social-media/ (already in the rewrites), and every city page ("see all areas we serve")</td></tr>
+</table>
+
+<h2 class="pb">5. Rewritten Page Content (ready to paste)</h2>
+<p class="small">About 800 words. Each city blurb is unique on purpose; refine them with local client names or landmarks you work near.</p>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Areas We Serve on the Emerald Coast</b></p>
+<p><span class="tag">&lt;p&gt;</span> Rockstar Marketing is based in Destin and has helped businesses across Northwest Florida grow online since 1996. Whether you run a beachfront restaurant, a charter boat, a medical practice or a home-services company, we know the local market, the tourist seasons and what your customers are searching for. Find your area below.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Destin, Florida (Our Home Office)</b><br>
+<span class="tag">&lt;p&gt;</span> Our office is at 385 Harbor Blvd, in the heart of Destin. Destin businesses compete for millions of visitors every year, and the ones that show up first on Google and Instagram win the bookings. Explore our <a>Destin SEO company</a>, <a>Destin social media company</a> and <a>Destin web design</a> services, or read more <a>about Destin, Florida</a>.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Fort Walton Beach</b><br>
+<span class="tag">&lt;p&gt;</span> From Okaloosa Island tourism to the businesses serving Hurlburt Field and Eglin AFB families, Fort Walton Beach has both a seasonal and a year-round customer base. We help local companies reach both with <a>Fort Walton Beach SEO</a>, <a>social media</a> and <a>web design</a>.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Santa Rosa Beach &amp; 30A</b><br>
+<span class="tag">&lt;p&gt;</span> The boutiques, restaurants, vacation rentals and builders along Scenic Highway 30A sell a lifestyle, and their marketing has to look the part. See our <a>Santa Rosa Beach SEO</a>, <a>social media</a> and <a>web design</a> services, covering Seaside, WaterColor, Grayton Beach, Blue Mountain Beach, Dune Allen, Rosemary and Alys Beach.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Miramar Beach &amp; Sandestin</b><br>
+<span class="tag">&lt;p&gt;</span> Just east of Destin, Miramar Beach and Sandestin are packed with resorts, shopping and dining that live on reviews and social buzz. Our <a>Miramar Beach social media</a> team keeps your feeds full and your reputation strong.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Pensacola</b><br>
+<span class="tag">&lt;p&gt;</span> Pensacola is the largest market on the Emerald Coast, and the most competitive. We help Pensacola businesses outrank bigger competitors with <a>Pensacola SEO</a>, <a>social media marketing</a> and <a>web design</a>.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>More Communities We Serve</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Niceville &amp; Bluewater Bay</b> <span class="tag">&lt;p&gt;</span> Local SEO and social media for Niceville's growing business community, minutes from our Destin office.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Navarre &amp; Gulf Breeze</b> <span class="tag">&lt;p&gt;</span> Marketing for the beach towns between Pensacola and Fort Walton Beach.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Crestview</b> <span class="tag">&lt;p&gt;</span> SEO and websites for one of Okaloosa County's fastest-growing cities.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Panama City Beach</b> <span class="tag">&lt;p&gt;</span> Social media and SEO for the attractions and rentals of Bay County.</p>
+<p><span class="tag">&lt;p&gt;</span> We also serve Shalimar, Valparaiso, Mary Esther, Milton and Pace. Every location gets our full <a>SEO services</a>, <a>social media marketing</a> and <a>video marketing</a>.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>National Clients</b><br>
+<span class="tag">&lt;p&gt;</span> Our reach doesn't stop at the Florida line. We run SEO, social media and video campaigns for brands, bands and athletes across the Southeast and nationwide, from Mobile, New Orleans and Birmingham to Nashville and beyond. See our <a>client results</a>.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Find Our Office</b><br>
+<span class="tag">map</span> service-area map with pins, or the existing Google Maps embed (responsive, lazy)<br>
+<span class="tag">&lt;address&gt;</span> <b>Rockstar Marketing</b> · 385 Harbor Blvd, Suite 200, Destin, FL 32541 · <a>(850) 542-3091</a> · Mon–Fri 9am–5pm<br>
+<span class="tag">button</span> [Get a Free Marketing Audit] → /contact-us/</p>
+</div>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Location clicks</td><td>Fire <code>select_location</code> with parameters <code>city</code> and <code>service</code> on every city link. This shows demand by area and tells you which city page to build next.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>CTA + phone</td><td><code>cta_click</code> (locations_bottom), <code>phone_call_click</code>.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>GA4 geo report</td><td>Compare GA4 visitor cities (Reports → Demographics → City) with the hub's city list. Add any city with meaningful traffic and no block.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>GSC</td><td>Filter Search Console queries containing city names (regex <code>niceville|navarre|crestview|gulf breeze|panama city</code>) to size the opportunity for each future page.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Thin indexed page</td><td>Today it's an indexable page with 1 word. Set it to noindex until the hub copy is published, then index it and submit it in GSC.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Schema</td><td><code>CollectionPage</code> with <code>hasPart</code>/<code>ItemList</code> → city page URLs; Organization <code>areaServed</code>: [Destin, Fort Walton Beach, Santa Rosa Beach, Miramar Beach, Pensacola, Niceville, Navarre, Crestview, Gulf Breeze, Panama City Beach] as <code>City</code>.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Breadcrumbs</td><td>Turn on AIOSEO breadcrumbs. If city pages get Parent = Locations, check that the permalinks stay flat (or add 301s). <b>Don't break ranking URLs.</b></td></tr>
+<tr><td><span class="p3">P3</span></td><td>Template</td><td>Classic editor is fine for this page. Alternatively build it in WPBakery with city cards (image + 3 service buttons) to match the site's look.</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>LO-01</td><td>Remove</td><td>Single "Locations → /" link</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LO-02</td><td>Add</td><td>Hub copy (~800 words): H1, 5 city H2s, 4 community H3s, national, office</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LO-03</td><td>Add</td><td>Links to all 11 city pages + /destin-florida/ + service pages + Clients + Contact</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LO-04</td><td>Add</td><td>SEO title "Areas We Serve on Florida's Emerald Coast | Rockstar Marketing"; meta description</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LO-05</td><td>Change</td><td>noindex until the content is live, then index + submit in GSC</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LO-06</td><td>Add</td><td>Service-area map + NAP + CTA</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LO-07</td><td>Add</td><td>CollectionPage/ItemList schema; Organization areaServed</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LO-08</td><td>Change</td><td>Menu: Locations top-level with city dropdown; optional parent/breadcrumbs without URL changes</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LO-09</td><td>Tracking</td><td>select_location (city, service), cta_click, phone_call_click; GA4 city report; GSC city regex</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LO-10</td><td>Backlog</td><td>New city pages, in order: Niceville, Navarre, Crestview, Gulf Breeze, Panama City Beach</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: FAQ (/faq/)</b></p>
+</body></html>

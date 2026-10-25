@@ -14,7 +14,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 7 | [x] done 2026-10-25 | About Us | 11548 | /about-us/ | 07-about-us.pdf |
 | 8 | [x] done 2026-10-25 | Contact us | 11576 | /contact-us/ | 08-contact-us.pdf |
 | 9 | [x] done 2026-10-25 | Clients | 4015 | /clients/ | 09-clients.pdf |
-| 10 | [ ] | Locations | 12023 | /locations/ | |
+| 10 | [x] done 2026-10-25 | Locations | 12023 | /locations/ | 10-locations.pdf |
 | 11 | [ ] | FAQ | 12060 | /faq/ | |
 | 12 | [ ] | Destin SEO Company | 11989 | /destin-seo-company/ | |
 | 13 | [ ] | Destin Social Media Company | 11942 | /destin-social-media-company/ | |
