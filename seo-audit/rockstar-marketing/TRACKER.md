@@ -12,7 +12,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 5 | [x] done 2026-10-25 | Video Marketing | 11544 | /video-marketing/ | 05-video-marketing.pdf |
 | 6 | [x] done 2026-10-25 | Web Design | 11546 | /web-design/ | 06-web-design.pdf |
 | 7 | [x] done 2026-10-25 | About Us | 11548 | /about-us/ | 07-about-us.pdf |
-| 8 | [ ] | Contact us | 11576 | /contact-us/ | |
+| 8 | [x] done 2026-10-25 | Contact us | 11576 | /contact-us/ | 08-contact-us.pdf |
 | 9 | [ ] | Clients | 4015 | /clients/ | |
 | 10 | [ ] | Locations | 12023 | /locations/ | |
 | 11 | [ ] | FAQ | 12060 | /faq/ | |
@@ -48,3 +48,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - Keyword ownership: /social-media/ = "social media marketing services" (national); city social pages = local intent (local volumes 0–70/mo).
 - Keyword ownership: /video-marketing/ = "video marketing services" + "Destin video marketing" (Home currently #1 – shift via anchor link). Backlog: YouTube SEO Services page.
 - Keyword ownership: /web-design/ = "Destin web design" (#2–4 on 9 variants). /destin-webdesign-company/ = 301 candidate (decide in audit #14). Experience claim: use "since 1996".
+- Extra NAP (from /contact-us/): toll-free (855) 545-3669, info@rockstar-marketing.com, hours Mon–Fri 9–5, Sat by phone, Sun closed. Lead tracking depends on new /thank-you/ page (CU-01).

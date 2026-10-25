@@ -1,0 +1,151 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – Contact Us</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Contact Us</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/contact-us/</b> &nbsp;·&nbsp; WP ID 11576 &nbsp;·&nbsp; Builder: WPBakery + Quform (form id 1) &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Last modified in WP: 2024-02-12 &nbsp;·&nbsp; Page 8 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> This is the site's <b>conversion page</b>. Every CTA in the previous 7 audits points here, so measurement matters more on this page than anywhere else. It's in decent shape: form, NAP, hours, email and map are all present. The problems are mainly conversion and technical. Neither phone number is click-to-call, the email address is exposed as plain text, the map iframe is fixed at 1100px wide (it overflows on mobile) and isn't lazy-loaded, there are probably two H1s, the meta description is the duplicate used site-wide, and there is <b>no thank-you page</b> to measure leads. There's no reassurance copy either (what happens after I submit? how fast will you reply?).
+<br><br><b>New NAP data found here:</b> second phone <b>(855) 545-3669</b> (toll-free), email <b>info@rockstar-marketing.com</b>, hours <b>Mon–Fri 9am–5pm, Sat by phone, Sun closed</b>. Use them in schema site-wide.
+</div>
+<p class="small"><b>Method note:</b> the live site can't be reached from the audit environment. Data comes from WordPress (connector) and AIOSEO. <i>Verify live</i> = check in the browser.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>Lead tracking</td><td>Quform id 1 has no thank-you page. Create <code>/thank-you/</code> (noindex) and set Quform 1 → Confirmation → Redirect to it. Fire <code>generate_lead</code> there. Without this, no lead in GA4 or Google Ads can be attributed.</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>Click-to-call</td><td>Both numbers are plain text: "1-(850)-542-3091" and "1-(855)-545-3669". Make them <code>&lt;a href="tel:+18505423091"&gt;(850) 542-3091&lt;/a&gt;</code> and <code>tel:+18555453669</code>. Most mobile visitors call rather than fill in a form.</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Map breaks mobile</td><td>The iframe is <code>width="1100" height="450"</code> inside a 2/3 column, so it causes horizontal scroll on phones. Use <code>width="100%"</code>, a responsive wrapper, <code>loading="lazy"</code> and <code>title="Map to Rockstar Marketing, Destin FL"</code>. The empty 1/3 column next to it can be removed.</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>Duplicate H1</td><td>The content H1 "Contact Us" plus the theme title "Contact us" (<i>verify live</i>). Keep one: <b>"Contact Rockstar Marketing"</b>.</td></tr>
+<tr><td>5</td><td><span class="p1">P1</span></td><td>Meta tags</td><td>SEO title empty; description duplicated with Home, Clients and About. New values in §2.</td></tr>
+<tr><td>6</td><td><span class="p2">P2</span></td><td>Reassurance copy</td><td>Add 2–3 lines above the form: what happens next, reply time ("within 1 business day", a promise already made on the Services page), and that the audit is free with no obligation.</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Form fields</td><td>Recommended fields: Name, Email, Phone, Business/Website, <b>Service interested in</b> (dropdown: SEO / Social / Video / Web Design / PPC / Not sure), Message. Optional: Budget, How did you hear about us. The service dropdown feeds the <code>service</code> parameter in tracking. <i>Verify the current fields live.</i></td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Email exposure</td><td>Plain-text info@rockstar-marketing.com gets scraped by spam bots. Use a <code>mailto:</code> link with simple obfuscation (or keep the form only) and fire <code>email_click</code> on it.</td></tr>
+<tr><td>9</td><td><span class="p2">P2</span></td><td>Schema</td><td><code>ContactPage</code> + the Organization/ProfessionalService entity, with both telephones, email, <code>openingHoursSpecification</code> (Mon–Fri 09:00–17:00) and a <code>contactPoint</code> (contactType "sales").</td></tr>
+<tr><td>10</td><td><span class="p2">P2</span></td><td>Sidebar heading</td><td>"Rockstar Marketing" as an H2 is fine, but rename it "Visit or Call Us" for clarity, and add an "Office Hours" H3.</td></tr>
+<tr><td>11</td><td><span class="p3">P3</span></td><td>Emoji bullets</td><td>📍📞📩🕘 render inconsistently and screen readers announce them ("round pushpin"). Wrap them in <code>&lt;span aria-hidden="true"&gt;</code> or use icon fonts. Mark up hours as a list or table.</td></tr>
+<tr><td>12</td><td><span class="p3">P3</span></td><td>Internal links</td><td>0 links. Add a short "Not ready to talk? Explore our services" row with links to the 4 service pages and /faq/.</td></tr>
+<tr><td>13</td><td><span class="p3">P3</span></td><td>Trust</td><td>Add a single testimonial or a Google rating snippet ("★ 4.9 from [N] Google reviews") beside the form. <i>Use your real rating.</i></td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>(empty → site default)</td><td><b>Contact Rockstar Marketing | Destin, FL | (850) 542-3091</b> (56)</td></tr>
+<tr><td>Meta description</td><td>(duplicate of Home/Clients/About)</td><td><b>Contact Rockstar Marketing in Destin, FL for SEO, social media, video or web design. Call (850) 542-3091 or request your free marketing audit online.</b> (149)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>Contact Rockstar Marketing</td></tr>
+<tr><td>H1</td><td>"Contact Us" ×2 (<i>verify</i>)</td><td>Contact Rockstar Marketing</td></tr>
+<tr><td>WP page title</td><td>"Contact us"</td><td>"Contact Us" (title case, matches the menu)</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td class="small">(theme H1 "Contact us", <i>verify</i>)<br>H1 – Contact Us<br>H2 – Rockstar Marketing (sidebar)</td><td class="small">
+<b>H1</b> – Contact Rockstar Marketing<br>
+<b>H2</b> – Request Your Free Marketing Audit <i>(form column)</i><br>
+<b>H2</b> – Visit or Call Us <i>(sidebar)</i><br>
+&nbsp;&nbsp;<b>H3</b> – Office Hours<br>
+<b>H2</b> – What Happens Next<br>
+<b>H2</b> – Find Our Destin Office <i>(map)</i><br>
+<b>H2</b> – Not Ready to Talk Yet? <i>(service links)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:40%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>SEO services</td><td>/seo/</td><td>"Not ready" row</td></tr>
+<tr><td>social media marketing</td><td>/social-media/</td><td>"Not ready" row</td></tr>
+<tr><td>video marketing</td><td>/video-marketing/</td><td>"Not ready" row</td></tr>
+<tr><td>web design</td><td>/web-design/</td><td>"Not ready" row</td></tr>
+<tr><td>read our FAQ</td><td>/faq/</td><td>"Not ready" row</td></tr>
+<tr><td>see client results</td><td>/clients/</td><td>Trust line</td></tr>
+<tr><td>Get directions</td><td>Google Maps directions URL (external)</td><td>Map section</td></tr>
+<tr><td><b>Inbound</b></td><td>Every page's CTA → /contact-us/ (https, relative). Fix the http:// button links on Home.</td><td>site-wide</td></tr>
+</table>
+
+<h2 class="pb">5. Rewritten Page Content (ready to paste)</h2>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Contact Rockstar Marketing</b></p>
+<p><span class="tag">&lt;p&gt;</span> Ready to get more customers from Google, social media and video? Tell us about your business and we'll get back to you within one business day, usually much sooner. Prefer to talk? Call <a>(850) 542-3091</a>.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Request Your Free Marketing Audit</b><br>
+<span class="tag">[quform id="1"]</span> (fields as in §1 #7)<br>
+<span class="tag">&lt;p class="small"&gt;</span> No obligation, no spam. We'll never share your information.</p>
+
+<p><span class="tag">sidebar &lt;h2&gt;</span> <b>Visit or Call Us</b><br>
+<span class="tag">&lt;address&gt;</span> <b>Rockstar Marketing</b><br>385 Harbor Blvd, Suite 200<br>Destin, FL 32541<br>
+Phone: <a>(850) 542-3091</a> <span class="small">[tel:+18505423091]</span><br>
+Toll-free: <a>(855) 545-3669</a> <span class="small">[tel:+18555453669]</span><br>
+Email: <a>info@rockstar-marketing.com</a> <span class="small">[mailto, obfuscated]</span></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Office Hours</b><br>
+<span class="tag">&lt;ul&gt;</span> Monday–Friday: 9am–5pm · Saturday: by phone · Sunday: Closed</p>
+<p><span class="tag">trust</span> ★ [rating] from [N] Google reviews. "[short testimonial]" — [Name, Business]. <a>See client results</a>. <span class="small">[→ /clients/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>What Happens Next</b></p>
+<ol>
+<li><b>We review your business.</b> We look at your website, Google rankings, Google Business Profile and social accounts.</li>
+<li><b>We call you.</b> A quick 15–20 minute conversation about your goals.</li>
+<li><b>You get a plan.</b> Clear recommendations and pricing, with no pressure and no long sales pitch.</li>
+</ol>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Find Our Destin Office</b><br>
+<span class="tag">responsive map iframe</span> + <a>Get directions</a> <span class="small">[Google Maps directions link]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Not Ready to Talk Yet?</b><br>
+<span class="tag">&lt;p&gt;</span> Learn more about our <a>SEO services</a>, <a>social media marketing</a>, <a>video marketing</a> and <a>web design</a>, or <a>read our FAQ</a>.</p>
+</div>
+
+<h3>Thank-you page (new, /thank-you/)</h3>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Thanks, We've Got Your Message!</b><br>
+<span class="tag">&lt;p&gt;</span> A member of our team will contact you within one business day. If it's urgent, call <a>(850) 542-3091</a>.<br>
+<span class="tag">&lt;p&gt;</span> While you wait: [embed your best video] or follow us on <a>Facebook</a> / <a>Instagram</a>.<br>
+<span class="tag">settings</span> AIOSEO: <b>noindex, nofollow</b>; exclude from the sitemap; no menu link.</p>
+</div>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>generate_lead</td><td>Fire on /thank-you/ page view (GTM trigger: Page Path equals /thank-you/), with parameters <code>form_id=1</code>, <code>service</code> (from the dropdown, passed as a query string, e.g. <code>/thank-you/?service=seo</code>) and <code>lead_source_page</code> (referrer). Mark it as a Key Event.</td></tr>
+<tr><td><span class="p1">P1</span></td><td>phone_call_click</td><td>Both tel: links, with parameter <code>phone_line</code> (main / tollfree). Mark it as a Key Event.</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Google Ads conversions</td><td>Import <code>generate_lead</code> and <code>phone_call_click</code> from GA4 into Google Ads. Add a Google Ads call conversion for calls from ads.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Meta Pixel / CAPI</td><td>Fire <code>Lead</code> on /thank-you/ and <code>Contact</code> on tel:/mailto: clicks.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Form abandonment</td><td>Fire <code>form_start</code> (Enhanced Measurement does this automatically) and compare it with generate_lead to get the form completion rate. If it's under 30%, cut fields.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>email_click, directions_click</td><td>Secondary engagement events. Don't mark them as Key Events.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>CRM / lead log</td><td>Send Quform submissions to a sheet or CRM (Quform → webhook / Zapier) with UTM fields captured in hidden inputs, so each lead carries its source.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Responsive map</td><td>Fixed 1100px iframe → 100% width, aspect-ratio wrapper, loading="lazy", title. Or replace it with a static map image linked to Google Maps (faster LCP).</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Form deliverability</td><td>Send a test submission. Check that the notification reaches info@, that SMTP is authenticated (not PHP mail), that spam protection is on (Quform honeypot + reCAPTCHA v3 or Turnstile), and that the redirect to /thank-you/ fires. <i>Verify live.</i></td></tr>
+<tr><td><span class="p2">P2</span></td><td>ContactPage schema</td><td><code>ContactPage</code> → about: Organization @id; Organization gets telephone ["+1-850-542-3091","+1-855-545-3669"], email, openingHoursSpecification and contactPoint.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>NAP consistency</td><td>Check that the Google Business Profile shows exactly "385 Harbor Blvd Suite 200, Destin, FL 32541" and (850) 542-3091 as primary. Record the toll-free number as an additional phone only.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Empty column</td><td>Delete the empty 1/3 column in the map row (or put "Get directions" + parking info there).</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Accessibility</td><td>Form labels visible (not placeholder-only), error messages announced, emoji aria-hidden.</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>CU-01</td><td>Add</td><td>/thank-you/ page (noindex) + Quform 1 redirect</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CU-02</td><td>Fix</td><td>tel: links for (850) 542-3091 and (855) 545-3669; standard phone format</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CU-03</td><td>Fix</td><td>Responsive, lazy-loaded map iframe with title; remove the empty column</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CU-04</td><td>Fix</td><td>Single H1 "Contact Rockstar Marketing"</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CU-05</td><td>Change</td><td>SEO title + unique meta description</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CU-06</td><td>Add</td><td>Intro/reassurance copy, "What Happens Next", trust snippet, "Not ready yet" links</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CU-07</td><td>Change</td><td>Form fields incl. "Service interested in" dropdown; spam protection; SMTP check</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CU-08</td><td>Fix</td><td>Email as obfuscated mailto; NAP in an &lt;address&gt; element; hours as a list</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CU-09</td><td>Add</td><td>ContactPage schema + contactPoint, openingHoursSpecification, both phones, email</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CU-10</td><td>Tracking</td><td>generate_lead (thank-you), phone_call_click (2 lines), Google Ads import, Meta Lead/Contact, form_start rate, UTM hidden fields</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CU-11</td><td>Fix</td><td>Emoji aria-hidden; visible form labels</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: Clients (/clients/)</b></p>
+</body></html>
