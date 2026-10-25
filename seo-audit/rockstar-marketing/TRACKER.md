@@ -20,7 +20,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 13 | [x] done 2026-10-25 | Destin Social Media Company | 11942 | /destin-social-media-company/ | 13-destin-social-media-company.pdf |
 | 14 | [x] done 2026-10-25 | Destin Web Design Company | 12001 | /destin-webdesign-company/ | 14-destin-webdesign-company.pdf (301 → /web-design/) |
 | 15 | [x] done 2026-10-25 | Fort Walton Beach SEO Company | 12093 | /fort-walton-beach-seo-company/ | 15-fort-walton-beach-seo-company.pdf |
-| 16 | [ ] | Fort Walton Beach Social Media Company | 12112 | /fort-walton-beach-social-media-company/ | |
+| 16 | [x] done 2026-10-25 | Fort Walton Beach Social Media Company | 12112 | /fort-walton-beach-social-media-company/ | 16-fort-walton-beach-social-media-company.pdf |
 | 17 | [ ] | Fort Walton Beach Web Design Company | 12120 | /fort-walton-beach-web-design/ | |
 | 18 | [ ] | Santa Rosa Beach SEO Company | 12041 | /santa-rosa-beach-seo-company/ | |
 | 19 | [ ] | Santa Rosa Beach Social Media Company | 12026 | /santa-rosa-beach-social-media-company/ | |
