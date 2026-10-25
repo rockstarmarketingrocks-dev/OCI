@@ -9,7 +9,7 @@ Work top to bottom; mark `[x]` when the changelog is delivered.
 | 2 | [x] | Crab Island Tours | 599 | /crab-island-tours-in-destin-fl/ | pdf/02-crab-island-tours.pdf |
 | 3 | [x] | Sunset & Dolphin Tour / Fireworks Cruise | 672 | /crab-island-tours-in-destin-fl-2/ | pdf/03-sunset-dolphin-fireworks.pdf |
 | 4 | [x] | Dolphin Tours in Destin FL | 1457 | /crab-island-tours-in-destin-fl-2-2-2-2/ | pdf/04-dolphin-tours.pdf |
-| 5 | [ ] | FAQs | 2271 | /faqs/ | |
+| 5 | [x] | FAQs | 2271 | /faqs/ | pdf/05-faqs.pdf |
 | 6 | [ ] | Contact | 812 | /contact-bikkini-bottom-boat-charters/ | |
 | 7 | [ ] | Gallery | 420 | /our-charter/ | |
 | 8 | [ ] | What is Crab Island | 2333 | /what-is-crab-island/ | |
