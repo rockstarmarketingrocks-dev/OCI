@@ -19,7 +19,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 12 | [x] done 2026-10-25 | Destin SEO Company | 11989 | /destin-seo-company/ | 12-destin-seo-company.pdf |
 | 13 | [x] done 2026-10-25 | Destin Social Media Company | 11942 | /destin-social-media-company/ | 13-destin-social-media-company.pdf |
 | 14 | [x] done 2026-10-25 | Destin Web Design Company | 12001 | /destin-webdesign-company/ | 14-destin-webdesign-company.pdf (301 → /web-design/) |
-| 15 | [ ] | Fort Walton Beach SEO Company | 12093 | /fort-walton-beach-seo-company/ | |
+| 15 | [x] done 2026-10-25 | Fort Walton Beach SEO Company | 12093 | /fort-walton-beach-seo-company/ | 15-fort-walton-beach-seo-company.pdf |
 | 16 | [ ] | Fort Walton Beach Social Media Company | 12112 | /fort-walton-beach-social-media-company/ | |
 | 17 | [ ] | Fort Walton Beach Web Design Company | 12120 | /fort-walton-beach-web-design/ | |
 | 18 | [ ] | Santa Rosa Beach SEO Company | 12041 | /santa-rosa-beach-seo-company/ | |
@@ -53,3 +53,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - FAQ is the single FAQPage-schema source; service-page FAQs stay short and link to /faq/ (no duplicate FAQ schema).
 - /destin-seo-company/ = re-focused to "Local SEO Destin / GBP" (no rankings; Home owns head term). City SEO pages (FWB/SRB/Pensacola) likely share its Jan-2023 template – check for stuffing + /locations anchor.
 - Forms: Quform 1 = Contact, 2 = Destin Social (+ maybe others), 3 = Video → all redirect to /thank-you/?form=N&service=&city=.
+- QUICK WIN: "fort walton beach seo company" 260/mo KD 7 – Home ranks #15, FWB page not in top 100. /destin-florida/ ranks #42 for FWB SEO term.
