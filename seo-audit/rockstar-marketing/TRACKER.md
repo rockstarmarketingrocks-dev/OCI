@@ -18,7 +18,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 11 | [x] done 2026-10-25 | FAQ | 12060 | /faq/ | 11-faq.pdf |
 | 12 | [x] done 2026-10-25 | Destin SEO Company | 11989 | /destin-seo-company/ | 12-destin-seo-company.pdf |
 | 13 | [x] done 2026-10-25 | Destin Social Media Company | 11942 | /destin-social-media-company/ | 13-destin-social-media-company.pdf |
-| 14 | [ ] | Destin Web Design Company | 12001 | /destin-webdesign-company/ | |
+| 14 | [x] done 2026-10-25 | Destin Web Design Company | 12001 | /destin-webdesign-company/ | 14-destin-webdesign-company.pdf (301 → /web-design/) |
 | 15 | [ ] | Fort Walton Beach SEO Company | 12093 | /fort-walton-beach-seo-company/ | |
 | 16 | [ ] | Fort Walton Beach Social Media Company | 12112 | /fort-walton-beach-social-media-company/ | |
 | 17 | [ ] | Fort Walton Beach Web Design Company | 12120 | /fort-walton-beach-web-design/ | |
