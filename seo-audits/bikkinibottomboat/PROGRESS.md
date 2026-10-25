@@ -6,7 +6,7 @@ Work top to bottom; mark `[x]` when the changelog is delivered.
 | # | Done | Page | WP ID | URL | Changelog |
 |---|------|------|-------|-----|-----------|
 | 1 | [x] | Homepage | 556 | / | pdf/01-homepage.pdf |
-| 2 | [ ] | Crab Island Tours | 599 | /crab-island-tours-in-destin-fl/ | |
+| 2 | [x] | Crab Island Tours | 599 | /crab-island-tours-in-destin-fl/ | pdf/02-crab-island-tours.pdf |
 | 3 | [ ] | Sunset & Dolphin Tour / Fireworks Cruise | 672 | /crab-island-tours-in-destin-fl-2/ | |
 | 4 | [ ] | Dolphin Tours in Destin FL | 1457 | /crab-island-tours-in-destin-fl-2-2-2-2/ | |
 | 5 | [ ] | FAQs | 2271 | /faqs/ | |
