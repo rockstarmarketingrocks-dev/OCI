@@ -35,7 +35,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 28 | [x] done 2026-10-25 | How to Start a YouTube Channel (post) | 12217 | /how-to-start-a-youtube-channel-everything-you-need-to-know/ | 28-post-youtube-channel.pdf |
 | 29 | [x] done 2026-10-25 | Instagram Account Step-by-Step Guide (post) | 12221 | /instagram-account-step-by-step-guide-to-getting-more-conversions-and-sales/ | 29-post-instagram-guide.pdf |
 | 30 | [x] done 2026-10-25 | Definitive Guide to Amazon Store (post) | 12246 | /definitive-guide-to-building-and-optimizing-your-amazon-store/ | 30-post-amazon-store.pdf |
-| 31 | [ ] | Destin AI Digital Marketing Company (post) | 12280 | /12280-2/ | |
+| 31 | [x] done 2026-10-25 | Destin AI Digital Marketing Company (post) | 12280 | /12280-2/ | 31-post-ai-marketing.pdf (move → /ai-marketing/ page) |
 | 32 | [ ] | Is an SEO Company the Breakthrough (post) | 12305 | /is-an-seo-company-the-breakthrough-your-business-needs/ | |
 | 33 | [ ] | Best Destin SEO Company: How to Choose (post) | 12308 | /best-destin-seo-company-how-to-choose-the-right-partner-for-your-business/ | |
 | 34 | [ ] | Portfolio item (1) | tbd | | |
@@ -64,3 +64,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - TOP OPPORTUNITY: Pensacola SEO cluster ≈1,130/mo, KD 2–9, CPC ~$24; site not in top 100. Organic only (no Pensacola address → no map pack; do NOT create virtual GBP address).
 - 2nd OPPORTUNITY: Pensacola web design cluster ≈910/mo, KD 5–34, CPC ~$15; not in top 100.
 - Privacy policy must be updated BEFORE enabling Meta Pixel / Ads remarketing / call tracking (PP-07).
+- AI: "ai seo services" 4,400/mo KD 34 → new page /ai-marketing/ (from post /12280-2/). Certifications need exact names/proof.
