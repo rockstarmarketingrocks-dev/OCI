@@ -1,0 +1,26 @@
+{
+  "id": 12023,
+  "type": "page",
+  "status": "publish",
+  "title": "Locations",
+  "slug": "locations",
+  "link": "https://rockstar-marketing.com/locations/",
+  "date": "2023-01-03 19:32:09",
+  "modified": "2023-01-03 19:42:41",
+  "parent": 0,
+  "menu_order": 0,
+  "author": 2,
+  "content": "<a href=\"https://rockstar-marketing.com/\">Locations</a>",
+  "excerpt": "",
+  "template": "",
+  "featured_media": 0,
+  "builder": "classic",
+  "terms": [],
+  "seo": {
+    "plugin": "aioseo",
+    "title": "",
+    "description": "",
+    "focus_keyword": ""
+  },
+  "edit_link": "https://rockstar-marketing.com/wp-admin/post.php?post=12023&action=edit"
+}

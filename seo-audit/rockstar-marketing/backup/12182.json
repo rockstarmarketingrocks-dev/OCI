@@ -1,0 +1,26 @@
+{
+    "id": 12182,
+    "type": "page",
+    "status": "publish",
+    "title": "Destin Florida",
+    "slug": "destin-florida",
+    "link": "https://rockstar-marketing.com/destin-florida/",
+    "date": "2023-01-09 16:02:34",
+    "modified": "2024-01-31 20:34:49",
+    "parent": 0,
+    "menu_order": 0,
+    "author": 2,
+    "content": "[vc_row row_type=\"row\" use_row_as_full_screen_section=\"no\" type=\"full_width\" oblique_section=\"no\" text_align=\"left\" Overflow=\"\" triangle_shape=\"no\" css_animation=\"\" overflow=\"\"][vc_column][vc_column_text]\r\n<h1>Destin, Florida</h1>\r\nAll about <a href=\"https://rockstar-marketing.com/locations\">Destin, Florida</a>\r\n\r\n[rs_weather location_id=\"3\"] [rs_about location_id=\"3\" hide_heading=\"NO\"] [rs_neighborhoods location_id=\"3\" hide_heading=\"NO\"] [rs_location_map location_id=\"3\" hide_heading=\"NO\"] [rs_thingstodo location_id=\"3\" hide_heading=\"NO\"] [rs_competitors_directions location_id=\"3\" hide_heading=\"NO\"]\r\n\r\n&nbsp;\r\n\r\n<a href=\"https://rockstar-marketing.com/\">Rockstar Marketing</a>[/vc_column_text][/vc_column][/vc_row]",
+    "excerpt": "",
+    "template": "",
+    "featured_media": 0,
+    "builder": "wpbakery",
+    "terms": [],
+    "seo": {
+        "plugin": "aioseo",
+        "title": "",
+        "description": "Destin is a city located in Okaloosa County, Florida. It is a principal city of the Crestview–Fort Walton Beach–Destin, Florida, metropolitan area.",
+        "focus_keyword": ""
+    },
+    "edit_link": "https://rockstar-marketing.com/wp-admin/post.php?post=12182&action=edit"
+}

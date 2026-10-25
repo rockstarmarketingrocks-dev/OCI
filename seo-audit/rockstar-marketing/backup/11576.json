@@ -1,0 +1,26 @@
+{
+  "id": 11576,
+  "type": "page",
+  "status": "publish",
+  "title": "Contact us",
+  "slug": "contact-us",
+  "link": "https://rockstar-marketing.com/contact-us/",
+  "date": "2017-01-23 05:27:29",
+  "modified": "2024-02-12 12:58:50",
+  "parent": 0,
+  "menu_order": 0,
+  "author": 2,
+  "content": "[vc_row row_type=\"row\" use_row_as_full_screen_section=\"no\" type=\"full_width\" oblique_section=\"no\" text_align=\"left\" Overflow=\"\" triangle_shape=\"no\" css_animation=\"\" overflow=\"\"][vc_column width=\"2/3\"][vc_column_text]\r\n<h1>Contact Us</h1>\r\n&nbsp;\r\n\r\n[quform id=\"1\" name=\"Contact us\"][/vc_column_text][/vc_column][vc_column width=\"1/3\"][vc_column_text]\r\n<h2>Rockstar Marketing</h2>\r\n<div class=\"textwidget\">\r\n\r\n📍 385 Harbor Blvd Suite 200\r\n📍 Destin, Florida 32541\r\n\r\n&nbsp;\r\n\r\n📞 1-(850)-542-3091\r\n📞 1-(855)-545-3669\r\n\r\n&nbsp;\r\n\r\n📩 info@rockstar-marketing.com\r\n\r\n&nbsp;\r\n\r\n<strong>🕘 Monday:</strong> 9am - 5pm\r\n<strong>🕘 Tuesday:</strong> 9am - 5pm\r\n<strong>🕘 Wednesday:</strong> 9am - 5pm\r\n<strong>🕘 Thursday:</strong> 9am - 5pm\r\n<strong>🕘 Friday:</strong> 9am - 5pm\r\n<strong>🕘 Saturday:</strong> Call us\r\n<strong>🕘 Sunday:</strong> Closed\r\n\r\n</div>\r\n[/vc_column_text][/vc_column][/vc_row][vc_row row_type=\"row\" use_row_as_full_screen_section=\"no\" type=\"full_width\" oblique_section=\"no\" text_align=\"left\" Overflow=\"\" triangle_shape=\"no\" css_animation=\"\" overflow=\"\"][vc_column width=\"2/3\"][vc_column_text]<iframe style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13765.943810685601!2d-86.5018264!3d30.3939516!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d979d2fd190a0a7!2sRockstar+Marketing!5e0!3m2!1sen!2sus!4v1485149955641\" width=\"1100\" height=\"450\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>[/vc_column_text][/vc_column][vc_column width=\"1/3\"][/vc_column][/vc_row]",
+  "excerpt": "",
+  "template": "",
+  "featured_media": 0,
+  "builder": "wpbakery",
+  "terms": [],
+  "seo": {
+    "plugin": "aioseo",
+    "title": "",
+    "description": "Rockstar Marketing is a Destin, Fort Walton Beach and Niceville, Florida Social Media, Search Engine Optimization, Video Marketing and Web Design Company.",
+    "focus_keyword": ""
+  },
+  "edit_link": "https://rockstar-marketing.com/wp-admin/post.php?post=11576&action=edit"
+}

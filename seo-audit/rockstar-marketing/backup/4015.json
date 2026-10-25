@@ -1,0 +1,26 @@
+{
+  "id": 4015,
+  "type": "page",
+  "status": "publish",
+  "title": "Clients",
+  "slug": "clients",
+  "link": "https://rockstar-marketing.com/clients/",
+  "date": "2015-09-08 13:59:03",
+  "modified": "2022-09-13 21:20:42",
+  "parent": 0,
+  "menu_order": 0,
+  "author": 1,
+  "content": "[vc_row row_type=\"row\" use_row_as_full_screen_section=\"no\" type=\"grid\" oblique_section=\"no\" text_align=\"center\" Overflow=\"\" triangle_shape=\"no\" padding_top=\"110\" css_animation=\"\" overflow=\"\" box_shadow_on_row=\"no\"][vc_column][no_separator_with_icon border_style=\"solid\" color=\"#e8001e\" width=\"300\" thickness=\"2\" up=\"0\" down=\"20px\" type=\"with_custom_icon\" separator_icon_position=\"center\" custom_icon=\"11730\"][vc_raw_html]JTI2bmJzcCUzQg==[/vc_raw_html][vc_raw_html]JTI2bmJzcCUzQg==[/vc_raw_html][/vc_column][/vc_row][vc_row row_type=\"row\" use_row_as_full_screen_section=\"no\" type=\"full_width\" oblique_section=\"no\" text_align=\"left\" Overflow=\"\" triangle_shape=\"no\" css_animation=\"\" overflow=\"\"][vc_column][vc_gallery type=\"image_grid\" images=\"11692,11693,11683,11691,11689,11684,11680,11694,11825,11837,11677,11682,11827,11833,11686,11688,11678,11676,11674,11673,11824,11690,11835,11834,11830\" img_size=\"350x350\" column_number=\"5\" grayscale=\"no\" hover_icon=\"none\" images_space=\"gallery_with_space\"][/vc_column][/vc_row]",
+  "excerpt": "",
+  "template": "full_width.php",
+  "featured_media": 0,
+  "builder": "wpbakery",
+  "terms": [],
+  "seo": {
+    "plugin": "aioseo",
+    "title": "#post_title#separator_sa #site_title",
+    "description": "Rockstar Marketing is a Destin, Fort Walton Beach and Niceville, Florida Social Media, Search Engine Optimization, Video Marketing and Web Design Company.",
+    "focus_keyword": ""
+  },
+  "edit_link": "https://rockstar-marketing.com/wp-admin/post.php?post=4015&action=edit"
+}
