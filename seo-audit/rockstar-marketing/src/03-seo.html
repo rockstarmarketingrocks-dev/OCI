@@ -1,0 +1,182 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – SEO Services</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Search Engine Optimization</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/seo/</b> &nbsp;·&nbsp; WP ID 11538 &nbsp;·&nbsp; Builder: WPBakery &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Last modified in WP: 2022-09-13 &nbsp;·&nbsp; Page 3 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> This is the core money page for the service you're best known for, but it reads like a 2015 brochure. There's no H1 in the content, the only heading is an all-caps H4, there are 0 internal links, and it never explains what's included in your SEO service. Semrush: <b>#2 "destin search engine optimization"</b>, #1 "santa rosa beach internet marketing agency", and only #54–75 for "seo destin", "seo destin fl" and "seo company destin fl" (those go to Home). The plan: make this page the definitive <b>"SEO services in Destin"</b> page (what we do, how, for whom, proof, FAQ). Home keeps "Destin SEO company" and this page takes "SEO services / search engine optimization".
+<br><br><b>Useful find:</b> this page has your NAP: <b>Rockstar Marketing, 385 Harbor Blvd Suite 200, Destin, FL 32541, (850) 542-3091</b>. Use it to fill the [PHONE] placeholders in the Home and Services reports, and in schema site-wide.
+</div>
+<p class="small"><b>Method note:</b> the live site can't be reached from the audit environment. Data comes from WordPress (connector), AIOSEO and Semrush US. <i>Verify live</i> = check in the browser.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>H1 / headings</td><td>The content has no H1. The only heading is the H4 "WE ARE AN ADVANCED SEARCH ENGINE OPTIMIZATION COMPANY". The theme title "Search Engine Optimization" is probably the H1 (<i>verify live</i>). New H1: <b>"SEO Services in Destin, Florida"</b>, with a full H2/H3 outline (§3).</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>No service substance</td><td>The page never says what the SEO service includes. Add H3 sections for technical SEO, keyword and on-page work, local SEO/GBP, content, link building, AI search visibility and reporting. This is the biggest ranking and conversion gap on the page.</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Intralinking</td><td>0 internal links. Add links to the city SEO pages, Social, Video, Web Design, Services hub, Clients, FAQ and Contact (§4).</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>SEO title</td><td>Empty (falls back to the site default). New: <b>"SEO Services in Destin, FL | Rockstar Marketing"</b> (47).</td></tr>
+<tr><td>5</td><td><span class="p1">P1</span></td><td>Brand risk</td><td>"Playboy Models" in the client list hurts trust with doctors, lawyers and other B2B prospects named in the same sentence. Remove it, or replace it with "entertainers and public figures".</td></tr>
+<tr><td>6</td><td><span class="p1">P1</span></td><td>Keyword stuffing</td><td>The centered list of 29 cities includes out-of-area cities (Mobile, Tampa, Jacksonville, Nashville, Dallas, New Orleans…) with no context or links, which looks like doorway/stuffing. Replace it with a linked service-area block and one sentence about national clients.</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Outdated copy</td><td>"Google, Bing, Yahoo and MSN" (MSN Search is now Bing), "weekly webinars", and the unsupported "worldwide leader". The text never mentions Google Business Profile, AI Overviews or ChatGPT search. Rewrite (§5).</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Builder junk</td><td>Six <code>vc_raw_html</code> blocks that only contain <code>&amp;nbsp;</code> (base64 "JTI2bmJzcCUzQg=="), used as spacers, plus 3 empty text blocks and an empty final row. Delete them all and use row padding instead.</td></tr>
+<tr><td>9</td><td><span class="p2">P2</span></td><td>Meta description</td><td>123 characters, generic, and it says "Niceville" though Niceville appears nowhere on the page. Rewrite (§2).</td></tr>
+<tr><td>10</td><td><span class="p2">P2</span></td><td>NAP &amp; schema</td><td>NAP is plain text with a nonstandard phone format, "1 (850)-542-3091". Use "(850) 542-3091" as a <code>tel:+18505423091</code> link, and add <code>Service</code> (serviceType "Search Engine Optimization") + <code>FAQPage</code> + <code>BreadcrumbList</code> schema.</td></tr>
+<tr><td>11</td><td><span class="p2">P2</span></td><td>Images</td><td>Logo strip: the 300px thumbnail is stretched to 600px with no alt text. The certification image <code>cert-300x32.jpg</code> has <code>alt=""</code>. Both use http://. Fix the size, add alt text, switch to https.</td></tr>
+<tr><td>12</td><td><span class="p3">P3</span></td><td>Copy errors</td><td>"you've come to the right place, a place." (cut off), "help your websites ranking" → "website's", random Title Case ("New Cutting Edge"), questions without question marks.</td></tr>
+<tr><td>13</td><td><span class="p3">P3</span></td><td>Proof</td><td>The Home page claims "ranked a keyword for 1 billion searches". Add 2–3 short SEO case results here (client type, keyword, position, lead increase) and a review.</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>(empty → site default)</td><td><b>SEO Services in Destin, FL | Rockstar Marketing</b></td></tr>
+<tr><td>Meta description</td><td>Rockstar Marketing is a Destin, Fort Walton Beach and Niceville, Florida Advanced Search Engine Optimization (SEO) Company. (123)</td><td><b>Local and national SEO services from Destin, FL. Technical SEO, Google Business Profile, content and links that get you on page one. Free SEO audit.</b> (147)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>SEO Services Destin</td></tr>
+<tr><td>Additional keyphrases</td><td>none</td><td>Destin search engine optimization · local SEO Destin FL · SEO agency Destin</td></tr>
+<tr><td>H1</td><td>Theme title "Search Engine Optimization" (<i>verify</i>)</td><td>SEO Services in Destin, Florida</td></tr>
+<tr><td>Slug</td><td>/seo/</td><td>Keep it (short, ranks #2 already).</td></tr>
+<tr><td>OG image</td><td>none</td><td>1200×630 "SEO Services – Destin, FL"</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td class="small">(H1 = theme title, <i>verify</i>)<br>H4 – WE ARE AN ADVANCED SEARCH ENGINE OPTIMIZATION COMPANY<br><i>No other headings</i></td><td class="small">
+<b>H1</b> – SEO Services in Destin, Florida<br>
+<b>H2</b> – What's Included in Our SEO Services<br>
+&nbsp;&nbsp;<b>H3</b> – Technical SEO Audits &amp; Fixes<br>
+&nbsp;&nbsp;<b>H3</b> – Keyword Research &amp; On-Page Optimization<br>
+&nbsp;&nbsp;<b>H3</b> – Local SEO &amp; Google Business Profile<br>
+&nbsp;&nbsp;<b>H3</b> – SEO Content Writing<br>
+&nbsp;&nbsp;<b>H3</b> – Link Building<br>
+&nbsp;&nbsp;<b>H3</b> – AI Search &amp; Answer Engine Optimization<br>
+&nbsp;&nbsp;<b>H3</b> – Monthly Reporting<br>
+<b>H2</b> – Local SEO vs. National SEO<br>
+<b>H2</b> – Our SEO Process<br>
+&nbsp;&nbsp;<b>H3</b> ×4 – Audit · Strategy · Optimize · Measure<br>
+<b>H2</b> – Why Choose Rockstar Marketing for SEO<br>
+<b>H2</b> – SEO Services Across the Emerald Coast<br>
+<b>H2</b> – SEO FAQ<br>
+&nbsp;&nbsp;<b>H3</b> ×5 – questions<br>
+<b>H2</b> – Get a Free SEO Audit <i>(CTA + NAP)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:40%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>Destin SEO company</td><td>/ (Home)</td><td>Intro (supports Home's #1)</td></tr>
+<tr><td>local SEO in Destin</td><td>/destin-seo-company/</td><td>Local SEO H3 + Areas</td></tr>
+<tr><td>Fort Walton Beach SEO</td><td>/fort-walton-beach-seo-company/</td><td>Areas</td></tr>
+<tr><td>Santa Rosa Beach SEO</td><td>/santa-rosa-beach-seo-company/</td><td>Areas</td></tr>
+<tr><td>Pensacola SEO</td><td>/pensacola-seo-company/</td><td>Areas</td></tr>
+<tr><td>website built for SEO</td><td>/web-design/</td><td>Technical H3</td></tr>
+<tr><td>YouTube SEO and video marketing</td><td>/video-marketing/</td><td>Content H3</td></tr>
+<tr><td>social media marketing</td><td>/social-media/</td><td>Why us</td></tr>
+<tr><td>all our digital marketing services</td><td>/services/</td><td>Why us</td></tr>
+<tr><td>SEO results for our clients</td><td>/clients/</td><td>Why us</td></tr>
+<tr><td>more SEO questions</td><td>/faq/</td><td>FAQ</td></tr>
+<tr><td>Get My Free SEO Audit</td><td>/contact-us/</td><td>2 CTAs</td></tr>
+<tr><td><b>Inbound:</b> "SEO services"</td><td>/seo/ ← from Home (SEO H3), Services, every city SEO page</td><td>other pages</td></tr>
+</table>
+
+<h2 class="pb">5. Rewritten Page Content (ready to paste)</h2>
+<p class="small">About 1,250 words. Uses your real NAP. Any result figures need your own numbers; I left [placeholders] instead of inventing them.</p>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>SEO Services in Destin, Florida</b></p>
+<p><span class="tag">&lt;p&gt;</span> Rockstar Marketing is a <a>Destin SEO company</a> that gets businesses found on Google, in the map pack, and now in AI search results. We handle local and national search engine optimization from start to finish (technical fixes, content, Google Business Profile and links) and report on what matters: rankings, traffic, calls and leads. <span class="small">[→ /]</span></p>
+<p><span class="tag">&lt;p&gt;</span> First and foremost, we're a search marketing company that happens to build websites, not a web design shop trying its hand at SEO. And we only use ethical, Google-compliant methods, so the rankings we earn last and your site is never at risk of a penalty.</p>
+<p><span class="tag">button</span> [Get a Free SEO Audit] → /contact-us/ &nbsp; [Call (850) 542-3091] → tel:+18505423091</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>What's Included in Our SEO Services</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Technical SEO Audits &amp; Fixes</b> <span class="tag">&lt;p&gt;</span> We crawl your site the way Google does and fix what holds it back: speed and Core Web Vitals, mobile usability, indexing, broken links, redirects, duplicate content and schema markup. Need a new <a>website built for SEO</a>? We do that too. <span class="small">[→ /web-design/]</span></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Keyword Research &amp; On-Page Optimization</b> <span class="tag">&lt;p&gt;</span> We find the searches your customers actually use, map one primary keyword to each page, and optimize titles, headings, copy, images and internal links so every page has a clear job.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Local SEO &amp; Google Business Profile</b> <span class="tag">&lt;p&gt;</span> For businesses that serve a local area, the map pack is where most of the calls come from. We optimize your Google Business Profile, build consistent citations, grow reviews and create city pages, the same <a>local SEO in Destin</a> that keeps our own site at the top. <span class="small">[→ /destin-seo-company/]</span></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>SEO Content Writing</b> <span class="tag">&lt;p&gt;</span> Service pages, location pages, blog posts and FAQs written to rank and to convert. We also optimize video through <a>YouTube SEO and video marketing</a>. <span class="small">[→ /video-marketing/]</span></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Link Building</b> <span class="tag">&lt;p&gt;</span> We earn links from relevant local and industry websites through partnerships, PR and content worth citing, never from link farms or private blog networks.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>AI Search &amp; Answer Engine Optimization</b> <span class="tag">&lt;p&gt;</span> More people now get answers from Google's AI Overviews, ChatGPT and Perplexity. We structure your content, schema and brand mentions so AI tools understand your business and cite you as a source.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Monthly Reporting</b> <span class="tag">&lt;p&gt;</span> Every month you get a clear report on keyword rankings, organic traffic, calls, form leads and the work we completed. No smoke and mirrors.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Local SEO vs. National SEO</b><br>
+<span class="tag">&lt;p&gt;</span> <b>Local SEO</b> is for businesses that serve customers in a specific area, like restaurants, contractors, attorneys, medical practices and vacation rentals on the Emerald Coast. It focuses on the map pack and "near me" searches. <b>National SEO</b> is for brands, eCommerce stores and service companies that sell across the U.S., and it focuses on organic rankings for competitive keywords. We do both, and many clients need a mix.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Our SEO Process</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>1. Audit</b> <span class="tag">&lt;p&gt;</span> A full technical, content, local and competitor review.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>2. Strategy</b> <span class="tag">&lt;p&gt;</span> A keyword map and a 90-day plan prioritized by revenue impact.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>3. Optimize</b> <span class="tag">&lt;p&gt;</span> Our team carries out the fixes, content and link building every month.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>4. Measure</b> <span class="tag">&lt;p&gt;</span> We track rankings, traffic and conversions in GA4 and Search Console, then refine the plan.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Why Choose Rockstar Marketing for SEO</b><br>
+<span class="tag">&lt;p&gt;</span> Pro athletes, entertainers, country and rock bands, doctors, lawyers and small business owners have trusted us to get them on the first page of Google. We've ranked a keyword with more than 1 billion searches on the front page, and our own site ranks #1 in Google for "Destin SEO company". We combine SEO with <a>social media marketing</a> and video, so your visibility compounds across every channel. See <a>all our digital marketing services</a> and <a>SEO results for our clients</a>. <span class="small">[→ /social-media/, /services/, /clients/]</span></p>
+<p><span class="tag">ADD</span> 2–3 case results: "[Client type] – #[pos] for '[keyword]' – +[X]% leads in [N] months" + 1 Google review.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>SEO Services Across the Emerald Coast</b><br>
+<span class="tag">&lt;p&gt;</span> From our Destin office we provide <a>local SEO in Destin</a>, <a>Fort Walton Beach SEO</a>, <a>Santa Rosa Beach and 30A SEO</a> and <a>Pensacola SEO</a>, and we serve Miramar Beach, Niceville, Crestview, Navarre, Gulf Breeze and Panama City Beach. We also run national SEO campaigns for clients across the Southeast and the rest of the U.S.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>SEO FAQ</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>How long does SEO take?</b> <span class="tag">&lt;p&gt;</span> Expect early movement in 60–90 days and significant lead growth in 4–6 months. Highly competitive keywords can take 6–12 months.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>How much do SEO services cost?</b> <span class="tag">&lt;p&gt;</span> It depends on your market and goals. Local campaigns start at [$X]/month. We'll give you a fixed quote after your free audit.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Do you guarantee first-page rankings?</b> <span class="tag">&lt;p&gt;</span> No ethical SEO company can guarantee rankings, because Google controls them. What we guarantee is transparent work, monthly reporting and a strategy built on what has worked for our clients for years.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Do I need to sign a long-term contract?</b> <span class="tag">&lt;p&gt;</span> [Your policy, e.g. month-to-month after an initial 3-month term.]</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Will SEO help me show up in ChatGPT and AI Overviews?</b> <span class="tag">&lt;p&gt;</span> Yes. The same signals that build Google rankings, clear content, structured data and authoritative mentions, are what AI search tools draw on. We optimize for both. <a>More SEO questions</a>. <span class="small">[→ /faq/]</span></p>
+
+<p><span class="tag">CTA band &lt;h2&gt;</span> <b>Get a Free SEO Audit</b><br>
+<span class="tag">&lt;p&gt;</span> See exactly why competitors outrank you, and the plan to pass them.<br>
+<span class="tag">button</span> [Get My Free SEO Audit] → /contact-us/<br>
+<span class="tag">&lt;p&gt; NAP</span> <b>Rockstar Marketing</b> · 385 Harbor Blvd, Suite 200, Destin, FL 32541 · <a>(850) 542-3091</a></p>
+</div>
+
+<h3>Image alt text</h3>
+<table>
+<tr><th>Image</th><th>Alt</th><th>Action</th></tr>
+<tr><td>logos-300x25.jpg (11596)</td><td>Search engines and platforms we optimize for</td><td>Use full-size image, https</td></tr>
+<tr><td>cert-300x32.jpg (11590)</td><td>[Name of the certifications shown, e.g. Google Partner]</td><td>https; link to the credential if it can be verified</td></tr>
+<tr><td>Separator icon 11785</td><td>(decorative, alt="")</td><td>Fine as is</td></tr>
+<tr><td>NEW: SEO results chart or screenshot</td><td>Google ranking report for a Destin client</td><td>Add next to case results</td></tr>
+</table>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Lead events</td><td><code>cta_click</code> (cta_location = seo_top / seo_bottom), <code>phone_call_click</code> on the tel: link, and <code>generate_lead</code> with <code>service = seo</code> passed in a hidden Quform field. That way GA4 can attribute leads to the SEO service.</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Search Console</td><td>Track the page in GSC: queries "destin search engine optimization", "seo services destin", "local seo destin". Set a baseline before the rewrite and compare after 28 and 90 days.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Rank tracking</td><td>Add the page's keywords to a Semrush Position Tracking project (Destin, FL location) so you can see map-pack and organic movement weekly.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>FAQ engagement</td><td>If the FAQ is an accordion, fire <code>faq_open</code> with the question text. This shows which objections matter most to prospects.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Spacer HTML blocks</td><td>Delete the 6 <code>vc_raw_html</code> &amp;nbsp; blocks, the 3 empty text blocks and the 2 empty rows. They add DOM weight and empty markup.</td></tr>
+<tr><td><span class="p1">P1</span></td><td>H1 duplication</td><td>When you add the content H1, turn off the theme title (or set the page title to the H1). Make sure there's only one H1.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Schema</td><td><code>Service</code> {serviceType: "Search Engine Optimization", provider: #organization, areaServed: [cities]} + <code>FAQPage</code> + <code>BreadcrumbList</code>. Reference the site-wide <code>ProfessionalService</code> entity (NAP above) by @id, rather than defining it again.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>NAP consistency</td><td>Use the identical NAP format everywhere: site footer, GBP, Facebook, Yelp, BBB and citations. Today's format, "1 (850)-542-3091", is nonstandard.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Mixed content</td><td>Two images use http://. Covered by the site-wide search-replace (Home H-13).</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Freshness</td><td>Last modified 2022. After the rewrite, add a visible "Updated [month year]" line (optional) and resubmit the URL in GSC.</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>SEO-01</td><td>Add</td><td>H1 "SEO Services in Destin, Florida"; remove the H4; single H1</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-02</td><td>Change</td><td>SEO title → "SEO Services in Destin, FL | Rockstar Marketing"</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-03</td><td>Change</td><td>New meta description (147); focus keyphrase "SEO Services Destin" + 3 secondary</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-04</td><td>Rewrite</td><td>Full copy (~1,250 words): 7 service H3s, local vs national, process, why us, areas, FAQ, CTA</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-05</td><td>Remove</td><td>"Playboy Models", "MSN", "worldwide leader", truncated "a place." sentence</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-06</td><td>Replace</td><td>29-city unlinked list (incl. out-of-state) → linked Emerald Coast block + national sentence</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-07</td><td>Add</td><td>~14 internal links (Home, 4 city SEO pages, service pages, Services, Clients, FAQ, Contact)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-08</td><td>Remove</td><td>6 &amp;nbsp; raw-HTML spacer blocks, 3 empty text blocks, 2 empty rows</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-09</td><td>Fix</td><td>NAP phone format + tel: link; https images; alt text on 2 images</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-10</td><td>Add</td><td>Service + FAQPage + BreadcrumbList schema</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-11</td><td>Add</td><td>2–3 SEO case results + review; OG image</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-12</td><td>Tracking</td><td>cta_click, phone_call_click, generate_lead (service=seo), faq_open; GSC baseline; Semrush position tracking</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>SEO-13</td><td>Cross-page</td><td>Use NAP (385 Harbor Blvd Ste 200, Destin FL 32541, (850) 542-3091) for [PHONE] in the Home &amp; Services reports and in site schema</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: Social Media (/social-media/)</b></p>
+</body></html>

@@ -7,7 +7,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 |---|--------|------|-------|-----|--------|
 | 1 | [x] done 2026-10-25 | Home | 6057 | / | 01-home.pdf |
 | 2 | [x] done 2026-10-25 | Services | 11534 | /services/ | 02-services.pdf |
-| 3 | [ ] | Search Engine Optimization | 11538 | /seo/ | |
+| 3 | [x] done 2026-10-25 | Search Engine Optimization | 11538 | /seo/ | 03-seo.pdf |
 | 4 | [ ] | Social Media | 11541 | /social-media/ | |
 | 5 | [ ] | Video Marketing | 11544 | /video-marketing/ | |
 | 6 | [ ] | Web Design | 11546 | /web-design/ | |
@@ -42,3 +42,6 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - 12 pages have no custom SEO title; 21 have no focus keyphrase.
 - Services hub: future pages backlog = PPC Management, Online Reputation Management, GBP Optimization, Niceville location page.
 - Burst theme likely prints page title as H1 – check every classic-editor page for missing/duplicate H1.
+- NAP (from /seo/): Rockstar Marketing, 385 Harbor Blvd Suite 200, Destin, FL 32541, (850) 542-3091 → use for [PHONE] placeholders + schema.
+- Keyword ownership: Home = "Destin SEO company"; /seo/ = "SEO services Destin / Destin search engine optimization"; /services/ = "digital marketing services Destin".
+- WPBakery pages contain base64 &nbsp; vc_raw_html spacer blocks – check each.
