@@ -1,0 +1,161 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – FAQ</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: FAQ</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/faq/</b> &nbsp;·&nbsp; WP ID 12060 &nbsp;·&nbsp; Builder: WPBakery (single text block) &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Last modified in WP: 2025-07-30 &nbsp;·&nbsp; Page 11 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> This is the <b>best content on the site</b>: about 4,000 words and roughly 70 clear, current answers (AI search, Apple/Bing Maps, Google Business Profile, local SEO). It doesn't need a rewrite; it needs <b>structure</b>. Every question is a bold <code>&lt;span&gt;</code> instead of a heading, so neither Google nor AI engines can split the page into answerable chunks. There's no H1 in the content, no table of contents, no FAQPage schema, and only 4 internal links on a page that mentions every service and city. It also carries leftover ChatGPT paste attributes (<code>data-start</code>/<code>data-end</code>) and hundreds of inline <code>color:#000000</code> spans. Semrush shows it ranking #25–27 for "destin search engine optimization", "santa rosa beach seo" and "seo company destin fl". That's mild cannibalization of /seo/ and Home; the fix is to point those signals at the right pages with links.
+</div>
+<p class="small"><b>Method note:</b> the live site can't be reached from the audit environment. Data comes from WordPress (connector), AIOSEO and Semrush US. <i>Verify live</i> = check in the browser.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>Questions not headings</td><td>Turn all ~70 questions from <code>&lt;span&gt;&lt;strong&gt;</code> / <code>&lt;p&gt;&lt;strong&gt;</code> into <b>H3</b>s under their category H2. This is the single biggest improvement: it makes each Q&amp;A extractable for featured snippets, AI Overviews and ChatGPT/Perplexity citations.</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>H1</td><td>No H1 in the content. The theme title "FAQ" is probably the only one (<i>verify</i>). Set it to <b>"Digital Marketing FAQ: SEO, Social Media, AI &amp; Web Design"</b>.</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Meta</td><td>SEO title empty. The description is the first sentence of an <i>old</i> version ("SEO is a powerful method to amplify…"), which no longer appears on the page. New values in §2.</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>Intralinking</td><td>Only 4 links (web design, SEO, social, YouTube). Add 1 contextual link per relevant answer, about 25 in total (§4). Each answer should end by pointing to the service page that sells that answer.</td></tr>
+<tr><td>5</td><td><span class="p1">P1</span></td><td>Schema</td><td>Add <code>FAQPage</code> JSON-LD (AIOSEO Pro FAQ block or a custom script). Note: since 2023 Google only shows FAQ rich results for government and health sites, but the markup still helps Google and AI engines map questions to answers. Don't add FAQ schema for the same questions on the service pages too; keep each Q&amp;A pair marked up once.</td></tr>
+<tr><td>6</td><td><span class="p2">P2</span></td><td>Table of contents</td><td>A 4,000-word page needs jump links. Add a TOC after the intro, linking to each category H2 (<code>id="seo"</code>, <code>id="ai-marketing"</code>, …). AIOSEO has a TOC block, or add anchors manually.</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Markup clean-up</td><td>Remove ~150 <code>&lt;span style="color: #000000;"&gt;</code> wrappers (let the theme set the colour), all <code>data-start/data-end</code> attributes (ChatGPT paste residue), <code>&lt;br data-…&gt;</code> tags, and the empty <code>&lt;strong&gt; &lt;/strong&gt;</code> inside the "AI Marketing" H2.</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>"GEO SEO" terminology</td><td>In 2025–26 "GEO" usually means <b>Generative Engine Optimization</b> (AI search). Your section uses it to mean geographic/local SEO, which will confuse prospects who search for GEO. Rename the section "Local SEO FAQs". Optionally add a short "What is GEO (Generative Engine Optimization)?" Q&amp;A to the AI section, since you offer it.</td></tr>
+<tr><td>9</td><td><span class="p2">P2</span></td><td>Accuracy</td><td>"Over 80% of local customers use Google…" has no source; cite one or soften it to "Most local customers". "Apple Maps pulls reviews from Yelp" is only part of the story: Apple Maps also has its own ratings and photos via Apple Business Connect. "WordPress powers over 40%" is fine (W3Techs ≈ 43%).</td></tr>
+<tr><td>10</td><td><span class="p2">P2</span></td><td>Missing buyer questions</td><td>The page has no answers on price, contracts, reporting, onboarding or results timelines for social and web. Add the 7 questions in §5.</td></tr>
+<tr><td>11</td><td><span class="p2">P2</span></td><td>Cannibalization</td><td>The FAQ ranks #25–27 for SEO-company terms. Link the SEO answers to /seo/ ("SEO services") and Home ("Destin SEO company"), and keep commercial phrases out of the FAQ's title and H1.</td></tr>
+<tr><td>12</td><td><span class="p3">P3</span></td><td>Accordion UX</td><td>Optional: show answers in an accessible accordion (button + aria-expanded), with all answers in the HTML at load (not fetched later) so they stay indexable.</td></tr>
+<tr><td>13</td><td><span class="p3">P3</span></td><td>Locations answer</td><td>The "What locations do you serve?" answer lists 13 towns with no links. Link the 5 city hubs and /locations/.</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>(empty → site default)</td><td><b>Digital Marketing FAQ: SEO, Social Media &amp; AI | Rockstar Marketing</b> (64)</td></tr>
+<tr><td>Meta description</td><td>What is SEO? SEO is a powerful method to amplify the visibility of your website on search engines. It allows you to refine your content and other elements (outdated)</td><td><b>Straight answers on SEO, AI search, social media, YouTube, Google Business Profile, Apple &amp; Bing Maps and web design from our Destin, FL team.</b> (144)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>digital marketing FAQ</td></tr>
+<tr><td>H1</td><td>Theme title "FAQ" (<i>verify</i>)</td><td>Digital Marketing FAQ: SEO, Social Media, AI &amp; Web Design</td></tr>
+<tr><td>Slug</td><td>/faq/</td><td>Keep it</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td class="small">
+H2 – SEO (Search Engine Optimization)<br>
+H2 – [empty strong] AI Marketing<br>
+H2 – YouTube Marketing<br>
+H2 – Social Media Marketing<br>
+H2 – Google Business Profile (GBP)<br>
+H2 – Press Releases &amp; Blogging<br>
+H2 – Web Design &amp; WordPress<br>
+H2 – General Internet Marketing<br>
+H2 – Bing Maps &amp; Apple Maps – FAQs for Local Businesses<br>
+H2 – GEO-Optimized SEO FAQs for Local Business Visibility<br>
+<i>~70 questions = bold text, not headings</i></td><td class="small">
+<b>H1</b> – Digital Marketing FAQ: SEO, Social Media, AI &amp; Web Design<br>
+<i>Intro + TOC</i><br>
+<b>H2</b> – SEO (Search Engine Optimization) → 10 × <b>H3</b><br>
+<b>H2</b> – Local SEO <i>(renamed from "GEO-Optimized SEO", moved up)</i> → 12 × <b>H3</b><br>
+<b>H2</b> – Google Business Profile → 5 × <b>H3</b><br>
+<b>H2</b> – Apple Maps &amp; Bing Places → 7 × <b>H3</b><br>
+<b>H2</b> – AI Marketing &amp; AI Search → 10 + 1 new × <b>H3</b><br>
+<b>H2</b> – Social Media Marketing → 5 × <b>H3</b><br>
+<b>H2</b> – YouTube &amp; Video Marketing → 5 × <b>H3</b><br>
+<b>H2</b> – Web Design &amp; WordPress → 5 × <b>H3</b><br>
+<b>H2</b> – Blogging &amp; Press Releases → 5 × <b>H3</b><br>
+<b>H2</b> – Working With Rockstar Marketing <i>(new: pricing, contracts…)</i> → 7 × <b>H3</b><br>
+<b>H2</b> – General Internet Marketing → 6 × <b>H3</b><br>
+<b>H2</b> – Still Have Questions? <i>(CTA)</i>
+</td></tr>
+</table>
+<p class="small">The order moves local topics (Local SEO, GBP, Maps) up next to SEO, because that's where local buyer intent is strongest.</p>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:44%">Answer (question)</th><th>Add link (anchor → URL)</th></tr>
+<tr><td>What is SEO, and why does my business need it?</td><td>SEO services → /seo/</td></tr>
+<tr><td>Will I rank #1 on Google?</td><td>Destin SEO company → / (Home) <span class="small">("we rank #1 for 'Destin SEO company' ourselves")</span></td></tr>
+<tr><td>What's the difference between SEO and Google Ads?</td><td>digital marketing services → /services/</td></tr>
+<tr><td>Do I need to blog to help my SEO? / What should I blog about?</td><td>our blog → /latest/</td></tr>
+<tr><td>Can social media help with SEO?</td><td>social media marketing → /social-media/</td></tr>
+<tr><td>Can you help my business show up in AI tools like ChatGPT?</td><td>AI search optimization → /seo/#ai-search (anchor on the new SEO page)</td></tr>
+<tr><td>Why should my business be on YouTube? / Can YouTube help me show up in Google?</td><td>video marketing / YouTube SEO → /video-marketing/</td></tr>
+<tr><td>Can you manage my social media for me?</td><td>social media management → /social-media/</td></tr>
+<tr><td>Can you optimize my profile? (GBP)</td><td>local SEO in Destin → /destin-seo-company/</td></tr>
+<tr><td>What makes a good website? / Why WordPress?</td><td>Destin web design → /web-design/</td></tr>
+<tr><td>What makes Rockstar Marketing different?</td><td>about our team → /about-us/ · client results → /clients/</td></tr>
+<tr><td>What locations do you serve?</td><td>Destin · Fort Walton Beach · Santa Rosa Beach · Pensacola · Miramar Beach city pages · all areas → /locations/</td></tr>
+<tr><td>How do I get my business to show up in nearby cities?</td><td>Fort Walton Beach SEO → /fort-walton-beach-seo-company/ · Santa Rosa Beach SEO → /santa-rosa-beach-seo-company/</td></tr>
+<tr><td>Should my business have individual pages for each city?</td><td>see how we do it → /locations/</td></tr>
+<tr><td>Still have questions? (CTA)</td><td>Contact us → /contact-us/</td></tr>
+<tr><td><b>Inbound</b></td><td>/faq/ ← every service-page FAQ ("more questions"), Home, Services, Contact ("read our FAQ"), all already in the rewrites</td></tr>
+</table>
+
+<h2 class="pb">5. Content to Add / Rewrite</h2>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Digital Marketing FAQ: SEO, Social Media, AI &amp; Web Design</b></p>
+<p><span class="tag">&lt;p&gt; intro</span> Straight answers to the questions business owners ask us most, from how SEO works and how to show up in ChatGPT to getting on Apple Maps and what a website should cost. Don't see your question? <a>Ask us</a>. <span class="small">[→ /contact-us/]</span></p>
+<p><span class="tag">TOC</span> SEO · Local SEO · Google Business Profile · Apple &amp; Bing Maps · AI Marketing · Social Media · YouTube &amp; Video · Web Design · Blogging &amp; PR · Working With Us · General</p>
+
+<p><span class="tag">NEW &lt;h2&gt;</span> <b>Working With Rockstar Marketing</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>How much do your services cost?</b> <span class="tag">&lt;p&gt;</span> It depends on your goals and market. Local SEO plans start at [$X]/month, social media management at [$Y]/month, and websites from [$Z]. Every quote is fixed and explained up front, after a free audit.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Do I have to sign a long-term contract?</b> <span class="tag">&lt;p&gt;</span> [Your policy, e.g. "SEO starts with a 3-month commitment, then month-to-month. Websites are a one-time project."]</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>How will I know it's working?</b> <span class="tag">&lt;p&gt;</span> You'll get a monthly report on rankings, website traffic, calls, form leads and social growth, plus a call to go over it.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>What do you need from me to get started?</b> <span class="tag">&lt;p&gt;</span> Access to your website, Google Business Profile and social accounts, plus a 30-minute kickoff call about your customers and goals. We handle the rest.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>How quickly will social media and ads show results?</b> <span class="tag">&lt;p&gt;</span> Paid ads can drive traffic within days. Organic social growth builds over 2–3 months of consistent posting.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Do you work with businesses outside Florida?</b> <span class="tag">&lt;p&gt;</span> Yes. Alongside Emerald Coast businesses, we work with brands, bands, athletes and companies nationwide.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Will I own my website and accounts?</b> <span class="tag">&lt;p&gt;</span> Yes. Your domain, website, content and social accounts are always yours.</p>
+
+<p><span class="tag">NEW &lt;h3&gt; in AI section</span> <b>What is GEO (Generative Engine Optimization)?</b> <span class="tag">&lt;p&gt;</span> GEO is the practice of optimizing your content so AI tools like ChatGPT, Google AI Overviews, Gemini and Perplexity understand your business and cite it in their answers. It builds on SEO with clear Q&amp;A content, structured data, consistent business information and mentions on trusted sites. It's part of our <a>SEO services</a>. <span class="small">[→ /seo/]</span></p>
+
+<p><span class="tag">REWRITE</span> <b>Why is local SEO so important?</b> Replace "Over 80% of local customers use Google…" with: "Most people searching for a local service use Google, and many call or visit a business the same day. Local SEO puts you on the map, in search results and in 'near me' searches where those customers are looking."</p>
+<p><span class="tag">REWRITE</span> <b>Can I get reviews on Apple Maps or Bing Maps?</b> → "Apple Maps shows its own ratings and photos from Apple users, plus reviews from partners like Yelp and Tripadvisor. Bing pulls reviews from sources like Yelp, Facebook and Tripadvisor. We help you manage all of them."</p>
+<p><span class="tag">REWRITE section H2</span> "GEO-Optimized SEO FAQs for Local Business Visibility" → <b>"Local SEO"</b>. Inside the answers, replace "GEO SEO" with "local SEO" (12 occurrences) and "GEO pages" with "city pages".</p>
+<p><span class="tag">REWRITE</span> <b>What locations do you serve?</b> → "We're based in Destin and serve the entire Emerald Coast: <a>Destin</a>, <a>Miramar Beach</a>, <a>Santa Rosa Beach and 30A</a>, Inlet Beach, Panama City Beach, <a>Fort Walton Beach</a>, Navarre, <a>Pensacola</a>, Niceville, Shalimar, Valparaiso and Crestview. See <a>all the areas we serve</a>."</p>
+
+<p><span class="tag">CTA &lt;h2&gt;</span> <b>Still Have Questions?</b> <span class="tag">&lt;p&gt;</span> Call <a>(850) 542-3091</a> or <a>send us a message</a> and we'll get you a straight answer, usually the same day. <span class="tag">button</span> [Get a Free Marketing Audit] → /contact-us/</p>
+</div>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>FAQ → service clicks</td><td>Fire <code>faq_link_click</code> with parameters <code>question</code> and <code>destination</code> on the new contextual links. Shows which answers push people toward buying.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>TOC / accordion</td><td><code>faq_toc_click</code> (category); <code>faq_open</code> (question) if you use an accordion. Shows the topics people care about most. Use it for blog topics.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>GSC question queries</td><td>In Search Console, filter queries by regex <code>^(what|how|why|can|do|does|is|will|should)\b</code> for /faq/. Add new Q&amp;As for questions that get impressions but have no matching answer.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>AI referrals</td><td>Create a GA4 channel group "AI Assistants" for sessions from <code>chatgpt.com</code>, <code>perplexity.ai</code>, <code>gemini.google.com</code>, <code>copilot.microsoft.com</code>, to measure whether the FAQ restructure gets you cited.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>CTA + phone</td><td><code>cta_click</code> (faq_bottom), <code>phone_call_click</code>.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Heading markup</td><td>About 70 questions become H3; H2 sections get <code>id</code> anchors for the TOC and for deep links like /faq/#local-seo.</td></tr>
+<tr><td><span class="p1">P1</span></td><td>FAQPage JSON-LD</td><td>One <code>FAQPage</code> with ~77 Question/acceptedAnswer pairs. The text must match the visible content exactly. Validate in the Rich Results Test (it will validate even though Google no longer displays the rich result for this type of site).</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Code bloat</td><td>Removing about 150 inline spans and the data-* attributes cuts roughly 15–20KB of HTML and makes the page much easier to edit.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Split option (later)</td><td>If any category grows past about 15 questions, give it its own page (e.g. /faq/local-seo/) with this page as the hub. Not needed now.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Freshness</td><td>Show a "Last updated: [month year]" line under the H1 and review the answers every 6 months (AI and Maps answers change quickly).</td></tr>
+<tr><td><span class="p3">P3</span></td><td>llms.txt (optional)</td><td>Consider adding <code>/llms.txt</code> that lists the FAQ, service pages and NAP, a low-cost signal for AI crawlers.</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>FAQ-01</td><td>Change</td><td>~70 questions from bold text → H3 headings</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-02</td><td>Add</td><td>H1 "Digital Marketing FAQ: SEO, Social Media, AI &amp; Web Design" + intro + TOC with anchors</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-03</td><td>Change</td><td>SEO title + new meta description (the old one quotes removed text)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-04</td><td>Change</td><td>Reorder sections (local topics up); rename "GEO-Optimized SEO" → "Local SEO"; fix the empty strong in the AI H2</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-05</td><td>Add</td><td>New "Working With Rockstar Marketing" section (7 Q&amp;As) + "What is GEO" Q&amp;A</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-06</td><td>Rewrite</td><td>Unsourced 80% stat; Apple/Bing reviews answer; locations answer with links</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-07</td><td>Add</td><td>~25 contextual internal links (service, city, Home, About, Clients, Locations, Latest, Contact)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-08</td><td>Remove</td><td>~150 inline colour spans, ChatGPT data-start/data-end attributes</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-09</td><td>Add</td><td>FAQPage JSON-LD (single source; no duplicate FAQ schema on service pages)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-10</td><td>Add</td><td>"Still have questions?" CTA + phone</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-11</td><td>Tracking</td><td>faq_link_click, faq_toc_click/faq_open, GSC question regex, GA4 AI Assistants channel</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>FAQ-12</td><td>Optional</td><td>Accessible accordion, "Last updated" line, llms.txt</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: Destin SEO Company (/destin-seo-company/)</b></p>
+</body></html>

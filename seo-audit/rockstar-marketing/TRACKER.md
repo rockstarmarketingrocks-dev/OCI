@@ -15,7 +15,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 8 | [x] done 2026-10-25 | Contact us | 11576 | /contact-us/ | 08-contact-us.pdf |
 | 9 | [x] done 2026-10-25 | Clients | 4015 | /clients/ | 09-clients.pdf |
 | 10 | [x] done 2026-10-25 | Locations | 12023 | /locations/ | 10-locations.pdf |
-| 11 | [ ] | FAQ | 12060 | /faq/ | |
+| 11 | [x] done 2026-10-25 | FAQ | 12060 | /faq/ | 11-faq.pdf |
 | 12 | [ ] | Destin SEO Company | 11989 | /destin-seo-company/ | |
 | 13 | [ ] | Destin Social Media Company | 11942 | /destin-social-media-company/ | |
 | 14 | [ ] | Destin Web Design Company | 12001 | /destin-webdesign-company/ | |
@@ -50,3 +50,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - Keyword ownership: /web-design/ = "Destin web design" (#2–4 on 9 variants). /destin-webdesign-company/ = 301 candidate (decide in audit #14). Experience claim: use "since 1996".
 - Extra NAP (from /contact-us/): toll-free (855) 545-3669, info@rockstar-marketing.com, hours Mon–Fri 9–5, Sat by phone, Sun closed. Lead tracking depends on new /thank-you/ page (CU-01).
 - Site-wide: image attachment pages are public (e.g. /jh-3/, /clients/sssss/) – redirect/noindex in AIOSEO (CL-06). Media titles are junk ("aaaa", "2323") – alt text likely empty everywhere.
+- FAQ is the single FAQPage-schema source; service-page FAQs stay short and link to /faq/ (no duplicate FAQ schema).
