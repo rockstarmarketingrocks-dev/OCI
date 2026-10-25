@@ -31,7 +31,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 24 | [x] done 2026-10-25 | Miramar Beach Social Media Company | 11955 | /miramar-beach-social-media-company/ | 24-miramar-beach-social-media-company.pdf |
 | 25 | [x] done 2026-10-25 | Destin Florida | 12182 | /destin-florida/ | 25-destin-florida.pdf |
 | 26 | [x] done 2026-10-25 | Latest | 12215 | /latest/ | 26-latest.pdf |
-| 27 | [ ] | Privacy Policy | 11909 | /privacy-policy/ | |
+| 27 | [x] done 2026-10-25 | Privacy Policy | 11909 | /privacy-policy/ | 27-privacy-policy.pdf |
 | 28 | [ ] | How to Start a YouTube Channel (post) | 12217 | /how-to-start-a-youtube-channel-everything-you-need-to-know/ | |
 | 29 | [ ] | Instagram Account Step-by-Step Guide (post) | 12221 | /instagram-account-step-by-step-guide-to-getting-more-conversions-and-sales/ | |
 | 30 | [ ] | Definitive Guide to Amazon Store (post) | 12246 | /definitive-guide-to-building-and-optimizing-your-amazon-store/ | |
@@ -63,3 +63,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - SRB cluster ≈640/mo (seo company 170, SEO 90/50, digital marketing ×6) scattered over 6 URLs → consolidate on /santa-rosa-beach-seo-company/. SRB video marketing (50) ranks #8 via SRB social page.
 - TOP OPPORTUNITY: Pensacola SEO cluster ≈1,130/mo, KD 2–9, CPC ~$24; site not in top 100. Organic only (no Pensacola address → no map pack; do NOT create virtual GBP address).
 - 2nd OPPORTUNITY: Pensacola web design cluster ≈910/mo, KD 5–34, CPC ~$15; not in top 100.
+- Privacy policy must be updated BEFORE enabling Meta Pixel / Ads remarketing / call tracking (PP-07).
