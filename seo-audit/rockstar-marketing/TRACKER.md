@@ -37,7 +37,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 30 | [x] done 2026-10-25 | Definitive Guide to Amazon Store (post) | 12246 | /definitive-guide-to-building-and-optimizing-your-amazon-store/ | 30-post-amazon-store.pdf |
 | 31 | [x] done 2026-10-25 | Destin AI Digital Marketing Company (post) | 12280 | /12280-2/ | 31-post-ai-marketing.pdf (move → /ai-marketing/ page) |
 | 32 | [x] done 2026-10-25 | Is an SEO Company the Breakthrough (post) | 12305 | /is-an-seo-company-the-breakthrough-your-business-needs/ | 32-post-seo-company-breakthrough.pdf (URGENT: fake testimonials) |
-| 33 | [ ] | Best Destin SEO Company: How to Choose (post) | 12308 | /best-destin-seo-company-how-to-choose-the-right-partner-for-your-business/ | |
+| 33 | [x] done 2026-10-25 | Best Destin SEO Company: How to Choose (post) | 12308 | /best-destin-seo-company-how-to-choose-the-right-partner-for-your-business/ | 33-post-best-destin-seo-company.pdf |
 | 34 | [ ] | Portfolio item (1) | tbd | | |
 
 ## Site-wide notes carried between pages
@@ -66,3 +66,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - Privacy policy must be updated BEFORE enabling Meta Pixel / Ads remarketing / call tracking (PP-07).
 - AI: "ai seo services" 4,400/mo KD 34 → new page /ai-marketing/ (from post /12280-2/). Certifications need exact names/proof.
 - URGENT (post 12305): AutoBlogEngine content with fabricated testimonials/case studies (FTC risk), 9 hot-linked images, unrelated video. Check if auto-blogging tool still publishes.
+- Pricing source of truth: post 12308 tiers ($1–2K / $2–4K / $4–8K+ per month) → use to fill [$X] placeholders.
