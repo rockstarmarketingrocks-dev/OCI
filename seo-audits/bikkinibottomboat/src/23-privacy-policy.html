@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SEO Changelog – Privacy Policy – bikkinibottomboat.com</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Changelog — Privacy Policy</h1>
+<div class="meta">
+<b>URL:</b> https://bikkinibottomboat.com/privacy-policy/ &nbsp;·&nbsp; <b>WP ID:</b> 1660 (Elementor; text pasted from Google Docs) &nbsp;·&nbsp; <b>Last modified:</b> 2025-03-03 &nbsp;·&nbsp; <b>Audit date:</b> 2026-10-25 &nbsp;·&nbsp; <b>Audit page 23 of 24</b><br>
+<b>Sources:</b> WordPress content and Rank Math fields (site connector); plugin list from site_info.
+</div>
+
+<div class="box warn"><b>Not legal advice.</b> This changelog covers SEO, accuracy against what the site actually runs, and formatting. Have the final policy text reviewed by the owner's attorney or a reputable policy generator.</div>
+
+<div class="box"><b>Brand finding:</b> the policy names the legal entity <b>Beach Please Charters LLC</b>. That explains the "Beach Please Charters" mentions in the homepage meta, image alts and keyword fields. Use it <b>only as the legal name</b>: add <code>"legalName": "Beach Please Charters LLC"</code> to the LocalBusiness schema (homepage changelog §7a). Keep "Bikkini Bottom Boat Charters" as the customer-facing brand in titles, meta and alts.</div>
+
+<h2>1. Summary</h2>
+<table>
+<tr><th style="width:26%">Area</th><th>Current state</th><th style="width:11%">Priority</th></tr>
+<tr><td>Doesn't match the site</td><td>It's a generic template. It mentions <b>user Accounts</b> (the site has none) and the <b>DoubleClick DART cookie</b> (retired years ago). It doesn't mention the tools the site actually uses or should use: <b>FareHarbor</b> (bookings and payments), <b>WPForms</b> (contact form), <b>Google Analytics / Tag Manager</b>, Google Ads / Meta Pixel (if added), <b>Google Maps</b> and <b>YouTube</b> embeds, the Google reviews widget, and LiteSpeed/Hostinger hosting.</td><td class="pri p1">High</td></tr>
+<tr><td>Dead references</td><td>"Privacy Policy Links" and "What Are Cookies?" are plain text left over from the template (they were links in the original).</td><td class="pri p2">Medium</td></tr>
+<tr><td>Contact email</td><td>Lists <code>beachpleasecharters@gmail.com</code>; the footer and Contact page use <code>res4bikkinibottom@gmail.com</code>. Pick one for privacy requests.</td><td class="pri p2">Medium</td></tr>
+<tr><td>No effective date</td><td>No "Last updated" date.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Headings / formatting</td><td>H1 "Privacy Policy", then two H2s saying "Privacy Policy for Beach Please Charters LLC…". Section titles (Consent, Information we collect, Log Files, CCPA, GDPR…) are <b>plain paragraphs</b>, while only 2 subsections are H3. Every element carries Google Docs inline styles (negative margins, <code>padding:-6pt</code>, white backgrounds), which can break dark mode and mobile layout.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Rank Math</td><td>Focus keyword field stuffed with 5 phrases including "crab island tours". Meta "Privacy Policy details found here." is generic.</td><td class="pri p3">Low</td></tr>
+</table>
+
+<h2>2. Rank Math / indexing</h2>
+<table>
+<tr><th style="width:18%">Field</th><th style="width:38%">Current</th><th>Change to</th></tr>
+<tr><td>SEO title</td><td>Bikkini Bottom Boat Charters Privacy Policy</td><td>Keep</td></tr>
+<tr><td>Meta description</td><td>Bikkini Bottom Boat Charters Privacy Policy details found here.</td><td><b>How Bikkini Bottom Boat Charters (Beach Please Charters LLC) collects, uses and protects your information when you visit our site or book a tour.</b></td></tr>
+<tr><td>Focus keyword</td><td>5 phrases incl. "crab island tours"</td><td><b>Clear it</b> (no ranking target for a legal page)</td></tr>
+<tr><td>Robots</td><td>index (VERIFY)</td><td>Either is fine. Recommended: <b>index, follow</b> (a visible privacy policy is a trust signal), but exclude it from Internal Link Juicer so no keyword links get inserted into it.</td></tr>
+<tr><td>WordPress setting</td><td>—</td><td>Settings → Privacy: set this page as the Privacy Policy page so WP and plugins (WPForms, consent tools) can reference it.</td></tr>
+</table>
+
+<h2>3. New structure</h2>
+<table>
+<tr><th style="width:9%">Tag</th><th>Heading</th></tr>
+<tr><td>H1</td><td>Privacy Policy</td></tr>
+<tr><td>(text)</td><td>"Bikkini Bottom Boat Charters is operated by Beach Please Charters LLC, 530 Harbor Blvd, Destin, FL 32541. Last updated: [date]."</td></tr>
+<tr><td>H2</td><td>Information We Collect (H3: Information you give us · Booking and payment information · Information collected automatically)</td></tr>
+<tr><td>H2</td><td>How We Use Your Information</td></tr>
+<tr><td>H2</td><td>Bookings and Payments (FareHarbor)</td></tr>
+<tr><td>H2</td><td>Cookies, Analytics and Advertising (H3: Google Analytics &amp; Tag Manager · Advertising pixels [if used] · Embedded content: Google Maps, YouTube, reviews widget)</td></tr>
+<tr><td>H2</td><td>How We Share Information (service providers, legal, no sale of personal data)</td></tr>
+<tr><td>H2</td><td>Data Retention and Security</td></tr>
+<tr><td>H2</td><td>Your Choices and Rights (opt-out links; state rights where applicable; GDPR section only if serving EU visitors)</td></tr>
+<tr><td>H2</td><td>Children's Information</td></tr>
+<tr><td>H2</td><td>Changes to This Policy</td></tr>
+<tr><td>H2</td><td>Contact Us (one email, phone, address)</td></tr>
+</table>
+
+<h2>4. Content fixes (accuracy)</h2>
+<table>
+<tr><th style="width:30%">Current text</th><th>Change</th></tr>
+<tr><td>"When you register for an Account…"</td><td>Remove (no accounts). Replace with: "When you book a tour, our booking provider FareHarbor collects your name, email, phone and payment details to process your reservation. See FareHarbor's privacy policy."</td></tr>
+<tr><td>DoubleClick DART Cookie section</td><td>Remove. Replace with a current "Google Analytics" paragraph and an opt-out link (Google Analytics opt-out browser add-on), plus Google Ads / Meta Pixel paragraphs if those tags are installed (see the homepage tracking plan).</td></tr>
+<tr><td>"Our advertising partners are listed below… Google"</td><td>Rewrite as "Third-party services we use" with each provider and its privacy link: FareHarbor, Google (Analytics, Maps, YouTube), Meta (if pixel), WPForms/WordPress, Hostinger.</td></tr>
+<tr><td>"Privacy Policy Links" / "What Are Cookies?"</td><td>Remove the dead references or link them properly.</td></tr>
+<tr><td>Contact form</td><td>Add: "Messages sent through our contact form are emailed to us and are not stored on our website." (WPForms Lite doesn't store entries; VERIFY.)</td></tr>
+<tr><td>CCPA / GDPR sections</td><td>Keep only what applies, per legal review. Don't promise "one month" response times or fees unless they're actually honored.</td></tr>
+<tr><td>Email</td><td>Use the single address chosen in §1.</td></tr>
+</table>
+
+<h2>5. Technical</h2>
+<table>
+<tr><th style="width:24%">Issue</th><th>Fix</th><th style="width:11%">Priority</th></tr>
+<tr><td>Inline Google Docs styles</td><td>Paste the new text as plain text (Ctrl+Shift+V) into an Elementor Text Editor / Gutenberg blocks. Remove all <code>style=""</code> attributes, negative margins and duplicate H2s.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Consent banner</td><td>If GA4 advertising features, Google Ads or the Meta Pixel are enabled, add a lightweight consent banner (e.g. Complianz or CookieYes) with Google Consent Mode v2, and link this policy from it.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Links to the policy</td><td>Footer (exists). Add it to the WPForms contact and group inquiry forms ("By submitting you agree to our Privacy Policy") and to the cookie banner.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Terms page</td><td>Consider a short "Booking Terms" page (or link FareHarbor's terms) alongside the new Weather &amp; Cancellation Policy (changelog 22).</td><td class="pri p3">Low</td></tr>
+</table>
+
+<h2>6. Tracking</h2>
+<p>None needed on this page beyond default pageviews. Make sure tracking tags respect consent choices once a banner is installed (GTM consent checks on GA4, Ads and Meta tags).</p>
+
+<h2>7. Changelog (implementation checklist)</h2>
+<table>
+<tr><th style="width:5%">#</th><th>Change</th><th style="width:16%">Where</th><th style="width:9%">Status</th></tr>
+<tr><td>1</td><td>Rewrite to reflect real tools (FareHarbor, WPForms, GA4/GTM, Maps, YouTube, reviews, ads pixels if any); remove Accounts and DART text</td><td>Page 1660</td><td>To do</td></tr>
+<tr><td>2</td><td>Legal review of the final text</td><td>Owner / attorney</td><td>Waiting</td></tr>
+<tr><td>3</td><td>New H1/H2/H3 structure; inline styles stripped; "Last updated" date</td><td>Elementor</td><td>To do</td></tr>
+<tr><td>4</td><td>Single privacy contact email</td><td>Page / footer</td><td>To do</td></tr>
+<tr><td>5</td><td>Rank Math: meta updated, focus keyword cleared; ILJ exclusion</td><td>Rank Math / ILJ</td><td>To do</td></tr>
+<tr><td>6</td><td>Set as WP Privacy Policy page; link from forms</td><td>Settings / WPForms</td><td>To do</td></tr>
+<tr><td>7</td><td>Consent banner + Consent Mode v2 (if ad/remarketing tags used)</td><td>Plugin / GTM</td><td>To do</td></tr>
+<tr><td>8</td><td><code>legalName: Beach Please Charters LLC</code> added to LocalBusiness schema</td><td>Rank Math (homepage)</td><td>To do</td></tr>
+</table>
+<p class="small">Next page in queue: <b>Elementor #2321</b> (/elementor-2321/, ID 2321), the last page and a cleanup item.</p>
+</body></html>
