@@ -11,7 +11,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 4 | [x] done 2026-10-25 | Social Media | 11541 | /social-media/ | 04-social-media.pdf |
 | 5 | [x] done 2026-10-25 | Video Marketing | 11544 | /video-marketing/ | 05-video-marketing.pdf |
 | 6 | [x] done 2026-10-25 | Web Design | 11546 | /web-design/ | 06-web-design.pdf |
-| 7 | [ ] | About Us | 11548 | /about-us/ | |
+| 7 | [x] done 2026-10-25 | About Us | 11548 | /about-us/ | 07-about-us.pdf |
 | 8 | [ ] | Contact us | 11576 | /contact-us/ | |
 | 9 | [ ] | Clients | 4015 | /clients/ | |
 | 10 | [ ] | Locations | 12023 | /locations/ | |

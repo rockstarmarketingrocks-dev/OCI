@@ -1,0 +1,158 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – About Us</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: About Us</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/about-us/</b> &nbsp;·&nbsp; WP ID 11548 &nbsp;·&nbsp; Builder: WPBakery &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Last modified in WP: 2023-01-04 &nbsp;·&nbsp; Page 7 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> An About page isn't there to rank for keywords. Its job is <b>trust (E-E-A-T)</b>: it tells Google and prospects <i>who</i> is behind the business. This one names no people at all: no founder, team, history, credentials, photos or reviews. It's about 270 words of claims ("The Premier… company you will find", "99% of other firms don't work with Rockstars"). It may also have <b>two H1s</b> (content "About Us" + theme title), and it reuses the duplicate site-wide meta description. Its best material, the celebrity and athlete client list, is real social proof, but it's buried in a run-on sentence. The rewrite turns it into a story-led page: who we are, since 1996, the team, who we've worked with, how we work, and where we are.
+</div>
+<p class="small"><b>Method note:</b> the live site can't be reached from the audit environment. Data comes from WordPress (connector) and AIOSEO. <i>Verify live</i> = check in the browser. Names, bios and dates in [brackets] must come from you; I didn't invent any.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>No people (E-E-A-T)</td><td>Add a founder section (name, photo, role, years of experience, short bio, LinkedIn) and a team grid. It's the single biggest trust gap on the whole site, and Google's quality guidelines look for who is responsible for a site.</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>Duplicate H1</td><td>The content has <code>&lt;h1&gt;&lt;strong&gt; About Us&lt;/strong&gt;&lt;/h1&gt;</code>, and the theme probably prints "About Us" as an H1 too (<i>verify live</i>). Keep one H1: <b>"About Rockstar Marketing"</b>. Also remove the &lt;strong&gt; inside the heading and the leading space.</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Duplicate meta</td><td>The meta description is identical to Home, Clients and Contact. Write a unique one (§2). The SEO title is empty.</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>Intralinking</td><td>Only 1 link (to Home). Add links to the 4 service pages, /services/, /clients/, /locations/, /faq/ and /contact-us/ (§4).</td></tr>
+<tr><td>5</td><td><span class="p2">P2</span></td><td>Social proof</td><td>The celebrity/athlete claims (NFL, NBA, UFC, Grammy-winning bands) are strong, but they're unnamed and unverified. Name clients where you have permission, add logos, and add 3 testimonials. If you can't name anyone, use "[N] pro athletes and touring artists" plus a testimonial.</td></tr>
+<tr><td>6</td><td><span class="p2">P2</span></td><td>Unsupported superlatives</td><td>"The Premier… company you will find", "99% of other firms". Replace with specifics: since 1996, a #1 Google ranking for "Destin SEO company", 100M+ reach, the 60M-view video.</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Service area</td><td>The list mixes local towns with Mobile, Birmingham, Montgomery, New Orleans, Jacksonville and Tampa, and has no links. Replace with a linked local paragraph plus one national sentence.</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Copy errors</td><td>"then hear the client" → "and then hear"; "Country and Rocks Bands"; "Why are we different… because" (missing question mark); "everyday" → "every day"; "Fort Walton" → "Fort Walton Beach".</td></tr>
+<tr><td>9</td><td><span class="p2">P2</span></td><td>Schema</td><td>Add <code>AboutPage</code> with <code>mainEntity</code> → Organization (foundingDate 1996, founder Person, address, sameAs) and <code>Person</code> schema for the founder.</td></tr>
+<tr><td>10</td><td><span class="p3">P3</span></td><td>Images</td><td>The logo strip uses <code>logos-1024x85.jpg</code> (better than other pages) but has the keyword-stuffed alt "Destin SEO and Social Media Company". Cert image has alt="". Both use http://. Add team and office photos.</td></tr>
+<tr><td>11</td><td><span class="p3">P3</span></td><td>Builder junk</td><td>Empty text block, 2 &amp;nbsp; raw-HTML spacers. The red "WE ARE PASSIONATE…" custom-font line is fine as styling; keep it as a &lt;p&gt;, not a heading.</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>(empty → site default)</td><td><b>About Rockstar Marketing | Destin, FL Marketing Agency</b> (54)</td></tr>
+<tr><td>Meta description</td><td>(duplicate of Home/Clients/Contact)</td><td><b>Meet the Destin team behind 30 years of SEO, social media, video and web design, trusted by local businesses, pro athletes and touring artists.</b> (145)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>About Rockstar Marketing <span class="small">(brand page; no commercial target)</span></td></tr>
+<tr><td>H1</td><td>"About Us" (×2 likely)</td><td>About Rockstar Marketing (single)</td></tr>
+<tr><td>OG image</td><td>none</td><td>Team or office photo, 1200×630</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td class="small">(theme H1 "About Us", <i>verify</i>)<br>[custom font] WE ARE PASSIONATE ABOUT WHAT WE DO!<br>H1 – About Us<br><i>No other headings</i></td><td class="small">
+<b>H1</b> – About Rockstar Marketing<br>
+<b>H2</b> – Our Story: Building Websites Since 1996<br>
+<b>H2</b> – Meet the Team<br>
+&nbsp;&nbsp;<b>H3</b> – [Founder Name], Founder &amp; [Title]<br>
+&nbsp;&nbsp;<b>H3</b> – [Team member] ×N<br>
+<b>H2</b> – Who We Work With<br>
+<b>H2</b> – What Makes Us Different<br>
+&nbsp;&nbsp;<b>H3</b> – Marketing First, Websites Second<br>
+&nbsp;&nbsp;<b>H3</b> – A Fan Page Network Few Agencies Have<br>
+&nbsp;&nbsp;<b>H3</b> – Results We Can Show You<br>
+<b>H2</b> – What Our Clients Say<br>
+<b>H2</b> – Where We Work<br>
+<b>H2</b> – Let's Talk About Your Business <i>(CTA + NAP)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:40%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>SEO</td><td>/seo/</td><td>Story + Different</td></tr>
+<tr><td>social media marketing</td><td>/social-media/</td><td>Story</td></tr>
+<tr><td>video marketing</td><td>/video-marketing/</td><td>Story</td></tr>
+<tr><td>web design</td><td>/web-design/</td><td>Story</td></tr>
+<tr><td>everything we do</td><td>/services/</td><td>Different</td></tr>
+<tr><td>see our clients</td><td>/clients/</td><td>Who we work with</td></tr>
+<tr><td>all the areas we serve</td><td>/locations/</td><td>Where we work</td></tr>
+<tr><td>Destin / Fort Walton Beach / Santa Rosa Beach / Pensacola</td><td>/destin-seo-company/, /fort-walton-beach-seo-company/, /santa-rosa-beach-seo-company/, /pensacola-seo-company/</td><td>Where we work</td></tr>
+<tr><td>Destin, Florida</td><td>/destin-florida/</td><td>Story (local relevance)</td></tr>
+<tr><td>common questions</td><td>/faq/</td><td>CTA</td></tr>
+<tr><td>Contact us</td><td>/contact-us/</td><td>CTA</td></tr>
+<tr><td>Founder LinkedIn</td><td>external, rel="me noopener"</td><td>Founder bio</td></tr>
+</table>
+
+<h2 class="pb">5. Rewritten Page Content (ready to paste)</h2>
+<p class="small">About 850 words. [Brackets] = facts only you can provide.</p>
+<div class="copy">
+<p><span class="tag">styled &lt;p&gt;</span> <b>WE ARE PASSIONATE ABOUT WHAT WE DO!</b></p>
+<p><span class="tag">&lt;h1&gt;</span> <b>About Rockstar Marketing</b></p>
+<p><span class="tag">&lt;p&gt;</span> Nothing beats the call where a client tells us their phone is ringing, the online orders are coming in and new customers are walking through the door. That's why we do this. Rockstar Marketing is a search engine optimization, social media, video and web design agency based in beautiful <a>Destin, Florida</a>, in the heart of Northwest Florida. <span class="small">[→ /destin-florida/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Our Story: Building Websites Since 1996</b><br>
+<span class="tag">&lt;p&gt;</span> We built our first website in 1996, before it was even cool. [Founder first name] started Rockstar Marketing in [year] with a simple idea: most web design companies build a site and hope it gets found, so we would be a marketing company first. Over the years that grew into full-service <a>SEO</a>, <a>social media marketing</a>, <a>video marketing</a> and <a>web design</a>, with clients from Destin to Nashville and beyond. <span class="small">[→ 4 service pages]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Meet the Team</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>[Founder Name], Founder &amp; [CEO / Lead Strategist]</b><br>
+<span class="tag">photo + &lt;p&gt;</span> [2–4 sentences: background, years in SEO/social, notable work (e.g. the 100M-reach fan page, the 60M-view video), certifications, something personal about living on the Emerald Coast.] <a>LinkedIn</a></p>
+<p><span class="tag">&lt;h3&gt; ×N</span> <b>[Name], [Role]</b> <span class="tag">photo + 1–2 sentences each</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Who We Work With</b><br>
+<span class="tag">&lt;p&gt;</span> We work with local businesses, large and small, and with clients most agencies never get the chance to: NFL and NBA players, UFC fighters, All-American college football players, Grammy-winning country music bands, rock bands, radio stations, national and international companies, doctors and lawyers. Whether you're a Destin restaurant or a touring artist, you get the same team and the same strategies. <a>See our clients</a>. <span class="small">[→ /clients/]</span></p>
+<p><span class="tag">ADD</span> client logo strip (with permission), alt = client name</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>What Makes Us Different</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Marketing First, Websites Second</b> <span class="tag">&lt;p&gt;</span> We're a marketing company that happens to build websites. Every site, post and video is built to bring in customers, and we measure success in calls and sales.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>A Fan Page Network Few Agencies Have</b> <span class="tag">&lt;p&gt;</span> We control large social media fan pages we can use to cross-promote client content. It's how one of our campaigns reached more than 100 million people in a single month.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Results We Can Show You</b> <span class="tag">&lt;p&gt;</span> We've ranked a keyword with over 1 billion searches on the front page of Google, produced a video that reached 60 million people, and our own website ranks #1 on Google for "Destin SEO company". Explore <a>everything we do</a>. <span class="small">[→ /services/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>What Our Clients Say</b><br>
+<span class="tag">3 testimonials</span> ["Quote…" — Name, Business, City]. Pull from your Google reviews.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Where We Work</b><br>
+<span class="tag">&lt;p&gt;</span> Locally, we serve businesses in <a>Destin</a>, <a>Fort Walton Beach</a>, <a>Santa Rosa Beach and 30A</a>, <a>Pensacola</a>, Navarre, Gulf Breeze, Sandestin, Crestview, Shalimar, Niceville, Bluewater Bay and Panama City. Nationally, we work with clients across the Southeast, including Mobile, Birmingham, New Orleans, Jacksonville and Tampa, and throughout the U.S. See <a>all the areas we serve</a>. <span class="small">[→ city SEO pages, /locations/]</span></p>
+
+<p><span class="tag">CTA band &lt;h2&gt;</span> <b>Let's Talk About Your Business</b><br>
+<span class="tag">&lt;p&gt;</span> Grab a coffee with us in Destin or schedule a call. Have questions first? Read our <a>common questions</a>. <span class="small">[→ /faq/]</span><br>
+<span class="tag">button</span> [Contact Us] → /contact-us/ &nbsp; [Call (850) 542-3091] → tel:+18505423091<br>
+<span class="tag">&lt;p&gt; NAP</span> <b>Rockstar Marketing</b> · 385 Harbor Blvd, Suite 200, Destin, FL 32541 · (850) 542-3091 · [Hours]</p>
+</div>
+
+<h3>Image alt text</h3>
+<table>
+<tr><th>Image</th><th>Current alt</th><th>New alt</th></tr>
+<tr><td>logos-1024x85.jpg</td><td>Destin SEO and Social Media Company</td><td>Platforms we market on (or remove; it adds nothing here)</td></tr>
+<tr><td>cert-300x32.jpg</td><td>(empty)</td><td>[certification names]</td></tr>
+<tr><td>NEW founder photo</td><td>—</td><td>[Founder Name], founder of Rockstar Marketing</td></tr>
+<tr><td>NEW office/team photo</td><td>—</td><td>Rockstar Marketing team at our Destin, FL office</td></tr>
+</table>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>CTA + phone</td><td><code>cta_click</code> (about_bottom), <code>phone_call_click</code>.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Assisted conversions</td><td>In GA4, build a segment of users who viewed /about-us/ and compare their lead conversion rate with all users. About pages usually show up as a strong assist, which justifies investing in team photos and bios.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Outbound</td><td>Enhanced Measurement already tracks outbound clicks (LinkedIn, client sites). Check that they show up under the <code>click</code> event.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Single H1</td><td>Remove the content H1 or hide the theme title. Check the rendered source for exactly one &lt;h1&gt;.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>AboutPage + Person schema</td><td><code>AboutPage</code> → mainEntity Organization {@id site org, foundingDate "1996", founder Person {name, jobTitle, image, sameAs LinkedIn}}. Reference the same Organization @id used site-wide.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Author entity</td><td>Make the founder the WP author of the blog posts, with a matching author bio, so posts link back to a real person (E-E-A-T). Currently pages are authored by user ID 2, so check the display name.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Images</td><td>Team photos as WebP, about 600px, lazy-loaded; https for existing images.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Builder junk</td><td>Empty text block + 2 spacers.</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>AB-01</td><td>Fix</td><td>Single H1 "About Rockstar Marketing" (remove the duplicate; strip &lt;strong&gt;)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>AB-02</td><td>Change</td><td>SEO title "About Rockstar Marketing | Destin, FL Marketing Agency"; unique meta description</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>AB-03</td><td>Rewrite</td><td>Story-led copy (~850 words): story, team, who we work with, differentiators, testimonials, areas, CTA</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>AB-04</td><td>Add</td><td>Founder bio + photo + LinkedIn; team grid</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>AB-05</td><td>Add</td><td>3 testimonials + client logo strip</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>AB-06</td><td>Remove</td><td>"The Premier… company you will find", "99% of other firms" → specific proof points</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>AB-07</td><td>Add</td><td>~14 internal links (service pages, Services, Clients, Locations, city pages, Destin Florida, FAQ, Contact)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>AB-08</td><td>Fix</td><td>Grammar (5 items); NAP format + tel: link; add hours</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>AB-09</td><td>Add</td><td>AboutPage + Organization (foundingDate) + Person schema</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>AB-10</td><td>Fix</td><td>Alt text, https images, team/office photos, OG image; remove the empty block and spacers</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>AB-11</td><td>Tracking</td><td>cta_click, phone_call_click; GA4 "viewed About" assist segment</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: Contact Us (/contact-us/)</b></p>
+</body></html>
