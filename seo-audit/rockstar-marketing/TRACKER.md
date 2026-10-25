@@ -3,6 +3,8 @@
 Site: https://rockstar-marketing.com/ · Each audit = one PDF (findings + rewritten content + changelog) in this folder.
 Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 
+**STATUS: ALL 34 ITEMS AUDITED (2026-10-25). Start with `00-summary.pdf` (prioritized roadmap).**
+
 | # | Status | Page | WP ID | URL | Report |
 |---|--------|------|-------|-----|--------|
 | 1 | [x] done 2026-10-25 | Home | 6057 | / | 01-home.pdf |
@@ -38,7 +40,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 31 | [x] done 2026-10-25 | Destin AI Digital Marketing Company (post) | 12280 | /12280-2/ | 31-post-ai-marketing.pdf (move → /ai-marketing/ page) |
 | 32 | [x] done 2026-10-25 | Is an SEO Company the Breakthrough (post) | 12305 | /is-an-seo-company-the-breakthrough-your-business-needs/ | 32-post-seo-company-breakthrough.pdf (URGENT: fake testimonials) |
 | 33 | [x] done 2026-10-25 | Best Destin SEO Company: How to Choose (post) | 12308 | /best-destin-seo-company-how-to-choose-the-right-partner-for-your-business/ | 33-post-best-destin-seo-company.pdf |
-| 34 | [ ] | Portfolio item (1) | tbd | | |
+| 34 | [x] done 2026-10-25 | Portfolio: Professional NBA Players | 11714 | /portfolio_page/professional-nba-players/ | 34-portfolio-nba-players.pdf |
 
 ## Site-wide notes carried between pages
 - Live site not reachable from the audit sandbox; audits use WP connector data + Semrush (US). Items tagged "Verify live" need a browser check.

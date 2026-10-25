@@ -1,0 +1,108 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – Portfolio Item</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Portfolio Item "Professional NBA Players"</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/portfolio_page/professional-nba-players/</b> &nbsp;·&nbsp; ID 11714 &nbsp;·&nbsp; Post type: portfolio_page (Mikado Core) &nbsp;·&nbsp; Featured image: 11676<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Created / modified: 2017-01-29 &nbsp;·&nbsp; Item 34 of 34 (last) in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> This is the site's <b>only portfolio item</b>, and it's <b>empty</b>: 0 words, no meta, only a featured image (attachment 11676, one of the untitled Clients gallery logos). It has been indexable since 2017 under the clumsy URL base <code>/portfolio_page/</code>. It matters more than it looks: <b>the two portfolio sliders on the Home page</b> (<code>no_portfolio_slider</code> ×2, "number=6") pull from this post type, so with one item, Home's portfolio section likely shows <b>one image twice</b> (<i>verify live</i>). The topic ("Professional NBA Players") is one of your strongest proof points. Either build the portfolio out properly as case studies or retire it.
+</div>
+<p class="small"><b>Method note:</b> data comes from WordPress (connector) and AIOSEO; the live site couldn't be reached.</p>
+
+<h2>1. Decision &amp; Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>Decision</td><td><b>Option A (recommended): build it out.</b> Use the portfolio post type for the 3–6 case studies already requested in the Clients audit (CL-04): this NBA one, a Grammy-winning band, a Destin local business, a web design project, a video project. Home's sliders then show real work.<br><b>Option B: retire it.</b> Remove both sliders from Home (H-14), 301 this URL → /clients/, and noindex the portfolio_page type.</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>Empty indexed page</td><td>Until it has content: AIOSEO → noindex (or Draft it, if Home's sliders can be removed at the same time).</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Home sliders</td><td>Two sliders show the same post type (ASC + DESC). Keep one slider, and only once 4+ items exist (H-14).</td></tr>
+<tr><td>4</td><td><span class="p2">P2</span></td><td>URL base</td><td>/portfolio_page/ → change the Mikado portfolio slug to <b>/work/</b> or <b>/case-studies/</b> (Mikado Core → Portfolio settings, then save Permalinks). 301 the old URL.</td></tr>
+<tr><td>5</td><td><span class="p2">P2</span></td><td>Permissions &amp; accuracy</td><td>Naming NBA players requires their permission. If you can't name them, write "a professional NBA player" and describe the work and results in general terms.</td></tr>
+<tr><td>6</td><td><span class="p2">P2</span></td><td>Image</td><td>Featured image 11676 has no meaningful title or alt (like the other gallery files). Rename it and add alt text ("Social media campaign for a professional NBA player").</td></tr>
+<tr><td>7</td><td><span class="p3">P3</span></td><td>Meta</td><td>No SEO title or description (§2).</td></tr>
+</table>
+
+<h2>2. Meta Tags (Option A)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>Title / H1</td><td>Professional NBA Players</td><td><b>Case Study: Social Media &amp; Fan Growth for a Professional NBA Player</b></td></tr>
+<tr><td>SEO title</td><td>(empty)</td><td><b>NBA Player Social Media Case Study | Rockstar Marketing</b> (55)</td></tr>
+<tr><td>Meta description</td><td>(empty)</td><td><b>How Rockstar Marketing grew a professional NBA player's fan base and reach with social media, video and fan page cross-promotion. [Headline result].</b></td></tr>
+<tr><td>URL</td><td>/portfolio_page/professional-nba-players/</td><td>/case-studies/nba-player-social-media/ (+301)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>athlete social media marketing <span class="small">(niche; supports the "entertainers &amp; athletes" positioning)</span></td></tr>
+</table>
+
+<h2>3. Heading Structure (case-study template)</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New (use for every case study)</th></tr>
+<tr><td class="small"><i>No content; featured image only</i></td><td class="small">
+<b>H1</b> – Case Study: [Result] for [Client / client type]<br>
+<i>Results bar: 3 headline numbers</i><br>
+<b>H2</b> – The Client<br>
+<b>H2</b> – The Challenge<br>
+<b>H2</b> – What We Did<br>
+&nbsp;&nbsp;<b>H3</b> – [Service 1, e.g. Social Media Strategy] · <b>H3</b> – [Service 2] · <b>H3</b> – [Service 3]<br>
+<b>H2</b> – The Results <i>(numbers + screenshots)</i><br>
+<b>H2</b> – What the Client Said <i>(real, attributed quote only)</i><br>
+<b>H2</b> – Want Results Like These? <i>(CTA)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:40%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>social media marketing</td><td>/social-media/</td><td>What we did</td></tr>
+<tr><td>fan page cross-promotion network</td><td>/social-media/ (results band)</td><td>What we did</td></tr>
+<tr><td>video marketing</td><td>/video-marketing/</td><td>What we did</td></tr>
+<tr><td>see all client results</td><td>/clients/</td><td>End</td></tr>
+<tr><td>Get a free audit</td><td>/contact-us/</td><td>CTA</td></tr>
+<tr><td><b>Inbound</b></td><td>/clients/ (case study tiles, CL-04), Home slider, /about-us/ ("Who we work with"), /social-media/ results band</td><td>other pages</td></tr>
+</table>
+
+<h2>5. Content Template (ready to fill)</h2>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Case Study: Social Media &amp; Fan Growth for a Professional NBA Player</b></p>
+<p><span class="tag">results bar</span> <b>[+X followers]</b> · <b>[X million reach]</b> · <b>[X% engagement]</b> in [time frame]</p>
+<p><span class="tag">&lt;h2&gt;</span> <b>The Client</b><br>[Player name, with permission, or "A professional NBA player"], [team/position if allowed], looking to [grow a personal brand / promote a camp, foundation or product].</p>
+<p><span class="tag">&lt;h2&gt;</span> <b>The Challenge</b><br>[1–2 sentences: e.g. a large but inactive following, no content plan, low engagement outside game days.]</p>
+<p><span class="tag">&lt;h2&gt;</span> <b>What We Did</b><br>
+<span class="tag">&lt;h3&gt;</span> <b>Social Media Strategy &amp; Content</b>: [what you posted, platforms, cadence]. <a>social media marketing</a><br>
+<span class="tag">&lt;h3&gt;</span> <b>Fan Page Cross-Promotion</b>: [how the network amplified the content]<br>
+<span class="tag">&lt;h3&gt;</span> <b>Video</b>: [highlight reels, behind-the-scenes, Shorts]. <a>video marketing</a></p>
+<p><span class="tag">&lt;h2&gt;</span> <b>The Results</b><br>[Numbers + 2–3 screenshots of Insights, with personal data blurred.]</p>
+<p><span class="tag">&lt;h2&gt;</span> <b>What the Client Said</b><br>["Real quote." — Name, role. <i>Only with written permission; never invent it.</i>]</p>
+<p><span class="tag">CTA &lt;h2&gt;</span> <b>Want Results Like These?</b> <span class="tag">button</span> [Get a Free Social Media Audit] → /contact-us/?service=social · <a>See all client results</a></p>
+</div>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p2">P2</span></td><td>Case study engagement</td><td><code>select_content</code> (content_type=case_study) from Home slider and Clients tiles; <code>cta_click</code> (case_study_bottom).</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Assist</td><td>GA4: share of leads whose path includes a case study.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Indexing</td><td>noindex while empty; check the portfolio_page type in the AIOSEO sitemap (include it only if you choose Option A and it has content).</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Slug base</td><td>/portfolio_page/ → /case-studies/ + 301s.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Schema</td><td><code>Article</code> (or CreativeWork) + <code>BreadcrumbList</code> (Home › Clients › Case study). No Review markup for testimonials on your own site.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Slider performance</td><td>Home sliders load all item images. Keep one slider, lazy-load images, use WebP.</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>PF-01</td><td>Decision</td><td>Option A: build out 3–6 case studies in the portfolio type (recommended) / Option B: retire it (301 → /clients/, remove the sliders)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>PF-02</td><td>Urgent</td><td>noindex the empty portfolio item until it has content</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>PF-03</td><td>Add</td><td>Case-study content (template §5) with real, permitted numbers and quotes</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>PF-04</td><td>Change</td><td>Portfolio slug base → /case-studies/ + 301</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>PF-05</td><td>Fix</td><td>Home: one portfolio slider only, shown once 4+ items exist</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>PF-06</td><td>Add</td><td>Meta, image rename + alt, Article + BreadcrumbList schema, internal links</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>PF-07</td><td>Tracking</td><td>Case-study select_content + CTA events</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Status: DONE (audit complete) · This was the final item. All 34 items in the queue are audited.</b></p>
+</body></html>
