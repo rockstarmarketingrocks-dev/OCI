@@ -1,0 +1,149 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – Clients</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Clients</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/clients/</b> &nbsp;·&nbsp; WP ID 4015 &nbsp;·&nbsp; Builder: WPBakery (full_width template) &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Last modified in WP: 2022-09-13 &nbsp;·&nbsp; Page 9 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> Every page we've rewritten so far links here as proof ("see our clients"). Right now the page is <b>a 25-image gallery with zero words</b>: no heading in the content, no client names, no results, no testimonials. The image files are named "jh", "aaaa", "sssss", "2323", "343434" and "7676", so Google can't tell what (or who) is in them. Each image also has its own <b>indexable attachment page</b> (e.g. <code>/jh-3/</code>, <code>/clients/sssss/</code>, <code>/clients/attachment/7676/</code>), which are thin pages that waste crawl budget. The fix: turn the page into a <b>Clients &amp; Results</b> page (named logos, 3–5 short case studies, testimonials) and redirect attachment pages site-wide.
+</div>
+<p class="small"><b>Method note:</b> the live site can't be reached from the audit environment. Data comes from WordPress (connector) and AIOSEO. The connector doesn't expose image alt text. Given the file titles, assume alt text is empty and <i>verify in the Media Library</i>.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>No content</td><td>0 words of text. Add an intro, client categories, 3–5 case studies, testimonials and a CTA (about 700 words, §5).</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>H1</td><td>No heading in the content; the theme title "Clients" is the only probable H1 (<i>verify</i>). Set the H1 to <b>"Our Clients &amp; Results"</b>.</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Attachment pages</td><td>Each gallery image has a public attachment URL (/jh-3/, /clients/aaaa/ …). In AIOSEO → Search Appearance → Image SEO / Media, turn on <b>"Redirect attachment URLs → attachment file/parent"</b> and set Attachments to noindex. This is a site-wide fix, covering every image on the site.</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>Image names &amp; alt</td><td>Rename the media titles and add alt text for all 25 images: "[Client name] logo" or "[Artist] – social media client". Where you can't name a client, use a category (e.g. "Grammy-winning country band – Rockstar Marketing client").</td></tr>
+<tr><td>5</td><td><span class="p1">P1</span></td><td>Meta</td><td>SEO title "#post_title #separator_sa #site_title" renders as "Clients – Destin, Florida Advanced Social Media and SEO Company". Description is the site-wide duplicate. New values in §2.</td></tr>
+<tr><td>6</td><td><span class="p2">P2</span></td><td>Case studies</td><td>Add 3–5 mini case studies (client type → challenge → what we did → result). These become the proof that every other page links to. Use real numbers only.</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Testimonials</td><td>Add 3–6 testimonials with name, business and city (from Google reviews, with permission).</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Intralinking</td><td>0 links. Link each case study to the service used (SEO, social, video, web) and the matching city page, and add a CTA to /contact-us/.</td></tr>
+<tr><td>9</td><td><span class="p2">P2</span></td><td>Gallery weight</td><td>25 images at 350×350 load all at once. Lazy-load them, use WebP, and consider fewer (12–15 strongest logos) on a uniform background.</td></tr>
+<tr><td>10</td><td><span class="p3">P3</span></td><td>Builder junk</td><td>2 raw-HTML &amp;nbsp; spacers. The separator icon (hand-sm, 11730) is decorative; give it alt="".</td></tr>
+<tr><td>11</td><td><span class="p3">P3</span></td><td>Portfolio post type</td><td>One <code>portfolio_page</code> item exists (Mikado). Either build the case studies as portfolio items linked from here, or noindex the portfolio type. Decide when we reach it in the queue.</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>#post_title #separator_sa #site_title</td><td><b>Clients &amp; Results | Rockstar Marketing, Destin FL</b> (48)</td></tr>
+<tr><td>Meta description</td><td>(site-wide duplicate)</td><td><b>See who we've helped: local Destin businesses, national brands, pro athletes and Grammy-winning artists. Real SEO, social media and video results.</b> (146)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>Rockstar Marketing clients <span class="small">(brand/proof page)</span></td></tr>
+<tr><td>H1</td><td>Theme title "Clients"</td><td>Our Clients &amp; Results</td></tr>
+<tr><td>Slug</td><td>/clients/</td><td>Keep it (linked from many pages after the rewrites)</td></tr>
+<tr><td>OG image</td><td>none</td><td>Logo-collage 1200×630</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td class="small">(theme H1 "Clients", <i>verify</i>)<br><i>No headings in content; image gallery only</i></td><td class="small">
+<b>H1</b> – Our Clients &amp; Results<br>
+<b>H2</b> – Who We Work With<br>
+&nbsp;&nbsp;<b>H3</b> – Entertainers, Bands &amp; Pro Athletes<br>
+&nbsp;&nbsp;<b>H3</b> – Emerald Coast Businesses<br>
+&nbsp;&nbsp;<b>H3</b> – National Brands &amp; Professionals<br>
+<b>H2</b> – Client Results <i>(case studies)</i><br>
+&nbsp;&nbsp;<b>H3</b> ×3–5 – [Client / type]: [headline result]<br>
+<b>H2</b> – What Our Clients Say<br>
+<b>H2</b> – Some of the Brands We've Worked With <i>(gallery)</i><br>
+<b>H2</b> – Become Our Next Success Story <i>(CTA)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:40%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>SEO</td><td>/seo/</td><td>Case study "What we did"</td></tr>
+<tr><td>social media campaign / fan page network</td><td>/social-media/</td><td>Case studies + Entertainers H3</td></tr>
+<tr><td>video</td><td>/video-marketing/</td><td>Case study</td></tr>
+<tr><td>new website</td><td>/web-design/</td><td>Case study</td></tr>
+<tr><td>[city] business</td><td>matching city page (e.g. /destin-seo-company/)</td><td>Emerald Coast H3 / case studies</td></tr>
+<tr><td>our team</td><td>/about-us/</td><td>Intro</td></tr>
+<tr><td>Start your free audit</td><td>/contact-us/</td><td>CTA</td></tr>
+<tr><td><b>Inbound</b></td><td>/clients/ ← Home, Services, /seo/, /social-media/, /video-marketing/, /web-design/, About (all rewritten with "see our clients" links)</td><td>other pages</td></tr>
+</table>
+
+<h2 class="pb">5. Rewritten Page Content (ready to paste)</h2>
+<p class="small">About 700 words plus case studies. All results must be real; the brackets show the format.</p>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Our Clients &amp; Results</b></p>
+<p><span class="tag">&lt;p&gt;</span> Since 1996, Rockstar Marketing has helped businesses, brands and personalities get found, get followed and get customers. Our clients range from family-owned shops in Destin to NFL and NBA players, UFC fighters and Grammy-winning bands, and every one of them gets the same strategies and the same hands-on <a>team</a>. <span class="small">[→ /about-us/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Who We Work With</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Entertainers, Bands &amp; Pro Athletes</b> <span class="tag">&lt;p&gt;</span> Country and rock bands, Grammy-winning artists, NFL and NBA players, UFC fighters and All-American college athletes trust us to grow their fan bases. Through our <a>fan page network</a> we've reached more than 100 million people in a single month. <span class="small">[→ /social-media/]</span></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Emerald Coast Businesses</b> <span class="tag">&lt;p&gt;</span> Restaurants, charters, attractions, vacation rentals, contractors, doctors and lawyers from Pensacola to Panama City Beach rely on us for <a>local SEO</a>, social media and websites. <span class="small">[→ /destin-seo-company/]</span></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>National Brands &amp; Professionals</b> <span class="tag">&lt;p&gt;</span> National and international companies and radio stations use our <a>SEO</a> and <a>video marketing</a> to compete nationwide. <span class="small">[→ /seo/, /video-marketing/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Client Results</b></p>
+<p><span class="tag">&lt;h3&gt; template ×3–5</span> <b>[Client or client type]: [headline result, e.g. "#1 on Google for 'destin fishing charter'"]</b><br>
+<span class="tag">&lt;p&gt;</span> <b>Challenge:</b> [1 sentence]. <b>What we did:</b> [e.g. a <a>new website</a>, local SEO and a Google Business Profile overhaul]. <b>Result:</b> [numbers: rankings, traffic, calls, followers, sales] in [time frame].</p>
+<p class="small">Results you already state elsewhere on the site, which you can expand into case studies:</p>
+<ul class="small">
+<li>Ranked a keyword with 1 billion+ searches on the front page of Google</li>
+<li>A video that reached 60 million+ people</li>
+<li>102 million people reached with a Facebook fan page in 30 days</li>
+<li>35,000 fans added to a fan page in 24 hours</li>
+<li>4,500+ fans for a band from a single text message</li>
+<li>Rockstar Marketing itself: #1 on Google for "Destin SEO company"</li>
+</ul>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>What Our Clients Say</b><br>
+<span class="tag">3–6 blockquotes</span> "[Testimonial]" — <b>[Name]</b>, [Business], [City]</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Some of the Brands We've Worked With</b><br>
+<span class="tag">vc_gallery</span> existing gallery, 12–25 images, renamed and with alt text, lazy-loaded</p>
+
+<p><span class="tag">CTA band &lt;h2&gt;</span> <b>Become Our Next Success Story</b><br>
+<span class="tag">&lt;p&gt;</span> Find out what we can do for your business with a free, no-obligation marketing audit.<br>
+<span class="tag">button</span> [Start Your Free Audit] → /contact-us/ &nbsp; [Call (850) 542-3091] → tel:+18505423091</p>
+</div>
+
+<h3>Media Library clean-up (gallery images)</h3>
+<table>
+<tr><th>Media IDs</th><th>Current title</th><th>Action</th></tr>
+<tr><td>11692, 11693, 11683, 11691, 11689, 11684, 11680, 11694, 11825, 11837, 11677, 11682, 11827, 11833, 11686, 11688, 11678, 11676, 11674, 11673, 11824, 11690, 11835, 11834, 11830</td><td>e.g. "jh", "aaaa", "sssss", "343434", "7676", "2323"</td><td>Title + alt = "[Client name] logo". Rename future uploads before uploading (e.g. <code>client-name-logo.webp</code>).</td></tr>
+<tr><td>11730 (separator icon)</td><td>hand-sm</td><td>alt="" (decorative)</td></tr>
+</table>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>CTA + phone</td><td><code>cta_click</code> (clients_bottom), <code>phone_call_click</code>.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Proof-page assist</td><td>GA4 exploration: share of leads whose session included /clients/. If it's high, link here more prominently from service pages.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Case study clicks</td><td><code>case_study_click</code> with the case name, on "read more" or service links inside case studies.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Scroll</td><td>Check that 90% scroll is reached. If not, move the testimonials higher.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Attachment URLs (site-wide)</td><td>Redirect attachment pages to the file or parent page (AIOSEO setting), and check that the sitemap has no attachment URLs. Afterwards, request removal of indexed ones in GSC if any show in <code>site:rockstar-marketing.com/clients/</code>.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Images</td><td>Convert to WebP, keep 350×350 crops, lazy-load everything below the first row, and set explicit width/height.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Schema</td><td><code>CollectionPage</code> + <code>Review</code> items only if the testimonials are genuine. Don't add AggregateRating for your own business on your own site (Google ignores self-serving review stars).</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Builder junk</td><td>Remove 2 &amp;nbsp; raw-HTML spacers.</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>CL-01</td><td>Add</td><td>H1 "Our Clients &amp; Results"</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CL-02</td><td>Change</td><td>SEO title "Clients &amp; Results | Rockstar Marketing, Destin FL"; unique meta description</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CL-03</td><td>Add</td><td>~700 words: intro, 3 client-type H3s, case studies, testimonials, CTA</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CL-04</td><td>Add</td><td>3–5 case studies with real numbers</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CL-05</td><td>Fix</td><td>Rename + alt text for 25 gallery images; decorative alt for the separator</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CL-06</td><td>Fix (site-wide)</td><td>Redirect/noindex attachment pages in AIOSEO</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CL-07</td><td>Add</td><td>~8 internal links to service, city, About and Contact pages</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CL-08</td><td>Change</td><td>Gallery: WebP, lazy-load, trim to the strongest logos</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CL-09</td><td>Add</td><td>CollectionPage schema (+ Review only if genuine)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CL-10</td><td>Tracking</td><td>cta_click, phone_call_click, case_study_click; GA4 assist analysis</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>CL-11</td><td>Remove</td><td>2 raw-HTML spacers</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: Locations (/locations/)</b></p>
+</body></html>
