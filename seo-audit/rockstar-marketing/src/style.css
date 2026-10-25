@@ -1,0 +1,21 @@
+@page { size: Letter; margin: 0.6in 0.6in 0.7in; }
+body { font-family: "Helvetica Neue", Arial, sans-serif; color:#1d2327; font-size:10.5pt; line-height:1.45; }
+h1 { font-size:22pt; margin:0 0 4px; color:#c8102e; }
+h2 { font-size:14pt; border-bottom:2px solid #c8102e; padding-bottom:3px; margin:22px 0 8px; page-break-after:avoid; }
+h3 { font-size:11.5pt; margin:14px 0 6px; color:#333; page-break-after:avoid; }
+.meta { color:#555; font-size:9.5pt; margin-bottom:12px; }
+table { width:100%; border-collapse:collapse; margin:6px 0 10px; font-size:9.3pt; page-break-inside:auto; }
+th, td { border:1px solid #d0d4d8; padding:5px 6px; vertical-align:top; text-align:left; }
+th { background:#f3f4f6; }
+tr { page-break-inside:avoid; }
+.p1 { color:#fff; background:#c8102e; padding:1px 6px; border-radius:3px; font-weight:bold; font-size:8.5pt; white-space:nowrap; }
+.p2 { color:#fff; background:#d97706; padding:1px 6px; border-radius:3px; font-weight:bold; font-size:8.5pt; white-space:nowrap; }
+.p3 { color:#fff; background:#2563eb; padding:1px 6px; border-radius:3px; font-weight:bold; font-size:8.5pt; white-space:nowrap; }
+.box { background:#f8f9fa; border-left:4px solid #c8102e; padding:8px 12px; margin:8px 0; }
+.copy { border:1px dashed #9aa0a6; padding:10px 14px; margin:8px 0; background:#fffef8; }
+.copy .tag { font-family: Menlo, Consolas, monospace; font-size:8.5pt; color:#c8102e; font-weight:bold; }
+.copy a { color:#1a56db; }
+code { font-family: Menlo, Consolas, monospace; font-size:8.8pt; background:#f1f1f1; padding:0 3px; }
+.small { font-size:9pt; color:#555; }
+ul { margin:4px 0 8px 18px; padding:0; }
+.pb { page-break-before:always; }

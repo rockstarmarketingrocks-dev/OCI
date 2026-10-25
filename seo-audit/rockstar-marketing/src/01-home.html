@@ -1,0 +1,255 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – Home</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Home Page</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/</b> &nbsp;·&nbsp; WP ID 6057 &nbsp;·&nbsp; Builder: WPBakery (Burst theme) &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Last modified in WP: 2025-08-18 &nbsp;·&nbsp; Page 1 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> The home page is the site's strongest asset. Semrush (US) shows it ranking <b>#1 for "destin seo company"</b> (590/mo), <b>#1 "destin seo"</b> (210), <b>#1 "rockstar marketing"</b>, <b>#2 "seo company destin fl"</b> (260), #1 "destin video marketing", #2 "destin internet marketing", #2 "destin social media company", and <b>#7 "destin marketing agency"</b> (110) and "destin digital marketing" (90). It wins on age and authority, not on-page quality. The page has a malformed link, empty and out-of-order headings, no H3s, outdated statistics, almost no internal links, HTTP (non-SSL) links, and generic meta tags shared with three other pages. Fix those without moving the core "Destin SEO" focus and the page should hold its #1s and push the position-7 "marketing agency / digital marketing" terms into the top 3.
+</div>
+
+<b>Method note:</b> The live site couldn't be reached from the audit environment, so this audit uses the page content from the WordPress database (via the site connector), AIOSEO fields, and Semrush ranking data. Items marked <i>Verify live</i> concern the rendered theme header/footer, scripts or speed, and need a check in the browser, PageSpeed Insights or Tag Assistant.
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:7%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>Broken link</td><td>Anchor "Rockstar Marketing" points to <code>http://https//rockstar-marketing.com</code>, which goes nowhere. Link to <code>/seo/</code> with anchor "Destin SEO services" instead (see rewrite).</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>Headings</td><td>Two empty/decorative H2s at the top (one wraps the logo image, one is empty) appear before the H1. Remove both; the H1 must be the first heading.</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Headings</td><td>Service titles are H6 and the results lines are 7× H5. There are no H3s. Rebuild as H1 → H2 → H3 (outline in §3).</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>Meta title</td><td>Current: "Destin, Fort Walton Beach &amp; Niceville Social Media &amp; SEO Company" (~64 chars, no brand, "SEO" at the end). New: <b>"Destin SEO &amp; Social Media Company | Rockstar Marketing"</b> (54 chars).</td></tr>
+<tr><td>5</td><td><span class="p1">P1</span></td><td>Meta description</td><td>The same description is reused on Home, Clients, About Us and Contact Us. Write a unique one (§2).</td></tr>
+<tr><td>6</td><td><span class="p1">P1</span></td><td>Intralinking</td><td>Only 2 internal links on the page (both to Contact via button). Service images link to <code>#</code>. Add contextual links to all 4 service pages, 11 location pages, FAQ, Clients and About (§4).</td></tr>
+<tr><td>7</td><td><span class="p1">P1</span></td><td>Tracking</td><td>Confirm GA4 + Search Console through Site Kit, then add conversion events for form submits, tel: clicks (Call Now Button) and CTA clicks (§6).</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Mixed content</td><td>Hard-coded <code>http://</code> URLs (logo image, both CTA buttons). Change to relative or <code>https://</code> URLs. Run a site-wide search-replace <code>http://rockstar-marketing.com</code> → <code>https://rockstar-marketing.com</code>.</td></tr>
+<tr><td>9</td><td><span class="p2">P2</span></td><td>Content accuracy</td><td>Stats are 10+ years old: "60 hours of video uploaded to YouTube every minute" (it's 500+ hours), "2 Billion people on Facebook" (3B+ monthly users), "5 billion mobile subscribers", plus an unsourced "nearly 95%". Replace them (rewrite in §5).</td></tr>
+<tr><td>10</td><td><span class="p2">P2</span></td><td>Focus keyword</td><td>AIOSEO focus keyword is "Social Media", which is too broad and not what the page ranks for. Change to <b>"Destin SEO Company"</b>, with secondary phrases: Destin social media company, Destin digital marketing agency, Destin video marketing.</td></tr>
+<tr><td>11</td><td><span class="p2">P2</span></td><td>Schema</td><td>Add or verify <code>ProfessionalService</code>/<code>LocalBusiness</code> JSON-LD with NAP, geo, areaServed, sameAs, plus <code>FAQPage</code> for the new FAQ block (§7). <i>Verify live</i> what Rank Schema/AIOSEO already output, so the page doesn't end up with duplicate entities.</td></tr>
+<tr><td>12</td><td><span class="p2">P2</span></td><td>Trust / E-E-A-T</td><td>No address, phone, reviews, testimonials, team or certifications in the body. "AI Certified" appears twice with no explanation. Name the certification (issuer and year) or remove it. Add a review/testimonial strip and NAP.</td></tr>
+<tr><td>13</td><td><span class="p2">P2</span></td><td>Cannibalization</td><td>Home ranks #1 for "destin seo company", and <code>/destin-seo-company/</code> targets the same phrase as its focus keyword. Keep Home as the primary page. Link from Home to that page as "local SEO services in Destin" and re-focus it during its own audit, without adding a second exact-match target.</td></tr>
+<tr><td>14</td><td><span class="p3">P3</span></td><td>Layout bloat</td><td>Two portfolio sliders render back-to-back (ASC + DESC, 6 items each), which means duplicate items and extra JS/images. Keep one. There is also an empty text row at the top of the page; delete it.</td></tr>
+<tr><td>15</td><td><span class="p3">P3</span></td><td>Images</td><td>Logo strip <code>logos-300x25.jpg</code> is the 300px thumbnail stretched to 515px, so it renders blurry. Use the full-size image or a WebP. Add alt text to all 5 images (§5).</td></tr>
+<tr><td>16</td><td><span class="p3">P3</span></td><td>Copy quality</td><td>Typos and grammar: "Nations leading" → "nation's leading", "Advance Social Media" → "advanced", "Smartphone's" → "smartphones", "let us guide as you embark" → "let us guide you". Random Title Case ("Best choice").</td></tr>
+<tr><td>17</td><td><span class="p3">P3</span></td><td>CTA copy</td><td>"Do you love us yet?" gives no reason to act. Replace it with an offer such as "Get a Free SEO &amp; Social Media Audit" (§5).</td></tr>
+<tr><td>18</td><td><span class="p3">P3</span></td><td>WP page title</td><td>The internal title "Home" is fine. Set the H1 explicitly (done in the rewrite) and make sure the theme doesn't print "Home" as a second, visible H1. <i>Verify live</i>.</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>Destin, Fort Walton Beach &amp; Niceville Social Media &amp; SEO Company</td><td><b>Destin SEO &amp; Social Media Company | Rockstar Marketing</b></td></tr>
+<tr><td>Meta description</td><td>Rockstar Marketing is a Destin, Fort Walton Beach and Niceville, Florida Social Media, Search Engine Optimization, Video Marketing and Web Design Company. (154, duplicated on 4 pages)</td><td><b>Destin SEO, social media, video marketing and web design that bring in real customers. Serving the Emerald Coast from Destin, FL. Get a free audit today.</b> (153)</td></tr>
+<tr><td>Focus keyphrase</td><td>Social Media</td><td>Destin SEO Company</td></tr>
+<tr><td>Additional keyphrases</td><td>none</td><td>Destin social media company · Destin digital marketing agency · Destin video marketing · Destin web design</td></tr>
+<tr><td>OG / Twitter title</td><td><i>Verify live</i></td><td>Destin SEO &amp; Social Media Company | Rockstar Marketing</td></tr>
+<tr><td>OG image</td><td>None set (featured image = 0)</td><td>Upload a 1200×630 branded image (logo, "Destin SEO &amp; Social Media"), set it as the page's featured image and the AIOSEO social image.</td></tr>
+<tr><td>Canonical</td><td><i>Verify live</i></td><td><code>https://rockstar-marketing.com/</code> (self-referencing, https, trailing slash). Confirm <code>/home/</code> 301s or canonicals to <code>/</code>.</td></tr>
+<tr><td>Robots</td><td><i>Verify live</i></td><td>index, follow, max-image-preview:large</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:50%">Current (in source order)</th><th>New</th></tr>
+<tr><td class="small">
+H2 – [logo image only]<br>
+H2 – [empty]<br>
+H1 – Advanced Social Media, Search Engine Optimization and Video Marketing<br>
+H2 – Destin, Florida Internet Marketing<br>
+H6 – ADVANCED SOCIAL MEDIA<br>
+H6 – SEO<br>
+H6 – YOUTUBE MARKETING<br>
+H6 – WEB DESIGN<br>
+H6 – Want more buyers for your products or services?<br>
+H2 – Can other Internet Marketing Companies do what we do?<br>
+H5 ×7 – result statements<br>
+[custom font, not a heading] – Do you love us yet?
+</td><td class="small">
+<b>H1</b> – Destin SEO &amp; Social Media Company That Turns Searches Into Customers<br>
+<b>H2</b> – Digital Marketing Services in Destin, Florida<br>
+&nbsp;&nbsp;<b>H3</b> – Search Engine Optimization (SEO)<br>
+&nbsp;&nbsp;<b>H3</b> – Advanced Social Media Marketing<br>
+&nbsp;&nbsp;<b>H3</b> – YouTube &amp; Video Marketing<br>
+&nbsp;&nbsp;<b>H3</b> – Web Design &amp; Development<br>
+<b>H2</b> – Why Destin Businesses Choose Rockstar Marketing<br>
+&nbsp;&nbsp;<b>H3</b> – A Marketing Company That Builds Websites, Not the Other Way Around<br>
+&nbsp;&nbsp;<b>H3</b> – Results Other Agencies Can't Match <i>(stats as a list, not headings)</i><br>
+<b>H2</b> – Local SEO &amp; Social Media Across the Emerald Coast<br>
+<b>H2</b> – How We Grow Your Business<br>
+&nbsp;&nbsp;<b>H3</b> ×4 – Audit · Strategy · Execution · Reporting<br>
+<b>H2</b> – Frequently Asked Questions<br>
+&nbsp;&nbsp;<b>H3</b> ×4 – questions<br>
+<b>H2</b> – Get a Free SEO &amp; Social Media Audit <i>(CTA band)</i>
+</td></tr>
+</table>
+<p class="small">Implementation: in WPBakery, change each Text Block's paragraph format. Results lines become a <code>&lt;ul&gt;</code>, styled big and blue if you want to keep the look. The CTA banner text "Want more buyers…" becomes a <code>&lt;p&gt;</code> with a class, not an H6. Theme/sidebar/footer widget titles should be <code>&lt;p&gt;</code> or H3 rather than H2–H6 ahead of the content (<i>verify live</i>).</p>
+
+<h2>4. Internal Linking Plan</h2>
+<p>Current state: 2 internal links (both http:// to Contact), 1 broken link, 4 service images linked to <code>#</code>. Target state: about 20 contextual links. The anchors below are already placed in the rewritten copy in §5.</p>
+<table>
+<tr><th style="width:38%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>Destin SEO services / Search Engine Optimization (SEO)</td><td>/seo/</td><td>Intro + SEO H3 + image link</td></tr>
+<tr><td>social media marketing / Advanced Social Media Marketing</td><td>/social-media/</td><td>Intro + H3 + image link</td></tr>
+<tr><td>YouTube and video marketing</td><td>/video-marketing/</td><td>H3 + image link</td></tr>
+<tr><td>web design</td><td>/web-design/</td><td>H3 + image link</td></tr>
+<tr><td>local SEO services in Destin</td><td>/destin-seo-company/</td><td>Locations section</td></tr>
+<tr><td>Destin social media company</td><td>/destin-social-media-company/</td><td>Locations</td></tr>
+<tr><td>Destin web design company</td><td>/destin-webdesign-company/</td><td>Locations</td></tr>
+<tr><td>Fort Walton Beach SEO / social media / web design</td><td>/fort-walton-beach-seo-company/ · /fort-walton-beach-social-media-company/ · /fort-walton-beach-web-design/</td><td>Locations</td></tr>
+<tr><td>Santa Rosa Beach &amp; 30A SEO / social media / web design</td><td>/santa-rosa-beach-seo-company/ · /santa-rosa-beach-social-media-company/ · /santa-rosa-beach-web-design-company/</td><td>Locations</td></tr>
+<tr><td>Pensacola SEO / social media / web design</td><td>/pensacola-seo-company/ · /pensacola-social-media-company/ · /pensacola-web-design-company/</td><td>Locations</td></tr>
+<tr><td>Miramar Beach social media</td><td>/miramar-beach-social-media-company/</td><td>Locations</td></tr>
+<tr><td>see all areas we serve</td><td>/locations/</td><td>Locations</td></tr>
+<tr><td>see our clients</td><td>/clients/</td><td>Results section</td></tr>
+<tr><td>about our team</td><td>/about-us/</td><td>Why us section</td></tr>
+<tr><td>more answers in our FAQ</td><td>/faq/</td><td>FAQ section</td></tr>
+<tr><td>Get my free audit / Contact us</td><td>/contact-us/</td><td>CTA buttons (https, relative)</td></tr>
+</table>
+<p class="small">Gaps: Niceville, Navarre, Crestview, Gulf Breeze, Panama City Beach and 30A are named on the page but have no landing pages. Niceville already ranks #4 for "niceville social media company" from the home page alone, so start there; it's the first new page to build. Also: get the 4 core service pages and /locations/ into the main menu and the footer (<i>verify live</i>).</p>
+
+<h2 class="pb">5. Rewritten Page Content (ready to paste)</h2>
+<p class="small">Tags in red show the element to use in WPBakery. Bracketed items like [PHONE] need your real data; I didn't invent any. About 1,050 words (current: about 610). The stats are the ones already on your page; keep only the ones you can back up for a prospect who asks.</p>
+
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Destin SEO &amp; Social Media Company That Turns Searches Into Customers</b></p>
+
+<p><span class="tag">&lt;p&gt;</span> Rockstar Marketing is a Destin, Florida digital marketing agency specializing in <a>search engine optimization</a>, <a>social media marketing</a>, video marketing and web design. We help Emerald Coast businesses, from Pensacola to Panama City Beach, show up on the first page of Google, build audiences that actually buy, and turn website visitors into calls, bookings and sales. <span class="small">[links → /seo/, /social-media/]</span></p>
+
+<p><span class="tag">&lt;p&gt;</span> We're a marketing company that happens to build websites, not a web design shop that tries SEO on the side. Every strategy we run is measured against one thing: more customers for your business.</p>
+
+<p><span class="tag">&lt;p&gt; button</span> [Get a Free Marketing Audit] → /contact-us/ &nbsp;&nbsp; [Call [PHONE]] → tel:</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Digital Marketing Services in Destin, Florida</b></p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b><a>Search Engine Optimization (SEO)</a></b> <span class="small">[→ /seo/]</span></p>
+<p><span class="tag">&lt;p&gt;</span> Most of your customers start with a Google search. Our SEO services improve your rankings in local map results and organic search through technical fixes, keyword-focused content, Google Business Profile optimization and authority-building links, so you show up above your competitors when people are ready to buy.</p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b><a>Advanced Social Media Marketing</a></b> <span class="small">[→ /social-media/]</span></p>
+<p><span class="tag">&lt;p&gt;</span> Facebook alone has more than 3 billion monthly users, and your customers scroll Instagram, TikTok and YouTube every day. We plan, create and manage content and paid campaigns that grow a real, local following and drive it back to your website, your phone and your front door.</p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b><a>YouTube &amp; Video Marketing</a></b> <span class="small">[→ /video-marketing/]</span></p>
+<p><span class="tag">&lt;p&gt;</span> More than 500 hours of video are uploaded to YouTube every minute, and short-form video now drives discovery on every platform. We script, produce and optimize videos that rank in YouTube and Google search, and we've produced a single video that reached more than 60 million people.</p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b><a>Web Design &amp; Development</a></b> <span class="small">[→ /web-design/]</span></p>
+<p><span class="tag">&lt;p&gt;</span> Your website should work for you 24/7. We build fast, mobile-first WordPress, Shopify and custom HTML5 sites with SEO built in from day one, whether you need a lead-generating service site, an e-commerce store or a content portal.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Why Destin Businesses Choose Rockstar Marketing</b></p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b>A Marketing Company That Builds Websites, Not the Other Way Around</b></p>
+<p><span class="tag">&lt;p&gt;</span> Many web design companies build a site, then try SEO and social media and come up short. Our focus has always been search and advanced social media strategy. That's why business owners, marketing directors and other agencies outsource their SEO and social media to us, for local campaigns along the Gulf Coast and national campaigns across the U.S. <a>Learn about our team</a>. <span class="small">[→ /about-us/]</span></p>
+
+<p><span class="tag">&lt;h3&gt;</span> <b>Results Other Agencies Can't Match</b></p>
+<p><span class="tag">&lt;ul&gt;</span></p>
+<ul>
+<li>Ranked a keyword on the front page of Google with over 1 billion searches</li>
+<li>Made a single video reach more than 60 million people</li>
+<li>Reached 102 million people with a Facebook fan page in 30 days</li>
+<li>Added 35,000+ Facebook fans to a fan page in 24 hours</li>
+<li>Gained 4,500+ Facebook fans for a band with a single text message</li>
+<li>Made 50+ posts each reach over 1 million people in one year</li>
+<li>Work with some of the biggest entertainers on the planet</li>
+</ul>
+<p><span class="tag">&lt;p&gt;</span> <a>See our clients</a> <span class="small">[→ /clients/]</span> &nbsp;·&nbsp; <span class="tag">ADD</span> 2–3 short Google reviews with first name + business.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Local SEO &amp; Social Media Across the Emerald Coast</b></p>
+<p><span class="tag">&lt;p&gt;</span> Our office is in Destin, and we work with businesses throughout Okaloosa, Walton, Santa Rosa, Escambia and Bay counties, including Fort Walton Beach, Niceville, Crestview, Navarre, Gulf Breeze, Sandestin, Miramar Beach, Santa Rosa Beach, 30A, Dune Allen, Blue Mountain Beach and Panama City Beach.</p>
+<p><span class="tag">&lt;ul&gt; (3 columns)</span></p>
+<ul>
+<li><b>Destin:</b> <a>local SEO services in Destin</a> · <a>Destin social media company</a> · <a>Destin web design company</a></li>
+<li><b>Fort Walton Beach:</b> <a>Fort Walton Beach SEO</a> · <a>social media</a> · <a>web design</a></li>
+<li><b>Santa Rosa Beach &amp; 30A:</b> <a>Santa Rosa Beach SEO</a> · <a>social media</a> · <a>web design</a></li>
+<li><b>Pensacola:</b> <a>Pensacola SEO</a> · <a>social media</a> · <a>web design</a></li>
+<li><b>Miramar Beach:</b> <a>Miramar Beach social media</a></li>
+</ul>
+<p><span class="tag">&lt;p&gt;</span> <a>See all areas we serve</a> <span class="small">[→ /locations/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>How We Grow Your Business</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>1. Free Audit</b> <span class="tag">&lt;p&gt;</span> We review your website, Google Business Profile, rankings and social accounts and show you exactly where you're losing customers.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>2. Custom Strategy</b> <span class="tag">&lt;p&gt;</span> We pick the keywords, platforms and content that match how your customers search and buy.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>3. Execution</b> <span class="tag">&lt;p&gt;</span> Our team handles the SEO, content, video, ads and web updates, so you can run your business.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>4. Reporting</b> <span class="tag">&lt;p&gt;</span> Monthly reports on rankings, traffic, calls and leads. No vanity metrics.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Frequently Asked Questions</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>How long does SEO take to work in Destin?</b><br>
+<span class="tag">&lt;p&gt;</span> Most local businesses see ranking movement in 60–90 days and meaningful lead growth in 4–6 months. Competitive terms and new websites take longer.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Do you only work with businesses in Destin?</b><br>
+<span class="tag">&lt;p&gt;</span> No. Our office is in Destin and we serve the whole Emerald Coast, but we also run SEO and social media campaigns for companies nationwide.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Do I need a new website to start SEO?</b><br>
+<span class="tag">&lt;p&gt;</span> Not always. We audit your current site first; many sites only need technical fixes and better content. If a rebuild will pay off, we'll tell you why.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Can you manage our social media accounts for us?</b><br>
+<span class="tag">&lt;p&gt;</span> Yes. We handle strategy, content creation, posting, community management and paid social on Facebook, Instagram, TikTok, YouTube and LinkedIn.</p>
+<p><span class="tag">&lt;p&gt;</span> <a>Get more answers in our FAQ</a> <span class="small">[→ /faq/]</span></p>
+
+<p><span class="tag">CTA band &lt;h2&gt;</span> <b>Get a Free SEO &amp; Social Media Audit</b><br>
+<span class="tag">&lt;p&gt;</span> Find out why your competitors outrank you, and what it takes to pass them. No obligation.<br>
+<span class="tag">button</span> [Get My Free Audit] → /contact-us/ &nbsp; <span class="tag">button</span> [Call [PHONE]] → tel:[PHONE]</p>
+</div>
+
+<h3>Image alt text</h3>
+<table>
+<tr><th>Image</th><th>Alt text</th><th>Link to</th></tr>
+<tr><td>logos-300x25.jpg (ID 11596)</td><td>Platforms we market on: Google, Facebook, Instagram, YouTube and more</td><td>none</td></tr>
+<tr><td>ID 11614 (Social)</td><td>Advanced social media marketing in Destin, FL</td><td>/social-media/</td></tr>
+<tr><td>ID 11612 (SEO)</td><td>Destin SEO services</td><td>/seo/</td></tr>
+<tr><td>ID 11610 (YouTube)</td><td>YouTube and video marketing</td><td>/video-marketing/</td></tr>
+<tr><td>ID 11616 (Web)</td><td>Web design and development in Destin</td><td>/web-design/</td></tr>
+<tr><td>ID 11730 (parallax logo)</td><td>Rockstar Marketing logo</td><td>none</td></tr>
+</table>
+
+<h2 class="pb">6. Tracking &amp; Measurement</h2>
+<p>Site Kit by Google is installed. The audit environment can't confirm which services it has connected, so check all of these in WP Admin → Site Kit → Settings and in Google Tag Assistant:</p>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>GA4</td><td>Connected through Site Kit, with a single tag only (no duplicate gtag from the theme or header scripts). Turn on Enhanced Measurement (scrolls, outbound clicks, form interactions).</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Search Console</td><td>Domain property verified. Submit <code>/sitemap.xml</code> (AIOSEO). Watch "destin seo company", "destin marketing agency" and "destin digital marketing" in Performance.</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Lead events</td><td><code>generate_lead</code> on Quform successful submit (thank-you page or Quform JS success hook); <code>phone_call_click</code> on every <code>tel:</code> link, including the Call Now Button plugin; <code>cta_click</code> on "Get My Free Audit". Mark <code>generate_lead</code> and <code>phone_call_click</code> as Key Events in GA4.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Google Tag Manager</td><td>Move to GTM (Site Kit can place it) so events don't require code edits. Container: GA4 config, the events above, Google Ads conversion linker.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Google Business Profile</td><td>Use website link <code>https://rockstar-marketing.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp</code> so map-pack traffic shows separately in GA4.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Meta Pixel + CAPI</td><td>You sell social media services and run fan-page campaigns, so install the Pixel (Lead event on form submit) for retargeting and to show prospects you use it yourself.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Call tracking</td><td>A dynamic number (CallRail or similar) on the site, with GA4 integration, to attribute phone leads by source.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Consent</td><td>If you run ads to EU/UK or use remarketing, add a consent banner with Google Consent Mode v2.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>HTTPS consistency</td><td>Content has hard-coded <code>http://</code> links and images. Search-replace http → https site-wide (AIOSEO or Better Search Replace, after a backup). Confirm a single 301 hop from http:// and www. to <code>https://rockstar-marketing.com/</code>.</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Malformed URL</td><td><code>http://https//rockstar-marketing.com</code>: replace it. Run a broken-link crawl (Screaming Frog or Semrush Site Audit) across all pages, since this pattern may repeat.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Core Web Vitals</td><td>The Burst/Mikado theme loads a parallax section (bg image 11819), 2 portfolio sliders, animations and icon fonts. In LiteSpeed Cache: turn on image WebP + lazy load (exclude the first image, which is the likely LCP), CSS/JS minify + combine, Load CSS Async with Critical CSS, Guest Mode. Remove the duplicate slider. Target LCP &lt; 2.5s and CLS &lt; 0.1 on mobile in PageSpeed Insights.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Structured data</td><td>Add <code>ProfessionalService</code> (or <code>MarketingAgency</code> via additionalType) with name, url, logo, telephone, address, geo, openingHours, areaServed (the cities listed), sameAs (Facebook, Instagram, YouTube, LinkedIn, GBP). Add <code>FAQPage</code> for the 4 FAQs. Run it through the Rich Results Test, and check that Rank Schema and AIOSEO don't both output an Organization.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Duplicate meta</td><td>The same description appears on Home, Clients, About Us and Contact Us. Fix each when its audit comes up.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Image files</td><td>Replace the upscaled 300px logo strip. Convert PNG/JPG to WebP and set explicit width/height to prevent CLS.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Sitemap hygiene</td><td>Exclude <code>wpb_gutenberg_param</code> and empty taxonomy archives from the AIOSEO sitemap. Decide whether the single <code>portfolio_page</code> needs indexing.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Plugins/PHP</td><td>WP 7.1.3 / PHP 8.5: confirm that Mikado Core 2.1.2 and the Burst theme have no PHP warnings in the debug log (these can break schema or output).</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<p class="small">Status key: <b>Proposed</b> = recommended in this audit, not yet applied to the live site. Update the status column as you apply each item.</p>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:14%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>H-01</td><td>Fix</td><td>Replace broken link <code>http://https//rockstar-marketing.com</code> with contextual link to /seo/</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-02</td><td>Remove</td><td>Delete empty H2 + logo-wrapped H2 above H1; delete empty top text row</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-03</td><td>Rewrite</td><td>New H1 "Destin SEO &amp; Social Media Company That Turns Searches Into Customers"</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-04</td><td>Change</td><td>Rebuild heading hierarchy: H6 service titles → H3 under new H2; H5 stats → list; CTA H6 → p</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-05</td><td>Rewrite</td><td>Full body copy rewrite (~1,050 words) with updated stats and typo fixes</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-06</td><td>Add</td><td>New sections: Locations hub, 4-step process, 4-question FAQ, free-audit CTA band</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-07</td><td>Add</td><td>~20 internal links to service, location, FAQ, Clients, About, Contact pages; service images link to service pages</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-08</td><td>Change</td><td>SEO title → "Destin SEO &amp; Social Media Company | Rockstar Marketing"</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-09</td><td>Change</td><td>Unique meta description (153 chars)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-10</td><td>Change</td><td>Focus keyphrase "Social Media" → "Destin SEO Company" + 4 secondary keyphrases</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-11</td><td>Add</td><td>1200×630 featured/OG image</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-12</td><td>Add</td><td>Alt text on 6 images; replace upscaled logo strip</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-13</td><td>Fix</td><td>http:// → https:// for image + both CTA buttons (and site-wide search-replace)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-14</td><td>Remove</td><td>Duplicate portfolio slider (keep one)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-15</td><td>Add</td><td>ProfessionalService + FAQPage JSON-LD; dedupe with Rank Schema</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-16</td><td>Add</td><td>NAP, phone CTA, reviews strip; clarify or remove "AI Certified"</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-17</td><td>Tracking</td><td>Verify GA4 + GSC in Site Kit; add generate_lead, phone_call_click, cta_click; mark Key Events</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-18</td><td>Tracking</td><td>GTM container, GBP UTM link, Meta Pixel + CAPI, call tracking (P2–P3)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-19</td><td>Technical</td><td>LiteSpeed CWV settings (WebP, lazy-load excl. LCP, critical CSS)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>H-20</td><td>Backlog</td><td>Build a Niceville landing page (already #4 from home); de-cannibalize /destin-seo-company/ during its audit</td><td>Proposed</td></tr>
+</table>
+
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: Services (/services/)</b></p>
+</body></html>
