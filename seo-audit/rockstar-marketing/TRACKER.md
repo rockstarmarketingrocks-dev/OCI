@@ -8,7 +8,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 1 | [x] done 2026-10-25 | Home | 6057 | / | 01-home.pdf |
 | 2 | [x] done 2026-10-25 | Services | 11534 | /services/ | 02-services.pdf |
 | 3 | [x] done 2026-10-25 | Search Engine Optimization | 11538 | /seo/ | 03-seo.pdf |
-| 4 | [ ] | Social Media | 11541 | /social-media/ | |
+| 4 | [x] done 2026-10-25 | Social Media | 11541 | /social-media/ | 04-social-media.pdf |
 | 5 | [ ] | Video Marketing | 11544 | /video-marketing/ | |
 | 6 | [ ] | Web Design | 11546 | /web-design/ | |
 | 7 | [ ] | About Us | 11548 | /about-us/ | |
@@ -45,3 +45,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - NAP (from /seo/): Rockstar Marketing, 385 Harbor Blvd Suite 200, Destin, FL 32541, (850) 542-3091 → use for [PHONE] placeholders + schema.
 - Keyword ownership: Home = "Destin SEO company"; /seo/ = "SEO services Destin / Destin search engine optimization"; /services/ = "digital marketing services Destin".
 - WPBakery pages contain base64 &nbsp; vc_raw_html spacer blocks – check each.
+- Keyword ownership: /social-media/ = "social media marketing services" (national); city social pages = local intent (local volumes 0–70/mo).
