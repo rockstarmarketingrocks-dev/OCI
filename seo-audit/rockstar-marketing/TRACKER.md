@@ -28,7 +28,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 21 | [x] done 2026-10-25 | Pensacola SEO Company | 12139 | /pensacola-seo-company/ | 21-pensacola-seo-company.pdf |
 | 22 | [x] done 2026-10-25 | Pensacola Social Media Company | 12170 | /pensacola-social-media-company/ | 22-pensacola-social-media-company.pdf |
 | 23 | [x] done 2026-10-25 | Pensacola Web Design Company | 12157 | /pensacola-web-design-company/ | 23-pensacola-web-design-company.pdf |
-| 24 | [ ] | Miramar Beach Social Media Company | 11955 | /miramar-beach-social-media-company/ | |
+| 24 | [x] done 2026-10-25 | Miramar Beach Social Media Company | 11955 | /miramar-beach-social-media-company/ | 24-miramar-beach-social-media-company.pdf |
 | 25 | [ ] | Destin Florida | 12182 | /destin-florida/ | |
 | 26 | [ ] | Latest | 12215 | /latest/ | |
 | 27 | [ ] | Privacy Policy | 11909 | /privacy-policy/ | |

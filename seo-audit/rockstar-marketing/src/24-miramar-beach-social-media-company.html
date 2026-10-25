@@ -1,0 +1,145 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – Miramar Beach Social Media Company</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Miramar Beach Social Media Company</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/miramar-beach-social-media-company/</b> &nbsp;·&nbsp; WP ID 11955 &nbsp;·&nbsp; Builder: Classic editor &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Created 2022-08-29 · Modified 2022-09-13 &nbsp;·&nbsp; Page 24 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> Miramar Beach search demand is tiny. Semrush shows 0–10 searches/mo each for "miramar beach seo", "web design", "digital marketing" and "social media", and 0 for "sandestin marketing". Separate Miramar pages for each service would be thin, so the best use of this URL is <b>one combined page: "Miramar Beach &amp; Sandestin Digital Marketing"</b> (social media first, plus SEO and web design). Miramar Beach is the only city on the site with no SEO or web design page. Your Destin office is only a few miles away, which also makes Miramar Beach the one city outside Destin where you can realistically appear in the <b>map pack</b>.
+<br><br>Content problems: the two paragraphs are wrapped in <code>&lt;span data-slate-fragment="…"&gt;</code> attributes containing about 3KB of base64-encoded text each (pasted from a rich-text editor). Decoded, the hidden text says "Unlike other firms in <b>Destin</b>", so it was copied from the Destin page. The visible copy is rambling and first-person ("I mean, maybe still seems a little crazy… we can say confidently, decisive!"), with "Miramar Beaches Best" (no apostrophe, unproven claim). The meta description is empty, the image is the shared stock photo at full 847px over http:// with alt="", and the bulleted platform list includes Reddit and Twitter. One thing is good: the only internal link goes correctly to /social-media/.
+</div>
+<p class="small"><b>Method note:</b> the live site can't be reached from the audit environment. Data comes from WordPress (connector), AIOSEO and Semrush US. <i>Verify live</i> = check in the browser.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>Hidden base64 blobs</td><td>Remove both <code>data-slate-fragment</code> attributes (about 6KB of encoded text copied from the Destin page). Edit in the Text/Code view and remove the <code>&lt;span …&gt;</code> wrappers entirely.</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>Unprofessional copy</td><td>"I mean, maybe still seems a little crazy", "decisive!", "chaos online". Full rewrite (§5).</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Scope</td><td>Widen to <b>"Miramar Beach &amp; Sandestin Digital Marketing"</b> (social + SEO + web design + video). Keep the slug (it's linked from 6 rewrites as "Miramar Beach social media").</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>Meta description</td><td>Empty. Add it (§2). The title also uses the "-" separator template, unlike most pages (see SRW-06).</td></tr>
+<tr><td>5</td><td><span class="p1">P1</span></td><td>Duplicate H1</td><td>Content H1 + theme title (<i>verify</i>).</td></tr>
+<tr><td>6</td><td><span class="p2">P2</span></td><td>Map pack potential</td><td>Miramar Beach is next door to the Destin office. Make sure your GBP service area includes Miramar Beach, Sandestin and Seascape, and mention Miramar landmarks in the copy (§5).</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Image</td><td><code>182142720_s.jpg</code> full size (847×565), http://, alt="", also used on 4 other pages. Replace with a unique local image (WebP, about 800px, alt text).</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Unproven claim</td><td>"Miramar Beaches Best Social Media Company" → remove it and use proof points.</td></tr>
+<tr><td>9</td><td><span class="p2">P2</span></td><td>No CTA / NAP / map</td><td>Add them. A map is useful here, since the office is nearby.</td></tr>
+<tr><td>10</td><td><span class="p3">P3</span></td><td>Platform list</td><td>"X Social Media Marketing" ×7. Replace with short platform descriptions; drop Reddit unless you offer it.</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>#post_title - Rockstar Marketing</td><td><b>Miramar Beach &amp; Sandestin Social Media and Digital Marketing</b> (59)</td></tr>
+<tr><td>Meta description</td><td>(empty)</td><td><b>Social media, SEO and web design for Miramar Beach and Sandestin businesses, from a Destin team minutes away. Reach resort guests and locals.</b> (143)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>Miramar Beach social media</td></tr>
+<tr><td>Additional</td><td>none</td><td>Miramar Beach SEO · Miramar Beach web design · Sandestin marketing</td></tr>
+<tr><td>H1</td><td>Miramar Beach Social Media Company</td><td>Miramar Beach &amp; Sandestin Social Media and Digital Marketing</td></tr>
+<tr><td>Slug</td><td>/miramar-beach-social-media-company/</td><td>Keep it</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td class="small">H1 – Miramar Beach Social Media Company<br>(theme H1, <i>verify</i>)<br><i>No other headings; 7-item list</i></td><td class="small">
+<b>H1</b> – Miramar Beach &amp; Sandestin Social Media and Digital Marketing<br>
+<b>H2</b> – Marketing for Resorts, Restaurants &amp; Shops on Scenic 98<br>
+<b>H2</b> – Social Media Marketing in Miramar Beach<br>
+&nbsp;&nbsp;<b>H3</b> – Content &amp; Reels<br>
+&nbsp;&nbsp;<b>H3</b> – Management &amp; Reviews<br>
+&nbsp;&nbsp;<b>H3</b> – Paid Social<br>
+<b>H2</b> – SEO &amp; Google Maps for Miramar Beach Businesses<br>
+<b>H2</b> – Web Design for Miramar Beach &amp; Sandestin<br>
+<b>H2</b> – Who We Help<br>
+<b>H2</b> – FAQ <i>(3 Qs)</i><br>
+<b>H2</b> – Visit Us Minutes Away in Destin <i>(CTA + NAP + map)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:40%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>social media marketing <i>(keep the existing link)</i></td><td>/social-media/</td><td>Intro</td></tr>
+<tr><td>video marketing</td><td>/video-marketing/</td><td>Content H3</td></tr>
+<tr><td>local SEO &amp; Google Business Profile</td><td>/destin-seo-company/</td><td>SEO H2</td></tr>
+<tr><td>SEO services</td><td>/seo/</td><td>SEO H2</td></tr>
+<tr><td>Destin web design</td><td>/web-design/</td><td>Web design H2</td></tr>
+<tr><td>Destin social media company</td><td>/destin-social-media-company/</td><td>Nearby</td></tr>
+<tr><td>Santa Rosa Beach &amp; 30A</td><td>/santa-rosa-beach-seo-company/</td><td>Nearby</td></tr>
+<tr><td>client results</td><td>/clients/</td><td>Who we help</td></tr>
+<tr><td>more questions</td><td>/faq/</td><td>FAQ</td></tr>
+<tr><td><b>Inbound</b></td><td>"Miramar Beach social media" ← Home, Services, /social-media/, Locations, SRB SEO and Social pages (already in rewrites)</td><td>other pages</td></tr>
+</table>
+
+<h2 class="pb">5. Rewritten Page Content (ready to paste)</h2>
+<p class="small">About 850 words. Check the local references.</p>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Miramar Beach &amp; Sandestin Social Media and Digital Marketing</b></p>
+<p><span class="tag">&lt;p&gt;</span> Rockstar Marketing helps Miramar Beach and Sandestin businesses reach the visitors and locals who drive their sales, with <a>social media marketing</a>, SEO and websites built to convert. Our office is just a few minutes west in Destin, so we can meet you at your business and know the area well. <span class="small">[→ /social-media/]</span></p>
+<p><span class="tag">button</span> [Get a Free Marketing Audit] → /contact-us/?city=miramar&amp;service=social &nbsp; [Call (850) 542-3091]</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Marketing for Resorts, Restaurants &amp; Shops on Scenic 98</b><br>
+<span class="tag">&lt;p&gt;</span> Miramar Beach runs on visitors: resort guests at Sandestin, shoppers at Grand Boulevard and Silver Sands, families in beachfront condos along Scenic Gulf Drive. Most of them decide where to eat, shop and play on their phones, often after seeing a post or a review. Year-round residents matter too, especially for service businesses. We build campaigns for both, timed to the seasons.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Social Media Marketing in Miramar Beach</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Content &amp; Reels</b> <span class="tag">&lt;p&gt;</span> Photos, Reels and TikToks shot at your business and around Miramar Beach. Longer videos come through our <a>video marketing</a> team.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Management &amp; Reviews</b> <span class="tag">&lt;p&gt;</span> Posting, replies, DMs and review responses, so guests get answers before they book somewhere else.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Paid Social</b> <span class="tag">&lt;p&gt;</span> Facebook, Instagram and TikTok ads targeting people staying in Miramar Beach right now, or planning their trip from Atlanta, Birmingham or Nashville.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>SEO &amp; Google Maps for Miramar Beach Businesses</b><br>
+<span class="tag">&lt;p&gt;</span> When visitors search "restaurants near me" or "boat rental Miramar Beach", the map pack decides who gets the call. We optimize your Google Business Profile, reviews and website. Learn about our <a>local SEO &amp; Google Business Profile</a> work and full <a>SEO services</a>.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Web Design for Miramar Beach &amp; Sandestin</b><br>
+<span class="tag">&lt;p&gt;</span> Fast, mobile-friendly websites with menus, booking and online stores. See our <a>Destin web design</a> services. We build for the whole area.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Who We Help</b><br>
+<span class="tag">&lt;p&gt;</span> Restaurants and bars · resort shops and boutiques · vacation rental and condo managers · golf, spa and wellness businesses · water sports and rentals · real estate agents · home services. See our <a>client results</a>. [Add 1 Miramar/Sandestin client result.]</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>FAQ</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Can you meet us at our business in Miramar Beach?</b> <span class="tag">&lt;p&gt;</span> Yes. We're minutes away in Destin and happy to come to you.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Which platform is best for Miramar Beach businesses?</b> <span class="tag">&lt;p&gt;</span> Instagram for most visitor-facing businesses, Facebook for locals and older travelers, and TikTok for food and activities.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Do you do SEO and websites too?</b> <span class="tag">&lt;p&gt;</span> Yes. Social media, SEO, video and web design all under one roof. <a>More questions</a>. <span class="small">[→ /faq/]</span></p>
+
+<p><span class="tag">&lt;p&gt;</span> Nearby: <a>Destin social media company</a> · <a>Santa Rosa Beach &amp; 30A</a></p>
+
+<p><span class="tag">CTA band &lt;h2&gt;</span> <b>Visit Us Minutes Away in Destin</b><br>
+<span class="tag">button</span> [Get My Free Audit] → /contact-us/?city=miramar&amp;service=social<br>
+<span class="tag">&lt;address&gt;</span> <b>Rockstar Marketing</b> · 385 Harbor Blvd, Suite 200, Destin, FL 32541 · <a>(850) 542-3091</a> · <a>Get directions</a><br>
+<span class="tag">map</span> office map (responsive, lazy, titled)</p>
+</div>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Leads</td><td>city=miramar → <code>generate_lead</code>; <code>cta_click</code>, <code>phone_call_click</code>, <code>directions_click</code>.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>GBP</td><td>Check GBP Insights for searches from Miramar Beach (the map pack is winnable here). Add Miramar Beach to your GBP service areas.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>GSC</td><td>Regex <code>miramar|sandestin</code>. Low volume, so review it quarterly.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>data-slate-fragment</td><td>Remove ~6KB of hidden base64 attribute data (adds HTML weight and contains a duplicate copy of the Destin text).</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Single H1</td><td>Content H1 or theme title.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Schema</td><td><code>Service</code> (Social Media Marketing + Digital Marketing, areaServed [Miramar Beach, Sandestin]) + <code>BreadcrumbList</code>.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Image</td><td>https, WebP, unique, alt text, about 800px.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Site-wide scan</td><td>Search all content for <code>data-slate-fragment</code> and <code>data-start=</code> (ChatGPT residue was also found on the FAQ) and strip them.</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>MB-01</td><td>Remove</td><td>2 data-slate-fragment base64 blobs (hidden Destin copy)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>MB-02</td><td>Change</td><td>Scope → Miramar Beach &amp; Sandestin digital marketing (social-led); H1, title, description, keyphrases</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>MB-03</td><td>Rewrite</td><td>Rambling first-person copy → ~850-word local page</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>MB-04</td><td>Add</td><td>~10 internal links (keep /social-media/); CTA, NAP, map</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>MB-05</td><td>Replace</td><td>Shared http stock image → unique local image with alt</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>MB-06</td><td>Add</td><td>Service + BreadcrumbList schema; single H1</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>MB-07</td><td>Off-site</td><td>Add Miramar Beach / Sandestin to GBP service areas</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>MB-08</td><td>Site-wide</td><td>Scan and strip data-slate-fragment / data-start attributes</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>MB-09</td><td>Tracking</td><td>city=miramar lead params; events; GBP Insights review</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: Destin Florida (/destin-florida/)</b></p>
+</body></html>
