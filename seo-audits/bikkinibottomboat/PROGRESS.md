@@ -19,7 +19,7 @@ Work top to bottom; mark `[x]` when the changelog is delivered.
 | 12 | [x] | Is Crab Island Safe for Families | 2381 | /is-crab-island-safe-for-families/ | pdf/12-crab-island-safe-families.pdf |
 | 13 | [x] | Bachelorette Parties & Large Groups | 2389 | /best-crab-island-tour-for-bachelorette-parties-large-groups/ | pdf/13-bachelorette-groups.pdf |
 | 14 | [x] | Blog index | 2048 | /blog/ | pdf/14-blog-index.pdf |
-| 15 | [ ] | Post: Destin Fireworks Cruise | 2192 | /the-ultimate-front-row-seat-for-the-destin-fireworks-cruise/ | |
+| 15 | [x] | Post: Destin Fireworks Cruise | 2192 | /the-ultimate-front-row-seat-for-the-destin-fireworks-cruise/ | pdf/15-post-fireworks.pdf |
 | 16 | [ ] | Post: Crab Island Excursion Guide | 2197 | /the-ultimate-guide-to-your-crab-island-excursion-in-destin/ | |
 | 17 | [ ] | Post: Best Restaurants in Destin | 2210 | /the-ultimate-guide-to-the-best-restaurants-in-destin-fl/ | |
 | 18 | [ ] | Post: Lisa Snuggs Real Estate spotlight | 2225 | /local-spotlight-finding-your-piece-of-paradise-with-lisa-snuggs-real-estate-group/ | |
