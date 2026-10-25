@@ -1,0 +1,176 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – Video Marketing</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Video Marketing</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/video-marketing/</b> &nbsp;·&nbsp; WP ID 11544 &nbsp;·&nbsp; Builder: WPBakery + Quform (form id 3) &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Last modified in WP: 2022-09-14 &nbsp;·&nbsp; Page 5 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> The thinnest service page so far: about <b>200 words, and no video on a video marketing page</b>. Semrush: "destin video marketing" (70/mo) is won by <b>Home at #1</b>, with this page only at #7. There's no Destin video location page, so this page should own the local term <b>and</b> go after the national terms where you have real proof: <b>"video marketing services"</b> (2,900/mo, KD 31), <b>"YouTube SEO services"</b> (1,900, KD 27), "YouTube marketing services" (590, KD 23). Those are low-difficulty commercial keywords. "Destin video production" and "Destin videographer" show 0–20 searches.
+<br><br>Credibility problems: "YouTube's Domain Authority is 100 out of 100" (DA is a Moz metric, not a Google signal), "ranks 100 times faster" (unsourced), "rank YouTube videos in minutes" (sounds like a spam promise to anyone who knows SEO), and the 2014 stat "60 hours uploaded every minute" (now 500+).
+</div>
+<p class="small"><b>Method note:</b> the live site can't be reached from the audit environment. Data comes from WordPress (connector), AIOSEO and Semrush US. <i>Verify live</i> = check in the browser.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>No video</td><td>Embed 2–4 of your best videos (the 60M-reach video, a client promo, a YouTube SEO case). Use a lite YouTube embed (click-to-load) to protect page speed, and add <code>VideoObject</code> schema.</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>Thin content</td><td>About 200 words. Expand to about 1,100 with what's included, your process, YouTube SEO, proof and an FAQ (§5).</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>H1 / headings</td><td>Only the H4 "WE CAN RANK YOUTUBE VIDEOS IN MINUTES". New H1: <b>"Video Marketing &amp; YouTube SEO Services"</b>, with a full outline (§3).</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>SEO title</td><td>Empty. New: <b>"Video Marketing &amp; YouTube SEO in Destin, FL | Rockstar Marketing"</b> (63). It keeps "Destin" because there's no Destin video city page to cannibalize.</td></tr>
+<tr><td>5</td><td><span class="p1">P1</span></td><td>Risky claims</td><td>Remove "Domain Authority 100", "ranks 100 times faster" and "in minutes". Replace with concrete proof: the 60M-reach video, plus [X] videos ranked on page 1 of YouTube/Google for "[keyword]".</td></tr>
+<tr><td>6</td><td><span class="p1">P1</span></td><td>Intralinking</td><td>0 links. Add /social-media/, /seo/, /web-design/, /services/, /clients/, /faq/, city pages and /contact-us/ (§4). Ask Home to link here with the anchor "Destin video marketing" so this page takes over the #1 from Home.</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Broken markup</td><td>The NAP text block contains pasted HTML from a rendered WPBakery row (<code>&lt;div class="vc_row wpb_row section"&gt;…</code> 7 nested divs) inside a <code>vc_column_text</code>. Replace it with a clean paragraph.</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Form</td><td>Quform <code>[iphorm id="3" name="Video"]</code>: confirm it still renders, sends notifications and redirects to a thank-you page (needed for conversion tracking). <i>Verify live.</i> Keep the form; it's a good above-the-fold conversion point.</td></tr>
+<tr><td>9</td><td><span class="p2">P2</span></td><td>Outdated stat</td><td>"60 hours of video every minute" → "more than 500 hours". The same fix is needed on Home (H-05).</td></tr>
+<tr><td>10</td><td><span class="p2">P2</span></td><td>Meta description</td><td>97 characters and generic. Rewrite (§2).</td></tr>
+<tr><td>11</td><td><span class="p2">P2</span></td><td>Builder junk</td><td>6 raw-HTML &amp;nbsp; spacers, 2 &amp;nbsp; paragraphs, an empty final row. Delete them.</td></tr>
+<tr><td>12</td><td><span class="p3">P3</span></td><td>Images</td><td>Logo strip upscaled with no alt text; cert image has alt="" and its srcset points to http://. Fix both (https, alt text).</td></tr>
+<tr><td>13</td><td><span class="p3">P3</span></td><td>Backlog</td><td>Possible future pages: "YouTube SEO Services" (1,900/mo) as its own page once this one ranks; a video portfolio page.</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>(empty → site default)</td><td><b>Video Marketing &amp; YouTube SEO in Destin, FL | Rockstar Marketing</b></td></tr>
+<tr><td>Meta description</td><td>Rockstar Marketing is a Destin, Fort Walton Beach and Niceville, Florida Video Marketing Company. (97)</td><td><b>Video marketing and YouTube SEO from the Destin team behind a video that reached 60M+ people. Strategy, production, optimization and ads. Free audit.</b> (149)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>Video Marketing Services</td></tr>
+<tr><td>Additional</td><td>none</td><td>Destin video marketing · YouTube SEO services · YouTube marketing services · video marketing agency</td></tr>
+<tr><td>H1</td><td>Theme title "Video Marketing" (<i>verify</i>)</td><td>Video Marketing &amp; YouTube SEO Services</td></tr>
+<tr><td>Slug</td><td>/video-marketing/</td><td>Keep it</td></tr>
+<tr><td>OG image</td><td>none</td><td>A video thumbnail-style 1200×630 with a play icon and "60M+ views"</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td class="small">(H1 = theme title, <i>verify</i>)<br>H4 – WE CAN RANK YOUTUBE VIDEOS IN MINUTES<br><i>No other headings</i></td><td class="small">
+<b>H1</b> – Video Marketing &amp; YouTube SEO Services<br>
+<b>H2</b> – Why Video Marketing Works<br>
+<b>H2</b> – Our Video Marketing Services<br>
+&nbsp;&nbsp;<b>H3</b> – Video Strategy &amp; Scripting<br>
+&nbsp;&nbsp;<b>H3</b> – Video Production &amp; Editing<br>
+&nbsp;&nbsp;<b>H3</b> – YouTube SEO &amp; Channel Optimization<br>
+&nbsp;&nbsp;<b>H3</b> – Short-Form Video: Reels, TikTok &amp; Shorts<br>
+&nbsp;&nbsp;<b>H3</b> – Video Advertising<br>
+&nbsp;&nbsp;<b>H3</b> – Distribution &amp; Promotion<br>
+<b>H2</b> – Video Results <i>(embeds + stats)</i><br>
+<b>H2</b> – How YouTube SEO Gets Your Videos Found<br>
+<b>H2</b> – Video Marketing for Destin &amp; Emerald Coast Businesses<br>
+<b>H2</b> – Video Marketing FAQ<br>
+&nbsp;&nbsp;<b>H3</b> ×4 – questions<br>
+<b>H2</b> – Get a Free Video Marketing Consultation <i>(form + NAP)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:40%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>social media marketing</td><td>/social-media/</td><td>Short-form H3</td></tr>
+<tr><td>SEO services</td><td>/seo/</td><td>YouTube SEO section</td></tr>
+<tr><td>website</td><td>/web-design/</td><td>Distribution H3</td></tr>
+<tr><td>all our services</td><td>/services/</td><td>Local section</td></tr>
+<tr><td>Destin social media company / Fort Walton Beach / Santa Rosa Beach / Pensacola</td><td>city social pages</td><td>Local section</td></tr>
+<tr><td>client results</td><td>/clients/</td><td>Results</td></tr>
+<tr><td>more questions</td><td>/faq/</td><td>FAQ</td></tr>
+<tr><td>Request a free consultation</td><td>#video-form (on-page anchor) and /contact-us/</td><td>CTAs</td></tr>
+<tr><td><b>Inbound:</b> "Destin video marketing"</td><td>/video-marketing/ ← Home (video H3), Services, /social-media/</td><td>other pages</td></tr>
+</table>
+
+<h2 class="pb">5. Rewritten Page Content (ready to paste)</h2>
+<p class="small">About 1,100 words. Keep the Quform in the right-hand column at the top, and repeat it at the bottom (or use an anchor link).</p>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Video Marketing &amp; YouTube SEO Services</b></p>
+<p><span class="tag">&lt;p&gt;</span> Video is the most powerful way to earn attention online, and the hardest to get right. Rockstar Marketing plans, produces, optimizes and promotes video that gets found on YouTube and Google, gets shared on social media, and turns viewers into customers. Our team has produced a single video that reached more than 60 million people.</p>
+<p><span class="tag">&lt;p&gt;</span> Based in Destin, Florida, we create video marketing for local businesses on the Emerald Coast and for brands, bands and entertainers nationwide.</p>
+<p><span class="tag">button</span> [Get a Free Video Consultation] → #video-form &nbsp; [Call (850) 542-3091] → tel:+18505423091</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Why Video Marketing Works</b><br>
+<span class="tag">&lt;p&gt;</span> YouTube is the world's second-largest search engine, with more than 500 hours of video uploaded every minute, and Google regularly shows videos at the top of search results. Short-form video now drives discovery on Instagram, TikTok and Facebook. Businesses that use video get found in more places, build trust faster and give customers a reason to choose them over competitors who only use text and photos.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Our Video Marketing Services</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Video Strategy &amp; Scripting</b> <span class="tag">&lt;p&gt;</span> We research what your customers search for and watch, then plan videos that answer those questions, with hooks, scripts and calls to action built in.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Video Production &amp; Editing</b> <span class="tag">&lt;p&gt;</span> From promo videos and testimonials to how-to videos and event coverage, we shoot and edit professional video for your business. [Confirm: in-house production / partner crew / client-supplied footage.]</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>YouTube SEO &amp; Channel Optimization</b> <span class="tag">&lt;p&gt;</span> Titles, descriptions, tags, chapters, thumbnails, captions, playlists and channel setup, everything that helps YouTube and Google understand your video and rank it.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Short-Form Video: Reels, TikTok &amp; Shorts</b> <span class="tag">&lt;p&gt;</span> Vertical clips cut from longer content or made for each platform, posted as part of your <a>social media marketing</a>. <span class="small">[→ /social-media/]</span></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Video Advertising</b> <span class="tag">&lt;p&gt;</span> YouTube, Facebook, Instagram and TikTok video ads targeted by location and interest, with retargeting for people who've already watched.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Distribution &amp; Promotion</b> <span class="tag">&lt;p&gt;</span> We get your video in front of an audience fast: embedding it on your <a>website</a>, sharing it through our network of large fan pages, and promoting it across your channels. <span class="small">[→ /web-design/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Video Results</b><br>
+<span class="tag">EMBED ×2–4</span> [your best videos, lite-YouTube embeds with title + 1-line caption]</p>
+<ul>
+<li>A single video that reached <b>60 million+</b> people</li>
+<li>[X] videos ranked on page 1 of YouTube or Google for "[keyword]"</li>
+<li>Videos for [pro athletes / bands / Destin businesses], with your real examples</li>
+</ul>
+<p><span class="tag">&lt;p&gt;</span> See more <a>client results</a>. <span class="small">[→ /clients/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>How YouTube SEO Gets Your Videos Found</b><br>
+<span class="tag">&lt;p&gt;</span> A great video nobody finds doesn't help your business. We target a keyword people actually search for, optimize every on-video and on-page signal, add transcripts and chapters, and earn early views and engagement through distribution, which helps a video rank quickly on YouTube and appear in Google's video results. Video also supports your website rankings, which is why we pair it with our <a>SEO services</a>. <span class="small">[→ /seo/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Video Marketing for Destin &amp; Emerald Coast Businesses</b><br>
+<span class="tag">&lt;p&gt;</span> Restaurants, charters, attractions, vacation rentals, real estate agents, medical practices and contractors across Destin, Fort Walton Beach, Santa Rosa Beach, 30A, Miramar Beach and Pensacola use our videos to stand out. Video works best combined with local social media: see our <a>Destin social media company</a>, <a>Fort Walton Beach</a>, <a>Santa Rosa Beach</a> and <a>Pensacola</a> pages, or <a>all our services</a>. <span class="small">[→ city social pages, /services/]</span></p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Video Marketing FAQ</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>How long should a marketing video be?</b> <span class="tag">&lt;p&gt;</span> Social clips work best at 15–60 seconds. YouTube videos that answer a question or explain a service typically run 3–10 minutes. We'll recommend the right length for each goal.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>How quickly can a video rank on YouTube?</b> <span class="tag">&lt;p&gt;</span> For low-competition keywords, an optimized and promoted video can reach page one within days. Competitive terms take longer. We'll tell you which keywords are realistic.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Can you optimize videos I already have?</b> <span class="tag">&lt;p&gt;</span> Yes. We audit your channel and existing videos and re-optimize titles, descriptions, thumbnails and captions, often with quick gains.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>What does video marketing cost?</b> <span class="tag">&lt;p&gt;</span> [Your pricing: e.g. YouTube SEO from $X/video; production quoted per project.] <a>More questions</a>. <span class="small">[→ /faq/]</span></p>
+
+<p><span class="tag">&lt;h2 id="video-form"&gt;</span> <b>Get a Free Video Marketing Consultation</b><br>
+<span class="tag">&lt;p&gt;</span> Tell us about your video goals and we'll show you how to get more views, and more customers, from video.<br>
+<span class="tag">[iphorm id="3"]</span><br>
+<span class="tag">&lt;p&gt; NAP</span> <b>Rockstar Marketing</b> · 385 Harbor Blvd, Suite 200, Destin, FL 32541 · <a>(850) 542-3091</a></p>
+</div>
+
+<h3>Image &amp; video alt / titles</h3>
+<table>
+<tr><th>Asset</th><th>Alt / title</th><th>Action</th></tr>
+<tr><td>logos-300x25.jpg</td><td>Video platforms we market on</td><td>Full-size image, https</td></tr>
+<tr><td>cert-300x32.jpg</td><td>[certification names]</td><td>https src + srcset</td></tr>
+<tr><td>Video embeds</td><td><code>title="[Video title] – Rockstar Marketing"</code> on the iframe</td><td>Lite embed + VideoObject</td></tr>
+</table>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Form conversion</td><td>Quform id 3: redirect to /thank-you/?form=video, or fire <code>generate_lead</code> (service=video) through the Quform success JS hook. Mark it as a Key Event.</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Video engagement</td><td>GA4 Enhanced Measurement "Video engagement" tracks YouTube embeds (video_start / progress / complete) only if the embed has <code>enablejsapi=1</code>. Turn that on, or use the GTM YouTube trigger, since lite embeds need it.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>CTA + phone</td><td><code>cta_click</code> (video_top / video_bottom), <code>phone_call_click</code>.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>YouTube → site</td><td>Use UTM links in your YouTube descriptions and end screens (<code>utm_source=youtube&amp;utm_medium=video&amp;utm_campaign=[video-slug]</code>), and link the YouTube channel to GA4/Google Ads.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Meta Pixel</td><td>ViewContent "Video Marketing" + Lead, for retargeting.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Nested pasted markup</td><td>Remove the 7 nested <code>&lt;div class="vc_row…"&gt;</code> wrappers inside the NAP text block. That's rendered builder output pasted back in, and it creates invalid, duplicate row structure.</td></tr>
+<tr><td><span class="p1">P1</span></td><td>VideoObject schema</td><td>For each embed: name, description, thumbnailUrl, uploadDate, duration, embedUrl, contentUrl. Lets the page show video rich results in Google.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Embed performance</td><td>Standard YouTube iframes add about 500KB+ of JS each. Use a lite-youtube facade (thumbnail + click to load) or LiteSpeed's iframe lazy-load.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Video sitemap</td><td>AIOSEO Pro has a Video Sitemap. If you're on Pro, turn it on so Google discovers the embedded videos.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Schema</td><td><code>Service</code> (serviceType "Video Marketing") + <code>FAQPage</code> + <code>BreadcrumbList</code>.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Builder junk</td><td>Delete 6 &amp;nbsp; raw-HTML spacers, the &amp;nbsp; paragraphs and the empty row.</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>VM-01</td><td>Add</td><td>H1 "Video Marketing &amp; YouTube SEO Services"; remove the H4; single H1</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-02</td><td>Change</td><td>SEO title → "Video Marketing &amp; YouTube SEO in Destin, FL | Rockstar Marketing"</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-03</td><td>Change</td><td>Meta description (149); focus "Video Marketing Services" + 4 secondary</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-04</td><td>Rewrite</td><td>Copy ~200 → ~1,100 words: why video, 6 service H3s, results, YouTube SEO, local, FAQ, CTA</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-05</td><td>Remove</td><td>"DA 100/100", "100 times faster", "in minutes", "60 hours" claims</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-06</td><td>Add</td><td>2–4 lite YouTube embeds + VideoObject schema (+ video sitemap if on Pro)</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-07</td><td>Add</td><td>~12 internal links; on-page #video-form anchor; repeat form at the bottom</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-08</td><td>Fix</td><td>Remove nested pasted vc_row markup in the NAP block; standardize phone + tel: link</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-09</td><td>Remove</td><td>6 raw-HTML spacers, &amp;nbsp; paragraphs, empty row</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-10</td><td>Fix</td><td>https + alt text on 2 images; OG image</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-11</td><td>Add</td><td>Service + FAQPage + BreadcrumbList schema</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-12</td><td>Tracking</td><td>Quform 3 generate_lead (service=video), YouTube video events (enablejsapi), CTA/phone events, YouTube UTMs</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>VM-13</td><td>Backlog</td><td>Future: dedicated "YouTube SEO Services" page (1,900/mo, KD 27); video portfolio</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: Web Design (/web-design/)</b></p>
+</body></html>

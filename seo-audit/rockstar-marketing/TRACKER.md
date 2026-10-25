@@ -9,7 +9,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 2 | [x] done 2026-10-25 | Services | 11534 | /services/ | 02-services.pdf |
 | 3 | [x] done 2026-10-25 | Search Engine Optimization | 11538 | /seo/ | 03-seo.pdf |
 | 4 | [x] done 2026-10-25 | Social Media | 11541 | /social-media/ | 04-social-media.pdf |
-| 5 | [ ] | Video Marketing | 11544 | /video-marketing/ | |
+| 5 | [x] done 2026-10-25 | Video Marketing | 11544 | /video-marketing/ | 05-video-marketing.pdf |
 | 6 | [ ] | Web Design | 11546 | /web-design/ | |
 | 7 | [ ] | About Us | 11548 | /about-us/ | |
 | 8 | [ ] | Contact us | 11576 | /contact-us/ | |
@@ -46,3 +46,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - Keyword ownership: Home = "Destin SEO company"; /seo/ = "SEO services Destin / Destin search engine optimization"; /services/ = "digital marketing services Destin".
 - WPBakery pages contain base64 &nbsp; vc_raw_html spacer blocks – check each.
 - Keyword ownership: /social-media/ = "social media marketing services" (national); city social pages = local intent (local volumes 0–70/mo).
+- Keyword ownership: /video-marketing/ = "video marketing services" + "Destin video marketing" (Home currently #1 – shift via anchor link). Backlog: YouTube SEO Services page.
