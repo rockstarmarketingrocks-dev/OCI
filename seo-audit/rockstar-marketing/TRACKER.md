@@ -26,7 +26,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 19 | [x] done 2026-10-25 | Santa Rosa Beach Social Media Company | 12026 | /santa-rosa-beach-social-media-company/ | 19-santa-rosa-beach-social-media-company.pdf |
 | 20 | [x] done 2026-10-25 | Santa Rosa Beach Web Design Company | 12056 | /santa-rosa-beach-web-design-company/ | 20-santa-rosa-beach-web-design-company.pdf (EMPTY PAGE – noindex now) |
 | 21 | [x] done 2026-10-25 | Pensacola SEO Company | 12139 | /pensacola-seo-company/ | 21-pensacola-seo-company.pdf |
-| 22 | [ ] | Pensacola Social Media Company | 12170 | /pensacola-social-media-company/ | |
+| 22 | [x] done 2026-10-25 | Pensacola Social Media Company | 12170 | /pensacola-social-media-company/ | 22-pensacola-social-media-company.pdf |
 | 23 | [ ] | Pensacola Web Design Company | 12157 | /pensacola-web-design-company/ | |
 | 24 | [ ] | Miramar Beach Social Media Company | 11955 | /miramar-beach-social-media-company/ | |
 | 25 | [ ] | Destin Florida | 12182 | /destin-florida/ | |
