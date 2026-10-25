@@ -27,7 +27,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 20 | [x] done 2026-10-25 | Santa Rosa Beach Web Design Company | 12056 | /santa-rosa-beach-web-design-company/ | 20-santa-rosa-beach-web-design-company.pdf (EMPTY PAGE – noindex now) |
 | 21 | [x] done 2026-10-25 | Pensacola SEO Company | 12139 | /pensacola-seo-company/ | 21-pensacola-seo-company.pdf |
 | 22 | [x] done 2026-10-25 | Pensacola Social Media Company | 12170 | /pensacola-social-media-company/ | 22-pensacola-social-media-company.pdf |
-| 23 | [ ] | Pensacola Web Design Company | 12157 | /pensacola-web-design-company/ | |
+| 23 | [x] done 2026-10-25 | Pensacola Web Design Company | 12157 | /pensacola-web-design-company/ | 23-pensacola-web-design-company.pdf |
 | 24 | [ ] | Miramar Beach Social Media Company | 11955 | /miramar-beach-social-media-company/ | |
 | 25 | [ ] | Destin Florida | 12182 | /destin-florida/ | |
 | 26 | [ ] | Latest | 12215 | /latest/ | |
@@ -56,3 +56,4 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 - QUICK WIN: "fort walton beach seo company" 260/mo KD 7 – Home ranks #15, FWB page not in top 100. /destin-florida/ ranks #42 for FWB SEO term.
 - SRB cluster ≈640/mo (seo company 170, SEO 90/50, digital marketing ×6) scattered over 6 URLs → consolidate on /santa-rosa-beach-seo-company/. SRB video marketing (50) ranks #8 via SRB social page.
 - TOP OPPORTUNITY: Pensacola SEO cluster ≈1,130/mo, KD 2–9, CPC ~$24; site not in top 100. Organic only (no Pensacola address → no map pack; do NOT create virtual GBP address).
+- 2nd OPPORTUNITY: Pensacola web design cluster ≈910/mo, KD 5–34, CPC ~$15; not in top 100.
