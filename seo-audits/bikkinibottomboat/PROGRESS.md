@@ -21,7 +21,7 @@ Work top to bottom; mark `[x]` when the changelog is delivered.
 | 14 | [x] | Blog index | 2048 | /blog/ | pdf/14-blog-index.pdf |
 | 15 | [x] | Post: Destin Fireworks Cruise | 2192 | /the-ultimate-front-row-seat-for-the-destin-fireworks-cruise/ | pdf/15-post-fireworks.pdf |
 | 16 | [x] | Post: Crab Island Excursion Guide | 2197 | /the-ultimate-guide-to-your-crab-island-excursion-in-destin/ | pdf/16-post-crab-island-excursion.pdf |
-| 17 | [ ] | Post: Best Restaurants in Destin | 2210 | /the-ultimate-guide-to-the-best-restaurants-in-destin-fl/ | |
+| 17 | [x] | Post: Best Restaurants in Destin | 2210 | /the-ultimate-guide-to-the-best-restaurants-in-destin-fl/ | pdf/17-post-restaurants.pdf |
 | 18 | [ ] | Post: Lisa Snuggs Real Estate spotlight | 2225 | /local-spotlight-finding-your-piece-of-paradise-with-lisa-snuggs-real-estate-group/ | |
 | 19 | [ ] | Post: Crab Island Voyages spotlight | 2244 | /local-business-spotlight-finding-your-voyage-to-crab-island-from-fwb-with-our-friends-at-crab-island-voyages/ | |
 | 20 | [ ] | Post: Destin Elite Transportation spotlight | 2256 | /local-business-spotlight-elevate-your-vacation-with-destin-elite-transportation/ | |
