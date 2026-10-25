@@ -30,9 +30,15 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 23 | [x] done 2026-10-25 | Pensacola Web Design Company | 12157 | /pensacola-web-design-company/ | 23-pensacola-web-design-company.pdf |
 | 24 | [x] done 2026-10-25 | Miramar Beach Social Media Company | 11955 | /miramar-beach-social-media-company/ | 24-miramar-beach-social-media-company.pdf |
 | 25 | [x] done 2026-10-25 | Destin Florida | 12182 | /destin-florida/ | 25-destin-florida.pdf |
-| 26 | [ ] | Latest | 12215 | /latest/ | |
+| 26 | [x] done 2026-10-25 | Latest | 12215 | /latest/ | 26-latest.pdf |
 | 27 | [ ] | Privacy Policy | 11909 | /privacy-policy/ | |
-| 28+ | [ ] | 6 blog posts + 1 portfolio item (IDs listed when reached) | | | |
+| 28 | [ ] | How to Start a YouTube Channel (post) | 12217 | /how-to-start-a-youtube-channel-everything-you-need-to-know/ | |
+| 29 | [ ] | Instagram Account Step-by-Step Guide (post) | 12221 | /instagram-account-step-by-step-guide-to-getting-more-conversions-and-sales/ | |
+| 30 | [ ] | Definitive Guide to Amazon Store (post) | 12246 | /definitive-guide-to-building-and-optimizing-your-amazon-store/ | |
+| 31 | [ ] | Destin AI Digital Marketing Company (post) | 12280 | /12280-2/ | |
+| 32 | [ ] | Is an SEO Company the Breakthrough (post) | 12305 | /is-an-seo-company-the-breakthrough-your-business-needs/ | |
+| 33 | [ ] | Best Destin SEO Company: How to Choose (post) | 12308 | /best-destin-seo-company-how-to-choose-the-right-partner-for-your-business/ | |
+| 34 | [ ] | Portfolio item (1) | tbd | | |
 
 ## Site-wide notes carried between pages
 - Live site not reachable from the audit sandbox; audits use WP connector data + Semrush (US). Items tagged "Verify live" need a browser check.

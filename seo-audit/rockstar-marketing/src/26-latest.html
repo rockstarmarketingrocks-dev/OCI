@@ -1,0 +1,110 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – Latest (Blog)</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Latest (Blog Index)</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/latest/</b> &nbsp;·&nbsp; WP ID 12215 &nbsp;·&nbsp; Builder: Classic editor &nbsp;·&nbsp; SEO plugin: All in One SEO<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Created 2023-03-24 (never edited) &nbsp;·&nbsp; Page 26 of 33 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> "Latest" is meant to be the blog page, but it's <b>an empty published page</b>: 0 words, no meta. WordPress isn't using it as the posts page either. In <i>Settings → Reading</i>, "Posts page" is unset (<code>page_for_posts = 0</code>), so <b>/latest/ doesn't list any posts</b> unless the theme template does it (<i>verify live</i>). As a result, the site's 6 blog posts have no crawlable index page linking to them. Those 6 posts also have <b>no SEO title, no meta description and no focus keyphrase</b>, and one has the slug <code>/12280-2/</code>. Each post is audited separately (pages 28–33). This page needs to become a real blog hub.
+</div>
+<p class="small"><b>Method note:</b> the live site can't be reached from the audit environment. Data comes from WordPress (connector) and AIOSEO. <i>Verify live</i> = check in the browser.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>Not the posts page</td><td>WP Admin → Settings → Reading → "Your homepage displays: A static page" → Homepage: Home · <b>Posts page: Latest</b>. WordPress will then render /latest/ as the blog archive (paginated list of posts) using the theme's blog template.</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>Name / URL</td><td>"Latest" is vague for users and search. Rename the page title to <b>"Marketing Blog"</b> (menu label "Blog"). Keep the slug /latest/ (simplest), or change it to /blog/ with a 301 from /latest/. /blog/ is clearer and what users expect; recommended only if /latest/ has no backlinks (check Semrush Backlinks).</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Meta</td><td>Empty. Set the SEO title and description (§2). AIOSEO → Search Appearance → Archives/Blog page controls these once it's the posts page.</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>Menu &amp; footer</td><td>Add "Blog" to the main menu and footer (<i>verify live</i>). Without it, the posts are only reachable through the sitemap.</td></tr>
+<tr><td>5</td><td><span class="p2">P2</span></td><td>Intro text</td><td>WordPress ignores the posts page's own content. Add an intro via the theme's blog options or AIOSEO's archive description: 2–3 sentences plus links to the service pages (§5).</td></tr>
+<tr><td>6</td><td><span class="p2">P2</span></td><td>Categories</td><td>The 6 posts cover YouTube, Instagram, Amazon, AI marketing and SEO. Create 4 categories (SEO, Social Media, Video &amp; YouTube, eCommerce &amp; AI), assign them, and make sure "Uncategorized" isn't used.</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Blog → services</td><td>Each post should link to its matching service page, and service pages should link to related posts ("Read: How to Start a YouTube Channel" on /video-marketing/, etc.). Details in the post audits.</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Pagination &amp; archives</td><td>With 6 posts, one page is enough. Make sure author, date and tag archives are noindex (AIOSEO) to avoid thin duplicates. Keep category archives indexable only once they have 3+ posts.</td></tr>
+<tr><td>9</td><td><span class="p3">P3</span></td><td>Content cadence</td><td>Latest post date: <i>check</i>. Aim for 2 posts/month that support the money pages: Pensacola SEO, Pensacola web design, the FWB and SRB city topics, and AI search.</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>Page title</td><td>Latest</td><td>Marketing Blog</td></tr>
+<tr><td>SEO title</td><td>(empty)</td><td><b>Digital Marketing Blog: SEO, Social &amp; Video Tips | Rockstar Marketing</b> (67) / short: "Marketing Blog | Rockstar Marketing"</td></tr>
+<tr><td>Meta description</td><td>(empty)</td><td><b>Practical SEO, social media, YouTube, AI search and web design tips for small businesses, from the Destin team behind 30 years of results.</b> (139)</td></tr>
+<tr><td>H1</td><td>"Latest" (theme title)</td><td>Marketing Blog</td></tr>
+<tr><td>Slug</td><td>/latest/</td><td>Keep it, or /blog/ + 301 (see #2)</td></tr>
+<tr><td>Robots</td><td>index (empty!)</td><td>index once it lists posts. Until Settings → Reading is fixed, set it to noindex.</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td class="small"><i>Empty page; theme title only</i></td><td class="small">
+<b>H1</b> – Marketing Blog<br>
+<i>Intro paragraph</i><br>
+<b>H2</b> per post card = post title (theme default, usually H2; <i>verify</i>)<br>
+<i>Category filter links</i> (SEO · Social Media · Video &amp; YouTube · eCommerce &amp; AI)<br>
+<b>H2</b> – Need Help With Your Marketing? <i>(CTA, via the widget or theme blog footer)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:40%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>SEO services · social media marketing · video marketing · web design</td><td>/seo/ · /social-media/ · /video-marketing/ · /web-design/</td><td>Intro</td></tr>
+<tr><td>Post cards (title + "Read more")</td><td>6 posts</td><td>Listing</td></tr>
+<tr><td>Category links</td><td>4 category archives</td><td>Listing header</td></tr>
+<tr><td>Get a free marketing audit</td><td>/contact-us/</td><td>CTA</td></tr>
+<tr><td><b>Inbound</b></td><td>Main menu "Blog", footer, FAQ ("our blog" link in the FAQ rewrite), each post's breadcrumb</td><td>site-wide</td></tr>
+</table>
+
+<h2>5. Intro Copy (ready to paste)</h2>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>Marketing Blog</b></p>
+<p><span class="tag">&lt;p&gt;</span> Straight-talking tips on <a>SEO</a>, <a>social media marketing</a>, <a>YouTube and video</a>, AI search and <a>web design</a>, written by the Rockstar Marketing team in Destin, Florida. We share what's working for our clients right now, so you can use it too. Want us to do it for you? <a>Get a free marketing audit</a>.</p>
+</div>
+
+<h3>The 6 posts this page should list (each audited next)</h3>
+<table>
+<tr><th>ID</th><th>Title</th><th>URL</th><th>SEO meta</th><th>Flag</th></tr>
+<tr><td>12217</td><td>How to Start a YouTube Channel: Everything You Need to Know</td><td>/how-to-start-a-youtube-channel-everything-you-need-to-know/</td><td>none</td><td>Link to /video-marketing/</td></tr>
+<tr><td>12221</td><td>Instagram Account Step-by-Step Guide to Getting More Conversions and Sales</td><td>/instagram-account-step-by-step-guide…/</td><td>none</td><td>Link to /social-media/</td></tr>
+<tr><td>12246</td><td>Definitive Guide to Building and Optimizing Your Amazon Store</td><td>/definitive-guide-to-building-and-optimizing-your-amazon-store/</td><td>none</td><td>Off-topic? (Amazon isn't a listed service)</td></tr>
+<tr><td>12280</td><td>Destin Artificial Intelligence Digital Marketing Company</td><td><b>/12280-2/</b></td><td>none</td><td>Broken slug; commercial topic as a post</td></tr>
+<tr><td>12305</td><td>Is an seo company the Breakthrough Your Business Needs?</td><td>/is-an-seo-company-the-breakthrough-your-business-needs/</td><td>none</td><td>Lowercase "seo" in the title</td></tr>
+<tr><td>12308</td><td>Best Destin SEO Company: How to Choose the Right Partner…</td><td>/best-destin-seo-company-how-to-choose…/</td><td>none</td><td>Possible cannibalization of Home's #1</td></tr>
+</table>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p2">P2</span></td><td>Content group</td><td>GA4: set a <code>content_group</code> = "blog" for /latest/ and all posts (GTM data layer or Site Kit). Report blog → service-page → lead paths.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Post clicks</td><td><code>select_content</code> (content_type=post, item_id=slug) on post cards.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>GSC</td><td>After the change, URL Inspection on /latest/ and on each post, and request indexing.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Settings → Reading</td><td>Posts page = Latest (page_for_posts currently 0).</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Empty indexable page</td><td>noindex until it lists posts.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Schema</td><td>AIOSEO outputs <code>CollectionPage</code>/<code>Blog</code> for the posts page; posts get <code>BlogPosting</code> with author = founder Person (AB-09).</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Archive noindex</td><td>noindex author/date/tag archives; index categories with 3+ posts.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>RSS</td><td>Make sure /feed/ works once the posts page is set (used by aggregators and some AI crawlers).</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>LT-01</td><td>Fix</td><td>Settings → Reading → Posts page = Latest</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LT-02</td><td>Change</td><td>Rename to "Marketing Blog" (menu "Blog"); optional /blog/ + 301</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LT-03</td><td>Add</td><td>SEO title, description, intro copy with 5 service links + CTA</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LT-04</td><td>Add</td><td>"Blog" in the main menu + footer</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LT-05</td><td>Add</td><td>4 categories; assign the 6 posts; remove Uncategorized</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LT-06</td><td>Change</td><td>noindex now → index once the listing is live; noindex author/date/tag archives</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>LT-07</td><td>Tracking</td><td>GA4 content_group "blog"; post-card click event; GSC reindex</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Page status: DONE (audit complete) · Next page in queue: Privacy Policy (/privacy-policy/)</b></p>
+</body></html>
