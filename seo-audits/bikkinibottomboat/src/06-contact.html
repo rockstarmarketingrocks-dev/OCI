@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SEO Changelog – Contact – bikkinibottomboat.com</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Changelog — Contact</h1>
+<div class="meta">
+<b>URL:</b> https://bikkinibottomboat.com/contact-bikkini-bottom-boat-charters/ &nbsp;·&nbsp; <b>WP ID:</b> 812 (Elementor + WPForms Lite form #74) &nbsp;·&nbsp; <b>Audit date:</b> 2026-10-25 &nbsp;·&nbsp; <b>Audit page 6 of 24</b><br>
+<b>Sources:</b> WordPress/Elementor content and Rank Math fields (site connector), footer template (ID 330), FAQ (ID 2271), Semrush US.
+</div>
+
+<div class="box warn"><b>Limitation:</b> the live page could not be fetched from the audit environment. Rendered-HTML and form-delivery items are marked <b>VERIFY</b>.</div>
+
+<h2>1. Summary</h2>
+<table>
+<tr><th style="width:26%">Area</th><th>Current state</th><th style="width:11%">Priority</th></tr>
+<tr><td><b>Wrong booking system</b></td><td>"Book Your Trip Now" links to <code>reservations.waverez.com/beachpleasecharters/</code>, an <b>old booking platform under another brand name</b>. Every other page books through FareHarbor. Visitors ready to book here may hit a dead or outdated system.</td><td class="pri p1">Critical</td></tr>
+<tr><td>Form</td><td>Only Name, Email and Message fields. There's no phone, tour, date or group-size field, so every inquiry needs a follow-up. VERIFY that submissions reach <code>res4bikkinibottom@gmail.com</code>. The form HTML carries a cached token from March 2025, so check that LiteSpeed isn't serving a stale form (WPForms needs the page excluded from cache, or ESI).</td><td class="pri p1">High</td></tr>
+<tr><td>Missing info</td><td>No email address, no hours, no parking directions, no Suite number, no social links. The departure and parking instructions (the main reason people visit a contact page for a boat) live only on the FAQ and Crab Island pages.</td><td class="pri p1">High</td></tr>
+<tr><td>Headings</td><td>H1 "Contact Us"; H2 "Bikkini Bottom Boat Charter"; labels in H6 ("For Reservations", "Or Call", "Our Location"); the phone number is an H3.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Rank Math</td><td>Focus keyword is the bare brand. The meta is generic. Semrush shows the page ranking only for "bikkini" (#49).</td><td class="pri p2">Medium</td></tr>
+<tr><td>NAP consistency</td><td>The footer map embed uses "530 Harbor Blvd <b>Suite #16</b>"; this page and the footer text omit the suite. Must match Google Business Profile exactly.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Freshness</td><td>Last modified 2025-03-26.</td><td class="pri p3">Low</td></tr>
+</table>
+
+<h2>2. Keyword targeting</h2>
+<table>
+<tr><th>Keyword</th><th>Vol.</th><th>Now</th><th>Use</th></tr>
+<tr><td>530 harbor blvd destin fl</td><td>140</td><td>#15 (Crab Island page)</td><td><b>Primary</b>: people looking up the dock address. Use it in the H2 and the first paragraph.</td></tr>
+<tr><td>bikkini bottom boat charters (+ phone / directions / contact)</td><td>brand</td><td>—</td><td>Title + H1</td></tr>
+<tr><td>bikini bottom boat destin (misspelling)</td><td>40</td><td>#1 homepage</td><td>No action; covered by schema <code>alternateName</code></td></tr>
+<tr><td>destin harbor boat tours parking</td><td>low</td><td>—</td><td>Parking H2</td></tr>
+</table>
+
+<h2>3. Rank Math / meta changes</h2>
+<table>
+<tr><th style="width:18%">Field</th><th style="width:38%">Current</th><th>Change to</th></tr>
+<tr><td>SEO title</td><td>Contact Bikkini Bottom Boat Charters</td><td><b>Contact &amp; Directions | Bikkini Bottom Boat Charters, Destin FL</b> (60)</td></tr>
+<tr><td>Meta description</td><td>Get in touch with Bikkini Bottom Boat Charters for epic adventures…</td><td><b>Call (850) 420-2540 or message us. We depart from 530 Harbor Blvd, Destin, FL, with free parking across Hwy 98. Directions, hours and group bookings.</b> (153)</td></tr>
+<tr><td>Focus keyword</td><td>Bikkini Bottom Boat Charters</td><td><b>530 harbor blvd destin fl</b>; secondary: bikkini bottom boat charters contact</td></tr>
+<tr><td>WP title</td><td>Contact Bikkini Bottom Boat Charter</td><td><b>Contact</b></td></tr>
+<tr><td>Slug</td><td>contact-bikkini-bottom-boat-charters</td><td>Keep. Fix the footer link that points to <code>/contact-bikkini-bottom/</code> (homepage changelog).</td></tr>
+<tr><td>Schema type</td><td>— (VERIFY)</td><td>Rank Math → Schema → <b>ContactPage</b> + reference the LocalBusiness <code>@id</code></td></tr>
+</table>
+
+<h2>4. Heading structure</h2>
+<table>
+<tr><th style="width:9%">Tag</th><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td>H1</td><td>Contact Us</td><td><b>Contact Bikkini Bottom Boat Charters</b></td></tr>
+<tr><td>H2</td><td>Bikkini Bottom Boat Charter</td><td><b>Call, Text or Email Us</b></td></tr>
+<tr><td>H6 ×2, H3 (phone)</td><td>For Reservations / Or Call / (850) 420-2540</td><td>Plain styled text. The phone number becomes a large button, not a heading.</td></tr>
+<tr><td>H2</td><td>Send A Message to Bikkini Bottom Boat Charters</td><td><b>Send Us a Message</b></td></tr>
+<tr><td>H6</td><td>Our Location</td><td><b>H2: Departure Location: 530 Harbor Blvd, Destin, FL</b></td></tr>
+<tr><td>H3 <span class="small">(new)</span></td><td>—</td><td><b>Free Parking Across the Street</b></td></tr>
+<tr><td>H3 <span class="small">(new)</span></td><td>—</td><td><b>Walking From Parking to the Boat</b></td></tr>
+<tr><td>H3 <span class="small">(new)</span></td><td>—</td><td><b>Drop-Off, Uber &amp; Taxi</b></td></tr>
+<tr><td>H2 <span class="small">(new)</span></td><td>—</td><td><b>Office Hours</b></td></tr>
+<tr><td>H2 <span class="small">(new)</span></td><td>—</td><td><b>Planning a Group Trip?</b></td></tr>
+</table>
+
+<h2>5. Full rewritten page copy</h2>
+<div class="copy">
+<h1><span class="tag">H1</span>Contact Bikkini Bottom Boat Charters</h1>
+<p>Questions about a Crab Island tour, dolphin cruise or private charter? We'd love to help. Call us, send a message, or book online. Our boat departs from <b>530 Harbor Blvd on Destin Harbor</b>, with free parking right across the street.</p>
+<p><b>[Book Online]</b> → FareHarbor &nbsp; <b>[Call (850) 420-2540]</b></p>
+
+<h2><span class="tag">H2</span>Call, Text or Email Us</h2>
+<p><b>Phone:</b> <a>(850) 420-2540</a> [Owner: does this number accept texts?]<br>
+<b>Email:</b> <a>res4bikkinibottom@gmail.com</a><br>
+<b>Follow us:</b> <a>Facebook</a> · <a>Instagram</a> · <a>YouTube</a> · <a>Google reviews</a></p>
+
+<h2><span class="tag">H2</span>Send Us a Message</h2>
+<p>Tell us your date, group size and which trip you're interested in, and we'll get back to you within [24 hours].</p>
+<p>[Form: Name* · Email* · Phone · Tour (dropdown: Crab Island 3hr / Crab Island 4hr / Dolphin Cruise / Sunset Cruise / Fireworks Cruise / Private Charter / Other) · Preferred date · Group size · Message*]</p>
+
+<h2><span class="tag">H2</span>Departure Location: 530 Harbor Blvd, Destin, FL</h2>
+<p>Bikkini Bottom departs from <b>530 Harbor Blvd [Suite 16], Destin, FL 32541</b>, next to Harbor Docks on Destin Harbor. Look for our Bikkini Bottom sign and check in at the booth in the parking lot [15–20] minutes before departure.</p>
+<p>[Google Map embed] &nbsp; <a>Open in Google Maps →</a></p>
+<h3><span class="tag">H3</span>Free Parking Across the Street</h3>
+<p>Park free at <b>Craft Bar, 541 US-98, Destin</b>, directly across Highway 98. Take a left at the end of the driveway and park behind the small offices; signs will guide you. <b>Please don't park at the boat location. Vehicles there may be towed.</b> We're not responsible for vehicles, so lock up your valuables.</p>
+<h3><span class="tag">H3</span>Walking From Parking to the Boat</h3>
+<p>Walk toward the highway, turn left and walk to the traffic light at Benning Dr. Use the crosswalk to cross Highway 98, head toward Harbor Docks, and our lot is on the right. Boarding is walk-on from the marina.</p>
+<h3><span class="tag">H3</span>Drop-Off, Uber &amp; Taxi</h3>
+<p>Use <b>530 Harbor Blvd, Destin, FL 32541</b> as your drop-off address. Feel free to drop your group and gear at the boat before parking across the street.</p>
+
+<h2><span class="tag">H2</span>Office Hours</h2>
+<p>[Owner: e.g. "Phones answered daily 8am–8pm, March–October; by appointment November–February."] Tours run [season].</p>
+
+<h2><span class="tag">H2</span>Planning a Group Trip?</h2>
+<p>We host family reunions, company outings, birthdays and <a>bachelorette parties</a> for up to 49 guests. Read <a>public tour vs. private charter</a> or call for group rates. Have a quick question? Check our <a>FAQs</a>.</p>
+</div>
+
+<h2>6. Internal linking</h2>
+<table>
+<tr><th>Anchor</th><th>Target</th></tr>
+<tr><td>bachelorette parties</td><td>/best-crab-island-tour-for-bachelorette-parties-large-groups/</td></tr>
+<tr><td>public tour vs. private charter</td><td>/public-crab-island-tour-vs-private-charter-which-should-you-book/</td></tr>
+<tr><td>FAQs</td><td>/faqs/ (or <code>/faqs/#parking</code> next to the parking section)</td></tr>
+<tr><td>Crab Island tours / dolphin cruise / sunset cruise (intro)</td><td>Service pages 599 / 1457 / 672 (link the trip names in the intro)</td></tr>
+<tr><td><i>Inbound:</i> "Get directions", "Full directions"</td><td>From pages 1–5 (already in those changelogs) plus the footer "Contact Us" (fix the wrong slug)</td></tr>
+</table>
+
+<h2>7. Technical fixes</h2>
+<table>
+<tr><th style="width:24%">Issue</th><th>Fix</th><th style="width:11%">Priority</th></tr>
+<tr><td>WaveRez booking link</td><td>Replace <code>https://reservations.waverez.com/beachpleasecharters/</code> with <code>https://fareharbor.com/embeds/book/bikkinibottomboat/?full-items=yes</code>. Search the whole site and Elementor templates for "waverez" (site connector <code>search_replace</code>, dry run first). If the WaveRez account is still live, shut it down or point it to FareHarbor.</td><td class="pri p1">Critical</td></tr>
+<tr><td>Form fields</td><td>WPForms #74: add Phone, Tour (dropdown), Preferred date (Date field), Group size (Number). Set the confirmation message to "Thanks! We'll reply within [24h]. Need us sooner? Call (850) 420-2540."</td><td class="pri p1">High</td></tr>
+<tr><td>Form delivery</td><td>VERIFY with a live test: notifications to res4bikkinibottom@gmail.com. Install WP Mail SMTP (or Hostinger SMTP) so Gmail doesn't drop wp_mail messages. WPForms Lite doesn't store entries, so the email is the only record.</td><td class="pri p1">High</td></tr>
+<tr><td>Caching</td><td>LiteSpeed Cache → Excludes → URI: add <code>/contact-bikkini-bottom-boat-charters/</code>, or enable ESI for the form so the nonce/token isn't stale.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Spam</td><td>Turn on WPForms anti-spam (built-in token + Cloudflare Turnstile, free) rather than reCAPTCHA v2 (heavier).</td><td class="pri p3">Low</td></tr>
+<tr><td>NAP</td><td>Decide on one address string and use it on this page, the footer text, the footer map, schema and the Google Business Profile. Recommended: "530 Harbor Blvd, Suite 16, Destin, FL 32541" if GBP uses the suite; otherwise drop it from the map query.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Map</td><td>Use the place-ID based embed (Share → Embed in Google Maps) so the map pin shows the business name and reviews, not just an address.</td><td class="pri p3">Low</td></tr>
+<tr><td>Image</td><td>Add a photo of the dock or check-in booth (alt <b>"Bikkini Bottom check-in booth at 530 Harbor Blvd, Destin Harbor"</b>). First-timers can find the boat more easily, and it doubles as the OG image.</td><td class="pri p3">Low</td></tr>
+</table>
+<h3>7a. Schema</h3>
+<pre>{
+ "@context": "https://schema.org", "@type": "ContactPage",
+ "url": "https://bikkinibottomboat.com/contact-bikkini-bottom-boat-charters/",
+ "name": "Contact Bikkini Bottom Boat Charters",
+ "about": {"@id": "https://bikkinibottomboat.com/#business"},
+ "mainEntity": {"@id": "https://bikkinibottomboat.com/#business"}
+}</pre>
+<p class="small">Add <code>openingHoursSpecification</code> to the LocalBusiness entity (homepage schema) once hours are confirmed, plus <code>contactPoint</code> {telephone, contactType: "reservations", areaServed: "US"}.</p>
+
+<h2>8. Tracking</h2>
+<table>
+<tr><th style="width:26%">Item</th><th>Setup</th></tr>
+<tr><td>Form submission</td><td>GTM: WPForms fires the <code>wpformsAjaxSubmitSuccess</code> JS event. Use a custom HTML listener that pushes <code>generate_lead</code> with <code>form_id</code>=74 and <code>tour_interest</code> (dropdown value). Mark it as a GA4 key event. Import it into Google Ads as a secondary conversion.</td></tr>
+<tr><td>Calls / email / map</td><td><code>phone_click</code>, <code>email_click</code>, <code>directions_click</code> (from homepage changelog) with <code>link_location</code> = contact_page.</td></tr>
+<tr><td>Booking</td><td><code>begin_checkout</code> on the new FareHarbor button.</td></tr>
+<tr><td>Lead source</td><td>WPForms hidden fields: map <code>page_url</code> / <code>url_referer</code> to <code>{page_url}</code> / <code>{url_referer}</code> smart tags. The current values are literal placeholders (<code>http://page_url</code>), so leads arrive without a source.</td></tr>
+<tr><td>Call tracking (optional)</td><td>A dynamic number-insertion tool (e.g. CallRail) would show which channel drives phone bookings, a major channel for charters. Keep the main number in schema and the footer for NAP consistency.</td></tr>
+</table>
+
+<h2>9. Changelog (implementation checklist)</h2>
+<table>
+<tr><th style="width:5%">#</th><th>Change</th><th style="width:16%">Where</th><th style="width:9%">Status</th></tr>
+<tr><td>1</td><td><b>WaveRez "Beach Please" booking link → FareHarbor; sitewide search for "waverez"</b></td><td>Elementor / search_replace</td><td>To do (urgent)</td></tr>
+<tr><td>2</td><td>SEO title, meta, focus keyword; WP title → "Contact"</td><td>Rank Math</td><td>To do</td></tr>
+<tr><td>3</td><td>H1/H2/H3 restructure; H6 labels and H3 phone → styled text</td><td>Elementor</td><td>To do</td></tr>
+<tr><td>4</td><td>Copy rewritten: contact methods, email, socials, departure, parking, walking route, drop-off, hours, groups</td><td>Elementor</td><td>To do</td></tr>
+<tr><td>5</td><td>Form: Phone, Tour, Date, Group size fields; confirmation message; hidden source fields fixed</td><td>WPForms #74</td><td>To do</td></tr>
+<tr><td>6</td><td>SMTP delivery + live test; page excluded from LiteSpeed cache</td><td>Plugins</td><td>To do</td></tr>
+<tr><td>7</td><td>NAP string unified (suite decision) across page, footer, map, schema, GBP</td><td>Site-wide / GBP</td><td>To do</td></tr>
+<tr><td>8</td><td>Internal links (FAQ, groups, private vs public, tours)</td><td>Elementor</td><td>To do</td></tr>
+<tr><td>9</td><td>Dock photo + OG image; place-ID map embed</td><td>Media / Elementor</td><td>To do</td></tr>
+<tr><td>10</td><td>ContactPage schema; openingHours + contactPoint on LocalBusiness</td><td>Rank Math</td><td>To do</td></tr>
+<tr><td>11</td><td>generate_lead event; contact-page click events</td><td>GTM / GA4</td><td>To do</td></tr>
+<tr><td>12</td><td>Owner input: hours, text-enabled number?, reply time, suite in GBP?, is WaveRez still active?</td><td>Owner</td><td>Waiting</td></tr>
+</table>
+<p class="small">Next page in queue: <b>Gallery</b> (/our-charter/, ID 420).</p>
+</body></html>
