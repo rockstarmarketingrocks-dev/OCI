@@ -1,0 +1,186 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SEO Audit – Post: How to Start a YouTube Channel</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Audit &amp; Changelog: Blog Post "How to Start a YouTube Channel"</h1>
+<div class="meta">
+URL: <b>https://rockstar-marketing.com/how-to-start-a-youtube-channel-everything-you-need-to-know/</b> &nbsp;·&nbsp; Post ID 12217 &nbsp;·&nbsp; Block editor &nbsp;·&nbsp; Category: Uncategorized<br>
+Audit date: 2026-10-25 &nbsp;·&nbsp; Published 2023-03-24 · Modified 2023-03-27 &nbsp;·&nbsp; Item 28 of 34 in the site queue
+</div>
+
+<div class="box">
+<b>Summary.</b> The title promises "Everything You Need to Know", but the post (about 600 words) never explains how to actually <i>create</i> a channel: no account setup, handle, branding, uploading or YouTube SEO. It's mostly generic gear and content tips. Keyword reality (Semrush US): "how to start a youtube channel" = <b>12,100/mo, KD 40</b>, dominated by YouTube's own help pages and major creator sites, so it's not a realistic target for this site. The business-intent versions fit your buyers better and are attainable: <b>"how to create a youtube channel for business" (110, KD 36)</b>, "how to start a youtube channel for business" (50), "youtube for small business" (70), "youtube channel for business" (30, KD 0). <b>Plan:</b> rewrite it as a step-by-step guide <i>for businesses</i> that funnels readers to /video-marketing/. Technical issues: two H1s (the content H1 differs from the post title), an empty H2 and an empty H3, invalid block markup (lists inside <code>wp:paragraph</code>), a keyword-stuffed image alt, no meta, Uncategorized.
+</div>
+<p class="small"><b>Method note:</b> the live site can't be reached from the audit environment. Data comes from WordPress (connector), AIOSEO and Semrush US.</p>
+
+<h2>1. Priority Fix List</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:9%">Priority</th><th style="width:16%">Area</th><th>Issue → Fix</th></tr>
+<tr><td>1</td><td><span class="p1">P1</span></td><td>Keyword angle</td><td>Retarget to <b>"how to create a YouTube channel for business"</b>. New title and H1: "How to Start a YouTube Channel for Your Business (Step-by-Step)".</td></tr>
+<tr><td>2</td><td><span class="p1">P1</span></td><td>Doesn't deliver on its promise</td><td>Add the missing steps: account/Brand Account, creating the channel, handle, branding sizes, About and links, uploading, YouTube SEO, Shorts, analytics (§5).</td></tr>
+<tr><td>3</td><td><span class="p1">P1</span></td><td>Two H1s</td><td>The theme prints the post title as H1, and the content adds another H1 ("Start your YouTube Channel, Do it, Don't Put it Off"). Remove the content H1.</td></tr>
+<tr><td>4</td><td><span class="p1">P1</span></td><td>Empty headings</td><td><code>&lt;h2&gt; &lt;/h2&gt;</code> and <code>&lt;h3&gt; &lt;/h3&gt;</code> (used as spacers). Delete them.</td></tr>
+<tr><td>5</td><td><span class="p1">P1</span></td><td>Meta</td><td>No SEO title, description or keyphrase (§2).</td></tr>
+<tr><td>6</td><td><span class="p1">P1</span></td><td>Intralinking</td><td>Only 1 link (Home, anchor "Rockstar Marketing"). Add /video-marketing/ (primary), /social-media/, /seo/, the FAQ YouTube section and a CTA (§4).</td></tr>
+<tr><td>7</td><td><span class="p2">P2</span></td><td>Block markup</td><td>Lists and headings are wrapped in a single <code>&lt;!-- wp:paragraph --&gt;</code> block (pasted HTML), which shows "This block contains unexpected content" in the editor. Convert it to proper blocks (Paragraph, List, Heading).</td></tr>
+<tr><td>8</td><td><span class="p2">P2</span></td><td>Image</td><td>Alt "YouTube Social Media Company Destin" is stuffing. Use "Small business owner filming a YouTube video with a ring light". Set it as the featured image (none set) for social shares and the blog listing.</td></tr>
+<tr><td>9</td><td><span class="p2">P2</span></td><td>Category</td><td>Uncategorized → <b>Video &amp; YouTube</b> (LT-05).</td></tr>
+<tr><td>10</td><td><span class="p2">P2</span></td><td>Author / E-E-A-T</td><td>Author is user ID 2. Show a named author with a bio (the founder, per AB-09) and the published/updated date.</td></tr>
+<tr><td>11</td><td><span class="p3">P3</span></td><td>Outdated bits</td><td>"Twitter" → X; "Final Cut Pro X" → Final Cut Pro; the list implies you need an expensive camera (a modern phone is fine for most businesses).</td></tr>
+<tr><td>12</td><td><span class="p3">P3</span></td><td>Embed a video</td><td>A YouTube how-to with no video. Embed one of your own (lite embed + VideoObject).</td></tr>
+</table>
+
+<h2>2. Meta Tags &amp; Search Appearance (AIOSEO)</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>New</th></tr>
+<tr><td>Post title / H1</td><td>How to Start a YouTube Channel: Everything You Need to Know</td><td><b>How to Start a YouTube Channel for Your Business (Step-by-Step)</b></td></tr>
+<tr><td>SEO title</td><td>(empty)</td><td><b>How to Create a YouTube Channel for Business: 10 Steps</b> (55)</td></tr>
+<tr><td>Meta description</td><td>(empty)</td><td><b>A step-by-step guide to creating a YouTube channel for your business: setup, branding, gear, your first videos, YouTube SEO and growing subscribers.</b> (149)</td></tr>
+<tr><td>Focus keyphrase</td><td>(empty)</td><td>how to create a YouTube channel for business</td></tr>
+<tr><td>Additional</td><td>none</td><td>how to start a YouTube channel for business · YouTube for small business · YouTube channel for business</td></tr>
+<tr><td>Slug</td><td>/how-to-start-a-youtube-channel-everything-you-need-to-know/</td><td>Keep it (no measurable rankings, but 2+ years of age; it contains "how-to-start-a-youtube-channel"). Optional: shorten to /youtube-channel-for-business/ with a 301.</td></tr>
+<tr><td>Featured image</td><td>none</td><td>The existing image 12223 (rename + alt)</td></tr>
+</table>
+
+<h2>3. Heading Structure</h2>
+<table>
+<tr><th style="width:42%">Current</th><th>New</th></tr>
+<tr><td class="small">H1 (theme) – How to Start a YouTube Channel: Everything You Need to Know<br>H1 – Start your YouTube Channel, Do it, Don't Put it Off<br>H2 – [empty]<br>H2 – Making interesting content that sticks<br>H3 – [empty]<br>H3 – Being Patient For Results</td><td class="small">
+<b>H1</b> – How to Start a YouTube Channel for Your Business (Step-by-Step)<br>
+<b>H2</b> – Why Your Business Needs a YouTube Channel<br>
+<b>H2</b> – Step 1: Create a Brand Account<br>
+<b>H2</b> – Step 2: Create Your Channel and Choose a Handle<br>
+<b>H2</b> – Step 3: Brand Your Channel<br>
+<b>H2</b> – Step 4: Write Your Channel Description and Add Links<br>
+<b>H2</b> – Step 5: Plan Videos Your Customers Are Searching For<br>
+<b>H2</b> – Step 6: Get the Right (Affordable) Gear<br>
+<b>H2</b> – Step 7: Record and Edit Your First Videos<br>
+<b>H2</b> – Step 8: Optimize Every Video for YouTube Search<br>
+&nbsp;&nbsp;<b>H3</b> – Titles · <b>H3</b> – Descriptions &amp; Chapters · <b>H3</b> – Thumbnails · <b>H3</b> – Captions<br>
+<b>H2</b> – Step 9: Add YouTube Shorts<br>
+<b>H2</b> – Step 10: Promote, Engage and Measure<br>
+<b>H2</b> – Be Patient: What to Expect in the First 6 Months<br>
+<b>H2</b> – FAQ <i>(3 Qs)</i><br>
+<b>H2</b> – Want Help Growing Your Channel? <i>(CTA)</i>
+</td></tr>
+</table>
+
+<h2>4. Internal Linking Plan</h2>
+<table>
+<tr><th style="width:40%">Anchor text</th><th>Target</th><th style="width:22%">Where</th></tr>
+<tr><td>video marketing and YouTube SEO services</td><td>/video-marketing/</td><td>Intro + CTA (primary money link)</td></tr>
+<tr><td>YouTube SEO</td><td>/video-marketing/</td><td>Step 8</td></tr>
+<tr><td>social media marketing</td><td>/social-media/</td><td>Step 10</td></tr>
+<tr><td>embed videos on your website</td><td>/web-design/</td><td>Step 10</td></tr>
+<tr><td>SEO</td><td>/seo/</td><td>Why section</td></tr>
+<tr><td>more YouTube questions</td><td>/faq/#youtube</td><td>FAQ</td></tr>
+<tr><td>Instagram guide (sibling post)</td><td>/instagram-account-step-by-step-guide…/</td><td>Step 10</td></tr>
+<tr><td>Get a free video marketing consultation</td><td>/contact-us/?service=video</td><td>CTA</td></tr>
+<tr><td><b>Inbound (to add)</b></td><td>/video-marketing/ ("Read our guide: how to start a YouTube channel for your business"), /faq/ YouTube answers, /latest/</td><td>other pages</td></tr>
+</table>
+
+<h2 class="pb">5. Rewritten Post (ready to paste)</h2>
+<p class="small">About 1,400 words. Platform details are current as of 2026; check them in YouTube Studio before publishing, since YouTube changes its interface often.</p>
+<div class="copy">
+<p><span class="tag">&lt;h1&gt;</span> <b>How to Start a YouTube Channel for Your Business (Step-by-Step)</b></p>
+<p><span class="tag">&lt;p&gt;</span> YouTube is the world's second-largest search engine, and Google regularly shows YouTube videos at the top of its results. For a local business, a YouTube channel is one of the most effective ways to build trust before a customer ever calls. It can feel intimidating to start, but you don't need a studio or a big budget. Here's exactly how to set up a business YouTube channel and publish videos that get found. (Prefer to have it done for you? See our <a>video marketing and YouTube SEO services</a>.)</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Why Your Business Needs a YouTube Channel</b><br>
+<span class="tag">&lt;p&gt;</span> Video lets customers see your work, meet your team and get their questions answered, all before they contact you. Videos can rank on both YouTube and Google, support your website's <a>SEO</a>, and give you content you can reuse on Instagram, Facebook and TikTok.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Step 1: Create a Brand Account</b><br>
+<span class="tag">&lt;p&gt;</span> Sign in to YouTube with a Google account, then create the channel as a <b>Brand Account</b> (the "create a channel with a business or other name" option). A Brand Account lets you use your business name and add team members as managers without sharing a password. Use a company-owned Google account, not an employee's personal one.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Step 2: Create Your Channel and Choose a Handle</b><br>
+<span class="tag">&lt;p&gt;</span> Use your exact business name as the channel name, and pick a short, memorable handle (for example @yourbusinessname). Your handle becomes your channel URL, so match your other social profiles where you can.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Step 3: Brand Your Channel</b><br>
+<span class="tag">&lt;p&gt;</span> In YouTube Studio → Customization, upload your logo as the profile picture (square, at least 800×800 px) and a banner (2560×1440 px, with key text and logo kept inside the center "safe area"). Add a short channel trailer for new visitors.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Step 4: Write Your Channel Description and Add Links</b><br>
+<span class="tag">&lt;p&gt;</span> In a few sentences, explain who you help, where and with what, using the words customers search for (for example "Destin roofing company"). Add links to your website, booking page and other social profiles, plus your business email.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Step 5: Plan Videos Your Customers Are Searching For</b><br>
+<span class="tag">&lt;p&gt;</span> The best business videos answer real questions. Start with a list of the 10 questions customers ask you most, then type each into YouTube's search bar and note the auto-suggestions. Good first videos:</p>
+<ul>
+<li>"How much does [your service] cost in [your city]?"</li>
+<li>Step-by-step how-to and tips videos</li>
+<li>Project walk-throughs and before/after</li>
+<li>Customer testimonials</li>
+<li>"Meet the team" and behind-the-scenes</li>
+</ul>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Step 6: Get the Right (Affordable) Gear</b></p>
+<ul>
+<li><b>Camera:</b> a recent smartphone shooting in 1080p or 4K is enough for most businesses.</li>
+<li><b>Audio:</b> the most important upgrade. A clip-on lavalier or a USB/wireless mic makes you sound professional.</li>
+<li><b>Lighting:</b> face a window, or use a ring light or softbox.</li>
+<li><b>Stability:</b> a tripod or phone gimbal.</li>
+<li><b>Editing:</b> CapCut or DaVinci Resolve (free), or Adobe Premiere Pro and Final Cut Pro.</li>
+</ul>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Step 7: Record and Edit Your First Videos</b><br>
+<span class="tag">&lt;p&gt;</span> Hook viewers in the first 5–10 seconds by saying what they'll learn. Keep it focused on one topic, cut the pauses, add simple on-screen text, and end with a clear next step ("Call us", "Visit our website", "Subscribe"). For most local business videos, 2–8 minutes works well.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Step 8: Optimize Every Video for YouTube Search</b><br>
+<span class="tag">&lt;p&gt;</span> This is where most business channels fall short, and it's the core of <a>YouTube SEO</a>.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Titles</b> <span class="tag">&lt;p&gt;</span> Put the main search phrase first and keep it under about 60 characters, e.g. "How Much Does a New Roof Cost in Destin, FL?"</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Descriptions &amp; Chapters</b> <span class="tag">&lt;p&gt;</span> Write 150+ words that summarize the video, include your keyword naturally, link to your website, and add timestamps (chapters).</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Thumbnails</b> <span class="tag">&lt;p&gt;</span> Upload a custom 1280×720 thumbnail with a clear face, bold short text and high contrast. (Custom thumbnails require a verified account.)</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Captions</b> <span class="tag">&lt;p&gt;</span> Review and correct the auto-captions. They improve accessibility and help YouTube understand your video.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Step 9: Add YouTube Shorts</b><br>
+<span class="tag">&lt;p&gt;</span> Shorts (vertical videos under a minute) are the fastest way for a new channel to get discovered. Cut 2–3 clips from every long video, and post them on Instagram Reels and TikTok too.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Step 10: Promote, Engage and Measure</b></p>
+<ul>
+<li><b>Embed videos on your website</b> on the matching service pages. It keeps visitors on your site longer. (We build this into our <a>web design</a>.)</li>
+<li><b>Share every video</b> on your social channels and in your email newsletter. See our <a>social media marketing</a>, or read our <a>Instagram guide</a>.</li>
+<li><b>Reply to every comment</b> in the first 48 hours.</li>
+<li><b>Check YouTube Analytics</b> monthly: watch time, average view duration, click-through rate and traffic sources. Make more of what works.</li>
+</ul>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>Be Patient: What to Expect in the First 6 Months</b><br>
+<span class="tag">&lt;p&gt;</span> Most business channels grow slowly at first. Post consistently (even 2 videos a month), keep answering customer questions, and your library becomes an asset that brings in views, and customers, for years.</p>
+
+<p><span class="tag">&lt;h2&gt;</span> <b>FAQ</b></p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Is a YouTube channel free for businesses?</b> <span class="tag">&lt;p&gt;</span> Yes. Creating and running a channel is free; your only costs are equipment, editing and your time.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>How often should a business post on YouTube?</b> <span class="tag">&lt;p&gt;</span> Consistency beats volume: 2–4 long videos a month plus Shorts is a strong pace for most small businesses.</p>
+<p><span class="tag">&lt;h3&gt;</span> <b>Can YouTube videos help my Google rankings?</b> <span class="tag">&lt;p&gt;</span> Yes. Videos can appear directly in Google results, and embedding them on your site supports your page's SEO. <a>More YouTube questions</a>. <span class="small">[→ /faq/#youtube]</span></p>
+
+<p><span class="tag">CTA &lt;h2&gt;</span> <b>Want Help Growing Your Channel?</b><br>
+<span class="tag">&lt;p&gt;</span> Rockstar Marketing has produced a video that reached 60 million+ people and ranks videos on YouTube and Google for businesses across the Emerald Coast. <span class="tag">button</span> [Get a Free Video Marketing Consultation] → /contact-us/?service=video</p>
+</div>
+
+<h2>6. Tracking &amp; Measurement</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:28%">Item</th><th>Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Blog → service</td><td><code>cta_click</code> (cta_location=post_youtube) and clicks on the /video-marketing/ links. Measure blog-assisted leads in GA4 (content_group "blog").</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Scroll &amp; video</td><td>90% scroll; video_start/complete on the embedded video.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>GSC</td><td>Track "youtube channel for business" queries; request indexing after the update.</td></tr>
+</table>
+
+<h2>7. Technical SEO</h2>
+<table>
+<tr><th style="width:9%">Priority</th><th style="width:26%">Item</th><th>Finding / Action</th></tr>
+<tr><td><span class="p1">P1</span></td><td>Single H1</td><td>Remove the content H1; the theme's post title is the H1.</td></tr>
+<tr><td><span class="p1">P1</span></td><td>Empty headings + blocks</td><td>Delete the empty H2/H3; convert the pasted HTML to proper blocks.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Schema</td><td><code>BlogPosting</code> (author Person, datePublished/dateModified, image) + <code>HowTo</code>-style ordered steps (Google no longer shows HowTo rich results, but structured steps still help AI answers) + <code>VideoObject</code> if you embed a video + <code>BreadcrumbList</code>.</td></tr>
+<tr><td><span class="p2">P2</span></td><td>Featured image</td><td>Set image 12223 as featured (OG image); WebP; keep the width/height attributes.</td></tr>
+<tr><td><span class="p3">P3</span></td><td>Table of contents</td><td>Add a TOC block after the intro (10 steps → jump links).</td></tr>
+</table>
+
+<h2>8. Changelog</h2>
+<table>
+<tr><th style="width:11%">Date</th><th style="width:7%">ID</th><th style="width:13%">Type</th><th>Change</th><th style="width:10%">Status</th></tr>
+<tr><td>2026-10-25</td><td>YT-01</td><td>Change</td><td>Retarget to "how to create a YouTube channel for business"; new title, SEO title, description, keyphrases</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>YT-02</td><td>Rewrite</td><td>~600 words → ~1,400-word 10-step guide + FAQ + CTA</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>YT-03</td><td>Fix</td><td>Remove the second H1, the empty H2/H3; convert to proper blocks</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>YT-04</td><td>Add</td><td>~8 internal links (video-marketing ×2, social, web, SEO, FAQ, Instagram post, contact); inbound from /video-marketing/</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>YT-05</td><td>Fix</td><td>Image alt; featured image; embed your own video</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>YT-06</td><td>Change</td><td>Category → Video &amp; YouTube; named author + bio; updated date shown</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>YT-07</td><td>Add</td><td>BlogPosting + VideoObject + BreadcrumbList schema; TOC</td><td>Proposed</td></tr>
+<tr><td>2026-10-25</td><td>YT-08</td><td>Tracking</td><td>Blog CTA event, content_group, GSC reindex</td><td>Proposed</td></tr>
+</table>
+<p class="small"><b>Status: DONE (audit complete) · Next in queue: Post "Instagram Account Step-by-Step Guide"</b></p>
+</body></html>

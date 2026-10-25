@@ -32,7 +32,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 25 | [x] done 2026-10-25 | Destin Florida | 12182 | /destin-florida/ | 25-destin-florida.pdf |
 | 26 | [x] done 2026-10-25 | Latest | 12215 | /latest/ | 26-latest.pdf |
 | 27 | [x] done 2026-10-25 | Privacy Policy | 11909 | /privacy-policy/ | 27-privacy-policy.pdf |
-| 28 | [ ] | How to Start a YouTube Channel (post) | 12217 | /how-to-start-a-youtube-channel-everything-you-need-to-know/ | |
+| 28 | [x] done 2026-10-25 | How to Start a YouTube Channel (post) | 12217 | /how-to-start-a-youtube-channel-everything-you-need-to-know/ | 28-post-youtube-channel.pdf |
 | 29 | [ ] | Instagram Account Step-by-Step Guide (post) | 12221 | /instagram-account-step-by-step-guide-to-getting-more-conversions-and-sales/ | |
 | 30 | [ ] | Definitive Guide to Amazon Store (post) | 12246 | /definitive-guide-to-building-and-optimizing-your-amazon-store/ | |
 | 31 | [ ] | Destin AI Digital Marketing Company (post) | 12280 | /12280-2/ | |
