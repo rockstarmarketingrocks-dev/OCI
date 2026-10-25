@@ -28,4 +28,4 @@ Work top to bottom; mark `[x]` when the changelog is delivered.
 | 21 | [x] | Post: A Day Away Massage & Spa spotlight | 2262 | /local-business-spotlight-a-day-away-massage-and-spa-in-mary-esther-fl/ | pdf/21-post-a-day-away-spa.pdf |
 | 22 | [x] | Post: Hurricane Isaias | 2568 | /hurricane-isaias-destin-safety-updates/ | pdf/22-post-hurricane-isaias.pdf |
 | 23 | [x] | Privacy Policy | 1660 | /privacy-policy/ | pdf/23-privacy-policy.pdf |
-| 24 | [ ] | Elementor #2321 (test page — cleanup) | 2321 | /elementor-2321/ | |
+| 24 | [x] | Elementor #2321 (test page — cleanup) | 2321 | /elementor-2321/ | pdf/24-elementor-2321-cleanup.pdf |

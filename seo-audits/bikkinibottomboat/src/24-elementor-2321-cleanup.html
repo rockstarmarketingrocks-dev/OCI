@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SEO Changelog – Elementor #2321 &amp; Site Cleanup – bikkinibottomboat.com</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Changelog — Elementor #2321 &amp; Site Cleanup</h1>
+<div class="meta">
+<b>URL:</b> https://bikkinibottomboat.com/elementor-2321/ &nbsp;·&nbsp; <b>WP ID:</b> 2321 (page, <b>published</b>, Elementor) &nbsp;·&nbsp; <b>Audit date:</b> 2026-10-25 &nbsp;·&nbsp; <b>Audit page 24 of 24 (final)</b><br>
+<b>Sources:</b> WordPress content, drafts list and SEO overview (site connector). This changelog closes the audit and includes a site-wide priority roll-up (§4).
+</div>
+
+<h2>1. What this page is</h2>
+<table>
+<tr><th style="width:26%">Finding</th><th>Detail</th><th style="width:11%">Priority</th></tr>
+<tr><td><b>Published duplicate</b></td><td>"Elementor #2321" is a <b>live, public copy of the What Is Crab Island article</b> (created 2026-07-04, 20 minutes before the real page ID 2333). Same H1 "What Is Crab Island in Destin, FL?", same ~1,400 words and FAQs, but no title, meta, booking links or tour table. It competes with page 2333, which ranks #7 for "crab island location" (2,400/mo).</td><td class="pri p1">High</td></tr>
+<tr><td>Thin signals</td><td>Title "Elementor #2321", slug <code>/elementor-2321/</code>, empty Rank Math fields. If indexed, Google sees two near-identical pages and may pick the wrong one, or split signals.</td><td class="pri p1">High</td></tr>
+<tr><td>Image</td><td><code>bowlegs-2-1024x1024.jpg</code> with alt "Crab Island". Reusable on page 2333 if it's a good shot.</td><td class="pri p3">Low</td></tr>
+</table>
+
+<h2>2. Fix</h2>
+<ol>
+<li>Compare the two versions. If #2321 has any sentence or image that 2333 lacks, copy it into 2333 first.</li>
+<li>Rank Math → Redirections: <b>301 <code>/elementor-2321/</code> → <code>/what-is-crab-island/</code></b>.</li>
+<li>Move page 2321 to Trash (empty the trash after 30 days).</li>
+<li>Check the Rank Math sitemap and GSC → Pages: make sure <code>/elementor-2321/</code> drops out; use URL Inspection on <code>/what-is-crab-island/</code> to request reindexing.</li>
+<li>Search Elementor data for any internal links to <code>/elementor-2321/</code> and update them.</li>
+</ol>
+
+<h2>3. Related cleanup found during the audit</h2>
+<table>
+<tr><th style="width:30%">Item</th><th>Action</th></tr>
+<tr><td>Draft page "Elementor #2617" (2026-10-16, empty slug)</td><td>Check whether it's work in progress. Delete it if not.</td></tr>
+<tr><td>Draft post "Local Business Spotlight: Transportation" (ID 2254)</td><td>Earlier version of the Destin Elite spotlight (2256). Delete.</td></tr>
+<tr><td>Draft post "test" (ID 2067)</td><td>Delete.</td></tr>
+<tr><td><code>elementor_library</code> templates (12) and <code>elementor-hf</code> footer (has a public URL <code>/elementor-hf/crab-island-tours-in-destin-fl/</code>)</td><td>Rank Math → Titles &amp; Meta → Post Types: set <code>elementor_library</code> and <code>elementor-hf</code> to <b>noindex</b> and exclude them from the sitemap. VERIFY the footer URL isn't indexed in GSC. Its slug "crab-island-tours-in-destin-fl" collides in wording with page 599.</td></tr>
+<tr><td>Uncategorized category (ID 5, empty)</td><td>Delete if it isn't the default category (see blog changelog).</td></tr>
+<tr><td>Post-listing plugins (The Post Grid, Advanced Post Block, Advanced Posts Listing)</td><td>Keep one after the blog rebuild; deactivate the rest.</td></tr>
+</table>
+
+<h2>4. Site-wide priority roll-up (all 24 changelogs)</h2>
+<h3>Critical: revenue-impacting, do this week</h3>
+<table>
+<tr><th style="width:5%">#</th><th>Fix</th><th style="width:22%">Changelog</th></tr>
+<tr><td>1</td><td>Sunset &amp; Dolphin "Book Now" opens the <b>Fireworks</b> item (550737). Point it at 550732.</td><td>03 Sunset/Fireworks</td></tr>
+<tr><td>2</td><td>Contact page "Book Your Trip Now" → <b>WaveRez "beachpleasecharters"</b>. Switch to FareHarbor and search the whole site for "waverez".</td><td>06 Contact</td></tr>
+<tr><td>3</td><td>No lead capture on the Bachelorette/Group page ($4k–$8k leads). Add an inquiry form, Request/Call CTAs and a sticky mobile bar.</td><td>13 Bachelorette</td></tr>
+<tr><td>4</td><td>Booking CTAs and "Crab Island" links point to <b>originalcrabisland.com</b> (posts 2197, 2210, 2225, 2244). Replace site-wide.</td><td>16, 17, 18, 19</td></tr>
+<tr><td>5</td><td>"Sunset Cruises" link is a <b>google.com/search</b> URL. Search site-wide for <code>google.com/search?q=</code>.</td><td>21 Spa spotlight</td></tr>
+<tr><td>6</td><td>Stale FareHarbor links (<code>/calendar/2025/…</code>, <code>elementor-preview</code>) on Home, Crab Island, Sunset and Dolphin pages. Use evergreen item links.</td><td>01–04</td></tr>
+<tr><td>7</td><td>Hurricane post still says "approaching". Add a back-on-the-water update.</td><td>22 Hurricane</td></tr>
+</table>
+<h3>High: ranking and accuracy</h3>
+<table>
+<tr><th style="width:5%">#</th><th>Fix</th><th style="width:22%">Changelog</th></tr>
+<tr><td>8</td><td>Restaurants post: rebuild for "destin restaurants" (page-2 rankings for about 50k searches/month).</td><td>17</td></tr>
+<tr><td>9</td><td>Dolphin page: unique copy targeting "destin dolphin cruise" (2,400/mo, KD 29); slug change.</td><td>04</td></tr>
+<tr><td>10</td><td>Sunset page: target "sunset dolphin cruise destin" (cluster about 4,500/mo); slug change.</td><td>03</td></tr>
+<tr><td>11</td><td>Missing H1 on pages 2333, 2345, 2363, 2375, 2381 and 2389 (H2 → H1); empty Rank Math fields on the guide pages.</td><td>08–13</td></tr>
+<tr><td>12</td><td>Inaccurate "private charter is cheaper per person" claims. Correct them on the Cost, Public-vs-Private and Bachelorette pages.</td><td>09, 10, 13</td></tr>
+<tr><td>13</td><td>Wrong durations: "3 &amp; 4 hour" sunset/dolphin/fireworks in the What-is-Crab-Island table; 2 h vs 1.5 h on the Dolphin page.</td><td>04, 08</td></tr>
+<tr><td>14</td><td>Footer links to non-existent slugs (/crab-island-tours/, /sunset-and-dolphin-tour-fireworks-cruise/, /contact-bikkini-bottom/).</td><td>01</td></tr>
+<tr><td>15</td><td>Duplicate pages: Elementor #2321 (this page) and the Crab Island Excursion post. 301 both.</td><td>24, 16</td></tr>
+<tr><td>16</td><td>Tracking: GTM + GA4, FareHarbor purchase tracking, and booking, phone and lead events.</td><td>01, 06, 13</td></tr>
+<tr><td>17</td><td>Schema: LocalBusiness (with legalName Beach Please Charters LLC), TouristTrip offers with real prices, FAQPage.</td><td>01–05, 23</td></tr>
+</table>
+<h3>Owner input needed (collected from all changelogs)</h3>
+<ul>
+<li>Is there a 3-hour Crab Island trip? Daytime dolphin trip: does it exist, and what are its length, price and times?</li>
+<li>Weather/cancellation policy (→ new policy page); deposit terms for private charters</li>
+<li>Cooler/ice policy; glass policy; decoration rules; sound system</li>
+<li>Captain license type; lifejacket sizes (infant/child); minimum age; kids' pricing</li>
+<li>Fireworks nights/season/start time (the fireworks post says Thursdays, West Jetties); departure times by season</li>
+<li>"Since 1978" claim; GBP address format (Suite 16?); office hours; is the phone text-enabled?</li>
+<li>Partner relationships (paid/reciprocal?) for the spotlights and footer logos; who operates originalcrabisland.com; is the WaveRez account still active?</li>
+<li>Post-hurricane operating status</li>
+</ul>
+
+<h2>5. Tracking</h2>
+<p>After the redirect, confirm in GSC that impressions for "what is crab island" / "crab island location" consolidate on <code>/what-is-crab-island/</code>. No page-level tracking is needed for #2321 once it's redirected.</p>
+
+<h2>6. Changelog (implementation checklist)</h2>
+<table>
+<tr><th style="width:5%">#</th><th>Change</th><th style="width:16%">Where</th><th style="width:9%">Status</th></tr>
+<tr><td>1</td><td>Merge any unique bits into page 2333</td><td>Elementor</td><td>To do</td></tr>
+<tr><td>2</td><td>301 /elementor-2321/ → /what-is-crab-island/; trash page 2321</td><td>Rank Math / Pages</td><td>To do</td></tr>
+<tr><td>3</td><td>Delete drafts 2617 (if unused), 2254, 2067</td><td>Pages / Posts</td><td>To do</td></tr>
+<tr><td>4</td><td>Noindex + sitemap exclusion for Elementor library and header/footer post types</td><td>Rank Math</td><td>To do</td></tr>
+<tr><td>5</td><td>GSC: remove/inspect URLs; request reindex of /what-is-crab-island/</td><td>Search Console</td><td>To do</td></tr>
+<tr><td>6</td><td>Work through the §4 roll-up, critical items first</td><td>Site-wide</td><td>To do</td></tr>
+</table>
+<p class="small">End of audit: 24 of 24 pages complete.</p>
+</body></html>
