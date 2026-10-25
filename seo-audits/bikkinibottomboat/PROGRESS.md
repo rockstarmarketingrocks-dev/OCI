@@ -12,7 +12,7 @@ Work top to bottom; mark `[x]` when the changelog is delivered.
 | 5 | [x] | FAQs | 2271 | /faqs/ | pdf/05-faqs.pdf |
 | 6 | [x] | Contact | 812 | /contact-bikkini-bottom-boat-charters/ | pdf/06-contact.pdf |
 | 7 | [x] | Gallery | 420 | /our-charter/ | pdf/07-gallery.pdf |
-| 8 | [ ] | What is Crab Island | 2333 | /what-is-crab-island/ | |
+| 8 | [x] | What is Crab Island | 2333 | /what-is-crab-island/ | pdf/08-what-is-crab-island.pdf |
 | 9 | [ ] | How much does it cost to get to Crab Island | 2345 | /how-much-does-it-cost-to-get-to-crab-island/ | |
 | 10 | [ ] | Public Tour vs Private Charter | 2363 | /public-crab-island-tour-vs-private-charter-which-should-you-book/ | |
 | 11 | [ ] | What to Bring to Crab Island | 2375 | /what-to-bring-to-crab-island/ | |
