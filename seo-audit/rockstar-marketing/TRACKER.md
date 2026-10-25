@@ -24,7 +24,7 @@ Process: audit the next `[ ]` page, save `NN-slug.pdf`, mark it `[x]`.
 | 17 | [x] done 2026-10-25 | Fort Walton Beach Web Design Company | 12120 | /fort-walton-beach-web-design/ | 17-fort-walton-beach-web-design.pdf |
 | 18 | [x] done 2026-10-25 | Santa Rosa Beach SEO Company | 12041 | /santa-rosa-beach-seo-company/ | 18-santa-rosa-beach-seo-company.pdf |
 | 19 | [x] done 2026-10-25 | Santa Rosa Beach Social Media Company | 12026 | /santa-rosa-beach-social-media-company/ | 19-santa-rosa-beach-social-media-company.pdf |
-| 20 | [ ] | Santa Rosa Beach Web Design Company | 12056 | /santa-rosa-beach-web-design-company/ | |
+| 20 | [x] done 2026-10-25 | Santa Rosa Beach Web Design Company | 12056 | /santa-rosa-beach-web-design-company/ | 20-santa-rosa-beach-web-design-company.pdf (EMPTY PAGE – noindex now) |
 | 21 | [ ] | Pensacola SEO Company | 12139 | /pensacola-seo-company/ | |
 | 22 | [ ] | Pensacola Social Media Company | 12170 | /pensacola-social-media-company/ | |
 | 23 | [ ] | Pensacola Web Design Company | 12157 | /pensacola-web-design-company/ | |
