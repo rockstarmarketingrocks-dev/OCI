@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SEO Changelog – Homepage – bikkinibottomboat.com</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+<h1>SEO Changelog — Homepage</h1>
+<div class="meta">
+<b>URL:</b> https://bikkinibottomboat.com/ &nbsp;·&nbsp; <b>WP ID:</b> 556 (Elementor, Astra theme, Rank Math Pro) &nbsp;·&nbsp; <b>Audit date:</b> 2026-10-25 &nbsp;·&nbsp; <b>Audit page 1 of 24</b><br>
+<b>Sources:</b> WordPress/Elementor content and Rank Math fields (site connector), footer template (ID 330), FAQ page facts (ID 2271), Semrush US database (rankings + keyword volumes).
+</div>
+
+<div class="box warn"><b>Limitation:</b> the live site could not be fetched from the audit environment (network block), so the rendered HTML (canonical, robots meta, schema output, tracking scripts, Core Web Vitals) was not inspected directly. Items that depend on the rendered page are marked <b>VERIFY</b>.</div>
+
+<h2>1. Summary</h2>
+<table>
+<tr><th style="width:28%">Area</th><th>Current state</th><th style="width:12%">Priority</th></tr>
+<tr><td>Keyword targeting</td><td>Rank Math focus keyword field holds 6 phrases including a different brand ("beach please charters"). Homepage ranks #12 for "crab island tours" (1,600/mo) and #1 only for brand terms.</td><td class="pri p1">High</td></tr>
+<tr><td>SEO title &amp; meta</td><td>Title renders as "Crab Island Tour – Bikkini Bottom Boat Charters" (singular, low-volume variant). Meta description promotes "Beach Please Charters", not Bikkini Bottom.</td><td class="pri p1">High</td></tr>
+<tr><td>H1 / headings</td><td>H1 "Welcome to Bikkini Bottom Boat Charters" has no service or location keyword. "Why Choose Us" uses H6 for numbers ("01.") and H4 for items; no H3 layer.</td><td class="pri p1">High</td></tr>
+<tr><td>Content depth</td><td>About 380 visible words. Facts that set the business apart (49-passenger boat, free parking, BYOB, floats provided, Harbor Blvd departure) appear only on the FAQ page.</td><td class="pri p1">High</td></tr>
+<tr><td>Internal linking</td><td>Every tour card links only to FareHarbor. There are no contextual links to the Crab Island, Sunset/Dolphin/Fireworks, Dolphin, FAQ, Gallery or Contact pages. Footer links point at slugs that don't match the real pages.</td><td class="pri p1">High</td></tr>
+<tr><td>Booking links</td><td>Hard-coded to old calendar months (2025/02, 2025/03). One link carries an <code>?elementor-preview=556</code> back-URL.</td><td class="pri p1">High</td></tr>
+<tr><td>Images</td><td>3 of 5 content images have empty alt text. Originals of 2048–2560 px are served with <code>sizes="100vw"</code>. Filenames carry no meaning.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Schema</td><td>No LocalBusiness/TouristTrip markup set up through Rank Math for the homepage (VERIFY rendered output).</td><td class="pri p2">Medium</td></tr>
+<tr><td>Tracking</td><td>No evidence of GA4/GTM event tracking for Book Now, phone or FareHarbor purchases (VERIFY in WPCode / page source).</td><td class="pri p1">High</td></tr>
+</table>
+
+<h2>2. Keyword targeting (Semrush US, Oct 2026)</h2>
+<table>
+<tr><th>Keyword</th><th>Volume</th><th>KD</th><th>Current rank / URL</th><th>Assign to</th></tr>
+<tr><td>crab island destin</td><td>12,100</td><td>26</td><td>— (what-is-crab-island ranks #7 for "crab island location")</td><td>What is Crab Island page; homepage supports it</td></tr>
+<tr><td>crab island tours</td><td>1,600</td><td>26</td><td>#12 homepage</td><td>Crab Island Tours page (primary) + homepage (secondary)</td></tr>
+<tr><td>crab island excursions destin fl</td><td>1,300</td><td>—</td><td>#4 /crab-island-tours-in-destin-fl/</td><td>Crab Island Tours page</td></tr>
+<tr><td>destin sunset cruise / sunset cruise destin fl</td><td>880 / 720</td><td>45 / 51</td><td>not in top 40</td><td>Sunset &amp; Dolphin page; homepage section</td></tr>
+<tr><td>destin boat tours / boat tours destin fl</td><td>480 / 170</td><td>62 / 53</td><td>not in top 40</td><td><b>Homepage primary</b></td></tr>
+<tr><td>dolphin tours destin fl</td><td>480</td><td>33</td><td>not in top 40</td><td>Dolphin Tours page</td></tr>
+<tr><td>crab island charter</td><td>480</td><td>—</td><td>#4 homepage</td><td>Homepage (private charter section)</td></tr>
+<tr><td>crab island shuttle</td><td>210</td><td>19</td><td>—</td><td>Public vs private page; homepage mention</td></tr>
+<tr><td>bikini bottom boat (misspelled brand)</td><td>50–140</td><td>—</td><td>#1 homepage</td><td>Homepage; add as schema <code>alternateName</code></td></tr>
+</table>
+<div class="box"><b>Decision:</b> the homepage targets the umbrella term <b>"Destin boat tours"</b> plus <b>"Crab Island tours"</b> as secondary. The Crab Island Tours page (ID 599) owns "crab island tours" as its primary term. The homepage passes authority to it with exact-match anchor text, so the two pages stop competing for the same keyword.</div>
+
+<h2>3. Rank Math / meta changes</h2>
+<table>
+<tr><th style="width:20%">Field</th><th style="width:40%">Current</th><th>Change to</th></tr>
+<tr><td>SEO title</td><td>Crab Island Tour %sep% %sitename%</td><td><b>Destin Boat Tours &amp; Crab Island Tours | Bikkini Bottom</b> (55 chars)</td></tr>
+<tr><td>Meta description</td><td>Experience the best of Destin, FL with Beach Please Charters. Join our Crab Island tour, sunset and dolphin tour, and Destin fireworks cruise today!</td><td><b>Crab Island tours, sunset &amp; dolphin cruises and fireworks cruises in Destin, FL aboard Bikkini Bottom. 49-passenger boat, BYOB, free parking. Book online!</b> (153 chars)</td></tr>
+<tr><td>Focus keyword</td><td>Crab Island Tour, bikkini bottom, beach please charters, crab island, Sunset cruise, destin fireworks cruise</td><td><b>destin boat tours</b> (primary); secondary: crab island tours, destin sunset cruise, bikkini bottom boat charters. Remove "beach please charters".</td></tr>
+<tr><td>WP page title (internal)</td><td>Crab Island Tour | Dolphin Tour | Fireworks Cruise | Bikkini Bottom Boat Charter</td><td><b>Home</b>. Rank Math uses this in breadcrumbs and WebPage schema, so a keyword-stuffed title adds noise.</td></tr>
+<tr><td>Slug</td><td>crab-island-tours-in-destin-fl-2-2-2-2-2</td><td>No visible effect (front page serves at "/"), but rename to <b>home</b> to avoid confusion with service pages.</td></tr>
+<tr><td>Open Graph / Twitter</td><td>Not set (falls back to defaults)</td><td>OG title = SEO title; OG description = "Crab Island, sunset, dolphin &amp; fireworks cruises in Destin, FL. Book your spot aboard Bikkini Bottom."; OG image = 1200×630 crop of a boat photo at Crab Island (upload new).</td></tr>
+<tr><td>Site tagline</td><td>"Where Unforgettable Adventures Begin! Explore Crab Island…" (230+ chars)</td><td>Shorten to: <b>Crab Island &amp; Destin Boat Tours</b>. Some themes and schema outputs use the tagline.</td></tr>
+</table>
+
+<h2>4. Heading structure</h2>
+<table>
+<tr><th style="width:9%">Tag</th><th style="width:43%">Current</th><th>New</th></tr>
+<tr><td>H1</td><td>Welcome to Bikkini Bottom Boat Charters</td><td><b>Crab Island Tours &amp; Boat Cruises in Destin, FL</b></td></tr>
+<tr><td>H2</td><td>Discover Our Exciting Charter Options in Destin FL</td><td><b>Destin Boat Tours Aboard Bikkini Bottom</b></td></tr>
+<tr><td>H3 <span class="small">(was H2)</span></td><td>Crab Island Excursion</td><td><b>Crab Island Tour (3 or 4 Hours)</b></td></tr>
+<tr><td>H3 <span class="small">(was H2)</span></td><td>Destin Sunset Cruise &amp; Dolphin Tour</td><td><b>Sunset Cruise &amp; Dolphin Tour</b></td></tr>
+<tr><td>H3 <span class="small">(new)</span></td><td>— (Daytime dolphin tour is offered but not shown)</td><td><b>Daytime Dolphin Tour</b></td></tr>
+<tr><td>H3 <span class="small">(was H2)</span></td><td>Destin Fireworks Cruise</td><td><b>Destin Fireworks Cruise</b> (keep)</td></tr>
+<tr><td>H3 <span class="small">(was H2)</span></td><td>Private Charter</td><td><b>Private Crab Island Charter (Up to 49 Guests)</b></td></tr>
+<tr><td>H3 <span class="small">(was H2)</span></td><td>Crab Island Tiki Tour</td><td><b>Small-Group Option: Crab Island Tiki Tours</b></td></tr>
+<tr><td>H2</td><td>Why Choose Us</td><td><b>Why Families and Groups Choose Bikkini Bottom</b></td></tr>
+<tr><td>H6 ×3</td><td>01. / 02. / 03.</td><td><b>Remove as headings.</b> Keep the numbers as styled text (Elementor Text Editor or <code>&lt;span&gt;</code>).</td></tr>
+<tr><td>H3 <span class="small">(was H4)</span></td><td>Professional / Friendly / Affordable</td><td><b>Licensed, Experienced Captains</b> / <b>Local, Family-Owned Crew</b> / <b>Affordable, BYOB-Friendly Pricing</b></td></tr>
+<tr><td>H2 <span class="small">(new)</span></td><td>—</td><td><b>What's Included on Every Tour</b></td></tr>
+<tr><td>H2 <span class="small">(new)</span></td><td>—</td><td><b>Where We Depart &amp; Where to Park</b></td></tr>
+<tr><td>H2</td><td>What People Say about Bikkini Bottom Boat Charters</td><td><b>Reviews From Our Guests</b></td></tr>
+<tr><td>H2 <span class="small">(new)</span></td><td>— (unlabelled blue link list)</td><td><b>Plan Your Crab Island Trip</b></td></tr>
+<tr><td>H2 <span class="small">(new)</span></td><td>—</td><td><b>Destin Boat Tour FAQs</b></td></tr>
+<tr><td>Footer H3/H4</td><td>Directions to Your Crab Island Adventure / About Us / Activities / Get In Touch</td><td>Footer shows on every page, so change these to <b>styled paragraphs (not headings)</b>. This stops the same 4 headings repeating on every URL.</td></tr>
+</table>
+
+<h2>5. Full rewritten page copy (paste into Elementor)</h2>
+<p class="small">Facts are taken from the site's FAQ and footer. Text in [brackets] needs the owner's input. Do not publish the FAQ claim "part of Destin since 1978" until the owner confirms it.</p>
+<div class="copy">
+<p><span class="tag">Top bar</span>Questions? Call <a>(850) 420-2540</a> &nbsp;|&nbsp; <b>[Book Now]</b> → FareHarbor (all items)</p>
+
+<h1><span class="tag">H1</span>Crab Island Tours &amp; Boat Cruises in Destin, FL</h1>
+<p>Spend the day at Crab Island, watch the sun set over Choctawhatchee Bay with dolphins swimming alongside, or catch the Destin fireworks from the water. All of it happens aboard <b>Bikkini Bottom</b>, a 49-passenger charter boat that leaves from 530 Harbor Blvd on the Destin Harbor. We're small, local and family-owned. Bring your cooler; we'll bring the floats, music and good vibes.</p>
+<p><b>[Book Your Tour]</b> &nbsp; <b>[Call (850) 420-2540]</b></p>
+
+<h2><span class="tag">H2</span>Destin Boat Tours Aboard Bikkini Bottom</h2>
+<p>Every trip is captained by our own crew, who know these waters well. Choose a public tour and buy tickets per person, or book the whole boat for your group.</p>
+
+<h3><span class="tag">H3</span>Crab Island Tour (3 or 4 Hours)</h3>
+<p>Our <a><b>Crab Island tours</b></a> drop anchor in the middle of Destin's famous sandbar. The water is clear and waist-deep, and floating vendors, music and hundreds of boats make it one big party. Swim, float and grab food from the vendor boats while we watch the boat. Floats and toys are included. Choose a 3-hour or 4-hour trip.</p>
+<p><b>[Book Crab Island Tour]</b> &nbsp; <a>See Crab Island tour details →</a></p>
+
+<h3><span class="tag">H3</span>Sunset Cruise &amp; Dolphin Tour</h3>
+<p>See the sky turn orange over the Destin Harbor and the bay. Our <a><b>Destin sunset cruise</b></a> follows the routes where bottlenose dolphins feed in the evening, and most guests see them. It's a relaxed, BYOB evening that suits couples, families and anyone wrapping up a beach day.</p>
+<p><b>[Book Sunset Cruise]</b> &nbsp; <a>Sunset &amp; dolphin cruise details →</a></p>
+
+<h3><span class="tag">H3</span>Daytime Dolphin Tour</h3>
+<p>Want dolphins in full daylight? Our <a><b>dolphin tours in Destin</b></a> cruise the harbor and East Pass while our captains look for pods. Kids love it, and so does everyone with a camera.</p>
+<p><b>[Book Dolphin Tour]</b> &nbsp; <a>Dolphin tour details →</a></p>
+
+<h3><span class="tag">H3</span>Destin Fireworks Cruise</h3>
+<p>Skip the crowded beach and watch the show from the best seat in town. During the season, Destin puts on fireworks <b>[day of week]</b> nights over the harbor. Our <a><b>Destin fireworks cruise</b></a> puts you right on the water for it. Seats sell out early on holiday weeks.</p>
+<p><b>[Book Fireworks Cruise]</b> &nbsp; <a>Fireworks cruise schedule →</a></p>
+
+<h3><span class="tag">H3</span>Private Crab Island Charter (Up to 49 Guests)</h3>
+<p>Book the whole boat for family reunions, birthdays, company outings and bachelorette parties. Build your own day: a few hours at Crab Island, a dolphin search, a sunset run, or all three. Ask about <a>group rates for large parties</a>.</p>
+<p><b>[Request a Private Charter]</b></p>
+
+<h3><span class="tag">H3</span>Small-Group Option: Crab Island Tiki Tours</h3>
+<p>Got a smaller group of up to 18? Our sister company <a>Crab Island Tiki Tours</a> runs private tiki-boat charters with a captain and an onboard bathroom.</p>
+<p><b>[Book a Tiki Tour]</b></p>
+
+<h2><span class="tag">H2</span>Why Families and Groups Choose Bikkini Bottom</h2>
+<h3><span class="tag">H3</span>Licensed, Experienced Captains</h3>
+<p>Captains Daniel and Devin run every trip and follow all Coast Guard rules. Safety gear is on board and the crew watches the water, so you can relax.</p>
+<h3><span class="tag">H3</span>Local, Family-Owned Crew</h3>
+<p>We're a small Destin business, not a booking factory. Our owner greets guests like family. Our crew will take your group photos, point out dolphins and make sure everyone has a good time.</p>
+<h3><span class="tag">H3</span>Affordable, BYOB-Friendly Pricing</h3>
+<p>Per-person tickets keep Crab Island affordable. Bring your own drinks (21+ for alcohol), snacks and a small cooler, with no bar markup. Tours start at <b>[$XX per person]</b>.</p>
+
+<h2><span class="tag">H2</span>What's Included on Every Tour</h2>
+<ul>
+<li>Licensed captain and crew</li>
+<li>Floats, toys and water fun gear (Crab Island tours)</li>
+<li>Room for 49 guests</li>
+<li>BYOB: bring your own cooler, drinks and snacks</li>
+<li>Photos taken by the crew during your trip</li>
+<li>Free parking across the street</li>
+</ul>
+<p>Not sure what to pack? Read <a>what to bring to Crab Island</a>.</p>
+
+<h2><span class="tag">H2</span>Where We Depart &amp; Where to Park</h2>
+<p>Bikkini Bottom departs from <b>530 Harbor Blvd, Destin, FL 32541</b>. Free parking is directly across Highway 98 at Craft Bar (541 US-98). Take a left at the end of the driveway and park behind the small offices, then cross at the Benning Dr. light and walk to the marina. <b>Don't park at the marina itself; vehicles there may be towed.</b> <a>Get directions and contact info →</a></p>
+
+<h2><span class="tag">H2</span>Reviews From Our Guests</h2>
+<p>We love hearing from our guests. <a>Read our Google reviews</a> or leave one after your trip!</p>
+<p>[One review widget, server-rendered: Widgets for Google Reviews / Trustindex]</p>
+
+<h2><span class="tag">H2</span>Plan Your Crab Island Trip</h2>
+<ul>
+<li><a>What Is Crab Island? Destin's Famous Sandbar Explained</a></li>
+<li><a>How Much Does It Cost to Get to Crab Island?</a></li>
+<li><a>Crab Island Shuttle vs. Pontoon Rental vs. Private Charter</a></li>
+<li><a>What to Bring to Crab Island: The Complete Packing List</a></li>
+<li><a>Is Crab Island Safe for Kids and Families?</a></li>
+<li><a>Best Crab Island Tours for Bachelorette Parties &amp; Large Groups</a></li>
+<li><a>The Ultimate Guide to Your Crab Island Excursion</a></li>
+<li><a>Best Restaurants in Destin, FL</a></li>
+</ul>
+
+<h2><span class="tag">H2</span>Destin Boat Tour FAQs</h2>
+<h3><span class="tag">H3</span>How long is the Crab Island tour?</h3>
+<p>We offer 3-hour and 4-hour Crab Island tours. Both give you plenty of time to swim, float and visit the vendor boats.</p>
+<h3><span class="tag">H3</span>Can I bring alcohol on the boat?</h3>
+<p>Yes. Guests 21 and over may bring their own alcohol, plus soft drinks, snacks and a small cooler. Bring water too; staying hydrated matters out there.</p>
+<h3><span class="tag">H3</span>Where do I park for the boat?</h3>
+<p>Free parking is across the street at Craft Bar, 541 US-98. Don't park at the marina; vehicles there may be towed.</p>
+<h3><span class="tag">H3</span>Will we see dolphins?</h3>
+<p>Wildlife sightings can't be guaranteed, but dolphins are common in Destin Harbor and most of our guests see them.</p>
+<h3><span class="tag">H3</span>Can we book the whole boat?</h3>
+<p>Yes. Private charters hold up to 49 guests. Call (850) 420-2540 for group rates.</p>
+<p><a>See all FAQs →</a></p>
+</div>
+<p class="small">Word count of the new copy: about 900 words (up from about 380). Keep paragraphs short on mobile and keep the Book Now buttons next to each tour.</p>
+
+<h2>6. Internal linking plan</h2>
+<h3>6a. Links to add on the homepage</h3>
+<table>
+<tr><th>Anchor text</th><th>Target URL</th><th>Location</th></tr>
+<tr><td>Crab Island tours</td><td>/crab-island-tours-in-destin-fl/ (ID 599)</td><td>Crab Island H3 body + "See details" link</td></tr>
+<tr><td>Destin sunset cruise</td><td>/crab-island-tours-in-destin-fl-2/ (ID 672)</td><td>Sunset H3 body</td></tr>
+<tr><td>dolphin tours in Destin</td><td>/crab-island-tours-in-destin-fl-2-2-2-2/ (ID 1457)</td><td>Dolphin H3 body</td></tr>
+<tr><td>Destin fireworks cruise</td><td>/crab-island-tours-in-destin-fl-2/#fireworks (ID 672)</td><td>Fireworks H3 body</td></tr>
+<tr><td>group rates for large parties</td><td>/best-crab-island-tour-for-bachelorette-parties-large-groups/</td><td>Private charter H3</td></tr>
+<tr><td>Crab Island Tiki Tours</td><td>Sister-site homepage (not only FareHarbor)</td><td>Tiki H3</td></tr>
+<tr><td>what to bring to Crab Island</td><td>/what-to-bring-to-crab-island/</td><td>"What's included"</td></tr>
+<tr><td>Get directions and contact info</td><td>/contact-bikkini-bottom-boat-charters/</td><td>Departure section</td></tr>
+<tr><td>See all FAQs</td><td>/faqs/</td><td>FAQ section</td></tr>
+<tr><td>Ultimate Guide to Your Crab Island Excursion</td><td>/the-ultimate-guide-to-your-crab-island-excursion-in-destin/</td><td>Plan Your Trip list</td></tr>
+<tr><td>Best Restaurants in Destin, FL</td><td>/the-ultimate-guide-to-the-best-restaurants-in-destin-fl/</td><td>Plan Your Trip list (this post ranks for 9,900/mo terms)</td></tr>
+<tr><td>Photo gallery</td><td>/our-charter/</td><td>Under the tour cards: "See photos from recent trips"</td></tr>
+</table>
+<h3>6b. Fix existing links</h3>
+<table>
+<tr><th>Location</th><th>Current href</th><th>Fix</th></tr>
+<tr><td>Footer → Crab Island Tour, Private Large Group Tour</td><td>/crab-island-tours/</td><td>Point at /crab-island-tours-in-destin-fl/ (or the new clean slug, see §7). VERIFY whether a Rank Math redirect exists; a redirect hop on a site-wide link still wastes crawl budget.</td></tr>
+<tr><td>Footer → Sunset and Dolphin Tour, Destin Fireworks Cruise</td><td>/sunset-and-dolphin-tour-fireworks-cruise/</td><td>Point at the real page URL. Send Fireworks to <code>#fireworks</code> on that page.</td></tr>
+<tr><td>Footer → Contact Us</td><td>/contact-bikkini-bottom/</td><td>/contact-bikkini-bottom-boat-charters/</td></tr>
+<tr><td>Footer → Activities</td><td>No Dolphin Tours link</td><td>Add "Daytime Dolphin Tour" → ID 1457 page</td></tr>
+<tr><td>Footer → About Us</td><td>No Gallery or Blog</td><td>Add "Photo Gallery" → /our-charter/ and "Local Guide (Blog)" → /blog/</td></tr>
+<tr><td>Footer partner logos (5)</td><td>No alt text; one link is <code>http://Luxxnailspafwb.com</code></td><td>Add alt = partner name, use https, add <code>rel="noopener"</code>. Consider linking the partner logos to the matching spotlight posts on this site instead.</td></tr>
+<tr><td>Blog link list on homepage</td><td>Inline <code>style="color:#0000ff"</code>, no heading</td><td>Remove inline styles. Put the links under the "Plan Your Crab Island Trip" H2 as a styled list or Elementor Icon List.</td></tr>
+<tr><td>"View All Testimonial" button</td><td>goo.gl short link</td><td>Rename to "Read All Google Reviews". Use the full Google Maps place URL (goo.gl links are deprecated), opened in a new tab.</td></tr>
+</table>
+<h3>6c. Links other pages should send to the homepage</h3>
+<p>Each blog post and Crab Island guide page should link once to the homepage with the anchor "<b>Destin boat tours</b>" or "<b>Bikkini Bottom Boat Charters</b>". Set this up in Internal Link Juicer (already installed): add "destin boat tours" and "destin boat charters" as keywords on page 556.</p>
+
+<h2>7. Technical fixes</h2>
+<table>
+<tr><th style="width:24%">Issue</th><th>Fix</th><th style="width:11%">Priority</th></tr>
+<tr><td>Stale FareHarbor booking URLs</td><td>Replace with evergreen links that open the FareHarbor Lightframe:<br>
+Crab Island: <code>https://fareharbor.com/embeds/book/bikkinibottomboat/items/615407/?full-items=yes</code><br>
+Sunset/Dolphin: <code>…/items/550732/?full-items=yes</code><br>
+Fireworks: <code>…/items/550737/?full-items=yes</code><br>
+Private: <code>…/items/550728/?full-items=yes&amp;flow=1191550</code><br>
+Remove <code>/calendar/2025/0X/</code> and the <code>back=…elementor-preview…</code> parameter.</td><td class="pri p1">High</td></tr>
+<tr><td>Service page slugs (site-wide)</td><td>Rename and 301 in Rank Math → Redirections:<br>
+/crab-island-tours-in-destin-fl-2/ → <b>/destin-sunset-cruise-fireworks/</b><br>
+/crab-island-tours-in-destin-fl-2-2-2-2/ → <b>/dolphin-tours-destin-fl/</b><br>
+/our-charter/ → <b>/gallery/</b><br>
+Then update the menu, footer and every internal link to the new URLs. These get full write-ups on their own changelogs.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Images: missing alt</td><td>Hero/Crab Island image (439986986_…jpg): <b>"Guests floating at Crab Island beside the Bikkini Bottom boat in Destin FL"</b><br>
+Private charter image (IMG_2762…): <b>"Private group charter aboard Bikkini Bottom on Destin Harbor"</b><br>
+Tiki image (812EE4F3…): <b>"Crab Island Tiki Tours tiki boat in Destin"</b><br>
+Footer logo: replace "default-logo" with <b>"Bikkini Bottom Boat Charters logo"</b>.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Images: weight</td><td>The 2560×1920 and 2048×2048 originals load into cards about 400 px wide. In Elementor, set Image Size = "Medium Large (768)" for each card. In Imagify, turn on WebP/AVIF conversion and delivery via &lt;picture&gt;. Mark the first image <code>fetchpriority="high"</code> and leave it out of LiteSpeed lazy-load. The Private Charter card uses a 300×225 file, so switch it to 768w to avoid blur on retina screens.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Image filenames</td><td>Rename new uploads before upload, e.g. <code>crab-island-tour-destin-bikkini-bottom.jpg</code>. Don't rename existing files in place (it breaks URLs) unless you also add redirects.</td><td class="pri p3">Low</td></tr>
+<tr><td>Review iframe</td><td>The reviews iframe (bikkinibottomboatreviews.com) sits beside a <code>[trustindex]</code> shortcode, so two review systems are stacked. Keep one. Prefer the Widgets for Google Reviews plugin, which renders review text in the HTML. Delete the iframe: Google doesn't count iframe content toward this page, and it adds third-party load.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Google Map iframe (footer, every page)</td><td>Already <code>loading="lazy"</code>. Consider a static map image linking to Google Maps to cut about 500 KB of JS on mobile.</td><td class="pri p3">Low</td></tr>
+<tr><td>Canonical / robots / sitemap</td><td>VERIFY: the homepage canonical is <code>https://bikkinibottomboat.com/</code>, and http and www both 301 to it. Rank Math sitemap excludes <code>elementor_library</code> and <code>elementor-hf</code>. The test page "Elementor #2321" is noindex or deleted.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Core Web Vitals</td><td>VERIFY in PageSpeed Insights (mobile). Expected issues: LCP from the large hero, CLS from the review iframe (min-height 250px, no fixed height), INP from the FareHarbor and map scripts. LiteSpeed: turn on CSS/JS combine with Elementor-safe settings, and delay JS for FareHarbor until interaction.</td><td class="pri p2">Medium</td></tr>
+</table>
+
+<h3>7a. Schema (Rank Math → Schema → Custom, homepage only)</h3>
+<pre>{
+ "@context": "https://schema.org",
+ "@type": ["LocalBusiness", "TouristAttraction"],
+ "@id": "https://bikkinibottomboat.com/#business",
+ "name": "Bikkini Bottom Boat Charters",
+ "alternateName": ["Bikkini Bottom", "Bikini Bottom Boat Charters"],
+ "url": "https://bikkinibottomboat.com/",
+ "telephone": "+1-850-420-2540",
+ "email": "res4bikkinibottom@gmail.com",
+ "image": "https://bikkinibottomboat.com/wp-content/uploads/2025/02/IMG_8070-scaled.jpg",
+ "logo": "https://bikkinibottomboat.com/wp-content/uploads/2025/07/cropped-Untitled-design.png",
+ "priceRange": "$$",
+ "address": {"@type": "PostalAddress", "streetAddress": "530 Harbor Blvd, Suite 16",
+   "addressLocality": "Destin", "addressRegion": "FL", "postalCode": "32541", "addressCountry": "US"},
+ "geo": {"@type": "GeoCoordinates", "latitude": "[verify]", "longitude": "[verify]"},
+ "hasMap": "[full Google Maps place URL]",
+ "areaServed": ["Destin", "Fort Walton Beach", "Okaloosa Island", "Miramar Beach"],
+ "sameAs": ["https://www.facebook.com/profile.php?id=100092672047341",
+   "https://www.instagram.com/bikkinibottomboat/", "https://www.youtube.com/@BIKKINIBOTTOMBOAT"],
+ "makesOffer": [
+  {"@type": "Offer", "itemOffered": {"@type": "TouristTrip", "name": "Crab Island Tour",
+    "url": "https://bikkinibottomboat.com/crab-island-tours-in-destin-fl/"}},
+  {"@type": "Offer", "itemOffered": {"@type": "TouristTrip", "name": "Sunset Cruise & Dolphin Tour"}},
+  {"@type": "Offer", "itemOffered": {"@type": "TouristTrip", "name": "Daytime Dolphin Tour"}},
+  {"@type": "Offer", "itemOffered": {"@type": "TouristTrip", "name": "Destin Fireworks Cruise"}},
+  {"@type": "Offer", "itemOffered": {"@type": "TouristTrip", "name": "Private Boat Charter"}}
+ ]
+}</pre>
+<p class="small">Also add FAQPage schema for the 5 homepage FAQs (Rank Math FAQ block, or include it in the custom schema). Google now shows FAQ rich results only for authoritative gov/health sites, but AI Overviews and answer engines still read the markup. Do <b>not</b> add aggregateRating to your own LocalBusiness markup; Google ignores self-served review stars. Make sure the address string exactly matches the Google Business Profile, including or leaving out "Suite 16" the same way. The map embed includes "Suite #16" but the footer text doesn't.</p>
+
+<h2>8. Tracking &amp; measurement</h2>
+<table>
+<tr><th style="width:26%">Item</th><th>Setup</th><th style="width:11%">Priority</th></tr>
+<tr><td>Base tags</td><td>VERIFY in WPCode / page source whether GA4 and/or GTM are installed. If not, install <b>Google Tag Manager</b> through WPCode (header + body snippets) and load GA4, Google Ads and Meta Pixel from GTM. Don't hard-code duplicate tags.</td><td class="pri p1">High</td></tr>
+<tr><td>Booking conversions</td><td>In FareHarbor Dashboard → Settings → Integrations, add the GA4 Measurement ID and/or GTM container. FareHarbor then sends <code>purchase</code> with value from the Lightframe. In GA4, mark <code>purchase</code> as a key event. Turn on cross-domain measurement for <code>fareharbor.com</code> (GA4 Admin → Data streams → Configure tag settings → Configure your domains).</td><td class="pri p1">High</td></tr>
+<tr><td>Book Now clicks</td><td>GTM Click trigger: Click URL contains <code>fareharbor.com/embeds/book/bikkinibottomboat</code> → GA4 event <code>begin_checkout</code>, parameters <code>tour_name</code> (from the item ID: 615407 = Crab Island, 550732 = Sunset/Dolphin, 550737 = Fireworks, 550728 = Private) and <code>link_location</code> (hero / card / footer).</td><td class="pri p1">High</td></tr>
+<tr><td>Tiki Tours referral</td><td>Click URL contains <code>crabislandguideservice</code> → event <code>sister_brand_click</code>.</td><td class="pri p3">Low</td></tr>
+<tr><td>Phone, email, directions</td><td><code>tel:</code> → <code>phone_click</code> (key event); <code>mailto:</code> → <code>email_click</code>; Google Maps links → <code>directions_click</code>.</td><td class="pri p1">High</td></tr>
+<tr><td>Engagement</td><td>Scroll depth 50/90%, FAQ toggle clicks, and outbound clicks to partner logos.</td><td class="pri p3">Low</td></tr>
+<tr><td>Google Business Profile</td><td>Set the GBP website link to <code>https://bikkinibottomboat.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp</code> so map-pack traffic shows up separately in GA4.</td><td class="pri p2">Medium</td></tr>
+<tr><td>Search Console &amp; Bing</td><td>VERIFY both properties exist (domain property in GSC). Submit <code>/sitemap_index.xml</code>. Link GSC to GA4 and to Rank Math (Analytics module) for keyword tracking of "destin boat tours" and "crab island tours".</td><td class="pri p2">Medium</td></tr>
+<tr><td>Consent</td><td>If you run Meta or Google Ads remarketing, add a lightweight consent banner with Consent Mode v2 defaults set in GTM.</td><td class="pri p3">Low</td></tr>
+</table>
+
+<h2>9. Changelog (implementation checklist)</h2>
+<table>
+<tr><th style="width:5%">#</th><th>Change</th><th style="width:15%">Where</th><th style="width:9%">Status</th></tr>
+<tr><td>1</td><td>SEO title → "Destin Boat Tours &amp; Crab Island Tours | Bikkini Bottom"</td><td>Rank Math</td><td>To do</td></tr>
+<tr><td>2</td><td>Meta description rewritten (removed "Beach Please Charters")</td><td>Rank Math</td><td>To do</td></tr>
+<tr><td>3</td><td>Focus keyword reset to "destin boat tours" + 3 secondary</td><td>Rank Math</td><td>To do</td></tr>
+<tr><td>4</td><td>OG/Twitter title, description and 1200×630 image</td><td>Rank Math → Social</td><td>To do</td></tr>
+<tr><td>5</td><td>WP page title → "Home"; slug → "home"; tagline shortened</td><td>WP / Settings</td><td>To do</td></tr>
+<tr><td>6</td><td>H1 rewritten with service + location keywords</td><td>Elementor</td><td>To do</td></tr>
+<tr><td>7</td><td>Tour headings H2 → H3; new section H2s added; H6 numbers removed; H4 → H3</td><td>Elementor</td><td>To do</td></tr>
+<tr><td>8</td><td>Full copy replaced (about 900 words) incl. Daytime Dolphin Tour, What's Included, Departure &amp; Parking, FAQ</td><td>Elementor</td><td>To do</td></tr>
+<tr><td>9</td><td>12 contextual internal links added (§6a)</td><td>Elementor</td><td>To do</td></tr>
+<tr><td>10</td><td>Footer links fixed (Crab Island, Sunset, Contact); Dolphin, Gallery and Blog added; footer headings → styled text</td><td>Footer template 330</td><td>To do</td></tr>
+<tr><td>11</td><td>Partner logos: alt text, https, rel attributes</td><td>Footer template 330</td><td>To do</td></tr>
+<tr><td>12</td><td>Booking links replaced with evergreen Lightframe URLs</td><td>Elementor buttons</td><td>To do</td></tr>
+<tr><td>13</td><td>Alt text on 3 images + logo; card image sizes → 768; WebP/AVIF on</td><td>Media / Imagify</td><td>To do</td></tr>
+<tr><td>14</td><td>Remove review iframe; keep one Trustindex widget; button renamed</td><td>Elementor</td><td>To do</td></tr>
+<tr><td>15</td><td>LocalBusiness + TouristTrip + FAQPage schema</td><td>Rank Math Schema</td><td>To do</td></tr>
+<tr><td>16</td><td>GTM + GA4 + FareHarbor purchase + click events + GBP UTM</td><td>WPCode / GTM / FareHarbor</td><td>To do</td></tr>
+<tr><td>17</td><td>Internal Link Juicer keywords for homepage</td><td>ILJ settings</td><td>To do</td></tr>
+<tr><td>18</td><td>VERIFY canonical, redirects, sitemap exclusions, CWV, existing tracking</td><td>Live site</td><td>To do</td></tr>
+<tr><td>19</td><td>Owner input: prices, fireworks night(s), "since 1978" claim, GBP address format</td><td>Owner</td><td>Waiting</td></tr>
+</table>
+
+<p class="small">Next page in queue: <b>Crab Island Tours</b> (/crab-island-tours-in-destin-fl/, ID 599).</p>
+</body></html>
