@@ -17,8 +17,8 @@ One page per loop iteration. Each finished page gets a PDF changelog in `pdf/` (
 | 11 | DONE 2026-10-28 | 790 | How Deep Is Crab Island | /about-crab-island/how-deep-is-crab-island/ | pdf/11-how-deep-is-crab-island-changelog.pdf |
 | 12 | DONE 2026-10-28 | 791 | Best Time to Visit Crab Island | /about-crab-island/best-time-to-visit-crab-island/ | pdf/12-best-time-to-visit-changelog.pdf |
 | 13 | DONE 2026-10-28 | 792 | What to Bring to Crab Island | /about-crab-island/what-to-bring-to-crab-island/ | pdf/13-what-to-bring-changelog.pdf |
-| 14 | next | 793 | Tiki Boat vs Pontoon Rental | /about-crab-island/tiki-boat-vs-pontoon-rental-crab-island/ | |
-| 15 | todo | 53 | FAQs | /crab-island-tiki-tours-faqs/ | |
+| 14 | DONE 2026-10-28 | 793 | Tiki Boat vs Pontoon Rental | /about-crab-island/tiki-boat-vs-pontoon-rental-crab-island/ | pdf/14-tiki-vs-pontoon-changelog.pdf |
+| 15 | next | 53 | FAQs | /crab-island-tiki-tours-faqs/ | |
 | 16 | todo | 57 | Our Story | /about/ | |
 | 17 | todo | 863 | Captain Bill | /elementor-863/ | |
 | 18 | todo | 55 | Gallery | /gallery/ | |
