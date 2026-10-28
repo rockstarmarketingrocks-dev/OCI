@@ -8,8 +8,8 @@ One page per loop iteration. Each finished page gets a PDF changelog in `pdf/` (
 | 2 | DONE 2026-10-28 | 252 | Private Crab Island Charter | /charters/private-crab-island-charter-destin/ | pdf/02-private-crab-island-charter-changelog.pdf |
 | 3 | DONE 2026-10-28 | 267 | Private Sunset Cruise | /charters/private-sunset-cruise-in-destin-fl/ | pdf/03-private-sunset-cruise-changelog.pdf |
 | 4 | DONE 2026-10-28 | 492 | Bachelorette | /crab-island-bachelorette-party-destin/ | pdf/04-bachelorette-changelog.pdf |
-| 5 | next | 892 | Public Charter with Bikkini Bottom | /elementor-892/ | |
-| 6 | todo | 785 | About Crab Island (hub) | /about-crab-island/ | |
+| 5 | DONE 2026-10-28 | 892 | Public Charter with Bikkini Bottom | /elementor-892/ | pdf/05-public-charter-changelog.pdf |
+| 6 | next | 785 | About Crab Island (hub) | /about-crab-island/ | |
 | 7 | todo | 786 | What Is Crab Island | /about-crab-island/what-is-crab-island-destin/ | |
 | 8 | todo | 787 | Where Is Crab Island | /about-crab-island/where-is-crab-island/ | |
 | 9 | todo | 788 | How to Get to Crab Island | /about-crab-island/how-to-get-to-crab-island/ | |
