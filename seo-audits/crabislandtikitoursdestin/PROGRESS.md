@@ -13,8 +13,8 @@ One page per loop iteration. Each finished page gets a PDF changelog in `pdf/` (
 | 7 | DONE 2026-10-28 | 786 | What Is Crab Island | /about-crab-island/what-is-crab-island-destin/ | pdf/07-what-is-crab-island-changelog.pdf |
 | 8 | DONE 2026-10-28 | 787 | Where Is Crab Island | /about-crab-island/where-is-crab-island/ | pdf/08-where-is-crab-island-changelog.pdf |
 | 9 | DONE 2026-10-28 | 788 | How to Get to Crab Island | /about-crab-island/how-to-get-to-crab-island/ | pdf/09-how-to-get-to-crab-island-changelog.pdf |
-| 10 | next | 789 | How Much Does Crab Island Cost | /about-crab-island/how-much-does-crab-island-cost/ | |
-| 11 | todo | 790 | How Deep Is Crab Island | /about-crab-island/how-deep-is-crab-island/ | |
+| 10 | DONE 2026-10-28 | 789 | How Much Does Crab Island Cost | /about-crab-island/how-much-does-crab-island-cost/ | pdf/10-crab-island-cost-changelog.pdf |
+| 11 | next | 790 | How Deep Is Crab Island | /about-crab-island/how-deep-is-crab-island/ | |
 | 12 | todo | 791 | Best Time to Visit Crab Island | /about-crab-island/best-time-to-visit-crab-island/ | |
 | 13 | todo | 792 | What to Bring to Crab Island | /about-crab-island/what-to-bring-to-crab-island/ | |
 | 14 | todo | 793 | Tiki Boat vs Pontoon Rental | /about-crab-island/tiki-boat-vs-pontoon-rental-crab-island/ | |
