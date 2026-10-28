@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SEO Changelog: Home</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>SEO Changelog: Home Page</h1>
+<div class="meta">Site: crabislandtikitoursdestin.com &nbsp;|&nbsp; URL: https://crabislandtikitoursdestin.com/ &nbsp;|&nbsp; WP page ID 61 (Elementor, Hello Elementor theme, Rank Math) &nbsp;|&nbsp; Audit date: October 28, 2026 &nbsp;|&nbsp; Page 1 of the site queue</div>
+
+<p class="note">Method: content, headings, links, images and SEO meta were pulled from WordPress through the site connector (last modified September 5, 2026). The live URL could not be loaded from the audit environment, so rendered-page items (Core Web Vitals, header/footer links, tags that fire in the browser, Rank Math schema output) are listed as checks to run, not as confirmed findings.</p>
+
+<h2>1. Summary</h2>
+<table>
+<tr><th style="width:28%">Item</th><th>Current state</th></tr>
+<tr><td>SEO title (Rank Math)</td><td>Crab Island Tours in Destin | Private Captain-Included Boat Tours (66 characters, likely truncated)</td></tr>
+<tr><td>Meta description</td><td>Experience the best Crab Island tours in Destin, Florida. Choose from private charters, public tours, fireworks cruises, and sunset adventures. (144 characters, no capacity, captain or bathroom selling points)</td></tr>
+<tr><td>H1</td><td>Crab Island Tours in Destin, Florida (one H1, good)</td></tr>
+<tr><td>Body copy</td><td>About 400 words. Thin for the site's main money page. No FAQ, no links to the nine About Crab Island guides.</td></tr>
+<tr><td>Internal links</td><td>5 internal links. 2 of them point to pages that do not exist.</td></tr>
+<tr><td>Images</td><td>12 image tags, 7 with empty alt text, 1 with an alt that describes the wrong image. The same 4 carousel images are output twice.</td></tr>
+<tr><td>Featured / OG image</td><td>None set</td></tr>
+<tr><td>Prices shown</td><td>Private tiki from $800, sunset from $600, public from $30. Other pages on the site say $900, $400, $50 and $60 for the same products.</td></tr>
+</table>
+
+<h2>2. Critical fixes (do first)</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:30%">Issue</th><th>Fix</th></tr>
+<tr><td>1</td><td><span class="tag p1">P1</span> Broken link: image above "Choose Your Adventure" links to <code>/charters/private-luxury-pontoon-crab-island-charter/</code></td><td>No page with that slug exists (published, draft or private). Point the image to <code>/charters/private-crab-island-charter-destin/</code>, or remove the link. If the URL was ever indexed, add a 301 in Rank Math &gt; Redirections to the private charter page.</td></tr>
+<tr><td>2</td><td><span class="tag p1">P1</span> Broken link: "Learn More" on the Private Sunset Dolphin Cruise card goes to <code>/charters/sunset-cruise/</code></td><td>The real page is <code>/charters/private-sunset-cruise-in-destin-fl/</code>. Update the button link and add a 301 from the old path.</td></tr>
+<tr><td>3</td><td><span class="tag p1">P1</span> Conflicting prices across the site</td><td>Home: private from $800, sunset from $600, public from $30. Private Charter page: 4-hour from $800, sunset from $400, public from $60. About Crab Island guides and their meta descriptions: private from $900, shuttle seats from $50. Pick the current FareHarbor prices and use the same "from" figure everywhere. Google and AI answer engines pull these numbers, and mismatches cost trust at checkout.</td></tr>
+<tr><td>4</td><td><span class="tag p1">P1</span> Wrong alt text</td><td>The hero-area image <code>Crab-island-random-pic-Large...png</code> has alt "How deep is the water at Crab Island Infographic" but links to a pontoon charter. Rewrite (see section 7) and link it to the private charter page.</td></tr>
+<tr><td>5</td><td><span class="tag p1">P1</span> "Learn More" for public tours goes to <code>/elementor-892/</code></td><td>Change the slug of page 892 to <code>/public-crab-island-boat-tours-destin/</code> and let WordPress/Rank Math redirect the old slug. Do the same for page 863 (Captain Bill): <code>/captain-bill/</code>.</td></tr>
+</table>
+
+<h2>3. SEO title and meta description</h2>
+<table>
+<tr><th style="width:18%">Field</th><th>Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>Crab Island Tours in Destin | Private Captain-Included Boat Tours</td><td><b>Crab Island Tours in Destin, FL | Private Tiki Boat Charters</b> (60 characters)</td></tr>
+<tr><td>Meta description</td><td>Experience the best Crab Island tours in Destin, Florida. Choose from private charters, public tours, fireworks cruises, and sunset adventures.</td><td><b>Private Crab Island tiki boat tours in Destin, FL for up to 18 guests. USCG captain and onboard bathroom included. 2 to 8 hour trips and sunset cruises.</b> (153 characters)</td></tr>
+<tr><td>Focus keyword</td><td>Not visible via connector</td><td>Primary: <b>crab island tours destin</b>. Secondary: private crab island charter, crab island tiki boat, destin tiki boat tour, crab island boat tour.</td></tr>
+<tr><td>OG / social</td><td>No featured image</td><td>Set a featured image (a wide 1200x630 crop of the tiki boat at Crab Island) and fill the Rank Math Facebook/X title and description with the values above.</td></tr>
+</table>
+<p class="note">The current description promises "fireworks cruises," which only the sister company sells. Leaving it out keeps the snippet accurate for this brand.</p>
+
+<h2>4. Heading structure</h2>
+<h3>Current</h3>
+<pre>H1  Crab Island Tours in Destin, Florida
+H2  Relax, celebrate, and explore Crab Island with a local captain included   (hero subhead marked as H2)
+H2  The Best Way to Experience Crab Island
+H2  Choose Your Adventure
+  H3  Private Crab Island Tiki Tour
+  H3  Private Sunset Dolphin Cruise
+  H3  Public Boat Tours
+  H3  Crab Island, Sunset, Fireworks                                       (label, not a section)
+H2  CRAB ISLAND TIKI TOURS                                                 (all caps, no keyword context)
+H2  Why Guests Love Crab Island Tiki Tours
+H2  Ready to Experience Crab Island?</pre>
+<h3>New</h3>
+<pre>H1  Private Crab Island Tiki Boat Tours in Destin, Florida
+    (hero subhead becomes a styled paragraph, not a heading)
+H2  The Easiest Way to Spend a Day at Crab Island
+H2  Choose Your Destin Boat Tour
+  H3  Private Crab Island Tiki Tour (2 to 8 Hours)
+  H3  Private Sunset Dolphin Cruise
+  H3  Public Pay-Per-Seat Boat Tours
+H2  What's Included on Every Private Charter
+H2  Who Books Our Tiki Boat
+  H3  Families With Kids
+  H3  Bachelorette Parties
+  H3  Birthdays, Reunions and Large Groups
+H2  Plan Your Crab Island Trip
+H2  Meet Crab Island Tiki Tours
+H2  What Guests Say About Our Crab Island Tours
+H2  Crab Island Tour FAQs
+  H3  (one H3 per question, 5 questions)
+H2  Ready to Book Your Crab Island Tour?</pre>
+
+<h2>5. Content rewrites (paste-ready)</h2>
+<p class="note">Facts used below come from the site's own pages: 18-guest capacity, USCG-licensed captain, onboard bathroom, departures from Destin Harbor, 2 to 8 hour trips, Crab Island about half a mile from the harbor near the Marler Bridge, 2 to 4 foot water depth. Confirm each one before publishing.</p>
+
+<h3>Hero</h3>
+<div class="copy">
+<p><b>H1:</b> Private Crab Island Tiki Boat Tours in Destin, Florida</p>
+<p><b>Subhead (paragraph):</b> Your group, your boat, your captain. Room for up to 18 guests with a bathroom onboard.</p>
+<p><b>Buttons:</b> "Check Availability" (primary, FareHarbor) and "See Tour Options" (anchor link to #tours)</p>
+</div>
+
+<h3>H2: The Easiest Way to Spend a Day at Crab Island</h3>
+<div class="copy">
+<p>Crab Island is a shallow sandbar just north of the Marler Bridge, about half a mile from Destin Harbor, and the only way to get there is by boat. Our private tiki boat takes the work out of it. A USCG-licensed captain handles the driving, anchoring and the trip back, so your group can swim, float and relax in 2 to 4 feet of clear water.</p>
+<p>The boat is yours for the whole trip. There's room for up to 18 guests, shade under the tiki roof, and a bathroom onboard, which matters a lot after a few hours on the water. Choose a 2-hour visit or stay up to 8 hours and add a cruise along the harbor.</p>
+</div>
+<p>Keep the existing six-item checklist under this paragraph (captain, 18 seats, bathroom, family friendly, celebrations, private tour).</p>
+
+<h3>H2: Choose Your Destin Boat Tour (add id="tours")</h3>
+<div class="copy">
+<p><b>H3: Private Crab Island Tiki Tour (2 to 8 Hours)</b><br>Spend a few hours or a full day at Crab Island on your own tiki boat. Your captain picks a good anchoring spot for the tide and crowd, then your group swims, floats and visits the food and drink vendors. It's a good fit for families, bachelorette parties, birthdays and groups of up to 18. <i>Buttons: "Book Now" and "Private Charter Details" (link to /charters/private-crab-island-charter-destin/)</i></p>
+<p><b>H3: Private Sunset Dolphin Cruise</b><br>Cruise the Destin Harbor area and the Emerald Coast as the sun goes down, with time to look for dolphins along the way. Bring your own group of up to 18 for a quieter evening on the water. <i>Buttons: "Book Now" and "Sunset Cruise Details" (link to /charters/private-sunset-cruise-in-destin-fl/)</i></p>
+<p><b>H3: Public Pay-Per-Seat Boat Tours</b><br>Traveling as a couple or a small group? Our sister company, Bikkini Bottom Boat Tours, sells individual seats on Crab Island, sunset and Destin Harbor fireworks trips. <i>Buttons: "Book a Seat" and "Public Tour Details" (link to the renamed page 892)</i></p>
+</div>
+
+<h3>H2: What's Included on Every Private Charter (new)</h3>
+<div class="copy">
+<ul>
+<li>USCG-licensed captain for the whole trip</li>
+<li>Private use of the tiki boat for up to 18 guests</li>
+<li>Onboard bathroom</li>
+<li>Shaded seating under the tiki roof</li>
+<li>Departure from Destin Harbor</li>
+<li>Trip lengths from 2 to 8 hours</li>
+</ul>
+<p>Bring sunscreen, water shoes, towels, snacks and drinks (no glass). See the full <a>Crab Island packing list</a>.</p>
+</div>
+<p class="note">Add coolers/BYOB, music or float details only if the business confirms them. The Bachelorette page's meta mentions BYOB.</p>
+
+<h3>H2: Who Books Our Tiki Boat (new)</h3>
+<div class="copy">
+<p><b>H3: Families With Kids</b><br>Most of the sandbar sits in 2 to 4 feet of water, and having a bathroom and shade on the boat makes a long day easier for younger kids and grandparents. Read <a>Is Crab Island family friendly?</a> before you go.</p>
+<p><b>H3: Bachelorette Parties</b><br>Keep the whole bridal party together on one private boat with a captain who handles the logistics. See our <a>Crab Island bachelorette party charters</a>.</p>
+<p><b>H3: Birthdays, Reunions and Large Groups</b><br>With room for 18, the tiki boat fits families traveling together and friend groups that would otherwise need two pontoon rentals. Compare the options in <a>Tiki boat or pontoon rental for Crab Island?</a></p>
+</div>
+
+<h3>H2: Plan Your Crab Island Trip (new hub block)</h3>
+<div class="copy">
+<p>New to Crab Island? These short guides answer the questions guests ask us most:</p>
+<ul>
+<li><a>What is Crab Island in Destin, Florida?</a></li>
+<li><a>Where is Crab Island?</a></li>
+<li><a>How do you get to Crab Island?</a></li>
+<li><a>How much does it cost to go to Crab Island?</a></li>
+<li><a>How deep is the water at Crab Island?</a></li>
+<li><a>What is the best time to go to Crab Island?</a></li>
+</ul>
+</div>
+
+<h3>H2: Meet Crab Island Tiki Tours (replaces "CRAB ISLAND TIKI TOURS")</h3>
+<div class="copy">
+<p>We're a small, local charter company running one private tiki boat out of Destin Harbor. Our view is simple: the best days on the water are shared with the people you came with. Every trip includes a USCG-licensed captain, room for up to 18 guests and a bathroom onboard, and you can shape the day around your group. <a>Read our story</a> or <a>meet Captain Bill</a>.</p>
+</div>
+
+<h3>H2: Crab Island Tour FAQs (new, mark up with Rank Math FAQ block)</h3>
+<div class="copy">
+<p><b>How many people fit on the tiki boat?</b> Up to 18 guests plus the captain.</p>
+<p><b>Is there a bathroom on the boat?</b> Yes. The tiki boat has an onboard bathroom.</p>
+<p><b>Where do tours leave from?</b> Destin Harbor. The exact meeting spot is in your FareHarbor confirmation email. <i>(Add the dock name and address.)</i></p>
+<p><b>How long are the private charters?</b> Private trips run from 2 to 8 hours. Longer charters leave time to cruise the harbor and shoreline after Crab Island.</p>
+<p><b>What happens if the weather is bad?</b> Link to the weather policy on the FAQs page and summarize it in one sentence here.</p>
+</div>
+
+<h3>H2: Ready to Book Your Crab Island Tour?</h3>
+<div class="copy"><p>Pick a date in the calendar and choose your trip length. Questions first? Call us at <i>(business phone)</i> or use the <a>contact form</a>.</p></div>
+
+<h2>6. Internal linking</h2>
+<table>
+<tr><th style="width:34%">Anchor text</th><th style="width:40%">Target</th><th>Placement</th></tr>
+<tr><td>Private Charter Details</td><td>/charters/private-crab-island-charter-destin/</td><td>Private tiki card (replace broken image link too)</td></tr>
+<tr><td>Sunset Cruise Details</td><td>/charters/private-sunset-cruise-in-destin-fl/</td><td>Sunset card (replaces /charters/sunset-cruise/)</td></tr>
+<tr><td>Public Tour Details</td><td>/public-crab-island-boat-tours-destin/ (renamed 892)</td><td>Public card</td></tr>
+<tr><td>Crab Island bachelorette party charters</td><td>/crab-island-bachelorette-party-destin/</td><td>Who Books section</td></tr>
+<tr><td>Is Crab Island family friendly?</td><td>/is-crab-island-family-friendly/</td><td>Who Books section</td></tr>
+<tr><td>Tiki boat or pontoon rental for Crab Island?</td><td>/about-crab-island/tiki-boat-vs-pontoon-rental-crab-island/</td><td>Who Books section</td></tr>
+<tr><td>Crab Island packing list</td><td>/about-crab-island/what-to-bring-to-crab-island/</td><td>What's Included section</td></tr>
+<tr><td>Six guide titles</td><td>/about-crab-island/ child pages (786 to 791)</td><td>Plan Your Trip section</td></tr>
+<tr><td>Read our story / meet Captain Bill</td><td>/about/ and /captain-bill/ (renamed 863)</td><td>Meet section</td></tr>
+<tr><td>Crab Island Tiki Tours FAQs</td><td>/crab-island-tiki-tours-faqs/</td><td>FAQ section footer</td></tr>
+<tr><td>contact form</td><td>/contact-crab-island-tiki-tours-destin/</td><td>Final CTA</td></tr>
+</table>
+<p class="note">Inbound: the Private Charter page links to the older blog posts (773, 910) instead of the newer About Crab Island guides. That is covered in its own changelog. Sitewide, check that the header menu links to About Crab Island and Gallery.</p>
+
+<h2>7. Images</h2>
+<table>
+<tr><th style="width:36%">File</th><th style="width:22%">Current alt</th><th>New alt / action</th></tr>
+<tr><td>Crab-island-random-pic-Large-e1782787597533.png</td><td>How deep is the water at Crab Island Infographic</td><td>Describe what the photo actually shows (for example "Guests swimming beside the tiki boat at Crab Island, Destin"). Convert from PNG to WebP. Rename file to crab-island-tiki-boat-destin.webp.</td></tr>
+<tr><td>Another-random-tiki-pic-Large.jpeg</td><td>(empty)</td><td>Private tiki boat anchored at Crab Island in Destin, FL. Rename file. Convert to WebP.</td></tr>
+<tr><td>Tiki-sunset-pic-Large.jpeg</td><td>(empty)</td><td>Private sunset cruise on a tiki boat near Destin Harbor. Convert to WebP.</td></tr>
+<tr><td>IMG_9191.jpg</td><td>Public/ Pay per seat boat</td><td>Bikkini Bottom public pay-per-seat boat at Crab Island. Rename file. Convert to WebP.</td></tr>
+<tr><td>thumbnail-4.webp</td><td>Tiki or Pontoon rentals</td><td>Describe the photo; keep it short.</td></tr>
+<tr><td>image-15.webp, image-3.webp</td><td>(empty)</td><td>Write descriptive alt for each (group on tiki boat, Crab Island sandbar, etc.).</td></tr>
+<tr><td>image-17.webp</td><td>About Crab Island</td><td>Describe the photo.</td></tr>
+</table>
+<ul>
+<li>The image carousel outputs all four slides twice (8 image tags). That is how the Elementor loop carousel duplicates slides for infinite scroll. Set those clones to lazy load, or switch to a static 4-image grid to cut page weight.</li>
+<li>Only the first hero image should load eagerly. Every image below the fold should have <code>loading="lazy"</code> (Elementor &gt; Settings &gt; Performance).</li>
+<li>Generic filenames like IMG_9191 and image-15 give search engines nothing. Rename on upload going forward.</li>
+</ul>
+
+<h2>8. Technical</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:32%">Item</th><th>Action</th></tr>
+<tr><td>1</td><td><span class="tag p1">P1</span> Schema</td><td>In Rank Math &gt; Titles &amp; Meta &gt; Local SEO, set Business Type to TravelAgency or LocalBusiness, add name, phone, Destin Harbor address, geo, hours, logo and sameAs (Google Business Profile, Facebook, Instagram). On the home page, add a TouristTrip or Product schema per tour with an Offer price that matches FareHarbor. Validate in the Rich Results Test.</td></tr>
+<tr><td>2</td><td><span class="tag p1">P1</span> /charters/ parent is a draft</td><td>Page 59 "Charters" is unpublished, so <code>/charters/</code> likely returns 404 while two live pages sit under it. Publish it as a tours hub page or 301 it to the home page #tours section.</td></tr>
+<tr><td>3</td><td><span class="tag p2">P2</span> Sample Page is live</td><td>Delete <code>/sample-page/</code> (page 2) and redirect it to the home page.</td></tr>
+<tr><td>4</td><td><span class="tag p2">P2</span> Privacy Policy is a draft</td><td>Publish page 3 and link it in the footer. GA4, Google Ads and Meta ads all expect a privacy policy, and Contact Form 7 collects personal data.</td></tr>
+<tr><td>5</td><td><span class="tag p2">P2</span> Keyword cannibalization</td><td>"What should you bring to Crab Island?" exists as page 792 and post 773. "Best time to go" exists as page 791 and post 910. Merge each pair into the stronger URL and 301 the other.</td></tr>
+<tr><td>6</td><td><span class="tag p2">P2</span> Hidden heading markup</td><td>The hero subhead uses an H2 tag. Change the Elementor Heading widget's HTML tag to <code>p</code> or <code>div</code>.</td></tr>
+<tr><td>7</td><td><span class="tag p2">P2</span> FareHarbor booking links</td><td>All Book Now buttons point to <code>fareharbor.com/embeds/book/...</code>. Confirm the FareHarbor plugin's Lightframe is active so checkout opens in an overlay on your domain instead of a new site.</td></tr>
+<tr><td>8</td><td><span class="tag p3">P3</span> Speed checks to run</td><td>Run PageSpeed Insights (mobile) on the home URL. Check LCP on the hero image, the Trustindex reviews widget script, and that WP-Optimize page caching and minify are on. Preload the hero image.</td></tr>
+<tr><td>9</td><td><span class="tag p3">P3</span> Indexing checks to run</td><td>In Search Console: confirm the home page is indexed with the canonical https://crabislandtikitoursdestin.com/, submit the Rank Math sitemap, and check Pages &gt; Not found for the two broken charter URLs.</td></tr>
+</table>
+
+<h2>9. Tracking</h2>
+<p>Site Kit by Google is installed. Booking happens on FareHarbor, so without extra setup GA4 records the Book Now click as an exit and never sees the sale.</p>
+<table>
+<tr><th style="width:4%">#</th><th style="width:30%">Setup</th><th>Steps</th></tr>
+<tr><td>1</td><td>Confirm Site Kit connections</td><td>Site Kit &gt; Settings: GA4 property and Search Console both connected; GA4 tag placed by Site Kit only once (no second hard-coded gtag or GTM copy).</td></tr>
+<tr><td>2</td><td>FareHarbor GA4 integration</td><td>In the FareHarbor dashboard, add the same GA4 Measurement ID under its Google Analytics integration so bookings send a <code>purchase</code> event with value. Do this for both shortnames (crabislandguideservice and, if you want credit for referrals, bikkinibottomboat).</td></tr>
+<tr><td>3</td><td>Cross-domain measurement</td><td>GA4 Admin &gt; Data streams &gt; Configure tag settings &gt; Configure your domains: add crabislandtikitoursdestin.com and fareharbor.com so sessions do not split at checkout.</td></tr>
+<tr><td>4</td><td>Key events</td><td>Mark <code>purchase</code>, <code>generate_lead</code> (Contact Form 7 submit) and <code>phone_click</code> as key events in GA4.</td></tr>
+<tr><td>5</td><td>Click events</td><td>Use Google Tag Manager (or Site Kit's event settings) to fire <code>book_now_click</code> with parameters <code>tour_name</code>, <code>fareharbor_item</code> (643424, 712850, 744100, 746740, 753976, 615407) and <code>button_location</code> (hero, tour_card, final_cta). Fire <code>phone_click</code> on tel: links from WP Call Button, and <code>outbound_click</code> for Bikkini Bottom links.</td></tr>
+<tr><td>6</td><td>Ads pixels (if running ads)</td><td>Add Google Ads conversion and Meta Pixel IDs inside FareHarbor's integrations so purchases are attributed. Import the GA4 purchase key event into Google Ads.</td></tr>
+<tr><td>7</td><td>Search Console link</td><td>Link Search Console to GA4 to see home page queries next to bookings.</td></tr>
+</table>
+
+<h2>10. Changelog</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:14%">Area</th><th>Change</th><th style="width:8%">Priority</th><th style="width:9%">Status</th></tr>
+<tr><td>1</td><td>Links</td><td>Fix hero image link to /charters/private-luxury-pontoon-crab-island-charter/ (404)</td><td>P1</td><td>To do</td></tr>
+<tr><td>2</td><td>Links</td><td>Fix sunset "Learn More" link from /charters/sunset-cruise/ to /charters/private-sunset-cruise-in-destin-fl/</td><td>P1</td><td>To do</td></tr>
+<tr><td>3</td><td>Content</td><td>Align all "from" prices with FareHarbor across home, charter and guide pages</td><td>P1</td><td>To do</td></tr>
+<tr><td>4</td><td>Images</td><td>Replace incorrect "infographic" alt text</td><td>P1</td><td>To do</td></tr>
+<tr><td>5</td><td>URLs</td><td>Rename /elementor-892/ and /elementor-863/ slugs with 301s</td><td>P1</td><td>To do</td></tr>
+<tr><td>6</td><td>Technical</td><td>Rank Math Local SEO + tour schema with matching Offer prices</td><td>P1</td><td>To do</td></tr>
+<tr><td>7</td><td>Technical</td><td>Publish or redirect /charters/ (page 59 is a draft)</td><td>P1</td><td>To do</td></tr>
+<tr><td>8</td><td>Tracking</td><td>FareHarbor GA4 integration, cross-domain, purchase key event</td><td>P1</td><td>To do</td></tr>
+<tr><td>9</td><td>Meta</td><td>New SEO title and meta description</td><td>P1</td><td>To do</td></tr>
+<tr><td>10</td><td>Headings</td><td>New H1, hero H2 to paragraph, rename all-caps H2, merge public tour H3s</td><td>P2</td><td>To do</td></tr>
+<tr><td>11</td><td>Content</td><td>Rewrite intro, tour cards and About block; add What's Included, Who Books, Plan Your Trip, FAQ sections (about 900 words total)</td><td>P2</td><td>To do</td></tr>
+<tr><td>12</td><td>Links</td><td>Add 15 internal links per section 6</td><td>P2</td><td>To do</td></tr>
+<tr><td>13</td><td>Images</td><td>Alt text on 7 images, WebP conversion, descriptive filenames, lazy loading</td><td>P2</td><td>To do</td></tr>
+<tr><td>14</td><td>Tracking</td><td>book_now_click, phone_click, generate_lead, outbound_click events</td><td>P2</td><td>To do</td></tr>
+<tr><td>15</td><td>Technical</td><td>Delete Sample Page, publish Privacy Policy, merge duplicate packing-list and best-time content</td><td>P2</td><td>To do</td></tr>
+<tr><td>16</td><td>Social</td><td>Featured image and Rank Math OG title/description</td><td>P3</td><td>To do</td></tr>
+<tr><td>17</td><td>Performance</td><td>PageSpeed run, hero preload, review widget and carousel weight check</td><td>P3</td><td>To do</td></tr>
+</table>
+</body></html>
