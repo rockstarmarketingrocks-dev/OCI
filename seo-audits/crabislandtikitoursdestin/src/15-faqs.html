@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SEO Changelog: FAQs</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>SEO Changelog: FAQs Page</h1>
+<div class="meta">URL: https://crabislandtikitoursdestin.com/crab-island-tiki-tours-faqs/ &nbsp;|&nbsp; WP page ID 53 (Elementor) &nbsp;|&nbsp; Last modified July 15, 2026 &nbsp;|&nbsp; Audit date: October 28, 2026 &nbsp;|&nbsp; Page 15 of the site queue</div>
+
+<p class="note">Method: content, headings, links and SEO meta were pulled from WordPress through the site connector. The live URL could not be loaded from the audit environment.</p>
+
+<h2>1. Summary</h2>
+<table>
+<tr><th style="width:28%">Item</th><th>Current state</th></tr>
+<tr><td>Role</td><td>Catch-all answers page, linked from the Charter, Cost and hub pages. Should answer booking and policy questions fast and send readers to the deeper guide for each topic.</td></tr>
+<tr><td>SEO title</td><td>Crab Island Tiki Tours FAQs | Destin, FL Private Boat Tours (59 characters, good)</td></tr>
+<tr><td>Meta description</td><td>183 characters. Google will cut it around 155 to 160.</td></tr>
+<tr><td>H1 / H2</td><td>"FREQUENTLY ASKED QUESTIONS (FAQS)" and "EVERYTHING YOU NEED TO KNOW", both all caps with trailing line breaks.</td></tr>
+<tr><td>Body copy</td><td>About 60 questions in one unbroken list of bold paragraphs. Section dividers exist but have no headings.</td></tr>
+<tr><td>Internal links</td><td>None. Not one answer links to the page that covers it in depth.</td></tr>
+<tr><td>Schema</td><td>None. The format (bold question + line break + answer) produces no FAQPage markup.</td></tr>
+</table>
+
+<h2>2. Critical fixes</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:30%">Issue</th><th>Fix</th></tr>
+<tr><td>1</td><td><span class="tag p1">P1</span> A fourth price</td><td>"Pricing typically starts around $600 depending on duration and group size." Other pages say $400 (sunset), $800 (4-hour charter) and $900. Replace with the confirmed starting prices per trip, or "Private sunset cruises start at $400 and Crab Island charters at $800" once confirmed.</td></tr>
+<tr><td>2</td><td><span class="tag p1">P1</span> A fourth set of durations</td><td>"We have options for 2, 4, 6, or 8 hours." The Charter page shows 4, 5, 6 and 8, its booking text says 3, 4, 5, 6 or 8, and the Sunset page is 1.5. The stray "2 Hours" icons on the Home and Charter cards may actually mean a 2-hour trip exists. Confirm the real list from FareHarbor and use it everywhere.</td></tr>
+<tr><td>3</td><td><span class="tag p1">P1</span> Per-guest pricing confirmed here</td><td>"pricing starts at up to 8 people with an additional cost for each additional after." This is the third page to state the base-for-8 rule, so it's probably real. State the add-on amount here and on the Cost and Charter pages, and remove the "$900 split 18 ways is $50" lines on the guide pages.</td></tr>
+<tr><td>4</td><td><span class="tag p1">P1</span> Four different cancellation answers</td><td>Reschedule "with 7 days notice, depending on availability"; weather "may be rescheduled or refunded"; you cancel "with at least 7 days notice... refund or credit"; captain cancels "full refund or reschedule option"; late arrivals "cancellation with no refund". Combine into one clear policy block (section 5) and reuse it on every page.</td></tr>
+<tr><td>5</td><td><span class="tag p1">P1</span> No FAQ schema, no structure</td><td>Rebuild with H2 category headings and either the Rank Math FAQ block or Elementor's FAQ widget with schema enabled (section 4).</td></tr>
+<tr><td>6</td><td><span class="tag p2">P2</span> Duplicate and filler questions</td><td>"Can I bring alcohol" and "Can you drink on a tiki boat"; "Do tours go to Crab Island every time" and "every day"; "Does the boat have music" and "Can we play our own music"; "What is the best tiki boat tour in Destin" (answer doesn't name you) and "Are tiki boat tours worth it". Merge or delete. Target about 35 strong questions.</td></tr>
+<tr><td>7</td><td><span class="tag p2">P2</span> Answer conflicts with the guides</td><td>"Is a tiki boat worth it compared to a pontoon rental? Yes..." ignores the guide's honest "for small groups, rent a pontoon". Use the revised answer from the Tiki vs Pontoon changelog.</td></tr>
+</table>
+
+<h2>3. SEO title and meta description</h2>
+<table>
+<tr><th style="width:18%">Field</th><th>Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>Crab Island Tiki Tours FAQs | Destin, FL Private Boat Tours</td><td>Keep.</td></tr>
+<tr><td>Meta description</td><td>Have questions about Crab Island and Crab Island Tiki Tours in Destin? Find answers to our frequently asked questions such as arrival time, customizing tours, weather policy and more.</td><td><b>Answers on booking, pricing, cancellations, weather, alcohol, kids and what's included on our private Crab Island tiki boat charters in Destin, FL.</b> (147 characters)</td></tr>
+<tr><td>H1</td><td>FREQUENTLY ASKED QUESTIONS (FAQS)</td><td><b>Crab Island Tiki Tours FAQs</b> (sentence case; style uppercase with CSS if wanted)</td></tr>
+<tr><td>WP page title</td><td>FAQs</td><td>Crab Island Tiki Tours FAQs</td></tr>
+</table>
+
+<h2>4. Heading structure</h2>
+<h3>Current</h3>
+<pre>H1  FREQUENTLY ASKED QUESTIONS (FAQS)
+H2  EVERYTHING YOU NEED TO KNOW
+    (about 60 bold-paragraph questions, separated by horizontal rules)</pre>
+<h3>New</h3>
+<pre>H1  Crab Island Tiki Tours FAQs
+    (intro sentence + jump links to each H2)
+H2  Booking and Location
+  H3  Where does the boat leave from?
+  H3  How far ahead should I book?
+  H3  Can I book same day?
+  H3  Is a deposit required?
+  H3  When should I arrive? / Is there parking?
+H2  Cancellations, Rescheduling and Weather    (one policy block + 3 questions)
+H2  Prices
+  H3  How much does a private charter cost?
+  H3  Is the price per person or per group?
+  H3  Are tips included? / Any extra fees?
+H2  The Boat and What's Included
+  H3  How many people fit? / Is there a bathroom? / Shade? / Music?
+  H3  Do I need boating experience?
+H2  Trip Options
+  H3  How long are the trips?
+  H3  Can we customize the route? / Restaurant stops?
+  H3  Do you offer sunset cruises? / Shared tours?
+H2  What to Bring
+  H3  Alcohol / Cooler / Decorations / Prohibited items
+H2  Safety, Kids and Non-Swimmers
+H2  Celebrations: Bachelorette, Birthdays, Proposals, Corporate
+H2  About Crab Island                            (short answers + links to guides)
+H2  Still Have a Question?</pre>
+<p class="note">Use H3 for each question (or an accordion widget whose titles are H3). Keep answers to 1 to 3 sentences, each ending with a link to the full guide where one exists.</p>
+
+<h2>5. Content rewrites (paste-ready)</h2>
+<h3>Intro under H1</h3>
+<div class="copy"><p>Quick answers about booking, prices, the boat and Crab Island itself. Jump to: <a>Booking</a> · <a>Cancellations</a> · <a>Prices</a> · <a>The Boat</a> · <a>Trip Options</a> · <a>What to Bring</a> · <a>Safety</a> · <a>Celebrations</a> · <a>Crab Island</a>. Can't find it? Call <a>850-613-1966</a>.</p></div>
+
+<h3>H2: Cancellations, Rescheduling and Weather (single policy block)</h3>
+<div class="copy">
+<p><b>Our policy:</b> Cancel or reschedule at least 7 days before your trip for a full refund or credit. If we cancel for weather or another reason, you get a full refund or credit, or we'll reschedule. Cancellations inside 7 days and no-shows are charged in full. Late arrivals may get a shorter trip, since the next group's time can't move. To cancel or reschedule, call 850-613-1966.</p>
+<p><b>Do tours run in light rain?</b> Usually yes. Summer showers often pass quickly. Lightning, strong wind and small craft advisories cancel trips, and the captain makes the call based on conditions.</p>
+</div>
+<p class="note">Confirm the wording with the owner. It merges what the FAQ, Bachelorette and guide pages currently say. Once approved, save it as a synced pattern.</p>
+
+<h3>Revised answers</h3>
+<table>
+<tr><th style="width:34%">Question</th><th>New answer</th></tr>
+<tr><td>How much does a tiki boat tour cost in Destin?</td><td>Private sunset cruises start at $400 and private Crab Island charters at $800 for 4 hours <i>(confirm)</i>. Prices cover up to 8 guests, with $__ per extra guest up to 18. <a>See full pricing</a>.</td></tr>
+<tr><td>How long is the tiki boat tour?</td><td><i>(Confirmed list, e.g. "Sunset cruises are 1.5 hours. Crab Island charters run 4, 5, 6 or 8 hours.")</i> <a>Compare charter lengths</a>.</td></tr>
+<tr><td>Is a tiki boat worth it compared to a pontoon rental?</td><td>For small groups with an experienced boater, a pontoon usually costs less. For bigger groups, celebrations and families, a captain, bathroom, shade and room for 18 make the charter worth the difference. <a>Full comparison</a>.</td></tr>
+<tr><td>Do you offer private or shared tours?</td><td>Our tiki tours are always private. For shared, pay-per-seat trips, our sister company Bikkini Bottom runs public Crab Island, sunset and fireworks tours. <a>Public tours</a>.</td></tr>
+<tr><td>Is Crab Island good for families?</td><td>Yes. Most of the sandbar is 2 to 4 feet deep, and we carry child-size life jackets. <a>Family guide</a>. (Drop "one of the most family-friendly attractions in Destin".)</td></tr>
+</table>
+
+<h3>Delete or merge</h3>
+<ul>
+<li>Delete "What is the best tiki boat tour in Destin Florida?" (the answer is generic and doesn't name you).</li>
+<li>Merge "Can you drink on a tiki boat in Destin?" into "Can I bring alcohol?".</li>
+<li>Merge "Do tiki boats go to Crab Island every day?" into "Do tours go to Crab Island every time?".</li>
+<li>Merge "Does the tiki boat have music?" with "Can we play our own music?".</li>
+<li>Merge "Are tiki boat tours in Destin worth it?" into the pontoon comparison answer.</li>
+</ul>
+
+<h3>New questions worth adding</h3>
+<div class="copy">
+<p><b>Is there a 32-foot boat or more than one boat?</b> One 32-foot tiki boat. <i>(Confirm.)</i></p>
+<p><b>Who is the captain?</b> Introduce Captain Bill with a link to his page.</p>
+<p><b>Can we bring a dog?</b> <i>(Owner to answer. It's a common question for boat charters.)</i></p>
+<p><b>Is the boat wheelchair accessible?</b> <i>(Owner to answer.)</i></p>
+</div>
+
+<h2>6. Internal linking (one link per relevant answer)</h2>
+<table>
+<tr><th style="width:36%">Answer</th><th>Link to</th></tr>
+<tr><td>Where is the boat located? / Parking</td><td>/about-crab-island/where-is-crab-island/ and /contact-crab-island-tiki-tours-destin/</td></tr>
+<tr><td>Prices / per person</td><td>/about-crab-island/how-much-does-crab-island-cost/</td></tr>
+<tr><td>Trip lengths / customize</td><td>/charters/private-crab-island-charter-destin/</td></tr>
+<tr><td>Sunset cruises</td><td>/charters/private-sunset-cruise-in-destin-fl/</td></tr>
+<tr><td>Shared tours</td><td>/public-crab-island-boat-tours-destin/</td></tr>
+<tr><td>Bachelorette</td><td>/crab-island-bachelorette-party-destin/</td></tr>
+<tr><td>What to bring / alcohol / cooler</td><td>/about-crab-island/what-to-bring-to-crab-island/</td></tr>
+<tr><td>Non-swimmers / kids / depth</td><td>/about-crab-island/how-deep-is-crab-island/ and /is-crab-island-family-friendly/</td></tr>
+<tr><td>Best time / crowds</td><td>/about-crab-island/best-time-to-visit-crab-island/</td></tr>
+<tr><td>Tiki boat vs pontoon</td><td>/about-crab-island/tiki-boat-vs-pontoon-rental-crab-island/</td></tr>
+<tr><td>What is Crab Island</td><td>/about-crab-island/what-is-crab-island-destin/</td></tr>
+<tr><td>Tides</td><td>/high-tide-vs-low-tide-at-crab-island/</td></tr>
+<tr><td>Who is the captain</td><td>/captain-bill/</td></tr>
+<tr><td>About Crab Island section header</td><td>/about-crab-island/</td></tr>
+</table>
+
+<h2>7. Images</h2>
+<p>The page has no images. Add one photo of the boat near the top (alt: "Crab Island Tiki Tours private tiki boat at Destin Harbor") and set it as the featured image for social shares.</p>
+
+<h2>8. Technical</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:30%">Item</th><th>Action</th></tr>
+<tr><td>1</td><td><span class="tag p1">P1</span> FAQPage schema</td><td>Use one FAQ block per section, or a single block, so FAQPage JSON-LD is output. Google limits FAQ rich results to authoritative government and health sites, so don't expect stars in search. The structured Q&amp;A still helps AI answer engines and Google understand the page.</td></tr>
+<tr><td>2</td><td><span class="tag p2">P2</span> Jump links</td><td>Give each H2 an ID (booking, cancellations, prices, boat, trips, bring, safety, celebrations, crab-island) for the jump links.</td></tr>
+<tr><td>3</td><td><span class="tag p2">P2</span> Leftover attributes</td><td>The HTML is full of <code>data-start</code>/<code>data-end</code> attributes, which usually come from text copied out of an AI chat tool. They are harmless for SEO. Paste as plain text when rebuilding.</td></tr>
+<tr><td>4</td><td><span class="tag p3">P3</span> URL</td><td>/crab-island-tiki-tours-faqs/ is fine. Keep.</td></tr>
+</table>
+
+<h2>9. Tracking</h2>
+<table>
+<tr><th style="width:30%">Event</th><th>Setup</th></tr>
+<tr><td>faq_open</td><td>If using an accordion, fire on each open with <code>question</code>. The most-opened questions tell you what to put on the Charter page.</td></tr>
+<tr><td>jump_link_click</td><td>Which section people go to first.</td></tr>
+<tr><td>phone_click / contact_click</td><td>From the intro and "Still have a question?". FAQ pages often lead to calls.</td></tr>
+<tr><td>Site search (optional)</td><td>If you add a search box, GA4 enhanced measurement records search terms, which shows unanswered questions.</td></tr>
+</table>
+
+<h2>10. Changelog</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:14%">Area</th><th>Change</th><th style="width:8%">Priority</th><th style="width:9%">Status</th></tr>
+<tr><td>1</td><td>Content</td><td>Fix "$600" price; confirm and publish per-guest add-on</td><td>P1</td><td>To do</td></tr>
+<tr><td>2</td><td>Content</td><td>Confirm trip lengths (2? 3? 4, 5, 6, 8) and use one list sitewide</td><td>P1</td><td>To do</td></tr>
+<tr><td>3</td><td>Content</td><td>One cancellation, weather and late-arrival policy block</td><td>P1</td><td>To do</td></tr>
+<tr><td>4</td><td>Headings</td><td>Sentence-case H1; 9 category H2s; questions as H3s; jump links</td><td>P1</td><td>To do</td></tr>
+<tr><td>5</td><td>Technical</td><td>FAQ block or widget with FAQPage schema</td><td>P1</td><td>To do</td></tr>
+<tr><td>6</td><td>Meta</td><td>Shorten description to 147 characters; rename WP title</td><td>P1</td><td>To do</td></tr>
+<tr><td>7</td><td>Links</td><td>Add about 14 links from answers to guide and product pages; tel: link</td><td>P1</td><td>To do</td></tr>
+<tr><td>8</td><td>Content</td><td>Delete 1 and merge 4 duplicate questions; revise 5 answers; add 4 new questions</td><td>P2</td><td>To do</td></tr>
+<tr><td>9</td><td>Images</td><td>Boat photo and featured image</td><td>P2</td><td>To do</td></tr>
+<tr><td>10</td><td>Technical</td><td>Rebuild from plain text to drop pasted data attributes</td><td>P3</td><td>To do</td></tr>
+<tr><td>11</td><td>Tracking</td><td>faq_open, jump_link_click, phone_click</td><td>P3</td><td>To do</td></tr>
+</table>
+</body></html>
