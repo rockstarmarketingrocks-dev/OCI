@@ -11,8 +11,8 @@ One page per loop iteration. Each finished page gets a PDF changelog in `pdf/` (
 | 5 | DONE 2026-10-28 | 892 | Public Charter with Bikkini Bottom | /elementor-892/ | pdf/05-public-charter-changelog.pdf |
 | 6 | DONE 2026-10-28 | 785 | About Crab Island (hub) | /about-crab-island/ | pdf/06-about-crab-island-changelog.pdf |
 | 7 | DONE 2026-10-28 | 786 | What Is Crab Island | /about-crab-island/what-is-crab-island-destin/ | pdf/07-what-is-crab-island-changelog.pdf |
-| 8 | next | 787 | Where Is Crab Island | /about-crab-island/where-is-crab-island/ | |
-| 9 | todo | 788 | How to Get to Crab Island | /about-crab-island/how-to-get-to-crab-island/ | |
+| 8 | DONE 2026-10-28 | 787 | Where Is Crab Island | /about-crab-island/where-is-crab-island/ | pdf/08-where-is-crab-island-changelog.pdf |
+| 9 | next | 788 | How to Get to Crab Island | /about-crab-island/how-to-get-to-crab-island/ | |
 | 10 | todo | 789 | How Much Does Crab Island Cost | /about-crab-island/how-much-does-crab-island-cost/ | |
 | 11 | todo | 790 | How Deep Is Crab Island | /about-crab-island/how-deep-is-crab-island/ | |
 | 12 | todo | 791 | Best Time to Visit Crab Island | /about-crab-island/best-time-to-visit-crab-island/ | |
