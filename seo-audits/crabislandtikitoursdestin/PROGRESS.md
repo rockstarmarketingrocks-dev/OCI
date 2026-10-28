@@ -15,8 +15,8 @@ One page per loop iteration. Each finished page gets a PDF changelog in `pdf/` (
 | 9 | DONE 2026-10-28 | 788 | How to Get to Crab Island | /about-crab-island/how-to-get-to-crab-island/ | pdf/09-how-to-get-to-crab-island-changelog.pdf |
 | 10 | DONE 2026-10-28 | 789 | How Much Does Crab Island Cost | /about-crab-island/how-much-does-crab-island-cost/ | pdf/10-crab-island-cost-changelog.pdf |
 | 11 | DONE 2026-10-28 | 790 | How Deep Is Crab Island | /about-crab-island/how-deep-is-crab-island/ | pdf/11-how-deep-is-crab-island-changelog.pdf |
-| 12 | next | 791 | Best Time to Visit Crab Island | /about-crab-island/best-time-to-visit-crab-island/ | |
-| 13 | todo | 792 | What to Bring to Crab Island | /about-crab-island/what-to-bring-to-crab-island/ | |
+| 12 | DONE 2026-10-28 | 791 | Best Time to Visit Crab Island | /about-crab-island/best-time-to-visit-crab-island/ | pdf/12-best-time-to-visit-changelog.pdf |
+| 13 | next | 792 | What to Bring to Crab Island | /about-crab-island/what-to-bring-to-crab-island/ | |
 | 14 | todo | 793 | Tiki Boat vs Pontoon Rental | /about-crab-island/tiki-boat-vs-pontoon-rental-crab-island/ | |
 | 15 | todo | 53 | FAQs | /crab-island-tiki-tours-faqs/ | |
 | 16 | todo | 57 | Our Story | /about/ | |
@@ -26,7 +26,7 @@ One page per loop iteration. Each finished page gets a PDF changelog in `pdf/` (
 | 20 | todo | 726 | Blog | /crab-island-destin-travel-guide/ | |
 | 21 | todo | 585 | Post: Is Crab Island Family Friendly | /is-crab-island-family-friendly/ | |
 | 22 | todo | 773 | Post: What to Bring (duplicate of 792) | /what-to-bring-to-crab-island/ | |
-| 23 | todo | 910 | Post: Best Time of Day (overlaps 791) | /best-time-of-day-to-visit-crabisland/ | |
+| 23 | DONE 2026-10-28 (merge + 301 into 791) | 910 | Post: Best Time of Day (overlaps 791) | /best-time-of-day-to-visit-crabisland/ | pdf/12-best-time-to-visit-changelog.pdf |
 | 24 | todo | 924 | Post: High Tide vs Low Tide | /high-tide-vs-low-tide-at-crab-island/ | |
 | 25 | todo | 1019 | Post: Fall at Crab Island | /fall-is-a-great-time-to-visit-crab-island-destin/ | |
 | 26 | todo | 1066 | Post: Things to Do Besides Crab Island | /things-to-do-in-destin-besides-crab-island/ | |
