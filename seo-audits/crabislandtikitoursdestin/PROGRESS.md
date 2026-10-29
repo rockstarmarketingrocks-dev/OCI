@@ -27,8 +27,8 @@ One page per loop iteration. Each finished page gets a PDF changelog in `pdf/` (
 | 21 | DONE 2026-10-29 | 585 | Post: Is Crab Island Family Friendly | /is-crab-island-family-friendly/ | pdf/21-family-friendly-changelog.pdf |
 | 22 | DONE 2026-10-28 (merge + 301 into 792) | 773 | Post: What to Bring (duplicate of 792) | /what-to-bring-to-crab-island/ | pdf/13-what-to-bring-changelog.pdf |
 | 23 | DONE 2026-10-28 (merge + 301 into 791) | 910 | Post: Best Time of Day (overlaps 791) | /best-time-of-day-to-visit-crabisland/ | pdf/12-best-time-to-visit-changelog.pdf |
-| 24 | next | 924 | Post: High Tide vs Low Tide | /high-tide-vs-low-tide-at-crab-island/ | |
-| 25 | todo | 1019 | Post: Fall at Crab Island | /fall-is-a-great-time-to-visit-crab-island-destin/ | |
+| 24 | DONE 2026-10-29 | 924 | Post: High Tide vs Low Tide | /high-tide-vs-low-tide-at-crab-island/ | pdf/24-high-tide-low-tide-changelog.pdf |
+| 25 | next | 1019 | Post: Fall at Crab Island | /fall-is-a-great-time-to-visit-crab-island-destin/ | |
 | 26 | todo | 1066 | Post: Things to Do Besides Crab Island | /things-to-do-in-destin-besides-crab-island/ | |
 | 27 | todo | 1074 | Post: Hurricane Isaias | /hurricane-isaias-destin-florida/ | |
 
