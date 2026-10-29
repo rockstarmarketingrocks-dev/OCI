@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SEO Changelog: Gallery</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>SEO Changelog: Gallery</h1>
+<div class="meta">URL: https://crabislandtikitoursdestin.com/gallery/ &nbsp;|&nbsp; WP page ID 55 (Elementor) &nbsp;|&nbsp; Last modified July 15, 2026 &nbsp;|&nbsp; Audit date: October 29, 2026 &nbsp;|&nbsp; Page 18 of the site queue</div>
+
+<p class="note">Method: page content and SEO meta were pulled from WordPress through the site connector. The live URL could not be loaded from the audit environment, so how the gallery renders in the browser should be confirmed with "View page source" or Chrome DevTools.</p>
+
+<h2>1. Summary</h2>
+<table>
+<tr><th style="width:28%">Item</th><th>Current state</th></tr>
+<tr><td>Role</td><td>Social proof page: shows the boat, real groups and Crab Island. Linked from the main menu. Can also bring Google Images traffic for "crab island" photo searches.</td></tr>
+<tr><td>SEO title</td><td>Crab Island Tiki Tours Photo Gallery | Destin, Florida (54 characters, good)</td></tr>
+<tr><td>Meta description</td><td>222 characters. Google will cut it around 155 to 160.</td></tr>
+<tr><td>H1</td><td>"GALLERY" (all caps, no keywords)</td></tr>
+<tr><td>Text</td><td>None. The page is an H1 and 22 photos.</td></tr>
+<tr><td>Photos</td><td>22, using the Elementor Gallery widget. The saved HTML has empty links with no <code>&lt;img&gt;</code> tags, which suggests the widget shows the photos as CSS backgrounds. Google Images doesn't index CSS backgrounds, and they can't carry alt text.</td></tr>
+<tr><td>Lightbox titles</td><td>Raw file names such as "c134c4ef-aaa3-463a-9137-309d672eba29" and "image-11", shown to visitors when a photo opens.</td></tr>
+<tr><td>Links</td><td>None. No booking button.</td></tr>
+</table>
+
+<h2>2. Critical fixes</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:30%">Issue</th><th>Fix</th></tr>
+<tr><td>1</td><td><span class="tag p1">P1</span> Photos may be invisible to Google</td><td>Check the live page source for <code>&lt;img</code> tags inside the gallery. If there are none, switch from the Elementor (Pro) Gallery widget to the "Basic Gallery" widget or individual Image widgets, which output real <code>&lt;img&gt;</code> tags with alt text.</td></tr>
+<tr><td>2</td><td><span class="tag p1">P1</span> File names shown to visitors</td><td>The lightbox title comes from each image's Media Library title. Rename the titles (and ideally the files) to short descriptions, e.g. "Bachelorette group at Crab Island". Fill in alt text and captions at the same time.</td></tr>
+<tr><td>3</td><td><span class="tag p1">P1</span> No text or links</td><td>Add a short intro, section headings, captions and a booking button (section 5).</td></tr>
+<tr><td>4</td><td><span class="tag p2">P2</span> Meta description too long</td><td>Shorten (section 3).</td></tr>
+</table>
+
+<h2>3. SEO title, meta and H1</h2>
+<table>
+<tr><th style="width:18%">Field</th><th>Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>Crab Island Tiki Tours Photo Gallery | Destin, Florida</td><td>Keep, or <b>Crab Island Photos | Tiki Boat Tours in Destin, FL</b> (50 characters) to target "crab island photos".</td></tr>
+<tr><td>Meta description</td><td>Explore our Crab Island Tiki Tours photo gallery and see why guests love spending the day on our private captained tiki boat. View real photos from families, large groups, birthdays, and bachelorette parties in Destin, FL.</td><td><b>Real photos from our private tiki boat trips to Crab Island in Destin, FL: families, bachelorette parties, birthdays, sunset cruises and the boat itself.</b> (153 characters)</td></tr>
+<tr><td>H1</td><td>GALLERY</td><td><b>Crab Island Photo Gallery</b></td></tr>
+<tr><td>Focus keyword</td><td colspan="2">Primary: <b>crab island photos</b>. Secondary: crab island pictures, destin tiki boat photos, crab island bachelorette photos.</td></tr>
+</table>
+<p class="note">Bikkini Bottom's gallery already targets "Crab Island Photos". If you'd rather not compete with the sister site, keep the current title and focus on "tiki boat" photo searches.</p>
+
+<h2>4. Heading structure</h2>
+<h3>Current</h3>
+<pre>H1  GALLERY
+    (22 photos, no other headings)</pre>
+<h3>New</h3>
+<pre>H1  Crab Island Photo Gallery
+    (2 to 3 sentence intro)
+H2  Our Tiki Boat
+H2  Days at Crab Island
+H2  Bachelorette Parties and Birthdays
+H2  Families on the Water
+H2  Sunset Cruises
+H2  Share Your Photos                      (hashtag / tag request)
+H2  Book Your Own Crab Island Day</pre>
+<p class="note">Sort the 22 existing photos into these sections. Each section's H2 matches what people search for and what the meta description promises.</p>
+
+<h2>5. Content rewrites (paste-ready)</h2>
+<h3>Intro under H1</h3>
+<div class="copy"><p>These are real photos from our private tiki boat trips out of Destin Harbor: families floating at Crab Island, bachelorette groups, birthdays and evening sunset cruises. Every trip has room for up to 18 guests, a USCG-licensed captain and a bathroom onboard. <a>See our private charters</a>.</p></div>
+
+<h3>Section intros (one line each, with a link)</h3>
+<div class="copy">
+<p><b>Our Tiki Boat:</b> Our 32-foot tiki boat has shaded seating for 18 and a full bathroom. <a>Read our story</a>.</p>
+<p><b>Days at Crab Island:</b> The shallow, clear sandbar just north of the Marler Bridge. <a>What is Crab Island?</a></p>
+<p><b>Bachelorette Parties and Birthdays:</b> Bring your playlist and your crew. <a>Bachelorette charters</a>.</p>
+<p><b>Families on the Water:</b> Most of the sandbar is 2 to 4 feet deep. <a>Is Crab Island family friendly?</a></p>
+<p><b>Sunset Cruises:</b> Golden hour on the Emerald Coast. <a>Private sunset cruise</a>.</p>
+<p><b>Share Your Photos:</b> Tag us on Instagram or Facebook <i>(add handles)</i> and we may feature your trip here. Ask permission before posting identifiable guests.</p>
+</div>
+
+<h3>Caption examples</h3>
+<ul>
+<li>"Bachelorette group floating at Crab Island, July 2026"</li>
+<li>"Tiki boat anchored at the Crab Island sandbar"</li>
+<li>"Sunset over Destin Harbor from the tiki boat"</li>
+</ul>
+<p class="note">Write captions only for what each photo actually shows. Dates and group types help both visitors and image search.</p>
+
+<h2>6. Internal linking</h2>
+<table>
+<tr><th style="width:34%">Anchor text</th><th style="width:44%">Target</th><th>Placement</th></tr>
+<tr><td>See our private charters / Book</td><td>/charters/private-crab-island-charter-destin/</td><td>Intro + final CTA</td></tr>
+<tr><td>Bachelorette charters</td><td>/crab-island-bachelorette-party-destin/</td><td>Bachelorette section</td></tr>
+<tr><td>Private sunset cruise</td><td>/charters/private-sunset-cruise-in-destin-fl/</td><td>Sunset section</td></tr>
+<tr><td>What is Crab Island?</td><td>/about-crab-island/what-is-crab-island-destin/</td><td>Crab Island section</td></tr>
+<tr><td>Is Crab Island family friendly?</td><td>/is-crab-island-family-friendly/</td><td>Families section</td></tr>
+<tr><td>Read our story</td><td>/about/</td><td>Boat section</td></tr>
+<tr><td>Book Now (button)</td><td>FareHarbor booking flow</td><td>Final CTA</td></tr>
+</table>
+<p class="note">Inbound: link to the Gallery from Bachelorette ("see bachelorette photos"), Our Story and Home.</p>
+
+<h2>7. Images</h2>
+<table>
+<tr><th style="width:40%">Current file / lightbox title</th><th>Action</th></tr>
+<tr><td>c134c4ef-...jpg, 9accaf87-...jpg, 48189cb1-...jpg</td><td>Hash names from a phone or app export. Rename, add alt and caption, convert to WebP.</td></tr>
+<tr><td>image-3, image-4, image-9 through image-23, image-12-1</td><td>Rename titles and alt to describe each photo.</td></tr>
+<tr><td>thumbnail-1, thumbnail-3, thumbnail-4, thumbnail-7</td><td>Same. These are reused on Home, Bachelorette and several guides, so good alt text here helps everywhere.</td></tr>
+<tr><td>Sightseeing-Cruise-image-1.webp</td><td>Check it shows this business's boat; the name suggests a stock or older image.</td></tr>
+</table>
+<ul>
+<li>Set "Image size" to medium or large (not full) for thumbnails, with lazy loading on.</li>
+<li>Pick the best photo as the page's featured image for social shares.</li>
+<li>Get written permission from guests who are clearly identifiable before using their photos.</li>
+</ul>
+
+<h2>8. Technical</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:30%">Item</th><th>Action</th></tr>
+<tr><td>1</td><td><span class="tag p1">P1</span> Indexable images</td><td>See critical fix 1. Afterwards, confirm in Search Console's URL Inspection (View crawled page) that the img tags appear.</td></tr>
+<tr><td>2</td><td><span class="tag p2">P2</span> Image sitemap</td><td>Rank Math includes images in the page sitemap automatically once they're real img tags. Check /page-sitemap.xml lists them.</td></tr>
+<tr><td>3</td><td><span class="tag p2">P2</span> Page weight</td><td>22 full-size images can be heavy. Use thumbnail sizes in the grid and full size only in the lightbox. Check mobile LCP.</td></tr>
+<tr><td>4</td><td><span class="tag p3">P3</span> Schema</td><td>Optional ImageGallery or CollectionPage type in Rank Math.</td></tr>
+</table>
+
+<h2>9. Tracking</h2>
+<table>
+<tr><th style="width:30%">Event</th><th>Setup</th></tr>
+<tr><td>gallery_open</td><td>Fire when a lightbox opens (GTM click trigger on gallery links). Shows how engaged visitors are.</td></tr>
+<tr><td>book_now_click</td><td><code>button_location=gallery</code>.</td></tr>
+<tr><td>Google Images traffic</td><td>In Search Console, filter Performance by Search type: Image to see if the new alt text brings image-search visits.</td></tr>
+</table>
+
+<h2>10. Changelog</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:14%">Area</th><th>Change</th><th style="width:8%">Priority</th><th style="width:9%">Status</th></tr>
+<tr><td>1</td><td>Technical</td><td>Confirm img output; switch to Basic Gallery or Image widgets if needed</td><td>P1</td><td>To do</td></tr>
+<tr><td>2</td><td>Images</td><td>Rename titles and files, add alt text and captions to 22 photos</td><td>P1</td><td>To do</td></tr>
+<tr><td>3</td><td>Content</td><td>Intro, 6 section H2s with one-line intros and links, booking CTA</td><td>P1</td><td>To do</td></tr>
+<tr><td>4</td><td>Headings</td><td>H1 "Crab Island Photo Gallery"</td><td>P1</td><td>To do</td></tr>
+<tr><td>5</td><td>Meta</td><td>Shorten description to 153 characters; decide on title</td><td>P2</td><td>To do</td></tr>
+<tr><td>6</td><td>Links</td><td>Add 7 links; add inbound links from Bachelorette, Our Story and Home</td><td>P2</td><td>To do</td></tr>
+<tr><td>7</td><td>Technical</td><td>Thumbnail sizes, lazy loading, featured image, image sitemap check</td><td>P2</td><td>To do</td></tr>
+<tr><td>8</td><td>Content</td><td>Photo permission and "Share Your Photos" section</td><td>P3</td><td>To do</td></tr>
+<tr><td>9</td><td>Tracking</td><td>gallery_open, book_now_click, image search report</td><td>P3</td><td>To do</td></tr>
+</table>
+</body></html>
