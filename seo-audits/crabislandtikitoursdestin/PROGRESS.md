@@ -22,8 +22,8 @@ One page per loop iteration. Each finished page gets a PDF changelog in `pdf/` (
 | 16 | DONE 2026-10-29 | 57 | Our Story | /about/ | pdf/16-our-story-changelog.pdf |
 | 17 | DONE 2026-10-29 | 863 | Captain Bill | /elementor-863/ | pdf/17-captain-bill-changelog.pdf |
 | 18 | DONE 2026-10-29 | 55 | Gallery | /gallery/ | pdf/18-gallery-changelog.pdf |
-| 19 | next | 10 | Contact Us | /contact-crab-island-tiki-tours-destin/ | |
-| 20 | todo | 726 | Blog | /crab-island-destin-travel-guide/ | |
+| 19 | DONE 2026-10-29 | 10 | Contact Us | /contact-crab-island-tiki-tours-destin/ | pdf/19-contact-changelog.pdf |
+| 20 | next | 726 | Blog | /crab-island-destin-travel-guide/ | |
 | 21 | todo | 585 | Post: Is Crab Island Family Friendly | /is-crab-island-family-friendly/ | |
 | 22 | DONE 2026-10-28 (merge + 301 into 792) | 773 | Post: What to Bring (duplicate of 792) | /what-to-bring-to-crab-island/ | pdf/13-what-to-bring-changelog.pdf |
 | 23 | DONE 2026-10-28 (merge + 301 into 791) | 910 | Post: Best Time of Day (overlaps 791) | /best-time-of-day-to-visit-crabisland/ | pdf/12-best-time-to-visit-changelog.pdf |

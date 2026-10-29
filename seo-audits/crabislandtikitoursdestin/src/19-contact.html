@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SEO Changelog: Contact Us</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>SEO Changelog: Contact Us</h1>
+<div class="meta">URL: https://crabislandtikitoursdestin.com/contact-crab-island-tiki-tours-destin/ &nbsp;|&nbsp; WP page ID 10 (block editor, with pasted Elementor markup) &nbsp;|&nbsp; Last modified September 8, 2026 &nbsp;|&nbsp; Audit date: October 29, 2026 &nbsp;|&nbsp; Page 19 of the site queue</div>
+
+<p class="note">Method: page content and SEO meta were pulled from WordPress through the site connector. The live URL could not be loaded from the audit environment. Test every contact link on a phone after the fixes.</p>
+
+<h2>1. Summary</h2>
+<table>
+<tr><th style="width:28%">Item</th><th>Current state</th></tr>
+<tr><td>Role</td><td>Where people go to call, email or find the dock. Every error here is a lost booking.</td></tr>
+<tr><td>SEO title</td><td>Contact Crab Island Tiki Tours Destin | Book Your Private Charter (65 characters)</td></tr>
+<tr><td>Meta description</td><td>212 characters. Google will cut it around 155 to 160.</td></tr>
+<tr><td>H1</td><td>"Contact  Crab Island Tiki Tours Destin, FL" (double space and a line break inside)</td></tr>
+<tr><td>Headings</td><td>The phone number, email and address are each wrapped in an H3. No H2s.</td></tr>
+<tr><td>Content</td><td>Logo, contact links, Google Map embed and Contact Form 7. No text, hours or booking link.</td></tr>
+<tr><td>Markup</td><td>Elementor HTML (tabs, SVG icons) pasted into a block-editor page, plus a leftover "Map-marked" text label.</td></tr>
+</table>
+
+<h2>2. Critical fixes</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:30%">Issue</th><th>Fix</th></tr>
+<tr><td>1</td><td><span class="tag p1">P1</span> Phone link dials the wrong number</td><td>The page shows 850-613-1966, but both phone links are <code>tel:8505436378</code> (850-543-6378). Anyone who taps the number calls a different line. Change both links to <code>tel:+18506131966</code> (if 613-1966 is the right number) and test on a phone.</td></tr>
+<tr><td>2</td><td><span class="tag p1">P1</span> Email link goes to a different address</td><td>The page shows tikitoursdestin@gmail.com, but both email links open <code>mailto:crabislandguideservice@yahoo.com</code>. Decide which inbox is right and use it in both the text and the link.</td></tr>
+<tr><td>3</td><td><span class="tag p1">P1</span> Address and map icon open "Write a review"</td><td>The address and map-marker links go to <code>search.google.com/local/writereview?placeid=...</code>, which opens a review form, not directions. Link the address to Google Maps directions: <code>https://www.google.com/maps/dir/?api=1&amp;destination_place_id=ChIJe012ul5dkYgRqO0YE0-jl-0&amp;destination=530+Harbor+Blvd+Suite+13+Destin+FL+32541</code>. Keep the review link as its own "Leave us a Google review" button.</td></tr>
+<tr><td>4</td><td><span class="tag p1">P1</span> Map zoomed out to county level</td><td>The embed uses <code>z=10</code>, which shows most of Okaloosa County. Set <code>z=16</code> so the harbor and dock are visible.</td></tr>
+<tr><td>5</td><td><span class="tag p2">P2</span> Leftover "Map-marked" text</td><td>Remove the stray text label next to the map icon.</td></tr>
+<tr><td>6</td><td><span class="tag p2">P2</span> Contact details as headings</td><td>Phone, email and address shouldn't be H3s. Make them plain text or an icon list.</td></tr>
+</table>
+<p class="note">The 850-613-1966 number appears on the hub and every guide page. The 850-543-6378 number may be an old line or another business's number. Search the site and Google Business Profile for both and make sure only one is used.</p>
+
+<h2>3. SEO title and meta description</h2>
+<table>
+<tr><th style="width:18%">Field</th><th>Current</th><th>New</th></tr>
+<tr><td>SEO title</td><td>Contact Crab Island Tiki Tours Destin | Book Your Private Charter</td><td><b>Contact Crab Island Tiki Tours | Destin Harbor, FL</b> (50 characters)</td></tr>
+<tr><td>Meta description</td><td>Contact Crab Island Tiki Tours Destin, FL to book your private charter or ask questions about your trip. We offer captained tiki boat tours in Destin, FL for families, groups, birthdays, and bachelorette parties.</td><td><b>Call 850-613-1966, email us or visit 530 Harbor Blvd Suite #13 in Destin. Questions about a private Crab Island tiki boat charter? We're happy to help.</b> (151 characters; confirm the phone number first)</td></tr>
+<tr><td>H1</td><td>Contact  Crab Island Tiki Tours Destin, FL</td><td><b>Contact Crab Island Tiki Tours</b></td></tr>
+<tr><td>URL</td><td colspan="2">/contact-crab-island-tiki-tours-destin/ is long but fine. Keep it, and 301 /contact-us/ and /contact/ to it (the Where Is guide links to /contact-us/).</td></tr>
+</table>
+
+<h2>4. Heading structure</h2>
+<h3>Current</h3>
+<pre>H1  Contact  Crab Island Tiki Tours Destin, FL
+H3  850-613-1966                    (link dials 850-543-6378)
+H3  tikitoursdestin@gmail.com       (link opens a yahoo.com address)
+H3  530 Harbor Blvd Suite #13...    (link opens a review form)
+    (map embed, contact form)</pre>
+<h3>New</h3>
+<pre>H1  Contact Crab Island Tiki Tours
+    (one-line intro)
+H2  Call, Text or Email
+H2  Where to Find Us
+    (address, directions link, parking note, map at z=16)
+H2  Office Hours                       (new)
+H2  Send Us a Message
+    (Contact Form 7)
+H2  Ready to Book?
+    (Check Availability button + links to charters and FAQs)
+H2  Leave Us a Review                  (Google review link)</pre>
+
+<h2>5. Content rewrites (paste-ready)</h2>
+<div class="copy">
+<p><b>Intro:</b> Questions about a private Crab Island charter, a sunset cruise or a group booking? Call, email or send a message and we'll get back to you. For the fastest answer on same-day trips, call.</p>
+<p><b>H2: Call, Text or Email</b><br>Phone: <a>850-613-1966</a> <i>(add "calls and texts" if the line takes texts)</i><br>Email: <a>(confirmed address)</a></p>
+<p><b>H2: Where to Find Us</b><br>530 Harbor Blvd Suite #13, Destin, FL 32541, on Destin Harbor. <a>Get directions</a>. Parking fills by late morning in summer, so arrive 20 to 30 minutes before your trip. See <a>where Crab Island is</a> for the boat ride from here.</p>
+<p><b>H2: Office Hours</b><br><i>(e.g. "Daily, 8 a.m. to 6 p.m. during the season." Match Google Business Profile.)</i></p>
+<p><b>H2: Send Us a Message</b><br>Tell us your date, group size and the trip you're interested in. <i>(Add date, group size and trip-type fields to the CF7 form.)</i></p>
+<p><b>H2: Ready to Book?</b><br>Check open dates for <a>private Crab Island charters</a> and the <a>private sunset cruise</a>, or read our <a>FAQs</a> for cancellation and weather policies. <i>Button: Check Availability (FareHarbor)</i></p>
+<p><b>H2: Leave Us a Review</b><br>Had a great day on the water? <a>Leave us a Google review</a>.</p>
+</div>
+
+<h2>6. Internal linking</h2>
+<table>
+<tr><th style="width:34%">Anchor text</th><th style="width:44%">Target</th><th>Placement</th></tr>
+<tr><td>private Crab Island charters</td><td>/charters/private-crab-island-charter-destin/</td><td>Ready to Book</td></tr>
+<tr><td>private sunset cruise</td><td>/charters/private-sunset-cruise-in-destin-fl/</td><td>Ready to Book</td></tr>
+<tr><td>FAQs</td><td>/crab-island-tiki-tours-faqs/</td><td>Ready to Book</td></tr>
+<tr><td>where Crab Island is</td><td>/about-crab-island/where-is-crab-island/</td><td>Where to Find Us</td></tr>
+<tr><td>bachelorette groups</td><td>/crab-island-bachelorette-party-destin/</td><td>Intro (optional)</td></tr>
+</table>
+
+<h2>7. Images</h2>
+<ul>
+<li>cropped-Crab-Island-Logo-White-Version.webp has alt "Crab Island Tiki Tours Destin". A white logo may be invisible on a white background; check it on the live page.</li>
+<li>Add a photo of the dock or storefront at 530 Harbor Blvd so first-timers recognize it. Alt: "Crab Island Tiki Tours dock at 530 Harbor Blvd, Destin Harbor".</li>
+</ul>
+
+<h2>8. Technical</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:30%">Item</th><th>Action</th></tr>
+<tr><td>1</td><td><span class="tag p1">P1</span> Rebuild cleanly</td><td>The page mixes pasted Elementor HTML into a Classic/HTML block. Rebuild it in Elementor (like the other pages) or with native blocks, so icons, links and spacing behave on mobile.</td></tr>
+<tr><td>2</td><td><span class="tag p1">P1</span> NAP consistency</td><td>Name, address and phone must match exactly on this page, the footer, Google Business Profile, Rank Math Local SEO and the hub page.</td></tr>
+<tr><td>3</td><td><span class="tag p2">P2</span> Schema</td><td>Rank Math page schema: ContactPage. Site-wide LocalBusiness with telephone, email, address, geo, openingHours and hasMap (the Google Maps URL for the place ID).</td></tr>
+<tr><td>4</td><td><span class="tag p2">P2</span> Redirects</td><td>301 /contact-us/ and /contact/ to this page.</td></tr>
+<tr><td>5</td><td><span class="tag p3">P3</span> Form spam</td><td>Add CF7's reCAPTCHA v3 or Akismet integration if spam starts.</td></tr>
+</table>
+
+<h2>9. Tracking</h2>
+<table>
+<tr><th style="width:30%">Event</th><th>Setup</th></tr>
+<tr><td>generate_lead</td><td>Contact Form 7 fires a <code>wpcf7mailsent</code> browser event on successful submit. In GTM, listen for it and send a GA4 <code>generate_lead</code> event with <code>form_name=contact</code>. Mark it a key event.</td></tr>
+<tr><td>phone_click</td><td>On tel: links, with <code>link_location=contact_page</code>. Only meaningful after the number is fixed.</td></tr>
+<tr><td>email_click</td><td>On mailto: links.</td></tr>
+<tr><td>directions_click / review_click</td><td>Separate events for the directions link and the Google review link.</td></tr>
+<tr><td>Google Business Profile</td><td>Use a UTM-tagged website link in GBP (<code>?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp</code>) so map-pack visits show separately in GA4.</td></tr>
+</table>
+
+<h2>10. Changelog</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:14%">Area</th><th>Change</th><th style="width:8%">Priority</th><th style="width:9%">Status</th></tr>
+<tr><td>1</td><td>Links</td><td>Fix tel: links (850-543-6378 to 850-613-1966, or confirm the right number)</td><td>P1</td><td>To do</td></tr>
+<tr><td>2</td><td>Links</td><td>Match email text and mailto: address</td><td>P1</td><td>To do</td></tr>
+<tr><td>3</td><td>Links</td><td>Address links to Google Maps directions; separate review button</td><td>P1</td><td>To do</td></tr>
+<tr><td>4</td><td>Technical</td><td>Map zoom z=10 to z=16; remove "Map-marked"; rebuild page cleanly</td><td>P1</td><td>To do</td></tr>
+<tr><td>5</td><td>Technical</td><td>Check NAP across site, footer and Google Business Profile</td><td>P1</td><td>To do</td></tr>
+<tr><td>6</td><td>Tracking</td><td>CF7 generate_lead key event; phone, email, directions clicks</td><td>P1</td><td>To do</td></tr>
+<tr><td>7</td><td>Headings</td><td>Clean H1; contact details out of H3s; 6 new H2s</td><td>P2</td><td>To do</td></tr>
+<tr><td>8</td><td>Meta</td><td>New title (50 characters) and description (151 characters)</td><td>P2</td><td>To do</td></tr>
+<tr><td>9</td><td>Content</td><td>Intro, hours, parking note, booking section, form fields for date and group size</td><td>P2</td><td>To do</td></tr>
+<tr><td>10</td><td>Links</td><td>Add 5 internal links; 301 /contact-us/ and /contact/</td><td>P2</td><td>To do</td></tr>
+<tr><td>11</td><td>Technical</td><td>ContactPage and LocalBusiness schema with hasMap</td><td>P2</td><td>To do</td></tr>
+<tr><td>12</td><td>Images</td><td>Check white logo visibility; add dock photo</td><td>P3</td><td>To do</td></tr>
+</table>
+</body></html>
