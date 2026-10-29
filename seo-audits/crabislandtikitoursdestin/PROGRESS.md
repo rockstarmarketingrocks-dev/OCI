@@ -30,6 +30,8 @@ One page per loop iteration. Each finished page gets a PDF changelog in `pdf/` (
 | 24 | DONE 2026-10-29 | 924 | Post: High Tide vs Low Tide | /high-tide-vs-low-tide-at-crab-island/ | pdf/24-high-tide-low-tide-changelog.pdf |
 | 25 | DONE 2026-10-29 | 1019 | Post: Fall at Crab Island | /fall-is-a-great-time-to-visit-crab-island-destin/ | pdf/25-fall-crab-island-changelog.pdf |
 | 26 | DONE 2026-10-29 | 1066 | Post: Things to Do Besides Crab Island | /things-to-do-in-destin-besides-crab-island/ | pdf/26-things-to-do-destin-changelog.pdf |
-| 27 | next | 1074 | Post: Hurricane Isaias | /hurricane-isaias-destin-florida/ | |
+| 27 | DONE 2026-10-29 | 1074 | Post: Hurricane Isaias | /hurricane-isaias-destin-florida/ | pdf/27-hurricane-isaias-changelog.pdf |
 
 Skipped (covered as technical items in the Home changelog): Sample Page (2, delete), Charters (59, draft), Privacy Policy (3, draft), Dolphin Cruise (265, private).
+
+All queue items complete. Site-wide summary: pdf/00-site-summary.pdf

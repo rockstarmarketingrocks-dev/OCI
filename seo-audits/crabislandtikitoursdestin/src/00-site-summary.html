@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SEO Audit Summary</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>Crab Island Tiki Tours: Site-Wide SEO Summary</h1>
+<div class="meta">Site: crabislandtikitoursdestin.com &nbsp;|&nbsp; Audit dates: October 28 to 29, 2026 &nbsp;|&nbsp; 27 queue items: 25 changelogs, 2 posts covered by merges</div>
+
+<p>This summary pulls together the issues that repeat across pages. Fixing these once clears a large share of every page changelog. Page-level detail is in files 01 to 27.</p>
+
+<h2>1. Decisions only the owner can make</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:34%">Question</th><th>Why it matters / where it appears</th></tr>
+<tr><td>1</td><td>What are the real prices?</td><td>Private charter "from" $800, $900 or $600; sunset $400 or $600; public $30, $50, $59.99 or $60. At least 8 pages disagree (Home, Charter, Sunset, Bachelorette $900/$1,800, Hub, Cost, FAQ, guides).</td></tr>
+<tr><td>2</td><td>Does the base price cover 8 guests with a per-guest add-on, and how much is it?</td><td>Stated on Hub, Cost, Pontoon and FAQ pages; contradicted by "$900 split 18 ways is $50".</td></tr>
+<tr><td>3</td><td>Which trip lengths exist?</td><td>Pages list 2, 3, 4, 5, 6 and 8 hours in different combinations. The "2 Hours" icons on cards may be real.</td></tr>
+<tr><td>4</td><td>Which phone number and email are correct?</td><td>Contact page shows 850-613-1966 but dials 850-543-6378; shows a Gmail address but opens a Yahoo address.</td></tr>
+<tr><td>5</td><td>What's onboard?</td><td>Floats, inflatable mat, one or several paddle boards, water toys: pages disagree. "Captain and crew" vs "captain".</td></tr>
+<tr><td>6</td><td>Cancellation, weather and late-arrival policy wording</td><td>Four versions on the FAQ page alone, more on Bachelorette, Best Time and How to Get. Draft merged text is in the FAQ changelog.</td></tr>
+<tr><td>7</td><td>Who writes the guides (author byline)?</td><td>Captain Bill, Daniel or Spencer.</td></tr>
+<tr><td>8</td><td>Public tour page: comparison page or noindex?</td><td>Avoids competing with bikkinibottomboat.com.</td></tr>
+</table>
+
+<h2>2. Fix once, applies everywhere</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:34%">Fix</th><th>How</th></tr>
+<tr><td>1</td><td>Broken URLs</td><td>Search and replace, plus 301s: /charters/private-crab-island-pontoon-destin/, /charters/private-luxury-pontoon-crab-island-charter/, /charters/sunset-cruise/, /charters/dolphin-cruise/, /contact-us/.</td></tr>
+<tr><td>2</td><td>Default Elementor slugs</td><td>/elementor-892/ to /public-crab-island-boat-tours-destin/; /elementor-863/ to /captain-bill/.</td></tr>
+<tr><td>3</td><td>Duplicate content</td><td>Merge post 773 into the What to Bring guide and post 910 into the Best Time guide, with 301s.</td></tr>
+<tr><td>4</td><td>Synced blocks</td><td>One reusable block each for: rate table, what's included, cancellation/weather policy, the guide link list (without self-links).</td></tr>
+<tr><td>5</td><td>Phone links</td><td>Every phone number as tel:+18506131966 (once confirmed).</td></tr>
+<tr><td>6</td><td>Empty headings</td><td>Empty H2s on How to Get, Cost, How Deep and What to Bring guides; empty H2 on the hub; multiple H1s on Bachelorette.</td></tr>
+<tr><td>7</td><td>HEIC images</td><td>Convert all .heic uploads (Our Story owners' photo, post 910 featured image) to WebP or JPEG.</td></tr>
+<tr><td>8</td><td>Alt text and file names</td><td>Most images have empty alt or names like IMG_9191 and image-15. Fix in the Media Library so every page benefits.</td></tr>
+<tr><td>9</td><td>Site pages</td><td>Publish or redirect /charters/ (draft parent), publish the Privacy Policy, delete Sample Page.</td></tr>
+<tr><td>10</td><td>Blog categories</td><td>Replace "Uncategorized" with Crab Island Tips, Seasons and Weather, Things to Do in Destin.</td></tr>
+</table>
+
+<h2>3. Technical setup</h2>
+<ul>
+<li>Rank Math Local SEO: LocalBusiness with name, 530 Harbor Blvd Suite #13, phone, geo, hours, sameAs, matching Google Business Profile.</li>
+<li>Product/TouristTrip schema with Offers on the Charter and Sunset pages only.</li>
+<li>FAQPage schema via Rank Math FAQ blocks on the guides and FAQ page.</li>
+<li>Article/BlogPosting with a named author and dateModified on guides and posts.</li>
+<li>Breadcrumbs once /charters/ is live.</li>
+<li>Check for a second H1 from the theme on posts.</li>
+</ul>
+
+<h2>4. Tracking setup</h2>
+<ul>
+<li>FareHarbor GA4 integration (both shortnames) and cross-domain measurement with fareharbor.com; mark <code>purchase</code> as a key event.</li>
+<li>Contact Form 7 <code>wpcf7mailsent</code> to GA4 <code>generate_lead</code> key event.</li>
+<li>Click events: <code>book_now_click</code> (with FareHarbor item ID and button location), <code>phone_click</code>, <code>email_click</code>, <code>directions_click</code>, <code>outbound_click</code>.</li>
+<li>GA4 content groups: product, guide, blog, company.</li>
+<li>UTM-tagged links in Google Business Profile and the FareHarbor confirmation email.</li>
+</ul>
+
+<h2>5. Suggested order of work</h2>
+<ol>
+<li>Owner decisions in section 1 (prices, phone, email, policy).</li>
+<li>Contact page links, broken URLs and redirects, slugs.</li>
+<li>FareHarbor GA4 and cross-domain tracking.</li>
+<li>Synced blocks and price/policy updates across all pages.</li>
+<li>Home, Charter, Sunset and Bachelorette rewrites (the pages that sell).</li>
+<li>Guide and post fixes, schema, images.</li>
+</ol>
+
+<h2>6. Changelog index</h2>
+<table>
+<tr><th>#</th><th>Page</th><th>File</th></tr>
+<tr><td>01</td><td>Home</td><td>01-home-changelog.pdf</td></tr>
+<tr><td>02</td><td>Private Crab Island Charter</td><td>02-private-crab-island-charter-changelog.pdf</td></tr>
+<tr><td>03</td><td>Private Sunset Cruise</td><td>03-private-sunset-cruise-changelog.pdf</td></tr>
+<tr><td>04</td><td>Bachelorette</td><td>04-bachelorette-changelog.pdf</td></tr>
+<tr><td>05</td><td>Public Charter (Bikkini Bottom)</td><td>05-public-charter-changelog.pdf</td></tr>
+<tr><td>06</td><td>About Crab Island (hub)</td><td>06-about-crab-island-changelog.pdf</td></tr>
+<tr><td>07</td><td>What Is Crab Island</td><td>07-what-is-crab-island-changelog.pdf</td></tr>
+<tr><td>08</td><td>Where Is Crab Island</td><td>08-where-is-crab-island-changelog.pdf</td></tr>
+<tr><td>09</td><td>How to Get to Crab Island</td><td>09-how-to-get-to-crab-island-changelog.pdf</td></tr>
+<tr><td>10</td><td>Crab Island Cost</td><td>10-crab-island-cost-changelog.pdf</td></tr>
+<tr><td>11</td><td>How Deep Is Crab Island</td><td>11-how-deep-is-crab-island-changelog.pdf</td></tr>
+<tr><td>12</td><td>Best Time to Visit (+ post 910 merge)</td><td>12-best-time-to-visit-changelog.pdf</td></tr>
+<tr><td>13</td><td>What to Bring (+ post 773 merge)</td><td>13-what-to-bring-changelog.pdf</td></tr>
+<tr><td>14</td><td>Tiki Boat vs Pontoon Rental</td><td>14-tiki-vs-pontoon-changelog.pdf</td></tr>
+<tr><td>15</td><td>FAQs</td><td>15-faqs-changelog.pdf</td></tr>
+<tr><td>16</td><td>Our Story</td><td>16-our-story-changelog.pdf</td></tr>
+<tr><td>17</td><td>Captain Bill</td><td>17-captain-bill-changelog.pdf</td></tr>
+<tr><td>18</td><td>Gallery</td><td>18-gallery-changelog.pdf</td></tr>
+<tr><td>19</td><td>Contact Us</td><td>19-contact-changelog.pdf</td></tr>
+<tr><td>20</td><td>Blog index</td><td>20-blog-changelog.pdf</td></tr>
+<tr><td>21</td><td>Is Crab Island Family Friendly (post)</td><td>21-family-friendly-changelog.pdf</td></tr>
+<tr><td>24</td><td>High Tide vs Low Tide (post)</td><td>24-high-tide-low-tide-changelog.pdf</td></tr>
+<tr><td>25</td><td>Fall at Crab Island (post)</td><td>25-fall-crab-island-changelog.pdf</td></tr>
+<tr><td>26</td><td>Things to Do in Destin (post)</td><td>26-things-to-do-destin-changelog.pdf</td></tr>
+<tr><td>27</td><td>Hurricane Isaias (post)</td><td>27-hurricane-isaias-changelog.pdf</td></tr>
+</table>
+<p class="note">Items 22 and 23 (posts 773 and 910) are covered by the merges in changelogs 13 and 12.</p>
+</body></html>
