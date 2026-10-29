@@ -20,8 +20,8 @@ One page per loop iteration. Each finished page gets a PDF changelog in `pdf/` (
 | 14 | DONE 2026-10-28 | 793 | Tiki Boat vs Pontoon Rental | /about-crab-island/tiki-boat-vs-pontoon-rental-crab-island/ | pdf/14-tiki-vs-pontoon-changelog.pdf |
 | 15 | DONE 2026-10-28 | 53 | FAQs | /crab-island-tiki-tours-faqs/ | pdf/15-faqs-changelog.pdf |
 | 16 | DONE 2026-10-29 | 57 | Our Story | /about/ | pdf/16-our-story-changelog.pdf |
-| 17 | next | 863 | Captain Bill | /elementor-863/ | |
-| 18 | todo | 55 | Gallery | /gallery/ | |
+| 17 | DONE 2026-10-29 | 863 | Captain Bill | /elementor-863/ | pdf/17-captain-bill-changelog.pdf |
+| 18 | next | 55 | Gallery | /gallery/ | |
 | 19 | todo | 10 | Contact Us | /contact-crab-island-tiki-tours-destin/ | |
 | 20 | todo | 726 | Blog | /crab-island-destin-travel-guide/ | |
 | 21 | todo | 585 | Post: Is Crab Island Family Friendly | /is-crab-island-family-friendly/ | |
