@@ -47,3 +47,9 @@ Crab Island Tips (585, 924), Seasons and Weather (1019, 1074), Things to Do in D
 - Schema, breadcrumbs, Local SEO settings in Rank Math
 - Tracking: FareHarbor GA4, cross-domain, CF7 lead event, GTM click events
 - Owner facts still open: public tour prices, onboard toys, "captain and crew", cancellation policy text, hours, decoration and age rules, Hurricane Isaias trip status
+
+## Round 2 (2026-10-30): Rank Math push
+- SEO titles and meta descriptions on all 25 live pages/posts now start with "Crab Island" (or "Crab Island Tiki Tours")
+- New content sections: Home (+~300 words: included, prices, who books, plan your trip), Sunset (+~280), Bachelorette (+~420), Public Tours (+~280 with comparison table), Captain Bill (+~230), Contact (+~180 before the form), Blog (+~140), Our Story (+~200, Meet Your Captains)
+- Outbound authority links added where pages had none: hub, What Is, Where Is, How to Get, Cost, How Deep, Best Time, What to Bring, Pontoon, Charter, FAQ (NOAA, FWC, NHC, NWS, AAD, VPS airport)
+- Focus keywords and alt text: connector can't set them; list in RANK-MATH-KEYWORDS-AND-ALT-TEXT.md
