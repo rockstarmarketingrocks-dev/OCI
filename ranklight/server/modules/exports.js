@@ -8,6 +8,7 @@
 import { httpError, requireAuth, loadOwnedDomain, parseJson } from '../lib/http.js';
 import { rankChange } from '../lib/metrics.js';
 import { tx } from '../db.js';
+import { enforceKeywordQuota } from '../lib/quota.js';
 
 const DEVICES = ['desktop', 'mobile'];
 const MAX_ROWS = 10000;
@@ -62,7 +63,8 @@ const send = (res, type, name, body) => {
 
 export default {
   name: 'exports',
-  router({ db, express, events }) {
+  router(ctx) {
+    const { db, express, events } = ctx;
     const r = express.Router();
     r.use(requireAuth);
     const domainOf = req => {
@@ -195,6 +197,7 @@ export default {
           ids.push(id);
           for (const t of k.tags) { addTag.run(d.id, t); link.run(id, tagId.get(d.id, t).id); }
         }
+        if (ids.length) enforceKeywordQuota(ctx, req.user.id);
         return ids;
       });
       if (keywordIds.length) events.emit('keywords:added', { domainId: d.id, keywordIds });

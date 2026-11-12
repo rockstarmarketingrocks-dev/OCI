@@ -2,6 +2,7 @@
 import { httpError, requireAuth, loadOwnedDomain, loadOwnedKeyword, parseJson } from '../lib/http.js';
 import { rankChange } from '../lib/metrics.js';
 import { tx } from '../db.js';
+import { enforceKeywordQuota } from '../lib/quota.js';
 
 const DEVICES = ['desktop', 'mobile'];
 const ENGINES = ['google', 'bing', 'youtube'];
@@ -36,7 +37,8 @@ const changeFrom = (hasCur, cur, past) => (!hasCur || past === undefined ? null 
 
 export default {
   name: 'keywords',
-  router({ db, express, events }) {
+  router(ctx) {
+    const { db, express, events } = ctx;
     const r = express.Router();
     r.use(requireAuth);
 
@@ -157,6 +159,7 @@ export default {
         const tagIds = tagNames.map(n => ensureTag(domain.id, n));
         const link = db.prepare('INSERT OR IGNORE INTO keyword_tags(keyword_id, tag_id) VALUES (?,?)');
         for (const k of ids) for (const t of tagIds) link.run(k, t);
+        if (ids.length) enforceKeywordQuota(ctx, req.user.id);
         return ids;
       });
       const requested = phrases.length * new Set(devices).size;

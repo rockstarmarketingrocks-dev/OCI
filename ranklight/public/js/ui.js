@@ -55,7 +55,7 @@ export function lineChart(series, { height = 220, invert = false, yLabel = '' } 
   });
   svg += `<text x="${P.l}" y="${H - 6}" font-size="11" fill="var(--muted)">${new Date(x0).toLocaleDateString()}</text><text x="${W - P.r}" y="${H - 6}" text-anchor="end" font-size="11" fill="var(--muted)">${new Date(x1).toLocaleDateString()}</text></svg>`;
   const el = h(`<div>${svg}</div>`);
-  if (series.length > 1) el.append(h(`<div class="row">${series.map((s, i) => `<span class="tag" style="border-left:3px solid ${s.color || colors[i % colors.length]}">${esc(s.name)}</span>`).join('')}</div>`));
+  if (series.length > 1) el.append(h(`<div class="row">${series.map((s, i) => `<span class="tag"><i style="display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:${s.color || colors[i % colors.length]}"></i>${esc(s.name)}</span>`).join('')}</div>`));
   return el;
 }
 

@@ -5,7 +5,7 @@ import { get, post, patch, del } from '../api.js';
 import { h, esc, toast, modal, table, fmtDate } from '../ui.js';
 
 const STYLE = `
-.pg-reports { display: grid; gap: 16px; }
+.pg-reports { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
 .pg-reports .gen { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); align-items: end; }
 .pg-reports .sections, .pg-reports-form .sections { display: flex; gap: 12px; flex-wrap: wrap; }
 .pg-reports .sections label, .pg-reports-form .sections label, .pg-reports-form .check { flex-direction: row; align-items: center; gap: 6px; color: var(--text); font-size: 13px; }
@@ -17,7 +17,7 @@ const STYLE = `
 .pg-reports-form { display: grid; gap: 12px; }
 .pg-reports-form .two { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; }
 .pg-reports-form textarea { min-height: 70px; resize: vertical; }
-@media (max-width: 600px) { .pg-reports-form .two { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .pg-reports-form .two { grid-template-columns: minmax(0, 1fr); } }
 `;
 const SECTIONS = [['kpis', 'KPIs'], ['chart', 'Average rank chart'], ['movers', 'Top movers'], ['keywords', 'Keyword table']];
 const FORMATS = [['html', 'HTML'], ['pdf-html', 'Printable (PDF)'], ['csv', 'CSV']];

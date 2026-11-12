@@ -4,7 +4,7 @@ import { get, post, patch, api } from '../api.js';
 import { h, esc, toast, table, modal } from '../ui.js';
 
 const STYLE = `
-.pg-account { display: grid; gap: 16px; max-width: 880px; }
+.pg-account { display: grid; gap: 16px; max-width: 880px; grid-template-columns: minmax(0, 1fr); }
 .pg-account form { display: grid; gap: 12px; }
 .pg-account .fields { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .pg-account .actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }

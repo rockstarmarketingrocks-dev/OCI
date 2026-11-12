@@ -27,7 +27,7 @@ const STYLE = `
 .pg-alerts [hidden], .pg-alerts-form [hidden] { display: none; }
 .pg-alerts-form .channels { display: flex; gap: 14px; flex-wrap: wrap; }
 .pg-alerts-form .channels label, .pg-alerts-form label.check { flex-direction: row; align-items: center; gap: 6px; color: var(--text); font-size: 14px; }
-@media (max-width: 900px) { .pg-alerts .layout { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .pg-alerts .layout { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 520px) { .pg-alerts .rule, .pg-alerts .note { flex-direction: column; } }
 `;
 const TYPES = {
@@ -99,7 +99,7 @@ export default {
         <span class="dot ${esc(n.type)}"></span>
         <div class="body"><div class="msg">${esc(n.message)}</div>
           <div class="meta"><span>${esc(ago(n.createdAt))}</span>${n.domainId ? `<span class="tag">${esc(domainName(n.domainId))}</span>` : ''}
-          ${n.keywordId ? `<a href="#/keyword-history/${n.keywordId}">History</a>` : ''}</div></div>
+          ${n.keywordId ? `<a href="#/keyword/${n.keywordId}">History</a>` : ''}</div></div>
         ${n.read ? '' : '<div class="actions"><button data-read>Mark read</button></div>'}</li>`).join('')
         : `<li class="empty">${f.unread ? 'You are all caught up.' : 'No notifications yet.'}</li>`;
     }

@@ -1,6 +1,7 @@
 // Domain CRUD: list (with keyword stats), create, read, update, delete, pause/resume.
 // Emits 'domain:created' { domainId, userId } after a domain is inserted.
 import { httpError, requireAuth, loadOwnedDomain } from '../lib/http.js';
+import { enforceDomainQuota } from '../lib/quota.js';
 
 const HOST_RE = /^(?=.{1,253}$)([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9-]{2,63}$/;
 const COUNTRY_RE = /^[A-Z]{2}$/;
@@ -57,7 +58,8 @@ function readFields(body, { create }) {
 
 export default {
   name: 'domains',
-  router({ db, express, events }) {
+  router(ctx) {
+    const { db, express, events } = ctx;
     const r = express.Router();
     r.use(requireAuth);
 
@@ -93,6 +95,7 @@ export default {
     r.post('/', (req, res) => {
       const f = readFields(req.body, { create: true });
       assertUniqueHost(req, f.host);
+      enforceDomainQuota(ctx, req.user.id);
       if (!f.display_name) f.display_name = f.host;
       const cols = Object.keys(f);
       const { lastInsertRowid } = db.prepare(`INSERT INTO domains(user_id, ${cols.join(', ')}) VALUES (?, ${cols.map(() => '?').join(', ')})`)

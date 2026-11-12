@@ -23,7 +23,7 @@ const STYLE = `
 .pg-competitors .cell.tie { background: var(--surface-2); }
 .pg-competitors .legend { font-size: 12px; margin-bottom: 8px; gap: 12px; }
 .pg-competitors .kw { max-width: 280px; overflow: hidden; text-overflow: ellipsis; display: inline-block; vertical-align: bottom; }
-@media (max-width: 800px) { .pg-competitors .grid-2 { grid-template-columns: 1fr; } }
+@media (max-width: 800px) { .pg-competitors .grid-2 { grid-template-columns: minmax(0, 1fr); } }
 `;
 const COLORS = ['var(--c1)', 'var(--c2)', 'var(--c3)', 'var(--c4)', 'var(--c5)', 'var(--c6)'];
 const color = i => COLORS[i % COLORS.length];

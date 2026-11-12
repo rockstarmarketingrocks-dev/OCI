@@ -23,7 +23,8 @@ const STYLE = `
 .pg-overview .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
 .pg-overview .note-line { stroke: var(--warn); stroke-dasharray: 3 3; }
 .pg-overview .note-dot { fill: var(--warn); }
-.pg-overview .kw { max-width: 260px; overflow: hidden; text-overflow: ellipsis; display: inline-block; vertical-align: bottom; }
+.pg-overview .dev { font-size: 11px; }
+.pg-overview .kw { max-width: 220px; overflow: hidden; text-overflow: ellipsis; display: inline-block; vertical-align: bottom; }
 `;
 
 const fmtDelta = (v, suffix = '', invert = false) => {
@@ -100,7 +101,7 @@ function distributionChart(rows, notes, from, to) {
 
 function moversTable(rows, empty) {
   return table([
-    { key: 'phrase', label: 'Keyword', render: r => `<span class="kw" title="${esc(r.phrase)}">${esc(r.phrase)}</span>` },
+    { key: 'phrase', label: 'Keyword', render: r => `<a class="kw" href="#/keyword/${Number(r.id)}" title="${esc(r.phrase)}">${esc(r.phrase)}</a>${r.device ? ` <span class="muted dev">${esc(r.device)}</span>` : ''}` },
     { key: 'previousRank', label: 'Before', num: true, render: r => fmtRank(r.previousRank) },
     { key: 'rank', label: 'Now', num: true, render: r => fmtRank(r.rank) },
     { key: 'change', label: 'Change', num: true, render: r => fmtChange(r.change) },

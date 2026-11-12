@@ -59,7 +59,7 @@ test('computes current SoV for you and configured competitors', async () => {
   assert.equal(data.discovered, false);
   assert.equal(data.current.you, pct(1000 * CTR_CURVE[1] + 3000 * CTR_CURVE[2], max));
   // rival: alpha #2, beta absent now
-  assert.deepEqual(data.current.competitors, [{ host: 'rival.com', sov: pct(1000 * CTR_CURVE[2], max) }]);
+  assert.deepEqual(data.current.competitors, [{ host: 'rival.com', displayName: null, sov: pct(1000 * CTR_CURVE[2], max) }]);
 });
 
 test('history carries ranks forward per day from the baseline', async () => {

@@ -9,6 +9,7 @@
 // GET    /api/gsc-import/oauth/status             OAuth connector stub (see below)
 import { httpError, requireAuth, loadOwnedDomain } from '../lib/http.js';
 import { tx } from '../db.js';
+import { enforceKeywordQuota } from '../lib/quota.js';
 
 export const STRIKING_MIN = 8, STRIKING_MAX = 20;
 const MAX_ROWS = 50000, MAX_TRACK = 1000, MAX_QUERY_LEN = 300;
@@ -88,7 +89,8 @@ export const isStriking = pos => pos != null && pos >= STRIKING_MIN && pos <= ST
 
 export default {
   name: 'gsc-import',
-  router({ db, express, events }) {
+  router(ctx) {
+    const { db, express, events } = ctx;
     const r = express.Router();
     r.use(requireAuth);
     const domainParam = v => {
@@ -176,6 +178,7 @@ export default {
           const { changes, lastInsertRowid } = ins.run(domain.id, p, device, domain.default_country, domain.default_location, domain.default_language);
           if (changes) keywordIds.push(Number(lastInsertRowid));
         }
+        if (keywordIds.length) enforceKeywordQuota(ctx, req.user.id);
       });
       if (keywordIds.length) events.emit('keywords:added', { domainId: domain.id, keywordIds });
       res.status(201).json({ added: keywordIds.length, skipped: phrases.length - keywordIds.length, keywordIds });

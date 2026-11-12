@@ -14,7 +14,7 @@ const STYLE = `
 .pg-team .link { font-family: ui-monospace, monospace; font-size: 12px; word-break: break-all; color: var(--muted); }
 .pg-team .accept { max-width: 420px; margin: 32px auto; display: grid; gap: 12px; }
 .pg-team .accept label { display: grid; gap: 4px; }
-@media (max-width: 900px) { .pg-team .grid-2 { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .pg-team .grid-2 { grid-template-columns: minmax(0, 1fr); } }
 `;
 const ROLE_COLORS = { owner: 'var(--c4)', admin: 'var(--c1)', member: 'var(--c2)', viewer: 'var(--muted)' };
 const roleBadge = r => `<span class="role" style="--rc:${ROLE_COLORS[r] || 'var(--muted)'}">${esc(r)}</span>`;

@@ -48,8 +48,25 @@ function authScreen() {
   });
 }
 async function boot() {
-  try { state.user = (await get('/api/auth/me')).user; } catch { return authScreen(); }
+  try { state.user = (await get('/api/auth/me')).user; } catch {
+    // Logged-out invitees must reach the team invite form (#/team/accept?token=...).
+    if (/^#\/team\/accept\b/.test(location.hash)) {
+      try {
+        const team = (await import('./pages/team.js')).default;
+        const qs = location.hash.split('?')[1] || '';
+        const el = h('<div class="auth-screen" id="app"></div>');
+        document.getElementById('app').replaceWith(el);
+        return await team.render(el, { param: 'accept', query: new URLSearchParams(qs), user: null, domains: [], domainId: null, domain: null,
+          navigate: hsh => { location.hash = hsh; }, refreshDomains: async () => {} });
+      } catch (e) { console.error(e); }
+    }
+    return authScreen();
+  }
   document.getElementById('user-email').textContent = state.user.email;
+  const sidebar = document.getElementById('sidebar'), navToggle = document.getElementById('nav-toggle');
+  const setNav = open => { sidebar.classList.toggle('open', open); navToggle.setAttribute('aria-expanded', String(open)); };
+  navToggle.onclick = () => setNav(!sidebar.classList.contains('open'));
+  window.addEventListener('hashchange', () => setNav(false));
   document.getElementById('logout').onclick = async () => { await post('/api/auth/logout'); location.reload(); };
   document.getElementById('domain-switcher').onchange = e => { state.domainId = Number(e.target.value); localStorage.setItem('rl_domain', state.domainId); route(); };
   await Promise.all([loadPages(), refreshDomains()]);

@@ -61,11 +61,12 @@ export default {
       const hosts = data.current.competitors.map(c => c.host);
       const colorOf = new Map([['you', COLORS[0]], ...hosts.map((host, i) => [host, COLORS[(i + 1) % COLORS.length]])]);
       const youName = ctx.domain?.display_name || ctx.domain?.host || 'You';
+      const nameOf = new Map(data.current.competitors.map(c => [c.host, c.displayName || c.host]));
       const series = [{ name: youName, color: colorOf.get('you'), points: data.history.map(p => ({ x: p.date, y: p.you })) },
-        ...hosts.map(host => ({ name: host, color: colorOf.get(host), points: data.history.map(p => ({ x: p.date, y: p[host] ?? null })) }))];
+        ...hosts.map(host => ({ name: nameOf.get(host), color: colorOf.get(host), points: data.history.map(p => ({ x: p.date, y: p[host] ?? null })) }))];
 
       const ranking = [{ name: youName, sov: data.current.you, you: true, color: colorOf.get('you') },
-        ...data.current.competitors.map(c => ({ name: c.host, sov: c.sov, color: colorOf.get(c.host) }))].sort((a, b) => b.sov - a.sov);
+        ...data.current.competitors.map(c => ({ name: nameOf.get(c.host), sov: c.sov, color: colorOf.get(c.host) }))].sort((a, b) => b.sov - a.sov);
       const rankCard = card('Current ranking', bars(ranking));
       if (data.discovered && hosts.length) rankCard.append(h('<div class="muted hint">No competitors configured; showing the top hosts found in your tracked SERPs.</div>'));
 

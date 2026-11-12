@@ -26,7 +26,7 @@ const STYLE = `
 .pg-tags .rule { display: grid; grid-template-columns: 140px 130px minmax(0, 1fr) auto; gap: 8px; margin-bottom: 8px; }
 .pg-tags .rule input, .pg-tags .rule select { min-width: 0; }
 .pg-tags .preview { font-size: 12px; margin-top: 8px; }
-@media (max-width: 900px) { .pg-tags .layout { grid-template-columns: 1fr; } .pg-tags .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 900px) { .pg-tags .layout { grid-template-columns: minmax(0, 1fr); } .pg-tags .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .pg-tags .rule { grid-template-columns: 1fr 1fr; } .pg-tags .rule input { grid-column: 1 / -1; } }
 `;
 const FIELDS = { phrase: 'Keyword', url: 'Ranking URL', rank: 'Rank', search_volume: 'Search volume', device: 'Device', location: 'Location' };
@@ -101,7 +101,7 @@ export default {
         { key: 'rank', label: 'Rank', num: true, render: r => fmtRank(r.rank) },
         { key: 'search_volume', label: 'Volume', num: true, render: r => fmtNum(r.search_volume) },
         { key: 'url', label: 'URL', render: r => r.url ? `<span class="muted">${esc(r.url)}</span>` : '–' },
-      ], t.keywords, { empty: 'No keywords carry this tag yet', onRowClick: r => ctx.navigate(`#/keyword-history/${r.id}`) }));
+      ], t.keywords, { empty: 'No keywords carry this tag yet', onRowClick: r => ctx.navigate(`#/keyword/${r.id}`) }));
     }
 
     function addRule(r = { field: 'phrase', op: 'contains', value: '' }) {

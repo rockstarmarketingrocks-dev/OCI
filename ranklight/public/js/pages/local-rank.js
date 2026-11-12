@@ -10,7 +10,7 @@ const STYLE = `
 .pg-local .grid-form input, .pg-local .grid-form select { font: inherit; padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px;
   background: var(--surface); color: var(--text); min-width: 0; }
 .pg-local .grid-out { display: grid; gap: 16px; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); align-items: start; }
-@media (max-width: 760px) { .pg-local .grid-out { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .pg-local .grid-out { grid-template-columns: minmax(0, 1fr); } }
 .pg-local svg.geo { width: 100%; height: auto; display: block; }
 .pg-local svg.geo rect { stroke: var(--surface); stroke-width: 2; }
 .pg-local svg.geo text { font: 600 13px var(--font); pointer-events: none; }

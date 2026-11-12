@@ -12,9 +12,10 @@ const STYLE = `
 .pg-domains .dom.paused { opacity: .7; }
 .pg-domains .dom .name { font-weight: 600; font-size: 15px; overflow-wrap: anywhere; }
 .pg-domains .dom .host { color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
-.pg-domains .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.pg-domains .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.pg-domains .stats div { min-width: 0; }
 .pg-domains .stats div { background: var(--surface-2); border-radius: 6px; padding: 6px 8px; }
-.pg-domains .stats b { display: block; font-size: 16px; font-variant-numeric: tabular-nums; }
+.pg-domains .stats b { display: block; font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .pg-domains .stats span { font-size: 11px; color: var(--muted); }
 .pg-domains .actions { display: flex; gap: 6px; flex-wrap: wrap; }
 .pg-domains .actions button { padding: 4px 10px; font-size: 13px; }
@@ -22,7 +23,7 @@ const STYLE = `
 .pg-domains-form { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; }
 .pg-domains-form .full { grid-column: 1 / -1; }
 .pg-domains-form .check { flex-direction: row; align-items: center; gap: 8px; color: var(--text); font-size: 14px; }
-@media (max-width: 560px) { .pg-domains-form { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .pg-domains-form { grid-template-columns: minmax(0, 1fr); } }
 `;
 
 function domainForm(d, groups, onSaved) {
@@ -57,7 +58,7 @@ function domainCard(d) {
     <div class="stats">
       <div><b>${fmtNum(d.keyword_count)}</b><span>Keywords</span></div>
       <div><b>${d.avg_rank == null ? '–' : esc(d.avg_rank)}</b><span>Avg. rank</span></div>
-      <div><b>${d.last_checked_at ? esc(fmtDate(d.last_checked_at)) : '–'}</b><span>Last check</span></div>
+      <div title="${d.last_checked_at ? esc(fmtDate(d.last_checked_at)) : ''}"><b>${d.last_checked_at ? esc(new Date(d.last_checked_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })) : '–'}</b><span>Last check</span></div>
     </div>
     <div class="actions"><button data-act="open" class="primary">Open</button><button data-act="edit">Edit</button>
       <button data-act="${d.paused ? 'resume' : 'pause'}">${d.paused ? 'Resume' : 'Pause'}</button><button data-act="delete" class="danger">Delete</button></div>

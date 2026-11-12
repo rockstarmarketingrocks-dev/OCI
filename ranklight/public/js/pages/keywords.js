@@ -33,7 +33,7 @@ const STYLE = `
 .pg-keywords-modal form { display: grid; gap: 12px; }
 .pg-keywords-modal textarea { min-height: 160px; width: 100%; }
 .pg-keywords-modal .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-@media (max-width: 600px) { .pg-keywords .filters > * { flex: 1 1 140px; } .pg-keywords-modal .two { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .pg-keywords .filters > * { flex: 1 1 140px; } .pg-keywords-modal .two { grid-template-columns: minmax(0, 1fr); } }
 `;
 const safeColor = c => (/^#[0-9a-f]{3,8}$/i.test(c) ? c : 'var(--border)');
 
@@ -44,20 +44,21 @@ export default {
       sort: 'rank', order: 'asc', page: 1, pageSize: 50, selected: new Set(), rows: [], total: 0, tags: [] };
     const root = h(`<div class="pg-keywords"><style>${STYLE}</style>
       <div class="row"><h1>Keywords</h1><span class="spacer"></span><button class="primary" data-add>+ Add keywords</button></div>
-      <div class="row filters">
+      <form class="row filters">
         <label>Search<input type="search" name="q" placeholder="Filter keywords"></label>
         <label>Tag<select name="tag"></select></label>
         <label>Device<select name="device"><option value="">All devices</option><option value="desktop">Desktop</option><option value="mobile">Mobile</option></select></label>
         <label class="rng">Rank from<input type="number" name="rankMin" min="1" max="101"></label>
         <label class="rng">to<input type="number" name="rankMax" min="1" max="101"></label>
         <label><span>Starred</span><input type="checkbox" name="starred"></label>
-      </div>
+      </form>
       <div class="row bulkbar" hidden></div>
       <div class="table-wrap"><table class="data"><thead></thead><tbody></tbody></table></div>
       <div class="row pager"></div></div>`);
     el.append(root);
     const $ = s => root.querySelector(s);
     const f = $('.filters');
+    f.addEventListener('submit', e => e.preventDefault());
     f.q.value = st.q;
 
     const loadTags = async () => {

@@ -67,6 +67,8 @@ function summary(db, userId) {
 
 export default {
   name: 'billing',
+  // Other modules enforce plan limits through ctx.quota (see server/lib/quota.js).
+  setup(ctx) { ctx.quota = { checkKeywordQuota, checkDomainQuota }; },
   router(ctx) {
     const { db, express, events } = ctx;
     const r = express.Router();

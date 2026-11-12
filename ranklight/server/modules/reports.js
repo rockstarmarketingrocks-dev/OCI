@@ -387,6 +387,15 @@ export default {
   name: 'reports',
   setup(ctx) {
     ctx.jobs.set('reports', { everyMinutes: 15, run: c => runDueSchedules(c) });
+    // Integration: deliver alerts module 'email' channel notifications through the same mail transport.
+    ctx.events.on('alert:email', ({ notification, userId, rule, domain } = {}) => {
+      const user = userId && ctx.db.prepare('SELECT email FROM users WHERE id = ?').get(userId);
+      if (!user?.email || !notification) return;
+      const subject = `Ranklight alert: ${notification.message}`;
+      const html = `<p>${esc(notification.message)}</p><p>Rule: ${esc(rule?.name)} · Domain: ${esc(domain?.host)}</p>`;
+      deliver(ctx, { to: [user.email], subject, html, attachments: [] })
+        .catch(e => console.error('[reports] alert email failed:', e.message));
+    });
   },
   router(ctx) {
     const { db, express } = ctx;

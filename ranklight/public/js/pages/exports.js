@@ -17,7 +17,7 @@ const STYLE = `
 .pg-import-export .summary { gap: 16px; flex-wrap: wrap; margin-bottom: 8px; font-weight: 600; }
 .pg-import-export .st { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding: 1px 6px; border-radius: 4px; border: 1px solid currentColor; }
 .pg-import-export .st.add { color: var(--up); } .pg-import-export .st.skip { color: var(--muted); } .pg-import-export .st.error { color: var(--down); }
-@media (max-width: 900px) { .pg-import-export .grid2 { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .pg-import-export .grid2 { grid-template-columns: minmax(0, 1fr); } }
 `;
 
 export default {

@@ -72,7 +72,9 @@ export function buildShareOfVoice(db, domain, { days = 30, tag = null } = {}, no
   const isOwn = h => hostMatches(h, domain.host, !!domain.include_subdomains);
 
   // Competitor hosts: configured, else discovered from the latest SERPs of in-scope keywords.
-  let hosts = db.prepare('SELECT host FROM competitors WHERE domain_id = ? ORDER BY id').all(domain.id).map(r => normHost(r.host)).filter(h => h && !isOwn(h));
+  const compRows = db.prepare('SELECT host, display_name FROM competitors WHERE domain_id = ? ORDER BY id').all(domain.id);
+  const nameOf = new Map(compRows.map(r => [normHost(r.host), r.display_name || null]));
+  let hosts = compRows.map(r => normHost(r.host)).filter(h => h && !isOwn(h));
   const discovered = !hosts.length;
   if (discovered) {
     const clicks = new Map();
@@ -120,7 +122,7 @@ export function buildShareOfVoice(db, domain, { days = 30, tag = null } = {}, no
     domainId: domain.id, days, from, to: isoDate(now), tag, discovered,
     current: {
       you: cur.you,
-      competitors: hosts.map((host, i) => ({ host, sov: cur.comp[i] })).sort((a, b) => b.sov - a.sov || a.host.localeCompare(b.host)),
+      competitors: hosts.map((host, i) => ({ host, displayName: nameOf.get(host) || null, sov: cur.comp[i] })).sort((a, b) => b.sov - a.sov || a.host.localeCompare(b.host)),
     },
     history,
     byTag: tags.map(t => {

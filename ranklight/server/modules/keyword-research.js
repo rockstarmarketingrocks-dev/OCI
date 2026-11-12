@@ -2,6 +2,7 @@
 import { httpError, requireAuth, loadOwnedDomain, parseJson } from '../lib/http.js';
 import { hostMatches, hostOf } from '../lib/metrics.js';
 import { tx } from '../db.js';
+import { enforceKeywordQuota } from '../lib/quota.js';
 
 const MAX_IDEAS = 200;
 const MAX_TRACK = 500;
@@ -230,8 +231,10 @@ export default {
 
       const keywordIds = tx(db, () => {
         const ins = db.prepare(`INSERT OR IGNORE INTO keywords(domain_id, phrase, device, country, location, language) VALUES (?,?,?,?,?,?)`);
-        return phrases.map(p => ins.run(domain.id, p, device, country, domain.default_location, language))
+        const ids = phrases.map(p => ins.run(domain.id, p, device, country, domain.default_location, language))
           .filter(x => x.changes).map(x => Number(x.lastInsertRowid));
+        if (ids.length) enforceKeywordQuota(ctx, req.user.id);
+        return ids;
       });
       if (keywordIds.length) events.emit('keywords:added', { domainId: domain.id, keywordIds });
       res.status(201).json({ created: keywordIds.length, skipped: phrases.length - keywordIds.length, keywordIds });

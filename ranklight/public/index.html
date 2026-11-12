@@ -9,10 +9,10 @@
 <body>
   <div id="app">
     <aside id="sidebar">
-      <a class="brand" href="#/">Ranklight</a>
+      <div class="brand-row"><a class="brand" href="#/">Ranklight</a><button id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav sidebar-foot" aria-label="Menu">Menu</button></div>
       <select id="domain-switcher" aria-label="Domain"></select>
       <nav id="nav"></nav>
-      <div class="sidebar-foot"><span id="user-email"></span> <button id="logout" class="btn-link">Log out</button></div>
+      <div class="sidebar-foot" id="sidebar-foot"><span id="user-email"></span> <button id="logout" class="btn-link">Log out</button></div>
     </aside>
     <main id="main"><div id="view">Loading…</div></main>
   </div>
