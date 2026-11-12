@@ -45,7 +45,7 @@ const SUFFIXES = ['hub', 'lab', 'guide', 'hq', 'pro', 'zone', 'insider', 'review
 const TLDS = ['com', 'com', 'com', 'net', 'org', 'io', 'co'];
 const TITLE_TEMPLATES = [
   (p, b) => `${p}: The Complete Guide | ${b}`, (p, b) => `${p} - ${b}`, (p, b) => `What Is ${p}? Everything You Need to Know`,
-  (p, b) => `10 Best ${p} Options (Updated) - ${b}`, (p, b) => `${p} Explained | ${b}`, (p, b) => `How to Choose ${p} | ${b}`,
+  (p, b) => `${p}: Top 10 Picks (Updated) - ${b}`, (p, b) => `${p} Explained | ${b}`, (p, b) => `How to Choose ${p} | ${b}`,
   (p, b) => `${p} Reviews and Comparison - ${b}`, (p, b) => `${b}: ${p} Tips and Ideas`,
 ];
 const FEATURE_ODDS = {
