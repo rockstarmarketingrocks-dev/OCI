@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ranklight</title>
+  <link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <a class="brand" href="#/">Ranklight</a>
+      <select id="domain-switcher" aria-label="Domain"></select>
+      <nav id="nav"></nav>
+      <div class="sidebar-foot"><span id="user-email"></span> <button id="logout" class="btn-link">Log out</button></div>
+    </aside>
+    <main id="main"><div id="view">Loading…</div></main>
+  </div>
+  <div id="toasts" aria-live="polite"></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
